@@ -1,0 +1,45 @@
+{
+  "version": "4.0.0",
+  "status": "validated",
+  "scope": "Public-data current social understanding and Chinese dialogue; not a real-home acceptance certificate",
+  "base": "../v2/models/qwen35_2B",
+  "base_revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "original_tasks": "../v2/models/social_zh/best",
+  "state": {
+    "checkpoint": "runs/current_state_lora/best",
+    "fingerprint": "3d6980b1054bcdfda580eb01afe03824b7595f0e29b814aae796465f826e9479",
+    "accepted_heads": [
+      "emotion",
+      "dialog_act",
+      "sentiment"
+    ],
+    "temperatures": {
+      "emotion": 0.9716587599362232,
+      "dialog_act": 1.0068857864561895,
+      "sentiment": 0.9716587599362232
+    }
+  },
+  "dialogue": {
+    "checkpoint": "runs/dialogue_repair_v2/best",
+    "sha256": "e3925867da7038c61f8d30c691e9db7663cd1d2d98adc70302318ec902e9a919"
+  },
+  "future_prediction_enabled": false,
+  "physical_base_models": 1,
+  "state_evaluation": "reports/current_state_evaluation.json",
+  "dialogue_evaluation": "reports/dialogue_repair_evaluation.json",
+  "dialogue_review": "reports/dialogue_repair_manual_review.json",
+  "fallbacks": {
+    "current_heads_not_accepted": "Original V2 head and task adapter",
+    "dialogue_not_accepted": "Frozen Qwen base with full Chinese conversation context"
+  },
+  "dialogue_prompt_version": "v4-grounded-2",
+  "first_dialogue_candidate_rejected": true,
+  "cpu_base": {
+    "file": "models/cpu_base_int8.pt",
+    "sha256": "320544dff845b7b4c73ebddddd7409e5a15e816aa1212aad4db2c033d28e9115",
+    "quality_status": "experimental_runtime_only",
+    "emotion_top1_agreement_with_gpu": 0.7291666666666666,
+    "probe_n": 96
+  },
+  "recommended_device": "cuda"
+}

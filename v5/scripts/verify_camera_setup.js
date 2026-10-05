@@ -1,0 +1,30 @@
+async page => {
+ const assert=(v,m)=>{if(!v)throw Error(m)};
+ await page.context().grantPermissions(['camera','microphone']);
+ await page.reload();await page.waitForFunction(()=>window.setupController&&window.cameraController);
+ assert(await page.locator('#setupPanel').getAttribute('open')!==null,'setup must start open');
+ assert(await page.evaluate(()=>document.getElementById('setupPanel').compareDocumentPosition(document.querySelector('.layout'))&Node.DOCUMENT_POSITION_FOLLOWING),'login must precede camera');
+ await page.setViewportSize({width:1440,height:1000});
+ assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'desktop overflow');
+ await page.screenshot({path:'output/playwright/setup-desktop.png',fullPage:true});
+ await page.setViewportSize({width:390,height:844});
+ assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'mobile overflow');
+ await page.screenshot({path:'output/playwright/setup-mobile.png',fullPage:true});
+ await page.setViewportSize({width:1440,height:1000});
+ await page.getByRole('button',{name:'确认以上选择，进入对话',exact:true}).click();
+ assert(await page.locator('#setupPanel').getAttribute('open')!==null,'cannot bypass identity choice');
+ await page.getByRole('button',{name:'暂不登录，以访客体验',exact:true}).click();
+ await page.locator('#cloudVoiceConsent').check();
+ await page.getByRole('button',{name:'确认以上选择，进入对话',exact:true}).click();
+ assert(await page.locator('#setupPanel').getAttribute('open')===null,'confirmed setup must collapse');
+ await page.getByRole('button',{name:'开启摄像头',exact:true}).click();
+ await page.waitForFunction(()=>window.cameraController.mode==='compat'&&document.getElementById('cameraPreview').naturalWidth>0,null,{timeout:20000});
+ await page.waitForFunction(()=>frameAt>0,null,{timeout:10000});
+ const camera=await page.evaluate(()=>({mode:cameraController.mode,width:document.getElementById('cameraPreview').naturalWidth,height:document.getElementById('cameraPreview').naturalHeight,vision_ready:frameAt>0,status:document.getElementById('cameraStatus').textContent}));
+ await page.getByRole('button',{name:'关闭摄像头',exact:true}).click();
+ assert(await page.evaluate(()=>!cameraController.active),'stop camera');
+ await page.getByRole('button',{name:'开启摄像头',exact:true}).click();
+ await page.waitForFunction(()=>cameraController.active&&document.getElementById('cameraPreview').naturalWidth>0,null,{timeout:10000});
+ await page.getByRole('button',{name:'关闭摄像头',exact:true}).click();
+ return {setup_first:true,explicit_choices:true,collapse_after_confirm:true,camera,reopen:true,desktop_mobile_overflow:false};
+}

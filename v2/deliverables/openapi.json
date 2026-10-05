@@ -1,0 +1,665 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "中文居家社会世界模型",
+    "version": "2.0.0"
+  },
+  "paths": {
+    "/health": {
+      "get": {
+        "summary": "Health",
+        "operationId": "health_health_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ]
+      }
+    },
+    "/v1/step": {
+      "post": {
+        "summary": "Step",
+        "operationId": "step_v1_step_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StepRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ]
+      }
+    },
+    "/v1/imagine": {
+      "post": {
+        "summary": "Imagine",
+        "operationId": "imagine_v1_imagine_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ImagineRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ]
+      }
+    },
+    "/v1/users/{user_id}": {
+      "delete": {
+        "summary": "Forget",
+        "operationId": "forget_v1_users__user_id__delete",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "user_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "User Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/users/{user_id}/reminders": {
+      "get": {
+        "summary": "Reminders",
+        "operationId": "reminders_v1_users__user_id__reminders_get",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "user_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "User Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/users/{user_id}/reminders/{reminder_id}/ack": {
+      "post": {
+        "summary": "Ack",
+        "operationId": "ack_v1_users__user_id__reminders__reminder_id__ack_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "user_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "User Id"
+            }
+          },
+          {
+            "name": "reminder_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "title": "Reminder Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "ImagineRequest": {
+        "properties": {
+          "speech": {
+            "type": "string",
+            "maxLength": 600,
+            "minLength": 1,
+            "title": "Speech"
+          },
+          "history": {
+            "items": {
+              "prefixItems": [
+                {
+                  "type": "string",
+                  "enum": [
+                    "用户",
+                    "对方"
+                  ]
+                },
+                {
+                  "type": "string",
+                  "maxLength": 600
+                }
+              ],
+              "type": "array",
+              "maxItems": 2,
+              "minItems": 2
+            },
+            "type": "array",
+            "maxItems": 4,
+            "title": "History"
+          },
+          "candidates": {
+            "items": {
+              "type": "string",
+              "maxLength": 200,
+              "minLength": 1
+            },
+            "type": "array",
+            "maxItems": 6,
+            "minItems": 1,
+            "title": "Candidates"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "speech",
+          "candidates"
+        ],
+        "title": "ImagineRequest"
+      },
+      "Observation": {
+        "properties": {
+          "user_id": {
+            "type": "string",
+            "maxLength": 80,
+            "minLength": 1,
+            "pattern": "^[\\w.-]+$",
+            "title": "User Id",
+            "default": "anonymous"
+          },
+          "session_id": {
+            "type": "string",
+            "maxLength": 80,
+            "minLength": 1,
+            "pattern": "^[\\w.-]+$",
+            "title": "Session Id",
+            "default": "default"
+          },
+          "speech": {
+            "type": "string",
+            "maxLength": 600,
+            "title": "Speech",
+            "default": ""
+          },
+          "person_present": {
+            "type": "boolean",
+            "title": "Person Present",
+            "default": true
+          },
+          "identity_verified": {
+            "type": "boolean",
+            "title": "Identity Verified",
+            "default": false
+          },
+          "memory_consent": {
+            "type": "boolean",
+            "title": "Memory Consent",
+            "default": false
+          },
+          "gaze": {
+            "type": "string",
+            "enum": [
+              "toward",
+              "away",
+              "unknown"
+            ],
+            "title": "Gaze",
+            "default": "unknown"
+          },
+          "distance": {
+            "type": "number",
+            "maximum": 100.0,
+            "minimum": 0.0,
+            "title": "Distance",
+            "default": 1.5
+          },
+          "pose": {
+            "type": "string",
+            "enum": [
+              "sitting",
+              "standing",
+              "lying",
+              "unknown"
+            ],
+            "title": "Pose",
+            "default": "unknown"
+          },
+          "movement": {
+            "type": "string",
+            "enum": [
+              "low",
+              "normal",
+              "high",
+              "unknown"
+            ],
+            "title": "Movement",
+            "default": "unknown"
+          },
+          "voice_arousal": {
+            "type": "string",
+            "enum": [
+              "low",
+              "normal",
+              "high",
+              "unknown"
+            ],
+            "title": "Voice Arousal",
+            "default": "unknown"
+          },
+          "current_task": {
+            "type": "string",
+            "maxLength": 80,
+            "title": "Current Task",
+            "default": "conversation"
+          },
+          "current_goal": {
+            "type": "string",
+            "maxLength": 120,
+            "title": "Current Goal",
+            "default": ""
+          },
+          "last_action": {
+            "type": "string",
+            "maxLength": 30,
+            "title": "Last Action",
+            "default": "WAIT"
+          },
+          "emergency_verified": {
+            "type": "boolean",
+            "title": "Emergency Verified",
+            "default": false
+          },
+          "motion_authorized": {
+            "type": "boolean",
+            "title": "Motion Authorized",
+            "default": false
+          },
+          "boundary": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "open",
+                  "do_not_disturb",
+                  "keep_distance"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Boundary"
+          },
+          "preferred_distance": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 5.0,
+                "minimum": 0.5
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Preferred Distance"
+          },
+          "preferred_style": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "neutral",
+                  "warm",
+                  "gentle",
+                  "brief",
+                  "silent"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Preferred Style"
+          },
+          "relationship_level": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "unknown",
+                  "first_contact",
+                  "acquaintance",
+                  "familiar",
+                  "trusted"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Relationship Level"
+          },
+          "known_topics": {
+            "items": {
+              "type": "string",
+              "maxLength": 80
+            },
+            "type": "array",
+            "maxItems": 10,
+            "title": "Known Topics"
+          },
+          "positive_feedback": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Positive Feedback"
+          },
+          "memory_note": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 200
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Memory Note"
+          },
+          "reminder_after_seconds": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "maximum": 31536000.0,
+                "minimum": 1.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Reminder After Seconds"
+          },
+          "reminder_text": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 200
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Reminder Text"
+          },
+          "cloud_consent": {
+            "type": "boolean",
+            "title": "Cloud Consent",
+            "default": false
+          },
+          "task_execution_authorized": {
+            "type": "boolean",
+            "title": "Task Execution Authorized",
+            "default": false
+          },
+          "asr_confidence": {
+            "type": "number",
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Asr Confidence",
+            "default": 1.0
+          },
+          "local_reasoning": {
+            "type": "boolean",
+            "title": "Local Reasoning",
+            "default": false
+          },
+          "target_device": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 80,
+                "pattern": "^[\\w.-]+$"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Target Device"
+          },
+          "confirmed_task_intent": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 60
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Confirmed Task Intent"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "Observation"
+      },
+      "StepRequest": {
+        "properties": {
+          "observation": {
+            "$ref": "#/components/schemas/Observation"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "observation"
+        ],
+        "title": "StepRequest"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    },
+    "securitySchemes": {
+      "HTTPBearer": {
+        "type": "http",
+        "scheme": "bearer"
+      }
+    }
+  }
+}

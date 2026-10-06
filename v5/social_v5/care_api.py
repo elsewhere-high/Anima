@@ -3,6 +3,7 @@ from typing import Literal
 from pydantic import Field,model_validator
 from fastapi import APIRouter,Depends,HTTPException,Request
 from .schema import Strict
+from .care import ReminderConflict
 
 class CareSettings(Strict):
     proactive_enabled:bool=False
@@ -47,7 +48,8 @@ def router(guard,member):
     @r.post('/reminders')
     def create(body:Reminder,request:Request,uid=Depends(member)):
         service=care(request);due=body.due_at.timestamp() if body.due_at else service.clock()+body.delay_seconds
-        try:return service.add(uid,body.text,due,body.request_id,86400 if body.repeat=='daily' else 0,body.kind)
+        try:return service.add(uid,body.text,due,body.request_id,86400 if body.repeat=='daily' else 0,body.kind,delay_seconds=body.delay_seconds)
+        except ReminderConflict as e:raise HTTPException(409,str(e))
         except ValueError as e:raise HTTPException(400,str(e))
     @r.post('/reminders/{rid}/resolve')
     def resolve(rid:int,body:Resolve,request:Request,uid=Depends(member)):

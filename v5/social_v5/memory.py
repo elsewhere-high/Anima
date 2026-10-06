@@ -14,6 +14,8 @@ def grams(text):
     text=re.sub(r'[^\w\u4e00-\u9fff]','',text.casefold())
     return set(text[i:i+2] for i in range(len(text)-1)) | set(re.findall(r'[a-z0-9]{2,}',text))
 
+PAST_REFERENCE=re.compile(r'以前|之前|原来|曾经|过去|昨天|前天|去年|上周|上个月')
+
 class MemoryStore(BaseStore):
     def __init__(self,path,key_path,embedder=None):
         self.embedder=embedder
@@ -112,17 +114,20 @@ class MemoryStore(BaseStore):
             if not value:self.forget(uid)
     def put(self,uid,kind,slot,text,source='user_explicit',session_id='',ttl_days=None,importance=.7,evidence=None,preserve_expiry=False):
         if not safe_text(text):raise ValueError('不保存密码、验证码等认证秘密')
-        now=time.time(); record_id=secrets.token_hex(12);slot_index=self.cipher.index(slot)
+        record_id=secrets.token_hex(12);slot_index=self.cipher.index(slot)
         # Exact slot revisions keep history for audit, while retrieval uses only active facts.
         with self.lock:
             self.purge(uid)
+            now=time.time()
             old=self.db.execute('SELECT id,payload,expires FROM records WHERE uid=? AND slot=? AND kind=? AND active=1',(uid,slot_index,kind)).fetchone() if kind!='event' else None
             expires=old[2] if preserve_expiry and old else now+ttl_days*86400 if ttl_days else None
             if old and self.cipher.load(old[1])['text']==text:
                 self.db.execute('UPDATE records SET updated=?,expires=? WHERE id=?',(now,expires,old[0]));self.db.commit();return old[0]
-            if old:self.db.execute('UPDATE records SET active=0 WHERE id=?',(old[0],))
             payload=dict(slot=slot,text=text,source=source,session_id=session_id,evidence=evidence or text,supersedes=old[0] if old else None)
             if self.embedder:payload['_embedding']=self.embedder.encode(text)
+            if old:
+                previous=self.cipher.load(old[1]);previous['recorded_until']=now
+                self.db.execute('UPDATE records SET active=0,payload=? WHERE id=?',(self.cipher.dump(previous),old[0]))
             self.db.execute('INSERT INTO records VALUES (?,?,?,?,?,?,?,?,?,1)',(record_id,uid,kind,slot_index,self.cipher.dump(payload),now,now,expires,importance))
             self.db.commit(); self._bound(uid)
         return record_id
@@ -140,11 +145,18 @@ class MemoryStore(BaseStore):
             self.purge(uid)
             rows=self.db.execute('SELECT id,kind,slot,payload,created,updated,expires,importance,active FROM records WHERE uid=?'+('' if include_history else ' AND active=1')+' ORDER BY updated DESC LIMIT ?',(uid,min(2000,max(1,limit)))).fetchall()
             result=[dict(id=r[0],kind=r[1],**self.cipher.load(r[3]),created=r[4],updated=r[5],expires=r[6],importance=r[7],active=bool(r[8])) for r in rows]
+            for r in result:
+                # These are knowledge-recording times, not inferred real-world event times.
+                r['recorded_from']=r['created']
+                r.setdefault('recorded_until',None)
+                r['temporal_status']='current_record' if r['active'] else 'superseded_record'
             if not _vectors:
                 for r in result:r.pop('_embedding',None)
             return result
-    def search(self,uid,query,limit=5):
-        q=grams(query); all_rows=self.list(uid,True,limit=2000,_vectors=True); rows=[r for r in all_rows if r['active']]; now=time.time(); ranked=[]
+    def search(self,uid,query,limit=5,include_history=False):
+        q=grams(query); all_rows=self.list(uid,True,limit=2000,_vectors=True)
+        rows=([r for r in all_rows if r['kind'] in {'fact','preference'}] if include_history else [r for r in all_rows if r['active']])
+        now=time.time(); ranked=[]
         obsolete=[r for r in all_rows if not r['active'] and r['kind'] in {'fact','preference'}]
         vector=self.embedder.encode(query,query=True) if self.embedder and rows else None
         for r in rows:
@@ -154,6 +166,7 @@ class MemoryStore(BaseStore):
             semantic=sum(a*b for a,b in zip(vector,embedding)) if vector is not None and embedding else 0.
             if not overlap and not profile and semantic<.6:continue
             if r['kind']=='event' and re.search(r'[?？]|在哪里|什么|记得吗',r['text']):continue
+            if r['kind'] in {'event','summary'} and PAST_REFERENCE.search(r['text']):continue
             if r['kind'] in {'event','summary'} and any(old['text'] in r['text'] or (isinstance(old['evidence'],str) and old['evidence'] in r['text']) for old in obsolete):continue
             relevance=overlap/math.sqrt(max(1,len(q))*max(1,len(t)))
             score=2*relevance+1.5*semantic+.12*math.exp(-(now-r['updated'])/(30*86400))+.12*r['importance']+(.15 if r['kind'] in {'fact','preference'} else 0)
@@ -162,19 +175,22 @@ class MemoryStore(BaseStore):
         for _,r,t in sorted(ranked,key=lambda x:x[0],reverse=True):
             # Once a semantic slot is current, don't inject obsolete episodic copies.
             if r['kind'] in {'event','summary'} and any(s['slot'].replace('位置','') in r['text'] and s['text'] not in r['text'] for s in rows if s['kind'] in {'fact','preference'}):continue
-            if any(len(t&old)/max(1,len(t|old))>.8 for old in seen):continue
+            if not include_history and any(len(t&old)/max(1,len(t|old))>.8 for old in seen):continue
             chosen.append(r);seen.add(frozenset(t))
             if len(chosen)>=limit:break
         return chosen
     def retrieve(self,state,query,limit=5):
         uid=state.get('_uid')
         if not uid:return []
-        return [f"[{datetime.fromtimestamp(r['updated'],timezone.utc).isoformat()}；{r['source']}；{r['kind']}] {r['text']}" for r in self.search(uid,query,limit)]
+        historical=bool(PAST_REFERENCE.search(query))
+        return [f"[记录ID={r['id']}；记录时间={datetime.fromtimestamp(r['recorded_from'],timezone.utc).isoformat()}；"
+                f"{'已被后续记录替代' if not r['active'] else '当前记录'}；来源={r['source']}；{r['kind']}] {r['text']}"
+                for r in self.search(uid,query,limit,include_history=historical)]
     def capture(self,uid,session_id,speech,note=None):
         text=speech.strip(); writes=[]
         if not text or not safe_text(text):return {'writes':[],'reason':'empty_or_sensitive'}
         # Questions, hypothetical/quoted stories and third-person statements aren't self facts.
-        eligible=not re.search(r'[?？]|如果|假如|假设|故事|扮演|他说|她说|有人说|朋友说|是不是|叫什么|在哪里|哪儿|哪里',text)
+        eligible=not re.search(r'[?？]|如果|假如|假设|故事|扮演|他说|她说|有人说|朋友说|是不是|叫什么|在哪里|哪儿|哪里',text) and not PAST_REFERENCE.search(text)
         patterns=[('姓名',r'(?:^|[，。；])(?:请记住[，：]?)?我(?:叫|的名字是)([\u4e00-\u9fffA-Za-z·]{1,20})(?=$|[，。；！])','fact',None),
                   ('称呼',r'(?:以后)?(?:请)?叫我([^，。；！？]{1,20})','fact',None),
                   ('偏好',r'(?:^|[，。；])我(?:现在|最近|已经|改成)?(?:不再)?(?:喜欢|不喜欢|爱吃|不吃|爱喝|不喝)([^，。；！？]{1,40})','preference',None),

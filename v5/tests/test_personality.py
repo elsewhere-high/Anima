@@ -15,7 +15,9 @@ def test_saved_mbti_recall_after_login_and_in_every_prompt(client):
     assert result['dialogue']['status']=='member_profile_recall' and 'INFJ' in result['response'] and '已保存' in result['response']
     step(client,'聊聊今天的事',headers=headers)
     policy=app.state.engine.predictor.calls[-1][2]
-    prompt=build_messages([], '你好', [], policy)[0]['content']
+    messages=build_messages([], '你好', [], policy)
+    assert 'INFJ' not in messages[0]['content']
+    prompt=messages[-1]['content']
     assert 'INFJ' in prompt and 'style_hints' in prompt
     policy['conversation']['compose_utterance']=True
     assert 'INFJ' in build_messages([], '帮我想一句话', [], policy)[0]['content']

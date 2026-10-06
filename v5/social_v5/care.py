@@ -4,6 +4,7 @@ The safety matcher is a conservative routing aid, NOT a validated detector.
 Durable care settings and reminder text use the existing encrypted store.
 """
 import re
+import json
 import time
 import threading
 from datetime import datetime, timezone, timedelta
@@ -66,12 +67,15 @@ def reminder_request(text):
 
 DEFAULTS=dict(proactive_enabled=False,interval_minutes=60,quiet_start=22,quiet_end=8,utc_offset_minutes=480)
 
+class ReminderConflict(ValueError):
+    """A request identifier was reused for a different operation."""
+
 class CareService:
     def __init__(self,memory,clock=time.time):
         self.memory=memory;self.clock=clock;self.lock=threading.RLock();self.activity={};self.paused=set()
         with memory.lock:
             columns={r[1] for r in memory.db.execute('PRAGMA table_info(reminders)')}
-            for name,definition in [('request_key','TEXT'),('repeat_seconds','INTEGER NOT NULL DEFAULT 0'),('kind',"TEXT NOT NULL DEFAULT 'general'")]:
+            for name,definition in [('request_key','TEXT'),('request_fingerprint','TEXT'),('repeat_seconds','INTEGER NOT NULL DEFAULT 0'),('kind',"TEXT NOT NULL DEFAULT 'general'")]:
                 if name not in columns:memory.db.execute(f'ALTER TABLE reminders ADD COLUMN {name} {definition}')
             memory.db.execute('CREATE UNIQUE INDEX IF NOT EXISTS reminder_request_key ON reminders(user_id,request_key) WHERE request_key IS NOT NULL')
             memory.db.commit()
@@ -104,20 +108,26 @@ class CareService:
                     p.setdefault('care_runtime',{})['paused']=boundary=='do_not_disturb'
                     self.memory.db.execute('UPDATE profiles SET payload=? WHERE id=?',(self.memory.cipher.dump(p),uid));self.memory.db.commit()
 
-    def add(self,uid,text,due,request_key=None,repeat_seconds=0,kind='general'):
+    def add(self,uid,text,due,request_key=None,repeat_seconds=0,kind='general',delay_seconds=None):
         if not text.strip() or len(text)>200 or not safe_text(text):raise ValueError('请填写不含认证秘密的提醒内容，最多 200 字')
         now=self.clock()
-        if not now-2<=due<=now+31536000:raise ValueError('提醒时间应在未来一年内')
+        # Hash the original request, not a moving deadline or snoozed occurrence.
+        timing={'delay_seconds':delay_seconds} if delay_seconds is not None else {'due_at':float(due)}
+        fingerprint=self.memory.cipher.index(json.dumps([text,timing,repeat_seconds,kind],ensure_ascii=False,sort_keys=True))
         with self.memory.lock:
             p=self.memory.profile(uid)
             if not p or not p['memory_consent']:raise ValueError('保存提醒需要先登录并允许长期记忆')
             if request_key:
-                old=self.memory.db.execute('SELECT id FROM reminders WHERE user_id=? AND request_key=?',(uid,request_key)).fetchone()
-                if old:return self.get(uid,old[0])
+                old=self.memory.db.execute('SELECT id,request_fingerprint FROM reminders WHERE user_id=? AND request_key=?',(uid,request_key)).fetchone()
+                if old:
+                    if old[1]!=fingerprint:
+                        raise ReminderConflict('请求编号已用于其他内容，或旧版记录无法核验；请刷新提醒并使用新的请求编号')
+                    return self.get(uid,old[0])
+            if not now-2<=due<=now+31536000:raise ValueError('提醒时间应在未来一年内')
             if self.memory.db.execute('SELECT COUNT(*) FROM reminders WHERE user_id=? AND delivered=0',(uid,)).fetchone()[0]>=100:raise ValueError('待办提醒已达 100 条，请先整理')
             # Bound retained completed rows, while preserving active reminders.
             self.memory.db.execute('DELETE FROM reminders WHERE user_id=? AND delivered=1 AND id NOT IN (SELECT id FROM reminders WHERE user_id=? AND delivered=1 ORDER BY id DESC LIMIT 200)',(uid,uid))
-            c=self.memory.db.execute('INSERT INTO reminders(user_id,due,text,request_key,repeat_seconds,kind) VALUES (?,?,?,?,?,?)',(uid,due,self.memory.cipher.dump(text),request_key,repeat_seconds,kind));self.memory.db.commit()
+            c=self.memory.db.execute('INSERT INTO reminders(user_id,due,text,request_key,repeat_seconds,kind,request_fingerprint) VALUES (?,?,?,?,?,?,?)',(uid,due,self.memory.cipher.dump(text),request_key,repeat_seconds,kind,fingerprint));self.memory.db.commit()
             return self.get(uid,c.lastrowid)
 
     def get(self,uid,rid):
@@ -134,6 +144,8 @@ class CareService:
             return [self._row(r) for r in rows if not due_only or r[1]<=self.clock()]
 
     def resolve(self,uid,rid,action,occurrence,minutes=10):
+        if action not in {'ack','snooze','cancel'}:raise ValueError('未知提醒操作')
+        if action=='snooze' and (not isinstance(minutes,int) or not 1<=minutes<=1440):raise ValueError('延后时间应为 1 到 1440 分钟')
         with self.memory.lock:
             item=self.get(uid,rid)
             if not item:return None
@@ -183,7 +195,7 @@ class CareService:
         if not observation.identity_verified or not observation.memory_consent:return {'kind':'reminder_needs_consent','priority':'normal','response':'还没有保存提醒。请先登录并开启长期记忆，再告诉我提醒的时间和内容。'}
         # Short dedupe window prevents the same recognized utterance creating a burst.
         key=self.memory.cipher.index(f'{observation.session_id}:{speech}:{int(self.clock()//30)}')
-        try:item=self.add(observation.user_id,parsed['text'],self.clock()+parsed['delay_seconds'],key,kind='medication' if re.search(r'吃药|用药|服药',parsed['text']) else 'general')
+        try:item=self.add(observation.user_id,parsed['text'],self.clock()+parsed['delay_seconds'],key,kind='medication' if re.search(r'吃药|用药|服药',parsed['text']) else 'general',delay_seconds=parsed['delay_seconds'])
         except ValueError as e:return {'kind':'reminder_error','priority':'attention','response':str(e)+'，提醒尚未保存。'}
         return {'kind':'reminder_saved','priority':'normal','response':f"已保存提醒：{parsed['text']}。约 {parsed['delay_seconds']} 秒后到期，可在提醒里查看、延后或取消。服务和接收端需要保持运行。",'reminder':item}
 

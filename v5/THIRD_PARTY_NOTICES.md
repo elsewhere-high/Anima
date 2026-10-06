@@ -14,6 +14,10 @@ V4 对话/文字情绪权重及其训练数据说明继续适用，见 `../v4/TH
 
 研究借鉴：
 
+- 2026-10-06 核对 [Graphiti](https://github.com/getzep/graphiti)：借鉴事实修订、来源和时序查询，在现有加密 SQLite 中实现记录生效/替代区间及历史检索。没有引入其图数据库依赖，也不声称实现完整双时态知识图谱。
+- 2026-10-06 核对 [τ²-bench](https://github.com/sierra-research/tau2-bench)：借鉴按实际任务状态验证结果的评估思路，新增提醒请求冲突、重试、重启和延后的本地回归场景；没有运行官方基准。
+- 2026-10-06 核对 [AgentDyn](https://github.com/SaFo-Lab/AgentDyn)：借鉴动态工具环境中的提示注入评估方向，隔离检索数据与系统指令并验证存储文本不能授予设备权限；测试数据自行编写，没有复制其数据或宣称防注入完备。
+
 - [Savchenko, ICML 2023：Facial Expression Recognition with Adaptive Frame Rate](https://proceedings.mlr.press/v202/savchenko23a.html)：选用其项目的轻量视觉模型；本实现采用简单同脸短时平滑，**没有复现论文的统计自适应帧率算法**。
 - [SFace 原论文](https://arxiv.org/abs/2205.12010)：使用 OpenCV 的五关键点对齐和人脸特征匹配。
 - [LongMemEval, ICLR 2025](https://arxiv.org/abs/2410.10813) 及 [官方代码](https://github.com/xiaowu0162/LongMemEval)：将跨会话提取、事实更新、时间与拒答作为验收方向；**未运行官方完整 LongMemEval，不报告其 benchmark 分数**。

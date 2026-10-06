@@ -173,7 +173,7 @@ def consent(body:Consent,uid=Depends(member)):
 @app.get('/v1/memory',dependencies=[Depends(guard)])
 def memories(q:str='',include_history:bool=False,uid=Depends(member)):
     if len(q)>600:raise HTTPException(400,'查询过长')
-    return app.state.memory.search(uid,q,10) if q else app.state.memory.list(uid,include_history)
+    return app.state.memory.search(uid,q,10,include_history=include_history) if q else app.state.memory.list(uid,include_history)
 
 @app.post('/v1/memory',dependencies=[Depends(guard)])
 def save(body:MemoryWrite,uid=Depends(member)):

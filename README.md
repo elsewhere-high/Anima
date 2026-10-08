@@ -175,7 +175,7 @@ flowchart TD
 安装脚本按 macOS / Unix 虚拟环境路径实现。Windows 请适配路径，**原 V5 的 Windows/CUDA 依赖锁不适用于这里**。
 
 ```sh
-git clone https://github.com/miracle121388-a11y/Anima.git
+git clone https://github.com/elsewhere-high/Anima.git
 cd Anima/perceive
 npm ci
 npm run setup
@@ -382,8 +382,9 @@ Node 服务提供 `/api/events` 只读 WebSocket 订阅。机器人可以消费�
 
 ## 14. 仓库与资料管理
 
-- 原仓库：`miracle121388-a11y/Anima`。本次是在保留同事最新提交的基础上加入 `perceive/`。
-- 组织：`elsewhere-high`。交接时当前登录账号有原仓库 push 权限，没有仓库转移管理员权限；组织内采用 fork 保留原仓库与提交历史。**组织副本不是原仓库所有权已转移**；最终状态以 GitHub 上仓库的 owner / fork 标识为准。
+- [原仓库：miracle121388-a11y/Anima](https://github.com/miracle121388-a11y/Anima)。本次是在保留同事最新提交的基础上加入 `perceive/`。
+- [组织仓库：elsewhere-high/Anima](https://github.com/elsewhere-high/Anima) 已建立并核实，拥有完整提交历史；当前账号在组织仓库有管理员权限。原仓库只有 push 权限，因此本次采用 fork，**没有转移原仓库所有权**。
+- 后续建议在组织仓库继续开发。两边本次提交已同步，但未来不会自动同步；向原仓库回送改动应走正常提交或 PR 流程，避免两边同时修改后误以为已经互通。
 - 项目没有统一的项目级开源许可证声明。当前按科研原型交接；第三方代码、模型和素材各有来源，见 [`perceive/THIRD_PARTY.md`](perceive/THIRD_PARTY.md) 及原 V5 的说明。
 - 不提交 Key、`.env`、个人记忆数据库或用户录制。新环境使用自己的凭证。不要从历史聊天、命令日志或同事电脑复制密钥到代码。
 

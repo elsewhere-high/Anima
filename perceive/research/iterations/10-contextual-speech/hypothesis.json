@@ -1,0 +1,13 @@
+{
+  "status": "not-yet-run",
+  "hypothesis": "Use only published stronger disfluency classes; a filled pause counts as a tentative speaking-pattern cue only after established speech. Preserve VAD transitions beyond the rolling window.",
+  "speechFast": true,
+  "heads": 2,
+  "localSpeechModel": "Romana TASLP WavLM",
+  "notClaimed": [
+    "calibrated psychological uncertainty",
+    "truthfulness",
+    "parity",
+    "held-out accuracy"
+  ]
+}

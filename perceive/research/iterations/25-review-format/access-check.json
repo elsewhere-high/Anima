@@ -1,0 +1,10 @@
+[
+  {
+    "at": "2026-10-08T01:22:47.460Z",
+    "model": "qwen3.8-flash",
+    "status": 403,
+    "code": "AccessDenied.Unpurchased",
+    "hasOutput": false,
+    "scope": "Benign text-only permission check without structured-output parameter; no user media."
+  }
+]

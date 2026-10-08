@@ -1,0 +1,70 @@
+{
+  "scope": "Counterfactual acoustic proposal timing from recorded actual measurement receipts; assumes one visible face, not a real UI run or accuracy test",
+  "rows": [
+    {
+      "clip": "yann-lecun-wef",
+      "proposals": [
+        {
+          "at": 4.163600000008941,
+          "start": 3.7399999999999998,
+          "end": 3.885,
+          "evidence": "言语迟疑初步判断：改口。单一声学模型，分数未校准；尚未做跨模态确认。",
+          "afterStop": false
+        }
+      ]
+    },
+    {
+      "clip": "steve-jobs-interview",
+      "proposals": []
+    },
+    {
+      "clip": "elon-musk-wef",
+      "proposals": [
+        {
+          "at": 1.2019000000059605,
+          "start": 0.88,
+          "end": 1.085,
+          "evidence": "言语迟疑初步判断：重复。单一声学模型，分数未校准；尚未做跨模态确认。",
+          "afterStop": false
+        },
+        {
+          "at": 3.0562000000029803,
+          "start": 2.06,
+          "end": 2.985,
+          "evidence": "言语迟疑初步判断：未完成的词、重复、改口。单一声学模型，分数未校准；尚未做跨模态确认。",
+          "afterStop": false
+        },
+        {
+          "at": 3.6575,
+          "start": 2.08,
+          "end": 3.3850000000000002,
+          "evidence": "言语迟疑初步判断：未完成的词、改口。单一声学模型，分数未校准；尚未做跨模态确认。",
+          "afterStop": false
+        }
+      ]
+    },
+    {
+      "clip": "pep-guardiola-press",
+      "proposals": []
+    },
+    {
+      "clip": "mark-zuckerberg-interview",
+      "proposals": [
+        {
+          "at": 4.233900000005961,
+          "start": 2.42,
+          "end": 2.6849999999999996,
+          "evidence": "言语迟疑初步判断：重复。单一声学模型，分数未校准；尚未做跨模态确认。",
+          "afterStop": false
+        },
+        {
+          "at": 4.856299999997019,
+          "start": 3.3600000000000003,
+          "end": 3.725,
+          "evidence": "言语迟疑初步判断：重复。单一声学模型，分数未校准；尚未做跨模态确认。",
+          "afterStop": false
+        }
+      ]
+    }
+  ]
+}

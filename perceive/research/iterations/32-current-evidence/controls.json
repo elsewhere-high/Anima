@@ -1,0 +1,63 @@
+[
+  {
+    "control": "current-blank",
+    "round": 1,
+    "complete": true,
+    "labels": [],
+    "forbiddenModalityClaims": 0,
+    "notices": [],
+    "error": null
+  },
+  {
+    "control": "current-blank",
+    "round": 2,
+    "complete": true,
+    "labels": [],
+    "forbiddenModalityClaims": 0,
+    "notices": [],
+    "error": null
+  },
+  {
+    "control": "current-mute",
+    "round": 2,
+    "complete": true,
+    "labels": [
+      "压力",
+      "表达自信"
+    ],
+    "forbiddenModalityClaims": 0,
+    "notices": [],
+    "error": null
+  },
+  {
+    "control": "current-mute",
+    "round": 1,
+    "complete": true,
+    "labels": [
+      "表达自信"
+    ],
+    "forbiddenModalityClaims": 0,
+    "notices": [
+      "FAST_DELIVERY_WINDOW_DROPPED"
+    ],
+    "error": null
+  },
+  {
+    "control": "current-no-video",
+    "round": 2,
+    "complete": true,
+    "labels": [],
+    "forbiddenModalityClaims": 0,
+    "notices": [],
+    "error": null
+  },
+  {
+    "control": "current-no-video",
+    "round": 1,
+    "complete": true,
+    "labels": [],
+    "forbiddenModalityClaims": 0,
+    "notices": [],
+    "error": null
+  }
+]

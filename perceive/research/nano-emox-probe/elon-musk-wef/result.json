@@ -1,0 +1,52 @@
+{
+  "createdAt": "2026-10-07T17:11:04.573704+00:00",
+  "clip": "elon-musk-wef",
+  "duration": 3,
+  "device": "mps",
+  "checkpoint": "epoch60",
+  "scope": "Prefix feasibility only, not social-signal parity or calibrated accuracy",
+  "transcriptInput": "none",
+  "runs": [
+    {
+      "text": "bothered, surprised",
+      "encodeMs": 2957,
+      "decodeMs": 2559,
+      "totalMs": 5516,
+      "tokens": 5,
+      "featureHashes": {
+        "video": "4f8f47d127922f54893cb011dad79b55a9739f4fe8220b5902576b5f6f1e1828",
+        "audio": "4d338c1e3440173bf0037673fb994a4bec19b00eaa0ab8a76ff057c381b51576",
+        "face": "a7009afcf62196098c69f78261a16e10291ce2f50c1a00afb74d9322b8ef908d",
+        "multi": "922ff59914477c5a6ce7993bb1ccc6b67db5583f2d2e63ab5d4656a4a60392d3",
+        "embeds": "a10493a0e2c36bea2266269c1ab0e216930c08724cb1375e3f54edd7df6c0634"
+      }
+    },
+    {
+      "text": "Tweaking the subtitle content, we cannot directly infer the character's emotional state. However, based on the video clues describing the man's relaxed posture and neutral expression, as well as the audio clue of the individual speaking in a calm tone without strong emotions, it can be speculated that the man may be experiencing a state of",
+      "encodeMs": 3144,
+      "decodeMs": 6014,
+      "totalMs": 9158,
+      "tokens": 64,
+      "featureHashes": {
+        "video": "4f8f47d127922f54893cb011dad79b55a9739f4fe8220b5902576b5f6f1e1828",
+        "audio": "4d338c1e3440173bf0037673fb994a4bec19b00eaa0ab8a76ff057c381b51576",
+        "face": "a7009afcf62196098c69f78261a16e10291ce2f50c1a00afb74d9322b8ef908d",
+        "multi": "922ff59914477c5a6ce7993bb1ccc6b67db5583f2d2e63ab5d4656a4a60392d3",
+        "embeds": "a10493a0e2c36bea2266269c1ab0e216930c08724cb1375e3f54edd7df6c0634"
+      }
+    }
+  ],
+  "loadMs": 19335,
+  "parameters": 2451961148,
+  "loadReport": {
+    "unexpected": [],
+    "missingLearned": [],
+    "missingFrozenCount": 1679,
+    "loadedTensors": 592,
+    "faceCheckpoint": {
+      "missingParameters": [],
+      "extraUnusedHeadTensors": 145,
+      "loadedTensors": 505
+    }
+  }
+}

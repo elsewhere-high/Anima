@@ -1,0 +1,222 @@
+{
+  "variant": "current-evidence",
+  "createdAt": "2026-10-08T02:51:30.317Z",
+  "sessions": 15,
+  "models": {
+    "fusion": "qwen3.8-max",
+    "fast": "qwen3.7-flash",
+    "specialists": {
+      "face": {
+        "status": "ready"
+      },
+      "voice": {
+        "status": "ready"
+      },
+      "speech": {
+        "status": "ready"
+      }
+    }
+  },
+  "rounds": {
+    "1-elon-musk-wef": {
+      "duration": 4.013,
+      "displayChanges": 5,
+      "labels": [
+        "愉悦语调",
+        "犹豫"
+      ],
+      "error": null
+    },
+    "1-mark-zuckerberg-interview": {
+      "duration": 5.12,
+      "displayChanges": 5,
+      "labels": [
+        "犹豫",
+        "表达自信"
+      ],
+      "error": null
+    },
+    "1-pep-guardiola-press": {
+      "duration": 4.999,
+      "displayChanges": 5,
+      "labels": [
+        "压力",
+        "愉悦语调",
+        "犹豫"
+      ],
+      "error": null
+    },
+    "1-steve-jobs-interview": {
+      "duration": 12.538,
+      "displayChanges": 12,
+      "labels": [
+        "兴趣",
+        "压力",
+        "犹豫",
+        "表达自信"
+      ],
+      "error": null
+    },
+    "1-yann-lecun-wef": {
+      "duration": 6.869375,
+      "displayChanges": 0,
+      "labels": [],
+      "error": null
+    },
+    "2-elon-musk-wef": {
+      "duration": 4.013,
+      "displayChanges": 4,
+      "labels": [
+        "压力",
+        "犹豫"
+      ],
+      "error": null
+    },
+    "2-mark-zuckerberg-interview": {
+      "duration": 5.12,
+      "displayChanges": 5,
+      "labels": [
+        "兴趣",
+        "犹豫",
+        "表达自信"
+      ],
+      "error": null
+    },
+    "2-pep-guardiola-press": {
+      "duration": 4.999,
+      "displayChanges": 5,
+      "labels": [
+        "不确定",
+        "压力",
+        "愉悦语调",
+        "犹豫",
+        "表达自信"
+      ],
+      "error": null
+    },
+    "2-steve-jobs-interview": {
+      "duration": 12.538,
+      "displayChanges": 13,
+      "labels": [
+        "兴趣",
+        "压力",
+        "挫败",
+        "表达自信"
+      ],
+      "error": null
+    },
+    "2-yann-lecun-wef": {
+      "duration": 6.869375,
+      "displayChanges": 6,
+      "labels": [
+        "兴趣",
+        "犹豫",
+        "表达自信"
+      ],
+      "error": null
+    },
+    "3-elon-musk-wef": {
+      "duration": 4.013,
+      "displayChanges": 4,
+      "labels": [
+        "压力",
+        "犹豫",
+        "表达自信"
+      ],
+      "error": null
+    },
+    "3-mark-zuckerberg-interview": {
+      "duration": 5.12,
+      "displayChanges": 7,
+      "labels": [
+        "犹豫",
+        "表达自信"
+      ],
+      "error": null
+    },
+    "3-pep-guardiola-press": {
+      "duration": 4.999,
+      "displayChanges": 4,
+      "labels": [
+        "不确定",
+        "压力",
+        "愉悦语调",
+        "犹豫"
+      ],
+      "error": null
+    },
+    "3-steve-jobs-interview": {
+      "duration": 12.538,
+      "displayChanges": 6,
+      "labels": [
+        "不确定",
+        "压力",
+        "表达自信"
+      ],
+      "error": null
+    },
+    "3-yann-lecun-wef": {
+      "duration": 6.869375,
+      "displayChanges": 8,
+      "labels": [
+        "犹豫",
+        "表达自信"
+      ],
+      "error": null
+    }
+  },
+  "notices": {
+    "FAST_DELIVERY_WINDOW_DROPPED": 2
+  },
+  "independentAccuracy": null,
+  "exactReferenceMatching": false,
+  "fast.result": {
+    "total": 79,
+    "live": 67,
+    "liveNonempty": 49,
+    "requestLatency": {
+      "n": 67,
+      "p50Ms": 922,
+      "p95Ms": 1805,
+      "maxMs": 4105
+    },
+    "inputEndToReceipt": {
+      "n": 67,
+      "p50Ms": 996.4,
+      "p95Ms": 1822.0,
+      "maxMs": 4151.5
+    },
+    "stale": 3
+  },
+  "result": {
+    "total": 63,
+    "live": 26,
+    "liveNonempty": 11,
+    "requestLatency": {
+      "n": 26,
+      "p50Ms": 2107.0,
+      "p95Ms": 5828,
+      "maxMs": 7269
+    },
+    "inputEndToReceipt": {
+      "n": 26,
+      "p50Ms": 2155.3,
+      "p95Ms": 5826.6,
+      "maxMs": 7267.5
+    },
+    "stale": 17
+  },
+  "transcript": {
+    "total": 588,
+    "live": 526,
+    "liveNonempty": 526,
+    "requestLatency": null,
+    "inputEndToReceipt": {
+      "n": 41,
+      "p50Ms": 285.7,
+      "p95Ms": 373.4,
+      "maxMs": 419.6
+    },
+    "stale": 0
+  }
+}

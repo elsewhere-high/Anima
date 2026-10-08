@@ -1,0 +1,1372 @@
+{
+  "createdAt": "2026-10-07T15:37:50.081761+00:00",
+  "model": "nyralabs/CrisperWhisper2.0_small",
+  "package": "crisperwhisper-2.0.3",
+  "device": "mps",
+  "computeType": "float32",
+  "wordTimestamps": true,
+  "scope": "3-second windows and whole public clips; latency feasibility, no accuracy truth",
+  "runs": [
+    {
+      "clip": "silence",
+      "window": "negative-control",
+      "wallMs": 10161,
+      "audioSeconds": 3.0,
+      "result": {
+        "text": "",
+        "language": "en",
+        "mode": "verbatim",
+        "duration": 3.0,
+        "processing_time": 10.155,
+        "chunks": null,
+        "words": null
+      }
+    },
+    {
+      "clip": "elon-musk-wef",
+      "window": "first-3s",
+      "wallMs": 2427,
+      "audioSeconds": 3.0,
+      "result": {
+        "text": "[UH] yeah. I mean I would say like I I you know I.",
+        "language": "en",
+        "mode": "verbatim",
+        "duration": 3.0,
+        "processing_time": 2.427,
+        "chunks": null,
+        "words": [
+          {
+            "word": "[UH]",
+            "start": 0.02,
+            "end": 0.96
+          },
+          {
+            "word": "yeah.",
+            "start": 0.96,
+            "end": 1.22
+          },
+          {
+            "word": "I",
+            "start": 1.22,
+            "end": 1.44
+          },
+          {
+            "word": "mean",
+            "start": 1.44,
+            "end": 1.48
+          },
+          {
+            "word": "I",
+            "start": 1.48,
+            "end": 1.54
+          },
+          {
+            "word": "would",
+            "start": 1.54,
+            "end": 1.6
+          },
+          {
+            "word": "say",
+            "start": 1.6,
+            "end": 1.6800000000000002
+          },
+          {
+            "word": "like",
+            "start": 1.6800000000000002,
+            "end": 1.84
+          },
+          {
+            "word": "I",
+            "start": 1.84,
+            "end": 2.06
+          },
+          {
+            "word": "I",
+            "start": 2.06,
+            "end": 2.3
+          },
+          {
+            "word": "you",
+            "start": 2.3,
+            "end": 2.56
+          },
+          {
+            "word": "know",
+            "start": 2.56,
+            "end": 2.6
+          },
+          {
+            "word": "I.",
+            "start": 2.6,
+            "end": 2.98
+          }
+        ]
+      }
+    },
+    {
+      "clip": "elon-musk-wef",
+      "window": "last-3s",
+      "wallMs": 1440,
+      "audioSeconds": 3.0,
+      "result": {
+        "text": "Yeah. I mean, I would say like I I you know I I did. That's a lot.",
+        "language": "en",
+        "mode": "verbatim",
+        "duration": 3.0,
+        "processing_time": 1.44,
+        "chunks": null,
+        "words": [
+          {
+            "word": "Yeah.",
+            "start": 0.02,
+            "end": 0.26
+          },
+          {
+            "word": "I",
+            "start": 0.26,
+            "end": 0.32
+          },
+          {
+            "word": "mean,",
+            "start": 0.32,
+            "end": 0.45999999999999996
+          },
+          {
+            "word": "I",
+            "start": 0.45999999999999996,
+            "end": 0.52
+          },
+          {
+            "word": "would",
+            "start": 0.52,
+            "end": 0.56
+          },
+          {
+            "word": "say",
+            "start": 0.56,
+            "end": 0.64
+          },
+          {
+            "word": "like",
+            "start": 0.64,
+            "end": 0.8200000000000001
+          },
+          {
+            "word": "I",
+            "start": 0.8200000000000001,
+            "end": 1.02
+          },
+          {
+            "word": "I",
+            "start": 1.02,
+            "end": 1.27
+          },
+          {
+            "word": "you",
+            "start": 1.27,
+            "end": 1.48
+          },
+          {
+            "word": "know",
+            "start": 1.48,
+            "end": 1.52
+          },
+          {
+            "word": "I",
+            "start": 1.52,
+            "end": 1.71
+          },
+          {
+            "word": "I",
+            "start": 1.71,
+            "end": 1.9500000000000002
+          },
+          {
+            "word": "did.",
+            "start": 1.9500000000000002,
+            "end": 2.2600000000000002
+          },
+          {
+            "word": "That's",
+            "start": 2.2600000000000002,
+            "end": 2.66
+          },
+          {
+            "word": "a",
+            "start": 2.66,
+            "end": 2.72
+          },
+          {
+            "word": "lot.",
+            "start": 2.72,
+            "end": 2.98
+          }
+        ]
+      }
+    },
+    {
+      "clip": "elon-musk-wef",
+      "window": "whole",
+      "wallMs": 1707,
+      "audioSeconds": 4.032,
+      "result": {
+        "text": "[UH] yeah. I mean, I would say like I I you know I I d- [laughter]",
+        "language": "en",
+        "mode": "verbatim",
+        "duration": 4.03,
+        "processing_time": 1.707,
+        "chunks": null,
+        "words": [
+          {
+            "word": "[UH]",
+            "start": 0.72,
+            "end": 0.96
+          },
+          {
+            "word": "yeah.",
+            "start": 0.96,
+            "end": 1.22
+          },
+          {
+            "word": "I",
+            "start": 1.22,
+            "end": 1.4
+          },
+          {
+            "word": "mean,",
+            "start": 1.4,
+            "end": 1.5
+          },
+          {
+            "word": "I",
+            "start": 1.5,
+            "end": 1.54
+          },
+          {
+            "word": "would",
+            "start": 1.54,
+            "end": 1.6
+          },
+          {
+            "word": "say",
+            "start": 1.6,
+            "end": 1.6800000000000002
+          },
+          {
+            "word": "like",
+            "start": 1.6800000000000002,
+            "end": 1.84
+          },
+          {
+            "word": "I",
+            "start": 1.84,
+            "end": 2.06
+          },
+          {
+            "word": "I",
+            "start": 2.06,
+            "end": 2.3
+          },
+          {
+            "word": "you",
+            "start": 2.3,
+            "end": 2.56
+          },
+          {
+            "word": "know",
+            "start": 2.56,
+            "end": 2.6
+          },
+          {
+            "word": "I",
+            "start": 2.6,
+            "end": 2.74
+          },
+          {
+            "word": "I",
+            "start": 2.74,
+            "end": 2.94
+          },
+          {
+            "word": "d-",
+            "start": 2.94,
+            "end": 3.2600000000000002
+          },
+          {
+            "word": "[laughter]",
+            "start": 3.2600000000000002,
+            "end": 3.68
+          }
+        ]
+      }
+    },
+    {
+      "clip": "mark-zuckerberg-interview",
+      "window": "first-3s",
+      "wallMs": 1657,
+      "audioSeconds": 3.0,
+      "result": {
+        "text": "[UH] around the world and c- make progress in a way that [UH]",
+        "language": "en",
+        "mode": "verbatim",
+        "duration": 3.0,
+        "processing_time": 1.657,
+        "chunks": null,
+        "words": [
+          {
+            "word": "[UH]",
+            "start": 0.02,
+            "end": 0.36
+          },
+          {
+            "word": "around",
+            "start": 0.36,
+            "end": 0.5800000000000001
+          },
+          {
+            "word": "the",
+            "start": 0.5800000000000001,
+            "end": 0.7
+          },
+          {
+            "word": "world",
+            "start": 0.7,
+            "end": 0.96
+          },
+          {
+            "word": "and",
+            "start": 0.96,
+            "end": 1.1
+          },
+          {
+            "word": "c-",
+            "start": 1.1,
+            "end": 1.2
+          },
+          {
+            "word": "make",
+            "start": 1.2,
+            "end": 1.26
+          },
+          {
+            "word": "progress",
+            "start": 1.26,
+            "end": 1.94
+          },
+          {
+            "word": "in",
+            "start": 1.94,
+            "end": 2.02
+          },
+          {
+            "word": "a",
+            "start": 2.02,
+            "end": 2.1
+          },
+          {
+            "word": "way",
+            "start": 2.1,
+            "end": 2.2600000000000002
+          },
+          {
+            "word": "that",
+            "start": 2.2600000000000002,
+            "end": 2.58
+          },
+          {
+            "word": "[UH]",
+            "start": 2.88,
+            "end": 3.0
+          }
+        ]
+      }
+    },
+    {
+      "clip": "mark-zuckerberg-interview",
+      "window": "last-3s",
+      "wallMs": 1353,
+      "audioSeconds": 3.0,
+      "result": {
+        "text": "The way that [UM] that that meets people's needs.",
+        "language": "en",
+        "mode": "verbatim",
+        "duration": 3.0,
+        "processing_time": 1.353,
+        "chunks": null,
+        "words": [
+          {
+            "word": "The",
+            "start": 0.02,
+            "end": 0.039999999999999994
+          },
+          {
+            "word": "way",
+            "start": 0.039999999999999994,
+            "end": 0.08
+          },
+          {
+            "word": "that",
+            "start": 0.08,
+            "end": 0.44
+          },
+          {
+            "word": "[UM]",
+            "start": 0.76,
+            "end": 1.08
+          },
+          {
+            "word": "that",
+            "start": 1.08,
+            "end": 1.48
+          },
+          {
+            "word": "that",
+            "start": 1.8,
+            "end": 1.94
+          },
+          {
+            "word": "meets",
+            "start": 1.94,
+            "end": 2.2
+          },
+          {
+            "word": "people's",
+            "start": 2.2,
+            "end": 2.62
+          },
+          {
+            "word": "needs.",
+            "start": 2.62,
+            "end": 3.0
+          }
+        ]
+      }
+    },
+    {
+      "clip": "mark-zuckerberg-interview",
+      "window": "whole",
+      "wallMs": 1989,
+      "audioSeconds": 5.12,
+      "result": {
+        "text": "Around the world and make progress in a way that [UM] that that meets people's needs.",
+        "language": "en",
+        "mode": "verbatim",
+        "duration": 5.12,
+        "processing_time": 1.989,
+        "chunks": null,
+        "words": [
+          {
+            "word": "Around",
+            "start": 0.02,
+            "end": 0.52
+          },
+          {
+            "word": "the",
+            "start": 0.52,
+            "end": 0.7
+          },
+          {
+            "word": "world",
+            "start": 0.7,
+            "end": 0.98
+          },
+          {
+            "word": "and",
+            "start": 0.98,
+            "end": 1.12
+          },
+          {
+            "word": "make",
+            "start": 1.12,
+            "end": 1.42
+          },
+          {
+            "word": "progress",
+            "start": 1.52,
+            "end": 1.94
+          },
+          {
+            "word": "in",
+            "start": 1.94,
+            "end": 2.02
+          },
+          {
+            "word": "a",
+            "start": 2.02,
+            "end": 2.1
+          },
+          {
+            "word": "way",
+            "start": 2.1,
+            "end": 2.2600000000000002
+          },
+          {
+            "word": "that",
+            "start": 2.2600000000000002,
+            "end": 2.56
+          },
+          {
+            "word": "[UM]",
+            "start": 2.9,
+            "end": 3.22
+          },
+          {
+            "word": "that",
+            "start": 3.22,
+            "end": 3.58
+          },
+          {
+            "word": "that",
+            "start": 4.0,
+            "end": 4.1
+          },
+          {
+            "word": "meets",
+            "start": 4.1,
+            "end": 4.279999999999999
+          },
+          {
+            "word": "people's",
+            "start": 4.279999999999999,
+            "end": 4.74
+          },
+          {
+            "word": "needs.",
+            "start": 4.74,
+            "end": 5.12
+          }
+        ]
+      }
+    },
+    {
+      "clip": "pep-guardiola-press",
+      "window": "first-3s",
+      "wallMs": 1412,
+      "audioSeconds": 3.0,
+      "result": {
+        "text": "F- switch of place with four we could not control it.",
+        "language": "en",
+        "mode": "verbatim",
+        "duration": 3.0,
+        "processing_time": 1.411,
+        "chunks": null,
+        "words": [
+          {
+            "word": "F-",
+            "start": 0.02,
+            "end": 0.33999999999999997
+          },
+          {
+            "word": "switch",
+            "start": 0.33999999999999997,
+            "end": 0.38
+          },
+          {
+            "word": "of",
+            "start": 0.38,
+            "end": 0.56
+          },
+          {
+            "word": "place",
+            "start": 0.56,
+            "end": 0.98
+          },
+          {
+            "word": "with",
+            "start": 0.98,
+            "end": 1.24
+          },
+          {
+            "word": "four",
+            "start": 1.24,
+            "end": 1.3800000000000001
+          },
+          {
+            "word": "we",
+            "start": 1.3800000000000001,
+            "end": 1.58
+          },
+          {
+            "word": "could",
+            "start": 1.58,
+            "end": 1.72
+          },
+          {
+            "word": "not",
+            "start": 1.72,
+            "end": 1.86
+          },
+          {
+            "word": "control",
+            "start": 1.86,
+            "end": 2.3200000000000003
+          },
+          {
+            "word": "it.",
+            "start": 2.3200000000000003,
+            "end": 2.84
+          }
+        ]
+      }
+    },
+    {
+      "clip": "pep-guardiola-press",
+      "window": "last-3s",
+      "wallMs": 1399,
+      "audioSeconds": 3.0,
+      "result": {
+        "text": "Control it [UM] but the part of that.",
+        "language": "en",
+        "mode": "verbatim",
+        "duration": 3.0,
+        "processing_time": 1.399,
+        "chunks": null,
+        "words": [
+          {
+            "word": "Control",
+            "start": 0.02,
+            "end": 0.58
+          },
+          {
+            "word": "it",
+            "start": 0.68,
+            "end": 0.68
+          },
+          {
+            "word": "[UM]",
+            "start": 1.7,
+            "end": 2.14
+          },
+          {
+            "word": "but",
+            "start": 2.14,
+            "end": 2.54
+          },
+          {
+            "word": "the",
+            "start": 2.54,
+            "end": 2.6
+          },
+          {
+            "word": "part",
+            "start": 2.6,
+            "end": 2.7800000000000002
+          },
+          {
+            "word": "of",
+            "start": 2.7800000000000002,
+            "end": 2.86
+          },
+          {
+            "word": "that.",
+            "start": 2.86,
+            "end": 3.04
+          }
+        ]
+      }
+    },
+    {
+      "clip": "pep-guardiola-press",
+      "window": "whole",
+      "wallMs": 1662,
+      "audioSeconds": 5.0155,
+      "result": {
+        "text": "F- switch of place with forward we could not control it [UM] but a part of that.",
+        "language": "en",
+        "mode": "verbatim",
+        "duration": 5.02,
+        "processing_time": 1.662,
+        "chunks": null,
+        "words": [
+          {
+            "word": "F-",
+            "start": 0.02,
+            "end": 0.26
+          },
+          {
+            "word": "switch",
+            "start": 0.26,
+            "end": 0.30000000000000004
+          },
+          {
+            "word": "of",
+            "start": 0.30000000000000004,
+            "end": 0.56
+          },
+          {
+            "word": "place",
+            "start": 0.56,
+            "end": 0.98
+          },
+          {
+            "word": "with",
+            "start": 0.98,
+            "end": 1.22
+          },
+          {
+            "word": "forward",
+            "start": 1.22,
+            "end": 1.5
+          },
+          {
+            "word": "we",
+            "start": 1.5,
+            "end": 1.58
+          },
+          {
+            "word": "could",
+            "start": 1.58,
+            "end": 1.6600000000000001
+          },
+          {
+            "word": "not",
+            "start": 1.6600000000000001,
+            "end": 1.92
+          },
+          {
+            "word": "control",
+            "start": 1.92,
+            "end": 2.3200000000000003
+          },
+          {
+            "word": "it",
+            "start": 2.3200000000000003,
+            "end": 2.5
+          },
+          {
+            "word": "[UM]",
+            "start": 3.74,
+            "end": 4.16
+          },
+          {
+            "word": "but",
+            "start": 4.16,
+            "end": 4.540000000000001
+          },
+          {
+            "word": "a",
+            "start": 4.540000000000001,
+            "end": 4.6
+          },
+          {
+            "word": "part",
+            "start": 4.6,
+            "end": 4.74
+          },
+          {
+            "word": "of",
+            "start": 4.74,
+            "end": 4.880000000000001
+          },
+          {
+            "word": "that.",
+            "start": 4.880000000000001,
+            "end": 5.04
+          }
+        ]
+      }
+    },
+    {
+      "clip": "steve-jobs-interview",
+      "window": "first-3s",
+      "wallMs": 1510,
+      "audioSeconds": 3.0,
+      "result": {
+        "text": "Competition that will attract the best people. Unfortunately.",
+        "language": "en",
+        "mode": "verbatim",
+        "duration": 3.0,
+        "processing_time": 1.51,
+        "chunks": null,
+        "words": [
+          {
+            "word": "Competition",
+            "start": 0.02,
+            "end": 0.72
+          },
+          {
+            "word": "that",
+            "start": 0.72,
+            "end": 0.8200000000000001
+          },
+          {
+            "word": "will",
+            "start": 0.8200000000000001,
+            "end": 0.92
+          },
+          {
+            "word": "attract",
+            "start": 0.92,
+            "end": 1.36
+          },
+          {
+            "word": "the",
+            "start": 1.36,
+            "end": 1.44
+          },
+          {
+            "word": "best",
+            "start": 1.44,
+            "end": 1.72
+          },
+          {
+            "word": "people.",
+            "start": 1.72,
+            "end": 2.2600000000000002
+          },
+          {
+            "word": "Unfortunately.",
+            "start": 2.2600000000000002,
+            "end": 3.02
+          }
+        ]
+      }
+    },
+    {
+      "clip": "steve-jobs-interview",
+      "window": "last-3s",
+      "wallMs": 1486,
+      "audioSeconds": 3.0,
+      "result": {
+        "text": "Fifteen years ago and shouldn't be teaching right now.",
+        "language": "en",
+        "mode": "verbatim",
+        "duration": 3.0,
+        "processing_time": 1.486,
+        "chunks": null,
+        "words": [
+          {
+            "word": "Fifteen",
+            "start": 0.02,
+            "end": 0.54
+          },
+          {
+            "word": "years",
+            "start": 0.54,
+            "end": 0.78
+          },
+          {
+            "word": "ago",
+            "start": 0.78,
+            "end": 1.04
+          },
+          {
+            "word": "and",
+            "start": 1.04,
+            "end": 1.1600000000000001
+          },
+          {
+            "word": "shouldn't",
+            "start": 1.1600000000000001,
+            "end": 1.52
+          },
+          {
+            "word": "be",
+            "start": 1.52,
+            "end": 1.6400000000000001
+          },
+          {
+            "word": "teaching",
+            "start": 1.6400000000000001,
+            "end": 2.0
+          },
+          {
+            "word": "right",
+            "start": 2.0,
+            "end": 2.2
+          },
+          {
+            "word": "now.",
+            "start": 2.2,
+            "end": 2.58
+          }
+        ]
+      }
+    },
+    {
+      "clip": "steve-jobs-interview",
+      "window": "whole",
+      "wallMs": 3593,
+      "audioSeconds": 12.5388125,
+      "result": {
+        "text": "Competition that will attract the best people. Unfortunately, the side effect of pushing out a lot of forty-six-year-old teachers that lost their spirit, you know, fifteen years ago and shouldn't be teaching right now.",
+        "language": "en",
+        "mode": "verbatim",
+        "duration": 12.54,
+        "processing_time": 3.593,
+        "chunks": null,
+        "words": [
+          {
+            "word": "Competition",
+            "start": 0.02,
+            "end": 0.74
+          },
+          {
+            "word": "that",
+            "start": 0.74,
+            "end": 0.86
+          },
+          {
+            "word": "will",
+            "start": 0.86,
+            "end": 0.92
+          },
+          {
+            "word": "attract",
+            "start": 0.92,
+            "end": 1.37
+          },
+          {
+            "word": "the",
+            "start": 1.37,
+            "end": 1.47
+          },
+          {
+            "word": "best",
+            "start": 1.47,
+            "end": 1.76
+          },
+          {
+            "word": "people.",
+            "start": 1.76,
+            "end": 2.18
+          },
+          {
+            "word": "Unfortunately,",
+            "start": 2.38,
+            "end": 3.16
+          },
+          {
+            "word": "the",
+            "start": 3.16,
+            "end": 3.24
+          },
+          {
+            "word": "side",
+            "start": 3.24,
+            "end": 3.7800000000000002
+          },
+          {
+            "word": "effect",
+            "start": 3.7800000000000002,
+            "end": 3.84
+          },
+          {
+            "word": "of",
+            "start": 3.84,
+            "end": 3.94
+          },
+          {
+            "word": "pushing",
+            "start": 4.04,
+            "end": 4.359999999999999
+          },
+          {
+            "word": "out",
+            "start": 4.359999999999999,
+            "end": 4.6000000000000005
+          },
+          {
+            "word": "a",
+            "start": 5.0200000000000005,
+            "end": 5.1
+          },
+          {
+            "word": "lot",
+            "start": 5.1,
+            "end": 5.32
+          },
+          {
+            "word": "of",
+            "start": 5.32,
+            "end": 5.42
+          },
+          {
+            "word": "forty-six-year-old",
+            "start": 5.92,
+            "end": 6.8100000000000005
+          },
+          {
+            "word": "teachers",
+            "start": 6.8100000000000005,
+            "end": 7.27
+          },
+          {
+            "word": "that",
+            "start": 7.27,
+            "end": 7.4
+          },
+          {
+            "word": "lost",
+            "start": 7.640000000000001,
+            "end": 8.0
+          },
+          {
+            "word": "their",
+            "start": 8.0,
+            "end": 8.2
+          },
+          {
+            "word": "spirit,",
+            "start": 8.34,
+            "end": 8.620000000000001
+          },
+          {
+            "word": "you",
+            "start": 8.76,
+            "end": 8.92
+          },
+          {
+            "word": "know,",
+            "start": 8.92,
+            "end": 9.18
+          },
+          {
+            "word": "fifteen",
+            "start": 9.68,
+            "end": 9.8
+          },
+          {
+            "word": "years",
+            "start": 9.92,
+            "end": 10.3
+          },
+          {
+            "word": "ago",
+            "start": 10.3,
+            "end": 10.58
+          },
+          {
+            "word": "and",
+            "start": 10.58,
+            "end": 10.68
+          },
+          {
+            "word": "shouldn't",
+            "start": 10.68,
+            "end": 11.06
+          },
+          {
+            "word": "be",
+            "start": 11.06,
+            "end": 11.18
+          },
+          {
+            "word": "teaching",
+            "start": 11.18,
+            "end": 11.54
+          },
+          {
+            "word": "right",
+            "start": 11.54,
+            "end": 11.72
+          },
+          {
+            "word": "now.",
+            "start": 11.72,
+            "end": 11.98
+          }
+        ]
+      }
+    },
+    {
+      "clip": "yann-lecun-wef",
+      "window": "first-3s",
+      "wallMs": 1321,
+      "audioSeconds": 3.0,
+      "result": {
+        "text": "[UM] So what are the limitations of current AI systems? There are.",
+        "language": "en",
+        "mode": "verbatim",
+        "duration": 3.0,
+        "processing_time": 1.321,
+        "chunks": null,
+        "words": [
+          {
+            "word": "[UM]",
+            "start": 0.14,
+            "end": 0.94
+          },
+          {
+            "word": "So",
+            "start": 0.94,
+            "end": 1.1400000000000001
+          },
+          {
+            "word": "what",
+            "start": 1.1400000000000001,
+            "end": 1.36
+          },
+          {
+            "word": "are",
+            "start": 1.36,
+            "end": 1.44
+          },
+          {
+            "word": "the",
+            "start": 1.44,
+            "end": 1.54
+          },
+          {
+            "word": "limitations",
+            "start": 1.54,
+            "end": 1.9
+          },
+          {
+            "word": "of",
+            "start": 1.9,
+            "end": 2.0
+          },
+          {
+            "word": "current",
+            "start": 2.0,
+            "end": 2.04
+          },
+          {
+            "word": "AI",
+            "start": 2.04,
+            "end": 2.24
+          },
+          {
+            "word": "systems?",
+            "start": 2.24,
+            "end": 2.74
+          },
+          {
+            "word": "There",
+            "start": 2.74,
+            "end": 2.8
+          },
+          {
+            "word": "are.",
+            "start": 2.8,
+            "end": 3.0
+          }
+        ]
+      }
+    },
+    {
+      "clip": "yann-lecun-wef",
+      "window": "last-3s",
+      "wallMs": 1513,
+      "audioSeconds": 3.0,
+      "result": {
+        "text": "Schedule to intelligent behavior that they really don't do very well.",
+        "language": "en",
+        "mode": "verbatim",
+        "duration": 3.0,
+        "processing_time": 1.513,
+        "chunks": null,
+        "words": [
+          {
+            "word": "Schedule",
+            "start": 0.02,
+            "end": 0.26
+          },
+          {
+            "word": "to",
+            "start": 0.26,
+            "end": 0.38
+          },
+          {
+            "word": "intelligent",
+            "start": 0.38,
+            "end": 0.8
+          },
+          {
+            "word": "behavior",
+            "start": 0.8,
+            "end": 1.28
+          },
+          {
+            "word": "that",
+            "start": 1.28,
+            "end": 1.42
+          },
+          {
+            "word": "they",
+            "start": 1.42,
+            "end": 1.6
+          },
+          {
+            "word": "really",
+            "start": 1.6,
+            "end": 1.82
+          },
+          {
+            "word": "don't",
+            "start": 1.82,
+            "end": 2.04
+          },
+          {
+            "word": "do",
+            "start": 2.22,
+            "end": 2.44
+          },
+          {
+            "word": "very",
+            "start": 2.44,
+            "end": 2.66
+          },
+          {
+            "word": "well.",
+            "start": 2.66,
+            "end": 3.02
+          }
+        ]
+      }
+    },
+    {
+      "clip": "yann-lecun-wef",
+      "window": "whole",
+      "wallMs": 2000,
+      "audioSeconds": 6.8693125,
+      "result": {
+        "text": "[UM] so what are the limitations of current AI systems? There are four things that are essential to intelligent behavior that they really don't do very well.",
+        "language": "en",
+        "mode": "verbatim",
+        "duration": 6.87,
+        "processing_time": 2.0,
+        "chunks": null,
+        "words": [
+          {
+            "word": "[UM]",
+            "start": 0.52,
+            "end": 0.76
+          },
+          {
+            "word": "so",
+            "start": 1.02,
+            "end": 1.1400000000000001
+          },
+          {
+            "word": "what",
+            "start": 1.1400000000000001,
+            "end": 1.3800000000000001
+          },
+          {
+            "word": "are",
+            "start": 1.3800000000000001,
+            "end": 1.46
+          },
+          {
+            "word": "the",
+            "start": 1.46,
+            "end": 1.52
+          },
+          {
+            "word": "limitations",
+            "start": 1.52,
+            "end": 1.9
+          },
+          {
+            "word": "of",
+            "start": 1.9,
+            "end": 1.98
+          },
+          {
+            "word": "current",
+            "start": 1.98,
+            "end": 2.04
+          },
+          {
+            "word": "AI",
+            "start": 2.04,
+            "end": 2.24
+          },
+          {
+            "word": "systems?",
+            "start": 2.24,
+            "end": 2.72
+          },
+          {
+            "word": "There",
+            "start": 2.72,
+            "end": 2.8200000000000003
+          },
+          {
+            "word": "are",
+            "start": 2.8200000000000003,
+            "end": 2.88
+          },
+          {
+            "word": "four",
+            "start": 2.88,
+            "end": 3.12
+          },
+          {
+            "word": "things",
+            "start": 3.12,
+            "end": 3.42
+          },
+          {
+            "word": "that",
+            "start": 3.42,
+            "end": 3.56
+          },
+          {
+            "word": "are",
+            "start": 3.56,
+            "end": 3.66
+          },
+          {
+            "word": "essential",
+            "start": 3.66,
+            "end": 4.18
+          },
+          {
+            "word": "to",
+            "start": 4.18,
+            "end": 4.300000000000001
+          },
+          {
+            "word": "intelligent",
+            "start": 4.300000000000001,
+            "end": 4.699999999999999
+          },
+          {
+            "word": "behavior",
+            "start": 4.699999999999999,
+            "end": 5.18
+          },
+          {
+            "word": "that",
+            "start": 5.18,
+            "end": 5.359999999999999
+          },
+          {
+            "word": "they",
+            "start": 5.359999999999999,
+            "end": 5.5
+          },
+          {
+            "word": "really",
+            "start": 5.5,
+            "end": 5.699999999999999
+          },
+          {
+            "word": "don't",
+            "start": 5.699999999999999,
+            "end": 5.86
+          },
+          {
+            "word": "do",
+            "start": 6.12,
+            "end": 6.26
+          },
+          {
+            "word": "very",
+            "start": 6.26,
+            "end": 6.540000000000001
+          },
+          {
+            "word": "well.",
+            "start": 6.540000000000001,
+            "end": 6.86
+          }
+        ]
+      }
+    }
+  ],
+  "loadSeconds": 7.51755737500207
+}

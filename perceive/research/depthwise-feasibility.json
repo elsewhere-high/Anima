@@ -1,0 +1,107 @@
+{
+  "createdAt": "2026-10-07T18:01:22.773085+00:00",
+  "maxOperatorErrors": [
+    2.384185791015625e-07,
+    1.1920928955078125e-07,
+    1.1920928955078125e-07
+  ],
+  "runs": [
+    {
+      "variant": "original",
+      "clip": "elon-musk-wef",
+      "ms": 870,
+      "transcript": "Yeah, I mean, I would say.",
+      "model": "SenseVoiceSmall",
+      "quality": "ok"
+    },
+    {
+      "variant": "original",
+      "clip": "mark-zuckerberg-interview",
+      "ms": 839,
+      "transcript": "Around the world and make progress in a way that.",
+      "model": "SenseVoiceSmall",
+      "quality": "ok"
+    },
+    {
+      "variant": "original",
+      "clip": "pep-guardiola-press",
+      "ms": 834,
+      "transcript": "Switch of plays with four, we could not control it.",
+      "model": "SenseVoiceSmall",
+      "quality": "ok"
+    },
+    {
+      "variant": "original",
+      "clip": "steve-jobs-interview",
+      "ms": 835,
+      "transcript": "Competition that will attract the best people.",
+      "model": "SenseVoiceSmall",
+      "quality": "ok"
+    },
+    {
+      "variant": "original",
+      "clip": "yann-lecun-wef",
+      "ms": 824,
+      "transcript": "So what are the limitationsal current systems?",
+      "model": "SenseVoiceSmall",
+      "quality": "ok"
+    },
+    {
+      "variant": "original",
+      "clip": "zh",
+      "ms": 825,
+      "transcript": "开饭时间早上九点。",
+      "model": "SenseVoiceSmall",
+      "quality": "ok"
+    },
+    {
+      "variant": "vectorized",
+      "clip": "elon-musk-wef",
+      "ms": 168,
+      "transcript": "Yeah, I mean, I would say.",
+      "model": "SenseVoiceSmall",
+      "quality": "ok"
+    },
+    {
+      "variant": "vectorized",
+      "clip": "mark-zuckerberg-interview",
+      "ms": 167,
+      "transcript": "Around the world and make progress in a way that.",
+      "model": "SenseVoiceSmall",
+      "quality": "ok"
+    },
+    {
+      "variant": "vectorized",
+      "clip": "pep-guardiola-press",
+      "ms": 170,
+      "transcript": "Switch of plays with four, we could not control it.",
+      "model": "SenseVoiceSmall",
+      "quality": "ok"
+    },
+    {
+      "variant": "vectorized",
+      "clip": "steve-jobs-interview",
+      "ms": 174,
+      "transcript": "Competition that will attract the best people.",
+      "model": "SenseVoiceSmall",
+      "quality": "ok"
+    },
+    {
+      "variant": "vectorized",
+      "clip": "yann-lecun-wef",
+      "ms": 174,
+      "transcript": "So what are the limitationsal current systems?",
+      "model": "SenseVoiceSmall",
+      "quality": "ok"
+    },
+    {
+      "variant": "vectorized",
+      "clip": "zh",
+      "ms": 173,
+      "transcript": "开饭时间早上九点。",
+      "model": "SenseVoiceSmall",
+      "quality": "ok"
+    }
+  ],
+  "changedLayers": 70
+}

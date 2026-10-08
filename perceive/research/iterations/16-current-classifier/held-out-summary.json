@@ -1,0 +1,270 @@
+{
+  "createdAt": "2026-10-07T17:42:55.508Z",
+  "input": "research/iterations/16-current-classifier/held-out-neutral.json",
+  "scope": "Six frozen new-speaker neutral clips; crowd-plurality basic-emotion check, not ten-social-signal accuracy or unseen-by-pretraining guarantee.",
+  "rules": "Confidence may coexist with neutral affect. Nonneutral expression labels conflict with neutral clip-level votes but need temporal review; social labels are listed without inventing social ground truth.",
+  "runs": [
+    {
+      "id": "1001_DFA_NEU_XX",
+      "reference": {
+        "audio": "N",
+        "visual": "N",
+        "audiovisual": "N"
+      },
+      "displayed": [],
+      "nonneutralExpressionLabels": [],
+      "voice": {
+        "windows": 2,
+        "meanScores": {
+          "生气/angry": 0.000001192072696665214,
+          "厌恶/disgusted": 0.0000012249798299612813,
+          "恐惧/fearful": 6.461435060889364e-7,
+          "开心/happy": 0.000004736679850902981,
+          "中立/neutral": 0.9999903440475464,
+          "其他/other": 1.8767874564867837e-7,
+          "难过/sad": 0.0000014024299042070254,
+          "吃惊/surprised": 1.730971847663243e-7,
+          "<unk>": 1.0314061039842868e-7
+        },
+        "top": "中立/neutral",
+        "neutralMatch": true
+      },
+      "face": {
+        "windows": 4,
+        "meanScores": {
+          "anger": 0.08892665151506662,
+          "contempt": 0.18886492773890495,
+          "disgust": 0.1556658074259758,
+          "fear": 0.09371740557253361,
+          "happy": 0.08214723644778132,
+          "neutral": 0.11651504971086979,
+          "sad": 0.21580879762768745,
+          "surprise": 0.05835415469482541
+        },
+        "top": "sad",
+        "neutralMatch": false
+      },
+      "notices": 1,
+      "error": null
+    },
+    {
+      "id": "1002_DFA_NEU_XX",
+      "reference": {
+        "audio": "N",
+        "visual": "N",
+        "audiovisual": "N"
+      },
+      "displayed": [],
+      "nonneutralExpressionLabels": [],
+      "voice": {
+        "windows": 2,
+        "meanScores": {
+          "生气/angry": 0.0000450185530098679,
+          "厌恶/disgusted": 0.00003270974866609322,
+          "恐惧/fearful": 0.00024629987365187844,
+          "开心/happy": 0.00006179128831718117,
+          "中立/neutral": 0.9962145984172821,
+          "其他/other": 0.0000025295288992310816,
+          "难过/sad": 0.003372437753569102,
+          "吃惊/surprised": 0.00002449644307489507,
+          "<unk>": 1.733810996995544e-7
+        },
+        "top": "中立/neutral",
+        "neutralMatch": true
+      },
+      "face": {
+        "windows": 5,
+        "meanScores": {
+          "anger": 0.057704889774322504,
+          "contempt": 0.2127766400575638,
+          "disgust": 0.13190324157476427,
+          "fear": 0.0852315977215767,
+          "happy": 0.11498950198292733,
+          "neutral": 0.16324736475944518,
+          "sad": 0.03424353674054146,
+          "surprise": 0.19990319237113
+        },
+        "top": "contempt",
+        "neutralMatch": false
+      },
+      "notices": 1,
+      "error": null
+    },
+    {
+      "id": "1003_DFA_NEU_XX",
+      "reference": {
+        "audio": "N",
+        "visual": "N",
+        "audiovisual": "N"
+      },
+      "displayed": [],
+      "nonneutralExpressionLabels": [],
+      "voice": {
+        "windows": 2,
+        "meanScores": {
+          "生气/angry": 0.0005787180907777384,
+          "厌恶/disgusted": 0.00003135939842148841,
+          "恐惧/fearful": 0.000013649147362932747,
+          "开心/happy": 0.00005880274329329079,
+          "中立/neutral": 0.998310923576355,
+          "其他/other": 0.0000013051114437637786,
+          "难过/sad": 0.000983988745630826,
+          "吃惊/surprised": 0.000021276923215597697,
+          "<unk>": 1.5437818188368756e-8
+        },
+        "top": "中立/neutral",
+        "neutralMatch": true
+      },
+      "face": {
+        "windows": 6,
+        "meanScores": {
+          "anger": 0.02954566478729248,
+          "contempt": 0.15992007280389467,
+          "disgust": 0.18267986178398135,
+          "fear": 0.09635464722911517,
+          "happy": 0.1454189345240593,
+          "neutral": 0.12573308125138283,
+          "sad": 0.14153969536225,
+          "surprise": 0.11880802704642215
+        },
+        "top": "disgust",
+        "neutralMatch": false
+      },
+      "notices": 1,
+      "error": null
+    },
+    {
+      "id": "1004_IEO_NEU_XX",
+      "reference": {
+        "audio": "N",
+        "visual": "N",
+        "audiovisual": "N"
+      },
+      "displayed": [
+        "愉悦语调"
+      ],
+      "nonneutralExpressionLabels": [
+        "愉悦语调"
+      ],
+      "voice": {
+        "windows": 2,
+        "meanScores": {
+          "生气/angry": 0.004835265259316657,
+          "厌恶/disgusted": 0.0030950619598115736,
+          "恐惧/fearful": 0.0006203299457183675,
+          "开心/happy": 0.3905260432675277,
+          "中立/neutral": 0.594871886074543,
+          "其他/other": 0.000230067775850884,
+          "难过/sad": 0.00436518085859916,
+          "吃惊/surprised": 0.001453234334917397,
+          "<unk>": 0.0000029419370193295435
+        },
+        "top": "中立/neutral",
+        "neutralMatch": true
+      },
+      "face": {
+        "windows": 4,
+        "meanScores": {
+          "anger": 0.05022602342069149,
+          "contempt": 0.19209291227161884,
+          "disgust": 0.19133214838802814,
+          "fear": 0.12905254773795605,
+          "happy": 0.0874169054441154,
+          "neutral": 0.19124265387654305,
+          "sad": 0.10871033929288387,
+          "surprise": 0.049926488660275936
+        },
+        "top": "contempt",
+        "neutralMatch": false
+      },
+      "notices": 1,
+      "error": null
+    },
+    {
+      "id": "1005_DFA_NEU_XX",
+      "reference": {
+        "audio": "N",
+        "visual": "N",
+        "audiovisual": "N"
+      },
+      "displayed": [],
+      "nonneutralExpressionLabels": [],
+      "voice": {
+        "windows": 2,
+        "meanScores": {
+          "生气/angry": 0.005263657774777283,
+          "厌恶/disgusted": 0.00012460377183751953,
+          "恐惧/fearful": 0.0000161506050062732,
+          "开心/happy": 0.0012420146958902819,
+          "中立/neutral": 0.9927289485931396,
+          "其他/other": 0.000004925665507471685,
+          "难过/sad": 0.0005558963166693208,
+          "吃惊/surprised": 0.00006375893281074692,
+          "<unk>": 4.151947230468522e-9
+        },
+        "top": "中立/neutral",
+        "neutralMatch": true
+      },
+      "face": {
+        "windows": 6,
+        "meanScores": {
+          "anger": 0.05577493893603484,
+          "contempt": 0.20190122723579407,
+          "disgust": 0.14600529645880062,
+          "fear": 0.08998881652951239,
+          "happy": 0.08201900434990723,
+          "neutral": 0.29557725290457404,
+          "sad": 0.05978945394357045,
+          "surprise": 0.06894400281210741
+        },
+        "top": "neutral",
+        "neutralMatch": true
+      },
+      "notices": 0,
+      "error": null
+    },
+    {
+      "id": "1006_DFA_NEU_XX",
+      "reference": {
+        "audio": "N",
+        "visual": "N",
+        "audiovisual": "N"
+      },
+      "displayed": [],
+      "nonneutralExpressionLabels": [],
+      "voice": {
+        "windows": 2,
+        "meanScores": {
+          "生气/angry": 0.00040366058081175993,
+          "厌恶/disgusted": 0.00011471601380819152,
+          "恐惧/fearful": 0.000033915774805493015,
+          "开心/happy": 0.0004204563963003949,
+          "中立/neutral": 0.9981726706027985,
+          "其他/other": 0.0000027331183346523957,
+          "难过/sad": 0.0007377783485793543,
+          "吃惊/surprised": 0.00011393065940490388,
+          "<unk>": 1.6043539430299347e-7
+        },
+        "top": "中立/neutral",
+        "neutralMatch": true
+      },
+      "face": {
+        "windows": 5,
+        "meanScores": {
+          "anger": 0.06754008308053015,
+          "contempt": 0.12107380628585815,
+          "disgust": 0.18998754918575286,
+          "fear": 0.07055246233940124,
+          "happy": 0.018600418791174887,
+          "neutral": 0.17512837499380113,
+          "sad": 0.30387110114097593,
+          "surprise": 0.05324620492756367
+        },
+        "top": "sad",
+        "neutralMatch": false
+      },
+      "notices": 1,
+      "error": null
+    }
+  ]
+}

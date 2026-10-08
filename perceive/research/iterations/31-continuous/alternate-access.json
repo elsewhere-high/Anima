@@ -1,0 +1,36 @@
+[
+  {
+    "model": "qwen3.7-flash",
+    "usage": {
+      "prompt_tokens": 1268,
+      "total_tokens": 1283,
+      "completion_tokens": 15,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 444,
+        "text_tokens": 824
+      },
+      "completion_tokens_details": {
+        "text_tokens": 15
+      }
+    },
+    "success": true
+  },
+  {
+    "model": "qwen3.8-max",
+    "usage": {
+      "prompt_tokens": 1264,
+      "total_tokens": 1274,
+      "completion_tokens": 10,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 444,
+        "text_tokens": 820
+      },
+      "completion_tokens_details": {
+        "text_tokens": 10
+      }
+    },
+    "success": true
+  }
+]

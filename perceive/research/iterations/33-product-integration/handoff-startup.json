@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-08T07:25:03.492Z",
+  "configured": false,
+  "review": "qwen3.8-max",
+  "fast": "qwen3.7-flash",
+  "signals": 23,
+  "maxSeconds": 600,
+  "localTranscription": false,
+  "specialists": {
+    "face": {
+      "status": "not_installed"
+    },
+    "voice": {
+      "status": "not_installed"
+    }
+  },
+  "scope": "Fresh clone-style start without model assets; validates defaults and honest missing-module status, not model effects"
+}

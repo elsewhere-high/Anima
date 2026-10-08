@@ -1,0 +1,42 @@
+{
+  "createdAt": "2026-10-07T16:55:19.831Z",
+  "scope": "Public-media modality removal, not human accuracy",
+  "checks": [
+    {
+      "file": "control-no-video.json",
+      "id": "elon-musk-wef",
+      "rule": "no personal state without visible target",
+      "labels": [],
+      "audioClaimsWithoutAudio": 0,
+      "error": null,
+      "passed": true
+    },
+    {
+      "file": "control-no-video.json",
+      "id": "pep-guardiola-press",
+      "rule": "no personal state without visible target",
+      "labels": [],
+      "audioClaimsWithoutAudio": 0,
+      "error": null,
+      "passed": true
+    },
+    {
+      "file": "control-mute.json",
+      "id": "elon-musk-wef",
+      "rule": "no claims grounded in absent audio",
+      "labels": [],
+      "audioClaimsWithoutAudio": 0,
+      "error": null,
+      "passed": true
+    },
+    {
+      "file": "control-mute.json",
+      "id": "steve-jobs-interview",
+      "rule": "no claims grounded in absent audio",
+      "labels": [],
+      "audioClaimsWithoutAudio": 0,
+      "error": null,
+      "passed": true
+    }
+  ]
+}

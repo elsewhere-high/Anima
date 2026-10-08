@@ -1,0 +1,17 @@
+{
+  "verifiedAt": "2026-10-07",
+  "packages": {"openface-test": "0.1.26", "funasr": "1.2.7", "torch": "2.8.0"},
+  "downloads": [{"url":"https://raw.githubusercontent.com/sb-ai-lab/EmotiEffLib/main/models/affectnet_emotions/onnx/enet_b2_8.onnx","path":"emotieff/enet_b2_8.onnx","sha256":"180a9d4845b59393de4511598a0d1d34b705034691ea32959ce5009db7cf52b7"}],
+  "models": [
+    {"id": "nutPace/openface_weights", "revision": "3844412b54706ed0a930b99589508ed3c101f39e", "directory": "openface", "files": {
+      "Alignment_RetinaFace.pth": "2979b33ffafda5d74b6948cd7a5b9a7a62f62b949cef24e95fd15d2883a65220",
+      "MTL_backbone.pth": "72f45843c7a3ed9500835c507467f32e864a23971160f733aeb23797a05a5bcd"
+    }},
+    {"id": "emotion2vec/emotion2vec_plus_large", "revision": "6c303ba987b86b93193de93e34bb2b077a6bedc4", "directory": "emotion2vec", "files": {
+      "model.pt": "be501a01f26fcdc7663a062dff86af839afbaef7c4de32f5e42d7e1ad2784da4",
+      "config.yaml": "f4fa0eb82cc78bfebb43c56d68791afb01788085a18897d20999af7bc45d51d3",
+      "configuration.json": "8b6a745213025c7d4565f9f074cfef1b5cd5ef76e38e2a8f7f8a3db271e735b2",
+      "tokens.txt": "866121e470057b847d7a50e9923509141fb2924392f53385a186482a1ec0fb7f"
+    }}
+  ]
+}

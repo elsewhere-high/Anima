@@ -1,0 +1,237 @@
+{
+  "createdAt": "2026-10-08T01:10:49.278Z",
+  "input": "research/iterations/23-fast-recovery/live-vad.json",
+  "protocol": "candidate-core-aligned-live-with-silero-v6",
+  "runs": [
+    {
+      "id": "yann-lecun-wef",
+      "round": 1,
+      "duration": 6.869375,
+      "expected": {
+        "confidence": 2.5
+      },
+      "firstShown": {
+        "hesitation": 3.3022000000029803,
+        "confidence": 6.4025
+      },
+      "liveMatches": [
+        "confidence"
+      ],
+      "timelyMatches": [],
+      "allMatches": [
+        "confidence"
+      ],
+      "publishedStateMatches": [
+        "confidence"
+      ],
+      "extraLabels": [
+        "hesitation"
+      ],
+      "finalResults": 7,
+      "afterStop": 2,
+      "notices": 0,
+      "error": null
+    },
+    {
+      "id": "steve-jobs-interview",
+      "round": 1,
+      "duration": 12.538,
+      "expected": {
+        "confidence": 3.453,
+        "frustration": 6.103
+      },
+      "firstShown": {
+        "hesitation": 1.6038999999910593,
+        "confidence": 3.1025,
+        "frustration": 5.4007999999970195
+      },
+      "liveMatches": [
+        "confidence",
+        "frustration"
+      ],
+      "timelyMatches": [
+        "confidence",
+        "frustration"
+      ],
+      "allMatches": [
+        "confidence",
+        "frustration"
+      ],
+      "publishedStateMatches": [
+        "confidence",
+        "frustration"
+      ],
+      "extraLabels": [
+        "hesitation"
+      ],
+      "finalResults": 13,
+      "afterStop": 2,
+      "notices": 0,
+      "error": null
+    },
+    {
+      "id": "elon-musk-wef",
+      "round": 1,
+      "duration": 4.013,
+      "expected": {
+        "hesitation": 2.366
+      },
+      "firstShown": {
+        "agreement": 2.1032999999970197,
+        "愉悦语调": 2.4040999999940396,
+        "hesitation": 3.1030999999940394
+      },
+      "liveMatches": [
+        "hesitation"
+      ],
+      "timelyMatches": [],
+      "allMatches": [
+        "hesitation"
+      ],
+      "publishedStateMatches": [
+        "hesitation"
+      ],
+      "extraLabels": [
+        "agreement",
+        "愉悦语调"
+      ],
+      "finalResults": 5,
+      "afterStop": 3,
+      "notices": 0,
+      "error": null
+    },
+    {
+      "id": "pep-guardiola-press",
+      "round": 1,
+      "duration": 4.999,
+      "expected": {
+        "confidence": 1.24,
+        "hesitation": 3.02,
+        "frustration": 4.18
+      },
+      "firstShown": {
+        "愉悦语调": 1.4006000000089407,
+        "confidence": 3.0049000000059602,
+        "frustration": 4.0076000000089405,
+        "hesitation": 4.30220000000298
+      },
+      "liveMatches": [
+        "confidence",
+        "hesitation",
+        "frustration"
+      ],
+      "timelyMatches": [
+        "frustration"
+      ],
+      "allMatches": [
+        "hesitation",
+        "frustration"
+      ],
+      "publishedStateMatches": [
+        "confidence",
+        "hesitation",
+        "frustration"
+      ],
+      "extraLabels": [
+        "愉悦语调"
+      ],
+      "finalResults": 6,
+      "afterStop": 3,
+      "notices": 0,
+      "error": null
+    },
+    {
+      "id": "mark-zuckerberg-interview",
+      "round": 1,
+      "duration": 5.12,
+      "expected": {
+        "confidence": 1.14,
+        "hesitation": 2.92,
+        "uncertainty": 4.64
+      },
+      "firstShown": {
+        "confidence": 2.9022999999970196,
+        "hesitation": 3.701600000008941
+      },
+      "liveMatches": [
+        "confidence",
+        "hesitation"
+      ],
+      "timelyMatches": [],
+      "allMatches": [
+        "confidence",
+        "hesitation"
+      ],
+      "publishedStateMatches": [
+        "confidence",
+        "hesitation"
+      ],
+      "extraLabels": [],
+      "finalResults": 6,
+      "afterStop": 3,
+      "notices": 0,
+      "error": null
+    }
+  ],
+  "referenceCoverageNotAccuracy": {
+    "denominator": 10,
+    "live": 9,
+    "timely": 3,
+    "allIncludingAfterStop": 8,
+    "extraLabelsNotAutomaticallyFalsePositives": 5
+  },
+  "requestLatencyMs": {
+    "n": 37,
+    "p50": 1800,
+    "p95": 2988
+  },
+  "windowEndToFinalMs": {
+    "n": 37,
+    "p50": 1859.099999994039,
+    "p95": 3521.4999999999995
+  },
+  "notices": 0,
+  "independentAccuracy": null,
+  "sourceHashes": {
+    "social.mjs": "8288971407cb0e950ec858a1d17dbf1f24f7924441c16e9e74a42983a586c500",
+    "realtime.mjs": "8f7dabd778c597a2d81ae73347c9e1e1edbbaa710d8cbcca9591a0779b9dcbf7",
+    "evidence.mjs": "c31542441585b13ea34db1c15a12417fa0bfb51e356b0cc4598f2dce7e8c28ff",
+    "speech-delivery.mjs": "6acd712a41aba6632e5e8049ce0540f3a78ffd50fe79561e9de1c765ae34693c",
+    "specialists.mjs": "1806855ce6f71473e9903fce2fd6c50a92d10116527e63a1a62258df3c344a51",
+    "integrations/disfluency.py": "ddcb0a50ac07780c0017bdcc2c34bb96f8992fb981f7c75046be5e0c6f7613e1",
+    "window-scheduler.mjs": "49b86dd1eed844d87f920bd69a6f7904b370f22d2ca221d078faeca4ed706be6",
+    "state-engine.mjs": "5368ab2a1eb6a0e21e57b1d626a95bf3de09c17a8161657beeb63a0ed88fe17b",
+    "public/live-state.js": "2649a848dda61ec955773cb8da273d3e72c4a9e4e9514f508bea10d94df50a92",
+    "public/iteration-qa.js": "32ba8f84d1a171fcec22472be1fed799d0ffa70ef4a450cce9bb5c216b8df3be",
+    "research/candidate-server.mjs": "fa53488b74d06ccf0b798ff12e10d1232497f187a23f00c5e341d4c70b482015"
+  },
+  "variant": "fast-recovery",
+  "metricNotes": {
+    "allIncludingAfterStop": "Legacy metric: final multimodal results only, excludes tentative local-only states.",
+    "publishedStateCoverage": "Any actually published current state, including partial and local specialist proposals; not necessarily final or live-visible."
+  },
+  "publishedStateCoverage": 9,
+  "observedModels": [
+    "qwen3.8-flash"
+  ],
+  "nonemptyRequestLatencyMs": {
+    "n": 20,
+    "p50": 1847.5,
+    "p95": 2988
+  },
+  "emptyRequestLatencyMs": {
+    "n": 17,
+    "p50": 1562,
+    "p95": 2357
+  },
+  "fastDeliveryRequestLatencyMs": {
+    "n": 25,
+    "p50": 1153,
+    "p95": 3275
+  },
+  "fastDeliveryNonemptyLatencyMs": {
+    "n": 19,
+    "p50": 1171,
+    "p95": 4158
+  }
+}

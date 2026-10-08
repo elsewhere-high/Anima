@@ -1,0 +1,764 @@
+{
+  "createdAt": "2026-10-07T16:12:45.288374+00:00",
+  "model": "Romana-TASLP2024-acoustic-WavLM-base",
+  "device": "cpu",
+  "checkpointSha256": "8724aaac4da9ae4d6e04f55dc394650a2517fbf529f5f4cd00b1353c74547036",
+  "threshold": 0.5,
+  "frameStrideSeconds": 0.02,
+  "receptiveFieldSeconds": 0.025,
+  "scope": "Causal prefix/window feasibility only; no social emotion accuracy claim",
+  "runs": [
+    {
+      "clip": "silence",
+      "start": 0,
+      "end": 3.0,
+      "wallMs": 134,
+      "spans": []
+    },
+    {
+      "clip": "elon-musk-wef",
+      "start": 0.0,
+      "end": 1.0,
+      "wallMs": 55,
+      "spans": []
+    },
+    {
+      "clip": "elon-musk-wef",
+      "start": 0.0,
+      "end": 1.5,
+      "wallMs": 69,
+      "spans": [
+        {
+          "label": "filled_pause",
+          "start": 0.74,
+          "end": 0.985,
+          "meanScore": 0.9196,
+          "peakScore": 0.9848
+        }
+      ]
+    },
+    {
+      "clip": "elon-musk-wef",
+      "start": 0.0,
+      "end": 2.0,
+      "wallMs": 75,
+      "spans": [
+        {
+          "label": "filled_pause",
+          "start": 0.72,
+          "end": 0.965,
+          "meanScore": 0.9058,
+          "peakScore": 0.9855
+        }
+      ]
+    },
+    {
+      "clip": "elon-musk-wef",
+      "start": 0.0,
+      "end": 2.5,
+      "wallMs": 83,
+      "spans": [
+        {
+          "label": "filled_pause",
+          "start": 0.74,
+          "end": 0.965,
+          "meanScore": 0.9275,
+          "peakScore": 0.9862
+        },
+        {
+          "label": "partial_word",
+          "start": 1.96,
+          "end": 2.385,
+          "meanScore": 0.6431,
+          "peakScore": 0.696
+        },
+        {
+          "label": "repetition",
+          "start": 2.04,
+          "end": 2.125,
+          "meanScore": 0.5477,
+          "peakScore": 0.5818
+        },
+        {
+          "label": "revision",
+          "start": 2.26,
+          "end": 2.425,
+          "meanScore": 0.5223,
+          "peakScore": 0.5349
+        }
+      ]
+    },
+    {
+      "clip": "elon-musk-wef",
+      "start": 0.0,
+      "end": 3.0,
+      "wallMs": 108,
+      "spans": [
+        {
+          "label": "filled_pause",
+          "start": 0.74,
+          "end": 0.945,
+          "meanScore": 0.8873,
+          "peakScore": 0.9547
+        },
+        {
+          "label": "partial_word",
+          "start": 1.98,
+          "end": 2.345,
+          "meanScore": 0.6111,
+          "peakScore": 0.6615
+        },
+        {
+          "label": "repetition",
+          "start": 2.02,
+          "end": 2.125,
+          "meanScore": 0.5416,
+          "peakScore": 0.5821
+        },
+        {
+          "label": "revision",
+          "start": 2.34,
+          "end": 2.985,
+          "meanScore": 0.761,
+          "peakScore": 0.9408
+        }
+      ]
+    },
+    {
+      "clip": "elon-musk-wef",
+      "start": 0.5,
+      "end": 3.5,
+      "wallMs": 108,
+      "spans": [
+        {
+          "label": "filled_pause",
+          "start": 0.22,
+          "end": 0.445,
+          "meanScore": 0.872,
+          "peakScore": 0.9561
+        },
+        {
+          "label": "partial_word",
+          "start": 1.5,
+          "end": 1.825,
+          "meanScore": 0.5671,
+          "peakScore": 0.5894
+        },
+        {
+          "label": "repetition",
+          "start": 1.54,
+          "end": 1.605,
+          "meanScore": 0.544,
+          "peakScore": 0.5627
+        },
+        {
+          "label": "revision",
+          "start": 1.62,
+          "end": 2.505,
+          "meanScore": 0.6638,
+          "peakScore": 0.8284
+        },
+        {
+          "label": "revision",
+          "start": 2.64,
+          "end": 2.805,
+          "meanScore": 0.5207,
+          "peakScore": 0.5456
+        }
+      ]
+    },
+    {
+      "clip": "elon-musk-wef",
+      "start": 1.0,
+      "end": 4.0,
+      "wallMs": 97,
+      "spans": [
+        {
+          "label": "revision",
+          "start": 0.98,
+          "end": 1.985,
+          "meanScore": 0.7412,
+          "peakScore": 0.8681
+        },
+        {
+          "label": "partial_word",
+          "start": 1.0,
+          "end": 1.305,
+          "meanScore": 0.5617,
+          "peakScore": 0.5886
+        }
+      ]
+    },
+    {
+      "clip": "mark-zuckerberg-interview",
+      "start": 0.0,
+      "end": 1.0,
+      "wallMs": 43,
+      "spans": []
+    },
+    {
+      "clip": "mark-zuckerberg-interview",
+      "start": 0.0,
+      "end": 1.5,
+      "wallMs": 56,
+      "spans": []
+    },
+    {
+      "clip": "mark-zuckerberg-interview",
+      "start": 0.0,
+      "end": 2.0,
+      "wallMs": 72,
+      "spans": []
+    },
+    {
+      "clip": "mark-zuckerberg-interview",
+      "start": 0.0,
+      "end": 2.5,
+      "wallMs": 81,
+      "spans": []
+    },
+    {
+      "clip": "mark-zuckerberg-interview",
+      "start": 0.0,
+      "end": 3.0,
+      "wallMs": 104,
+      "spans": [
+        {
+          "label": "filled_pause",
+          "start": 2.88,
+          "end": 2.985,
+          "meanScore": 0.9616,
+          "peakScore": 0.9796
+        }
+      ]
+    },
+    {
+      "clip": "mark-zuckerberg-interview",
+      "start": 0.5,
+      "end": 3.5,
+      "wallMs": 105,
+      "spans": [
+        {
+          "label": "repetition",
+          "start": 1.84,
+          "end": 2.085,
+          "meanScore": 0.8921,
+          "peakScore": 0.9441
+        },
+        {
+          "label": "filled_pause",
+          "start": 2.38,
+          "end": 2.765,
+          "meanScore": 0.9671,
+          "peakScore": 0.9963
+        }
+      ]
+    },
+    {
+      "clip": "mark-zuckerberg-interview",
+      "start": 1.0,
+      "end": 4.0,
+      "wallMs": 107,
+      "spans": [
+        {
+          "label": "repetition",
+          "start": 1.34,
+          "end": 1.605,
+          "meanScore": 0.9243,
+          "peakScore": 0.9664
+        },
+        {
+          "label": "filled_pause",
+          "start": 1.88,
+          "end": 2.285,
+          "meanScore": 0.9522,
+          "peakScore": 0.9964
+        }
+      ]
+    },
+    {
+      "clip": "mark-zuckerberg-interview",
+      "start": 1.5,
+      "end": 4.5,
+      "wallMs": 98,
+      "spans": [
+        {
+          "label": "repetition",
+          "start": 0.84,
+          "end": 1.105,
+          "meanScore": 0.9244,
+          "peakScore": 0.9567
+        },
+        {
+          "label": "filled_pause",
+          "start": 1.38,
+          "end": 1.765,
+          "meanScore": 0.9654,
+          "peakScore": 0.9966
+        },
+        {
+          "label": "repetition",
+          "start": 1.78,
+          "end": 2.145,
+          "meanScore": 0.8976,
+          "peakScore": 0.9341
+        }
+      ]
+    },
+    {
+      "clip": "mark-zuckerberg-interview",
+      "start": 2.0,
+      "end": 5.0,
+      "wallMs": 108,
+      "spans": [
+        {
+          "label": "repetition",
+          "start": 0.34,
+          "end": 0.605,
+          "meanScore": 0.8176,
+          "peakScore": 0.8817
+        },
+        {
+          "label": "filled_pause",
+          "start": 0.88,
+          "end": 1.265,
+          "meanScore": 0.9626,
+          "peakScore": 0.9967
+        },
+        {
+          "label": "repetition",
+          "start": 1.3,
+          "end": 1.645,
+          "meanScore": 0.625,
+          "peakScore": 0.6717
+        }
+      ]
+    },
+    {
+      "clip": "pep-guardiola-press",
+      "start": 0.0,
+      "end": 1.0,
+      "wallMs": 47,
+      "spans": []
+    },
+    {
+      "clip": "pep-guardiola-press",
+      "start": 0.0,
+      "end": 1.5,
+      "wallMs": 57,
+      "spans": []
+    },
+    {
+      "clip": "pep-guardiola-press",
+      "start": 0.0,
+      "end": 2.0,
+      "wallMs": 72,
+      "spans": []
+    },
+    {
+      "clip": "pep-guardiola-press",
+      "start": 0.0,
+      "end": 2.5,
+      "wallMs": 80,
+      "spans": []
+    },
+    {
+      "clip": "pep-guardiola-press",
+      "start": 0.0,
+      "end": 3.0,
+      "wallMs": 99,
+      "spans": []
+    },
+    {
+      "clip": "pep-guardiola-press",
+      "start": 0.5,
+      "end": 3.5,
+      "wallMs": 108,
+      "spans": []
+    },
+    {
+      "clip": "pep-guardiola-press",
+      "start": 1.0,
+      "end": 4.0,
+      "wallMs": 108,
+      "spans": [
+        {
+          "label": "revision",
+          "start": 1.06,
+          "end": 1.285,
+          "meanScore": 0.6044,
+          "peakScore": 0.677
+        },
+        {
+          "label": "filled_pause",
+          "start": 2.72,
+          "end": 2.985,
+          "meanScore": 0.9698,
+          "peakScore": 0.9943
+        }
+      ]
+    },
+    {
+      "clip": "pep-guardiola-press",
+      "start": 1.5,
+      "end": 4.5,
+      "wallMs": 101,
+      "spans": [
+        {
+          "label": "filled_pause",
+          "start": 2.22,
+          "end": 2.845,
+          "meanScore": 0.9399,
+          "peakScore": 0.9916
+        }
+      ]
+    },
+    {
+      "clip": "pep-guardiola-press",
+      "start": 2.0,
+      "end": 5.0,
+      "wallMs": 131,
+      "spans": [
+        {
+          "label": "filled_pause",
+          "start": 1.72,
+          "end": 2.325,
+          "meanScore": 0.955,
+          "peakScore": 0.9918
+        },
+        {
+          "label": "revision",
+          "start": 2.36,
+          "end": 2.985,
+          "meanScore": 0.8816,
+          "peakScore": 0.9148
+        }
+      ]
+    },
+    {
+      "clip": "steve-jobs-interview",
+      "start": 0.0,
+      "end": 1.0,
+      "wallMs": 57,
+      "spans": []
+    },
+    {
+      "clip": "steve-jobs-interview",
+      "start": 0.0,
+      "end": 1.5,
+      "wallMs": 80,
+      "spans": []
+    },
+    {
+      "clip": "steve-jobs-interview",
+      "start": 0.0,
+      "end": 2.0,
+      "wallMs": 100,
+      "spans": []
+    },
+    {
+      "clip": "steve-jobs-interview",
+      "start": 0.0,
+      "end": 2.5,
+      "wallMs": 82,
+      "spans": []
+    },
+    {
+      "clip": "steve-jobs-interview",
+      "start": 0.0,
+      "end": 3.0,
+      "wallMs": 94,
+      "spans": []
+    },
+    {
+      "clip": "steve-jobs-interview",
+      "start": 0.5,
+      "end": 3.5,
+      "wallMs": 94,
+      "spans": []
+    },
+    {
+      "clip": "steve-jobs-interview",
+      "start": 1.0,
+      "end": 4.0,
+      "wallMs": 100,
+      "spans": []
+    },
+    {
+      "clip": "steve-jobs-interview",
+      "start": 1.5,
+      "end": 4.5,
+      "wallMs": 129,
+      "spans": []
+    },
+    {
+      "clip": "steve-jobs-interview",
+      "start": 2.0,
+      "end": 5.0,
+      "wallMs": 99,
+      "spans": []
+    },
+    {
+      "clip": "steve-jobs-interview",
+      "start": 2.5,
+      "end": 5.5,
+      "wallMs": 100,
+      "spans": []
+    },
+    {
+      "clip": "steve-jobs-interview",
+      "start": 3.0,
+      "end": 6.0,
+      "wallMs": 100,
+      "spans": []
+    },
+    {
+      "clip": "steve-jobs-interview",
+      "start": 3.5,
+      "end": 6.5,
+      "wallMs": 105,
+      "spans": []
+    },
+    {
+      "clip": "steve-jobs-interview",
+      "start": 4.0,
+      "end": 7.0,
+      "wallMs": 107,
+      "spans": []
+    },
+    {
+      "clip": "steve-jobs-interview",
+      "start": 4.5,
+      "end": 7.5,
+      "wallMs": 98,
+      "spans": [
+        {
+          "label": "revision",
+          "start": 0.0,
+          "end": 0.165,
+          "meanScore": 0.8032,
+          "peakScore": 0.906
+        }
+      ]
+    },
+    {
+      "clip": "steve-jobs-interview",
+      "start": 5.0,
+      "end": 8.0,
+      "wallMs": 98,
+      "spans": []
+    },
+    {
+      "clip": "steve-jobs-interview",
+      "start": 5.5,
+      "end": 8.5,
+      "wallMs": 94,
+      "spans": []
+    },
+    {
+      "clip": "steve-jobs-interview",
+      "start": 6.0,
+      "end": 9.0,
+      "wallMs": 108,
+      "spans": []
+    },
+    {
+      "clip": "steve-jobs-interview",
+      "start": 6.5,
+      "end": 9.5,
+      "wallMs": 99,
+      "spans": []
+    },
+    {
+      "clip": "steve-jobs-interview",
+      "start": 7.0,
+      "end": 10.0,
+      "wallMs": 100,
+      "spans": []
+    },
+    {
+      "clip": "steve-jobs-interview",
+      "start": 7.5,
+      "end": 10.5,
+      "wallMs": 104,
+      "spans": []
+    },
+    {
+      "clip": "steve-jobs-interview",
+      "start": 8.0,
+      "end": 11.0,
+      "wallMs": 99,
+      "spans": []
+    },
+    {
+      "clip": "steve-jobs-interview",
+      "start": 8.5,
+      "end": 11.5,
+      "wallMs": 105,
+      "spans": []
+    },
+    {
+      "clip": "steve-jobs-interview",
+      "start": 9.0,
+      "end": 12.0,
+      "wallMs": 108,
+      "spans": []
+    },
+    {
+      "clip": "steve-jobs-interview",
+      "start": 9.5,
+      "end": 12.5,
+      "wallMs": 97,
+      "spans": []
+    },
+    {
+      "clip": "yann-lecun-wef",
+      "start": 0.0,
+      "end": 1.0,
+      "wallMs": 43,
+      "spans": [
+        {
+          "label": "filled_pause",
+          "start": 0.14,
+          "end": 0.265,
+          "meanScore": 0.5201,
+          "peakScore": 0.5299
+        },
+        {
+          "label": "filled_pause",
+          "start": 0.44,
+          "end": 0.985,
+          "meanScore": 0.7346,
+          "peakScore": 0.8723
+        }
+      ]
+    },
+    {
+      "clip": "yann-lecun-wef",
+      "start": 0.0,
+      "end": 1.5,
+      "wallMs": 56,
+      "spans": [
+        {
+          "label": "filled_pause",
+          "start": 0.52,
+          "end": 0.845,
+          "meanScore": 0.9101,
+          "peakScore": 0.9898
+        }
+      ]
+    },
+    {
+      "clip": "yann-lecun-wef",
+      "start": 0.0,
+      "end": 2.0,
+      "wallMs": 71,
+      "spans": [
+        {
+          "label": "filled_pause",
+          "start": 0.52,
+          "end": 0.805,
+          "meanScore": 0.9218,
+          "peakScore": 0.9877
+        }
+      ]
+    },
+    {
+      "clip": "yann-lecun-wef",
+      "start": 0.0,
+      "end": 2.5,
+      "wallMs": 81,
+      "spans": [
+        {
+          "label": "filled_pause",
+          "start": 0.52,
+          "end": 0.805,
+          "meanScore": 0.9268,
+          "peakScore": 0.9895
+        }
+      ]
+    },
+    {
+      "clip": "yann-lecun-wef",
+      "start": 0.0,
+      "end": 3.0,
+      "wallMs": 107,
+      "spans": [
+        {
+          "label": "filled_pause",
+          "start": 0.52,
+          "end": 0.805,
+          "meanScore": 0.9409,
+          "peakScore": 0.9887
+        }
+      ]
+    },
+    {
+      "clip": "yann-lecun-wef",
+      "start": 0.5,
+      "end": 3.5,
+      "wallMs": 101,
+      "spans": [
+        {
+          "label": "filled_pause",
+          "start": 0.02,
+          "end": 0.305,
+          "meanScore": 0.9241,
+          "peakScore": 0.9899
+        }
+      ]
+    },
+    {
+      "clip": "yann-lecun-wef",
+      "start": 1.0,
+      "end": 4.0,
+      "wallMs": 103,
+      "spans": [
+        {
+          "label": "revision",
+          "start": 2.64,
+          "end": 2.685,
+          "meanScore": 0.5075,
+          "peakScore": 0.5123
+        }
+      ]
+    },
+    {
+      "clip": "yann-lecun-wef",
+      "start": 1.5,
+      "end": 4.5,
+      "wallMs": 102,
+      "spans": []
+    },
+    {
+      "clip": "yann-lecun-wef",
+      "start": 2.0,
+      "end": 5.0,
+      "wallMs": 105,
+      "spans": []
+    },
+    {
+      "clip": "yann-lecun-wef",
+      "start": 2.5,
+      "end": 5.5,
+      "wallMs": 107,
+      "spans": []
+    },
+    {
+      "clip": "yann-lecun-wef",
+      "start": 3.0,
+      "end": 6.0,
+      "wallMs": 97,
+      "spans": []
+    },
+    {
+      "clip": "yann-lecun-wef",
+      "start": 3.5,
+      "end": 6.5,
+      "wallMs": 101,
+      "spans": []
+    }
+  ],
+  "parameters": 94385781,
+  "loadSeconds": 1.604
+}

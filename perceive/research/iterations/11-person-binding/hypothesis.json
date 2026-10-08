@@ -1,0 +1,6 @@
+{
+  "hypothesis": "An observed offscreen-voice false attribution must be blocked when the tracked person is absent, multiple, or stale. No model threshold change.",
+  "priorEvidence": "../10-contextual-speech/control-no-video.json",
+  "backgroundDownload": "Nano-EmoX weights during controls; do not compare control latency",
+  "tests": 57
+}

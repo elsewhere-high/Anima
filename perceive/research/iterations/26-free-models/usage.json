@@ -1,0 +1,27 @@
+{
+  "scope": "current-server-process",
+  "remainingFreeTokens": null,
+  "models": {
+    "qwen3.7-flash": {
+      "requests": 50,
+      "reportedRequests": 50,
+      "promptTokens": 110363,
+      "completionTokens": 3511,
+      "totalTokens": 113874
+    },
+    "qwen3.8-27b": {
+      "requests": 68,
+      "reportedRequests": 68,
+      "promptTokens": 154008,
+      "completionTokens": 1100,
+      "totalTokens": 155108
+    },
+    "qwen3.8-max": {
+      "requests": 50,
+      "reportedRequests": 50,
+      "promptTokens": 114605,
+      "completionTokens": 2268,
+      "totalTokens": 116873
+    }
+  }
+}

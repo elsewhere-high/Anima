@@ -1,0 +1,79 @@
+{
+  "variant": "ten-current",
+  "suite": "interhuman",
+  "requestedRounds": 1,
+  "control": null,
+  "createdAt": "2026-10-07T17:48:11.895Z",
+  "protocol": "candidate-core-aligned-live-with-silero-v6",
+  "scope": "真实时钟测试；音频在检测器准备完成后才开始传输。参考覆盖不等于人工准确率。控制实验仅检查移除模态后的不当归因。",
+  "cameraAccess": false,
+  "microphoneAccess": false,
+  "phase": "完成",
+  "runs": [
+    {
+      "id": "yann-lecun-wef",
+      "round": 1,
+      "events": [],
+      "display": [],
+      "captureDriftMs": [],
+      "notices": [],
+      "duration": 6.869375,
+      "error": "实时转写连接已断开。"
+    },
+    {
+      "id": "steve-jobs-interview",
+      "round": 1,
+      "events": [],
+      "display": [],
+      "captureDriftMs": [],
+      "notices": [],
+      "duration": 12.538,
+      "error": "实时转写连接已断开。"
+    },
+    {
+      "id": "elon-musk-wef",
+      "round": 1,
+      "events": [],
+      "display": [],
+      "captureDriftMs": [],
+      "notices": [],
+      "duration": 4.013,
+      "error": "实时转写连接已断开。"
+    },
+    {
+      "id": "pep-guardiola-press",
+      "round": 1,
+      "events": [],
+      "display": [],
+      "captureDriftMs": [],
+      "notices": [],
+      "duration": 4.999,
+      "error": "实时转写连接已断开。"
+    },
+    {
+      "id": "mark-zuckerberg-interview",
+      "round": 1,
+      "events": [],
+      "display": [],
+      "captureDriftMs": [],
+      "notices": [],
+      "duration": 5.12,
+      "error": "实时转写连接已断开。"
+    }
+  ],
+  "models": {
+    "fusion": "qwen3.8-omni-flash",
+    "specialists": {
+      "face": {
+        "status": "ready"
+      },
+      "voice": {
+        "status": "ready"
+      },
+      "speech": {
+        "status": "ready"
+      }
+    }
+  },
+  "passed": false
+}

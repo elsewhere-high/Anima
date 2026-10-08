@@ -1,0 +1,33 @@
+import {readFile,writeFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+const [input,output]=process.argv.slice(2);
+if(!input||!output)throw new Error('Usage: node research/compare-iteration.mjs log.json summary.json');
+const log=JSON.parse(await readFile(input,'utf8'));
+if(log.control)throw new Error('Modality-removal controls have different expected behavior; do not score them against normal clip references.');
+if(log.suite&&log.suite!=='interhuman')throw new Error('This suite has no Interhuman reference; evaluate its own annotations.');
+const reference=JSON.parse(await readFile(new URL('./interhuman-reference-events.json',import.meta.url),'utf8'));
+const mapping={'表达自信':'confidence','确信':'confidence','挫败':'frustration','不满':'frustration','犹豫':'hesitation','不确定':'uncertainty','赞同':'agreement','反对':'disagreement','怀疑':'skepticism','兴趣':'interest','困惑':'confusion','压力':'stress'};
+const stats=values=>{const v=values.filter(Number.isFinite).sort((a,b)=>a-b),n=v.length;return n?{n,p50:(v[Math.floor((n-1)/2)]+v[Math.floor(n/2)])/2,p95:v[Math.ceil(n*.95)-1]}:null;};
+const runs=log.runs.map(r=>{
+  const ref=reference.clips.find(c=>c.id===r.id),expected={},first={},all=new Set(),published=new Set();
+  for(const e of ref?.events||[])if(e.kind==='signal'&&!(e.signal.type in expected))expected[e.signal.type]=e.atMs/1000;
+  for(const d of r.display||[])for(const s of d.signals){const k=s.code||mapping[s.label]||s.label;first[k]??=d.at;}
+  const results=r.events.filter(e=>e.type==='result');
+  for(const e of results)for(const s of e.signals||[])all.add(s.code||mapping[s.label]||s.label);
+  for(const e of r.events.filter(e=>e.type==='state'))for(const s of e.current||[])published.add(s.code||mapping[s.label]||s.label);
+  const matches=Object.keys(expected).filter(k=>k in first);
+  return {id:r.id,round:r.round,duration:r.duration,expected,firstShown:first,liveMatches:matches,timelyMatches:matches.filter(k=>first[k]<=expected[k]+.5),allMatches:Object.keys(expected).filter(k=>all.has(k)),publishedStateMatches:Object.keys(expected).filter(k=>published.has(k)),extraLabels:Object.keys(first).filter(k=>!(k in expected)),finalResults:results.length,afterStop:results.filter(e=>e.afterStop).length,notices:r.notices?.length||0,error:r.error||null};
+});
+const results=log.runs.flatMap(r=>r.events.filter(e=>e.type==='result'));
+const sourceHashes={};for(const f of ['social.mjs','realtime.mjs','evidence.mjs','speech-delivery.mjs','specialists.mjs','integrations/disfluency.py','window-scheduler.mjs','state-engine.mjs','public/live-state.js','public/iteration-qa.js','research/candidate-server.mjs'])sourceHashes[f]=createHash('sha256').update(await readFile(new URL('../'+f,import.meta.url))).digest('hex');
+const summary={createdAt:new Date().toISOString(),input,protocol:log.protocol,runs,referenceCoverageNotAccuracy:{denominator:runs.reduce((s,r)=>s+Object.keys(r.expected).length,0),live:runs.reduce((s,r)=>s+r.liveMatches.length,0),timely:runs.reduce((s,r)=>s+r.timelyMatches.length,0),allIncludingAfterStop:runs.reduce((s,r)=>s+r.allMatches.length,0),extraLabelsNotAutomaticallyFalsePositives:runs.reduce((s,r)=>s+r.extraLabels.length,0)},requestLatencyMs:stats(results.map(e=>e.latencyMs)),windowEndToFinalMs:stats(results.map(e=>1000*(e.clientReceivedAt-e.end))),notices:runs.reduce((s,r)=>s+r.notices,0),independentAccuracy:null,sourceHashes};
+summary.variant=log.variant||'initial';
+summary.metricNotes={allIncludingAfterStop:'Legacy metric: final multimodal results only, excludes tentative local-only states.',publishedStateCoverage:'Any actually published current state, including partial and local specialist proposals; not necessarily final or live-visible.'};
+summary.publishedStateCoverage=runs.reduce((sum,r)=>sum+r.publishedStateMatches.length,0);
+summary.observedModels=[...new Set(results.map(e=>e.model))];
+summary.nonemptyRequestLatencyMs=stats(results.filter(e=>e.signals?.length).map(e=>e.latencyMs));
+summary.emptyRequestLatencyMs=stats(results.filter(e=>!e.signals?.length).map(e=>e.latencyMs));
+summary.fastDeliveryRequestLatencyMs=stats(log.runs.flatMap(r=>r.events.filter(e=>e.type==='fast.result').map(e=>e.latencyMs)));
+summary.fastDeliveryNonemptyLatencyMs=stats(log.runs.flatMap(r=>r.events.filter(e=>e.type==='fast.result'&&e.signals?.length).map(e=>e.latencyMs)));
+await writeFile(output,JSON.stringify(summary,null,2));
+console.log(JSON.stringify({coverage:summary.referenceCoverageNotAccuracy,requestLatencyMs:summary.requestLatencyMs,notices:summary.notices}));

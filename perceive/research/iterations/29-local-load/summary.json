@@ -1,0 +1,101 @@
+{
+  "runs": [
+    {
+      "profile": "hybrid-threads3",
+      "createdAt": "2026-10-08T02:21:31.362Z",
+      "source": "research/autosaved/1a340d037d9b5158475c-1-yann-lecun-wef.json",
+      "asr": {
+        "n": 5,
+        "p50": 2705.6,
+        "p95": 5755.3
+      },
+      "local": {
+        "face": {
+          "n": 9,
+          "p50": 1407,
+          "p95": 4895
+        },
+        "voice": {
+          "n": 9,
+          "p50": 1602,
+          "p95": 5133
+        },
+        "speech": {
+          "n": 13,
+          "p50": 1054,
+          "p95": 3109
+        }
+      },
+      "fast": {
+        "n": 18,
+        "p50": 892.5,
+        "p95": 1480
+      }
+    },
+    {
+      "profile": "hybrid-enforced-thread1",
+      "createdAt": "2026-10-08T02:25:49.521Z",
+      "source": "research/autosaved/bc502cda8d539cd39d85-1-yann-lecun-wef.json",
+      "asr": {
+        "n": 16,
+        "p50": 548.8,
+        "p95": 3441.2
+      },
+      "local": {
+        "face": {
+          "n": 34,
+          "p50": 202.0,
+          "p95": 906
+        },
+        "voice": {
+          "n": 16,
+          "p50": 465.5,
+          "p95": 1566
+        },
+        "speech": {
+          "n": 26,
+          "p50": 247.0,
+          "p95": 1070
+        }
+      },
+      "fast": {
+        "n": 15,
+        "p50": 1018,
+        "p95": 1722
+      }
+    },
+    {
+      "profile": "hybrid-threads1",
+      "createdAt": "2026-10-08T02:23:57.519Z",
+      "source": "research/autosaved/d394ef067e648e49783b-1-yann-lecun-wef.json",
+      "asr": {
+        "n": 17,
+        "p50": 844.5,
+        "p95": 2300.6
+      },
+      "local": {
+        "face": {
+          "n": 27,
+          "p50": 492,
+          "p95": 849
+        },
+        "voice": {
+          "n": 18,
+          "p50": 632.0,
+          "p95": 979
+        },
+        "speech": {
+          "n": 29,
+          "p50": 399,
+          "p95": 669
+        }
+      },
+      "fast": {
+        "n": 15,
+        "p50": 1008,
+        "p95": 1876
+      }
+    }
+  ],
+  "caution": "The first two profiles configured 3 and 1 threads but FunASR overwrote both to 4; only hybrid-enforced-thread1 confirms actual runtime. Temporary agent Chrome tabs closed before second run, so first-versus-second is not a thread-only comparison."
+}

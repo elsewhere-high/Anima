@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-08T01:55:39.290Z",
+  "model": "qwen3.7-flash",
+  "status": 200,
+  "code": null,
+  "hasOutput": true,
+  "usage": {
+    "prompt_tokens": 15,
+    "total_tokens": 17,
+    "completion_tokens": 2,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 15
+    }
+  },
+  "latencyMs": 445
+}

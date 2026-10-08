@@ -1,0 +1,120 @@
+{
+  "variant": "current-neutral",
+  "createdAt": "2026-10-08T03:11:04.667Z",
+  "sessions": 6,
+  "models": {
+    "fusion": "qwen3.8-max",
+    "fast": "qwen3.7-flash",
+    "specialists": {
+      "face": {
+        "status": "ready",
+        "latencyMs": 146,
+        "model": "EmotiEffLib-enet-b2-8 + OpenFace-3.0"
+      },
+      "voice": {
+        "status": "ready",
+        "latencyMs": 273,
+        "model": "emotion2vec-plus-large"
+      },
+      "speech": {
+        "status": "ready",
+        "latencyMs": 152,
+        "model": "Romana-TASLP2024-WavLM-base"
+      }
+    }
+  },
+  "rounds": {
+    "1-1001_DFA_NEU_XX": {
+      "duration": 2.0635,
+      "displayChanges": 0,
+      "labels": [],
+      "error": null
+    },
+    "1-1002_DFA_NEU_XX": {
+      "duration": 2.5335,
+      "displayChanges": 0,
+      "labels": [],
+      "error": null
+    },
+    "1-1003_DFA_NEU_XX": {
+      "duration": 3.2653125,
+      "displayChanges": 1,
+      "labels": [
+        "表达自信"
+      ],
+      "error": null
+    },
+    "1-1004_IEO_NEU_XX": {
+      "duration": 2.376,
+      "displayChanges": 0,
+      "labels": [],
+      "error": null
+    },
+    "1-1005_DFA_NEU_XX": {
+      "duration": 3.1345,
+      "displayChanges": 0,
+      "labels": [],
+      "error": null
+    },
+    "1-1006_DFA_NEU_XX": {
+      "duration": 2.610998,
+      "displayChanges": 2,
+      "labels": [
+        "不确定"
+      ],
+      "error": null
+    }
+  },
+  "notices": {},
+  "independentAccuracy": null,
+  "exactReferenceMatching": false,
+  "fast.result": {
+    "total": 14,
+    "live": 9,
+    "liveNonempty": 3,
+    "requestLatency": {
+      "n": 9,
+      "p50Ms": 820,
+      "p95Ms": 1136,
+      "maxMs": 1136
+    },
+    "inputEndToReceipt": {
+      "n": 9,
+      "p50Ms": 852.9,
+      "p95Ms": 1170.7,
+      "maxMs": 1170.7
+    },
+    "stale": 0
+  },
+  "result": {
+    "total": 14,
+    "live": 2,
+    "liveNonempty": 0,
+    "requestLatency": {
+      "n": 2,
+      "p50Ms": 2093.0,
+      "p95Ms": 2217,
+      "maxMs": 2217
+    },
+    "inputEndToReceipt": {
+      "n": 2,
+      "p50Ms": 2118.9,
+      "p95Ms": 2229.1,
+      "maxMs": 2229.1
+    },
+    "stale": 2
+  },
+  "transcript": {
+    "total": 45,
+    "live": 42,
+    "liveNonempty": 42,
+    "requestLatency": null,
+    "inputEndToReceipt": {
+      "n": 5,
+      "p50Ms": 289.5,
+      "p95Ms": 354.4,
+      "maxMs": 354.4
+    },
+    "stale": 0
+  }
+}

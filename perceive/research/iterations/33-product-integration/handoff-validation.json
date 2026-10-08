@@ -1,0 +1,23 @@
+{
+  "at": "2026-10-08T07:25:03.583630+00:00",
+  "tests": {
+    "total": 93,
+    "passed": 93,
+    "failed": 0,
+    "command": "npm test",
+    "requiresMediaDownloads": false
+  },
+  "syntaxChecks": [
+    "server.mjs",
+    "public/app.js",
+    "setup-speech.py",
+    "setup-media.py"
+  ],
+  "rootReadmeLinks": "all relative links resolved",
+  "credentialScan": "no credential patterns detected in publication files",
+  "notes": [
+    "Range test now checks committed CSS bytes, independent of downloaded video.",
+    "No final 600s pipeline pass claimed.",
+    "Downloaded weights, raw reference media, private recordings and credentials excluded."
+  ]
+}

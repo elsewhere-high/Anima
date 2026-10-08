@@ -1,0 +1,15 @@
+node_modules/
+.env
+*.log
+integrations/.venv/
+integrations/models/
+integrations/vendor/
+**/__pycache__/
+public/assets/
+public/models/
+public/vendor/
+public/research-assets/
+research/**/source*/
+research/candidate-trace.jsonl
+research/minicpm-probe/
+.DS_Store

@@ -1,0 +1,31 @@
+{
+  "observedAt": "2026-10-08T01:51:51.879344+00:00",
+  "source": "Read-only authenticated Bailian console UI",
+  "accountRestriction": "账号已欠费",
+  "keyMatchesExistingUserProvidedKey": true,
+  "keyEnabled": true,
+  "keyWorkspace": "default",
+  "modelsAuthorized": [
+    "qwen3.7-flash",
+    "qwen3.7-flash-2026-07-15",
+    "qwen3.8-max"
+  ],
+  "freeQuotaObserved": {
+    "qwen3.8-27b": {
+      "display": "剩 1M / 共 1M",
+      "expires": "2026-11-18"
+    },
+    "qwen3.7-flash-2026-07-15": {
+      "display": "剩 1M / 共 1M",
+      "expires": "2026-10-23"
+    },
+    "qwen3.8-max": {
+      "display": "剩 1M / 共 1M",
+      "expires": "2026-11-01"
+    }
+  },
+  "freeTierOnlySwitchesEnabled": true,
+  "exactWorkspaceHostTest": "workspace-access.json",
+  "conclusion": "Account restriction blocks calls despite displayed available model credits. No billing, credential, permission or quota-switch changes made. Requires account owner resolving restriction.",
+  "screenshot": "account-restriction.jpg"
+}

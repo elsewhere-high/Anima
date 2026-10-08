@@ -1,0 +1,571 @@
+{
+  "source": "https://www.interhuman.ai/_next/static/chunks/03hvlan.lx7z7.js",
+  "bundleSHA256": "dd8b4995dfd2423610aba1615c711b516409d12d6aae475d9d90dc3e962d1590",
+  "model": "Inter-2 video default",
+  "kind": "bundled prerecorded demo events, not independently timed live API",
+  "clips": [
+    {
+      "id": "yann-lecun-wef",
+      "src": "/videos/v3demo/yann-lecun-wef.mp4",
+      "durationMs": 6934,
+      "cues": [
+        {
+          "startMs": 640,
+          "endMs": 2640,
+          "speaker": "user",
+          "text": "So what are limitations of current AI systems?"
+        },
+        {
+          "startMs": 2780,
+          "endMs": 6800,
+          "speaker": "user",
+          "text": "There are four things that are essential to intelligent behavior that they really don't do very well."
+        }
+      ],
+      "events": [
+        {
+          "kind": "signal",
+          "atMs": 2500,
+          "signal": {
+            "id": "confidence-0-signal.detected",
+            "modelKey": "confidence",
+            "type": "confidence",
+            "confidence": 0.9,
+            "threshold": 0,
+            "passedThreshold": true,
+            "ts": 1790102981470,
+            "sessionStartS": 0,
+            "phase": "detected",
+            "modality": [
+              "visual"
+            ]
+          }
+        },
+        {
+          "kind": "signal_ended",
+          "atMs": 6934,
+          "ended": {
+            "type": "confidence",
+            "sessionEndS": 6.934
+          }
+        }
+      ]
+    },
+    {
+      "id": "steve-jobs-interview",
+      "src": "/videos/v3demo/steve-jobs-interview.mp4",
+      "durationMs": 12621,
+      "cues": [
+        {
+          "startMs": 0,
+          "endMs": 2408,
+          "speaker": "user",
+          "text": "competition that will attract the best people"
+        },
+        {
+          "startMs": 2408,
+          "endMs": 8600,
+          "speaker": "user",
+          "text": "Unfortunately the side effect of pushing out a lot of 46 year old teachers that lost their spirit"
+        },
+        {
+          "startMs": 8800,
+          "endMs": 10320,
+          "speaker": "user",
+          "text": "you know 15 years ago"
+        },
+        {
+          "startMs": 10580,
+          "endMs": 11780,
+          "speaker": "user",
+          "text": "and shouldn't be teaching right now"
+        }
+      ],
+      "events": [
+        {
+          "kind": "status",
+          "atMs": 344,
+          "status": {
+            "kind": "session_ready",
+            "ts": 1786705503171,
+            "summary": "Session ready"
+          }
+        },
+        {
+          "kind": "status",
+          "atMs": 352,
+          "status": {
+            "kind": "session_updated",
+            "ts": 1786705503188,
+            "summary": "Config applied"
+          }
+        },
+        {
+          "kind": "signal",
+          "atMs": 3453,
+          "signal": {
+            "id": "confidence-0-signal.detected",
+            "modelKey": "confidence",
+            "type": "confidence",
+            "confidence": 0.6,
+            "threshold": 0,
+            "passedThreshold": true,
+            "ts": 1786705506283,
+            "sessionStartS": 0,
+            "phase": "detected",
+            "modality": [
+              "audio"
+            ]
+          }
+        },
+        {
+          "kind": "signal",
+          "atMs": 6102,
+          "signal": {
+            "id": "confidence-3.973-signal.updated",
+            "modelKey": "confidence",
+            "type": "confidence",
+            "confidence": 0.9,
+            "threshold": 0,
+            "passedThreshold": true,
+            "ts": 1786705508930,
+            "sessionStartS": 3.973,
+            "phase": "updated",
+            "modality": [
+              "audio"
+            ]
+          }
+        },
+        {
+          "kind": "signal",
+          "atMs": 6103,
+          "signal": {
+            "id": "frustration-3.973-signal.detected",
+            "modelKey": "frustration",
+            "type": "frustration",
+            "confidence": 0.3,
+            "threshold": 0,
+            "passedThreshold": true,
+            "ts": 1786705508932,
+            "sessionStartS": 3.973,
+            "phase": "detected",
+            "modality": [
+              "audio"
+            ]
+          }
+        },
+        {
+          "kind": "signal_ended",
+          "atMs": 10332,
+          "ended": {
+            "type": "frustration",
+            "sessionEndS": 8
+          }
+        },
+        {
+          "kind": "signal",
+          "atMs": 11420,
+          "signal": {
+            "id": "frustration-9-signal.detected",
+            "modelKey": "frustration",
+            "type": "frustration",
+            "confidence": 0.3,
+            "threshold": 0,
+            "passedThreshold": true,
+            "ts": 1786705514255,
+            "sessionStartS": 9,
+            "phase": "detected",
+            "modality": [
+              "audio"
+            ]
+          }
+        },
+        {
+          "kind": "signal_ended",
+          "atMs": 12621,
+          "ended": {
+            "type": "confidence",
+            "sessionEndS": 11
+          }
+        },
+        {
+          "kind": "signal",
+          "atMs": 12621,
+          "signal": {
+            "id": "frustration-11-signal.updated",
+            "modelKey": "frustration",
+            "type": "frustration",
+            "confidence": 0.9,
+            "threshold": 0,
+            "passedThreshold": true,
+            "ts": 1786705516295,
+            "sessionStartS": 11,
+            "phase": "updated",
+            "modality": [
+              "audio"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "elon-musk-wef",
+      "src": "/videos/v3demo/elon-musk-wef.mp4",
+      "durationMs": 4013,
+      "cues": [
+        {
+          "startMs": 500,
+          "endMs": 3900,
+          "speaker": "user",
+          "text": "Ahh yeah I mean I was like oh I you know I did that's a lie"
+        }
+      ],
+      "events": [
+        {
+          "kind": "status",
+          "atMs": 0,
+          "status": {
+            "kind": "session_ready",
+            "ts": 1786705520746,
+            "summary": "Session ready"
+          }
+        },
+        {
+          "kind": "status",
+          "atMs": 0,
+          "status": {
+            "kind": "session_updated",
+            "ts": 1786705520787,
+            "summary": "Config applied"
+          }
+        },
+        {
+          "kind": "signal",
+          "atMs": 2366,
+          "signal": {
+            "id": "hesitation-0-signal.detected",
+            "modelKey": "hesitation",
+            "type": "hesitation",
+            "confidence": 0.3,
+            "threshold": 0,
+            "passedThreshold": true,
+            "ts": 1786705523672,
+            "sessionStartS": 0,
+            "phase": "detected",
+            "modality": [
+              "audio"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "pep-guardiola-press",
+      "src": "/videos/v3demo/pep-guardiola-press.mp4",
+      "durationMs": 5000.0,
+      "cues": [
+        {
+          "startMs": 0,
+          "endMs": 2600,
+          "speaker": "user",
+          "text": "switch of plays with four we could not control it"
+        },
+        {
+          "startMs": 3760,
+          "endMs": 4980,
+          "speaker": "user",
+          "text": "but a part of that"
+        }
+      ],
+      "events": [
+        {
+          "kind": "status",
+          "atMs": 372,
+          "status": {
+            "kind": "session_ready",
+            "ts": 1786711204372,
+            "summary": "Session ready"
+          }
+        },
+        {
+          "kind": "status",
+          "atMs": 391,
+          "status": {
+            "kind": "session_updated",
+            "ts": 1786711204391,
+            "summary": "Config applied"
+          }
+        },
+        {
+          "kind": "signal",
+          "atMs": 1240,
+          "signal": {
+            "id": "confidence-0-signal.detected",
+            "modelKey": "confidence",
+            "type": "confidence",
+            "confidence": 0.3,
+            "threshold": 0,
+            "passedThreshold": true,
+            "ts": 1786711205240,
+            "sessionStartS": 0,
+            "phase": "detected",
+            "modality": [
+              "audio"
+            ]
+          }
+        },
+        {
+          "kind": "signal",
+          "atMs": 2280,
+          "signal": {
+            "id": "confidence-1.02-signal.updated",
+            "modelKey": "confidence",
+            "type": "confidence",
+            "confidence": 0.6,
+            "threshold": 0,
+            "passedThreshold": true,
+            "ts": 1786711206280,
+            "sessionStartS": 1.02,
+            "phase": "updated",
+            "modality": [
+              "audio"
+            ]
+          }
+        },
+        {
+          "kind": "signal_ended",
+          "atMs": 2900,
+          "ended": {
+            "type": "confidence",
+            "sessionEndS": 2.02
+          }
+        },
+        {
+          "kind": "signal",
+          "atMs": 3020,
+          "signal": {
+            "id": "hesitation-2.02-signal.detected",
+            "modelKey": "hesitation",
+            "type": "hesitation",
+            "confidence": 0.6,
+            "threshold": 0,
+            "passedThreshold": true,
+            "ts": 1786711207020,
+            "sessionStartS": 2.02,
+            "phase": "detected",
+            "modality": [
+              "audio"
+            ]
+          }
+        },
+        {
+          "kind": "signal_ended",
+          "atMs": 3860,
+          "ended": {
+            "type": "hesitation",
+            "sessionEndS": 3
+          }
+        },
+        {
+          "kind": "signal",
+          "atMs": 4180,
+          "signal": {
+            "id": "frustration-3-signal.detected",
+            "modelKey": "frustration",
+            "type": "frustration",
+            "confidence": 0.3,
+            "threshold": 0,
+            "passedThreshold": true,
+            "ts": 1786711208180,
+            "sessionStartS": 3,
+            "phase": "detected",
+            "modality": [
+              "audio"
+            ]
+          }
+        },
+        {
+          "kind": "signal",
+          "atMs": 4820,
+          "signal": {
+            "id": "frustration-3.86-signal.updated",
+            "modelKey": "frustration",
+            "type": "frustration",
+            "confidence": 0.6,
+            "threshold": 0,
+            "passedThreshold": true,
+            "ts": 1786711208820,
+            "sessionStartS": 3.86,
+            "phase": "updated",
+            "modality": [
+              "audio"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "mark-zuckerberg-interview",
+      "src": "/videos/v3demo/mark-zuckerberg-interview.mp4",
+      "durationMs": 5166,
+      "cues": [
+        {
+          "startMs": 0,
+          "endMs": 3586,
+          "speaker": "user",
+          "text": "around the world and make progress in a way that"
+        },
+        {
+          "startMs": 3970,
+          "endMs": 4980,
+          "speaker": "user",
+          "text": "meets people's needs"
+        }
+      ],
+      "events": [
+        {
+          "kind": "status",
+          "atMs": 372,
+          "status": {
+            "kind": "session_ready",
+            "ts": 1786711400372,
+            "summary": "Session ready"
+          }
+        },
+        {
+          "kind": "status",
+          "atMs": 394,
+          "status": {
+            "kind": "session_updated",
+            "ts": 1786711400394,
+            "summary": "Config applied"
+          }
+        },
+        {
+          "kind": "signal",
+          "atMs": 1140,
+          "signal": {
+            "id": "confidence-0-signal.detected",
+            "modelKey": "confidence",
+            "type": "confidence",
+            "confidence": 0.3,
+            "threshold": 0,
+            "passedThreshold": true,
+            "ts": 1786711401140,
+            "sessionStartS": 0,
+            "phase": "detected",
+            "modality": [
+              "audio"
+            ]
+          }
+        },
+        {
+          "kind": "signal",
+          "atMs": 2160,
+          "signal": {
+            "id": "confidence-0.94-signal.updated",
+            "modelKey": "confidence",
+            "type": "confidence",
+            "confidence": 0.6,
+            "threshold": 0,
+            "passedThreshold": true,
+            "ts": 1786711402160,
+            "sessionStartS": 0.94,
+            "phase": "updated",
+            "modality": [
+              "audio"
+            ]
+          }
+        },
+        {
+          "kind": "signal_ended",
+          "atMs": 2740,
+          "ended": {
+            "type": "confidence",
+            "sessionEndS": 1.94
+          }
+        },
+        {
+          "kind": "signal",
+          "atMs": 2920,
+          "signal": {
+            "id": "hesitation-1.94-signal.detected",
+            "modelKey": "hesitation",
+            "type": "hesitation",
+            "confidence": 0.6,
+            "threshold": 0,
+            "passedThreshold": true,
+            "ts": 1786711402920,
+            "sessionStartS": 1.94,
+            "phase": "detected",
+            "modality": [
+              "audio"
+            ]
+          }
+        },
+        {
+          "kind": "signal",
+          "atMs": 3820,
+          "signal": {
+            "id": "hesitation-2.94-signal.updated",
+            "modelKey": "hesitation",
+            "type": "hesitation",
+            "confidence": 0.9,
+            "threshold": 0,
+            "passedThreshold": true,
+            "ts": 1786711403820,
+            "sessionStartS": 2.94,
+            "phase": "updated",
+            "modality": [
+              "audio"
+            ]
+          }
+        },
+        {
+          "kind": "signal_ended",
+          "atMs": 4460,
+          "ended": {
+            "type": "hesitation",
+            "sessionEndS": 3.86
+          }
+        },
+        {
+          "kind": "signal",
+          "atMs": 4640,
+          "signal": {
+            "id": "uncertainty-3.86-signal.detected",
+            "modelKey": "uncertainty",
+            "type": "uncertainty",
+            "confidence": 0.3,
+            "threshold": 0,
+            "passedThreshold": true,
+            "ts": 1786711404640,
+            "sessionStartS": 3.86,
+            "phase": "detected",
+            "modality": [
+              "audio"
+            ]
+          }
+        },
+        {
+          "kind": "signal",
+          "atMs": 5100,
+          "signal": {
+            "id": "uncertainty-4.8-signal.updated",
+            "modelKey": "uncertainty",
+            "type": "uncertainty",
+            "confidence": 0.6,
+            "threshold": 0,
+            "passedThreshold": true,
+            "ts": 1786711405100,
+            "sessionStartS": 4.8,
+            "phase": "updated",
+            "modality": [
+              "audio"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

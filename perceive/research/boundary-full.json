@@ -1,0 +1,543 @@
+[
+  {
+    "id": "neutral-confirmation",
+    "mode": "full",
+    "transcript": "你在测试是吧？",
+    "segments": [
+      {
+        "start": 0,
+        "end": 5,
+        "text": "你在测试是吧？"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "modality": "语意",
+        "text": "你在测试是吧？",
+        "start": 0,
+        "end": 5,
+        "source": "model_observation"
+      }
+    ],
+    "signals": [],
+    "behaviors": [
+      {
+        "start": 0,
+        "end": 5,
+        "label": "确认",
+        "target": "对方正在进行测试",
+        "refs": [
+          "o1"
+        ]
+      }
+    ],
+    "consistency": [],
+    "scene": "单人面对镜头说话",
+    "unknown": "缺少音频质量数据及面部动作细节，无法判断情绪或认知状态。",
+    "unknownFamilies": [
+      "情绪",
+      "认知",
+      "投入",
+      "立场"
+    ],
+    "rejected": [],
+    "quality": {
+      "audio": false,
+      "video": false,
+      "face": "unavailable",
+      "faceSamples": 0,
+      "clipping": false,
+      "dark": false,
+      "speech": null,
+      "quiet": false
+    },
+    "partial": false,
+    "speakerBound": true,
+    "source": "model",
+    "model": "qwen3.8-omni-flash",
+    "latencyMs": 2306
+  },
+  {
+    "id": "calm-disagreement",
+    "mode": "full",
+    "transcript": "第二个方案我不同意。成本太高了。",
+    "segments": [
+      {
+        "start": 0,
+        "end": 5,
+        "text": "第二个方案我不同意。成本太高了。"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "modality": "语意",
+        "text": "第二个方案我不同意。成本太高了。",
+        "start": 0,
+        "end": 5,
+        "source": "model_observation"
+      }
+    ],
+    "signals": [
+      {
+        "label": "反对",
+        "family": "立场",
+        "start": 0,
+        "end": 5,
+        "target": "第二个方案",
+        "anchor": "不同意",
+        "evidence": "明确表达不认同并给出理由",
+        "refs": [
+          "o1"
+        ],
+        "observations": [
+          {
+            "id": "o1",
+            "modality": "语意",
+            "text": "第二个方案我不同意。成本太高了。",
+            "start": 0,
+            "end": 5,
+            "source": "model_observation"
+          }
+        ],
+        "modalities": [
+          "语意"
+        ],
+        "scope": "current_self",
+        "basis": "explicit",
+        "confidence": 0.95,
+        "tentative": false,
+        "source": "fusion"
+      }
+    ],
+    "behaviors": [],
+    "consistency": [],
+    "scene": "口头讨论方案",
+    "unknown": "缺少音频质量、面部表情及肢体动作数据，无法判断情绪状态",
+    "unknownFamilies": [
+      "情绪",
+      "认知",
+      "投入"
+    ],
+    "rejected": [],
+    "quality": {
+      "audio": false,
+      "video": false,
+      "face": "unavailable",
+      "faceSamples": 0,
+      "clipping": false,
+      "dark": false,
+      "speech": null,
+      "quiet": false
+    },
+    "partial": false,
+    "speakerBound": true,
+    "source": "model",
+    "model": "qwen3.8-omni-flash",
+    "latencyMs": 1731
+  },
+  {
+    "id": "fluent-uncertainty",
+    "mode": "full",
+    "transcript": "我还不能确定这个数字是否准确，需要再核对一次原始记录。",
+    "segments": [
+      {
+        "start": 0,
+        "end": 5,
+        "text": "我还不能确定这个数字是否准确，需要再核对一次原始记录。"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "modality": "语意",
+        "text": "我还不能确定这个数字是否准确，需要再核对一次原始记录。",
+        "start": 0,
+        "end": 5,
+        "source": "model_observation"
+      }
+    ],
+    "signals": [
+      {
+        "label": "不确定",
+        "family": "认知",
+        "start": 0,
+        "end": 5,
+        "target": "数字的准确性",
+        "anchor": "不能确定",
+        "evidence": "说话人明确表示无法确认数据准确性",
+        "refs": [
+          "o1"
+        ],
+        "observations": [
+          {
+            "id": "o1",
+            "modality": "语意",
+            "text": "我还不能确定这个数字是否准确，需要再核对一次原始记录。",
+            "start": 0,
+            "end": 5,
+            "source": "model_observation"
+          }
+        ],
+        "modalities": [
+          "语意"
+        ],
+        "scope": "current_self",
+        "basis": "explicit",
+        "confidence": 0.95,
+        "tentative": false,
+        "source": "fusion"
+      }
+    ],
+    "behaviors": [],
+    "consistency": [],
+    "scene": "人物正在讨论数据核对问题",
+    "unknown": "缺少音频质量、面部表情及肢体动作信息",
+    "unknownFamilies": [
+      "情绪",
+      "投入",
+      "立场"
+    ],
+    "rejected": [],
+    "quality": {
+      "audio": false,
+      "video": false,
+      "face": "unavailable",
+      "faceSamples": 0,
+      "clipping": false,
+      "dark": false,
+      "speech": null,
+      "quiet": false
+    },
+    "partial": false,
+    "speakerBound": true,
+    "source": "model",
+    "model": "qwen3.8-omni-flash",
+    "latencyMs": 1869
+  },
+  {
+    "id": "quoted-past-sadness",
+    "mode": "full",
+    "transcript": "她去年说过，当时自己很悲伤。我现在只是给你复述这句话。",
+    "segments": [
+      {
+        "start": 0,
+        "end": 5,
+        "text": "她去年说过，当时自己很悲伤。我现在只是给你复述这句话。"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "modality": "语意",
+        "text": "她去年说过，当时自己很悲伤。我现在只是给你复述这句话。",
+        "start": 0,
+        "end": 5,
+        "source": "model_observation"
+      }
+    ],
+    "signals": [],
+    "behaviors": [],
+    "consistency": [],
+    "scene": "无画面信息",
+    "unknown": "缺少音频质量、视频画面及面部特征数据，无法判断说话人状态",
+    "unknownFamilies": [
+      "情绪",
+      "认知",
+      "投入",
+      "立场"
+    ],
+    "rejected": [],
+    "quality": {
+      "audio": false,
+      "video": false,
+      "face": "unavailable",
+      "faceSamples": 0,
+      "clipping": false,
+      "dark": false,
+      "speech": null,
+      "quiet": false
+    },
+    "partial": false,
+    "speakerBound": false,
+    "source": "model",
+    "model": "qwen3.8-omni-flash",
+    "latencyMs": 1342
+  },
+  {
+    "id": "correction-not-deception",
+    "mode": "full",
+    "transcript": "刚才说成周三了，口误，是周四交付。",
+    "segments": [
+      {
+        "start": 0,
+        "end": 5,
+        "text": "刚才说成周三了，口误，是周四交付。"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "modality": "语意",
+        "text": "刚才说成周三了，口误，是周四交付。",
+        "start": 0,
+        "end": 5,
+        "source": "model_observation"
+      }
+    ],
+    "signals": [],
+    "behaviors": [
+      {
+        "start": 0,
+        "end": 5,
+        "label": "自我修正",
+        "target": "交付日期从周三改为周四",
+        "refs": [
+          "o1"
+        ]
+      }
+    ],
+    "consistency": [],
+    "scene": "单人说话进行口头更正",
+    "unknown": "缺少音频与画面细节，无法判断情绪或认知状态",
+    "unknownFamilies": [
+      "情绪",
+      "认知",
+      "投入",
+      "立场"
+    ],
+    "rejected": [],
+    "quality": {
+      "audio": false,
+      "video": false,
+      "face": "unavailable",
+      "faceSamples": 0,
+      "clipping": false,
+      "dark": false,
+      "speech": null,
+      "quiet": false
+    },
+    "partial": false,
+    "speakerBound": true,
+    "source": "model",
+    "model": "qwen3.8-omni-flash",
+    "latencyMs": 1728
+  },
+  {
+    "id": "understanding-claim",
+    "mode": "full",
+    "transcript": "我懂了。",
+    "segments": [
+      {
+        "start": 0,
+        "end": 5,
+        "text": "我懂了。"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "modality": "语意",
+        "text": "我懂了。",
+        "start": 0,
+        "end": 5,
+        "source": "model_observation"
+      }
+    ],
+    "signals": [],
+    "behaviors": [
+      {
+        "start": 0,
+        "end": 5,
+        "label": "理解声明",
+        "target": "当前对话内容",
+        "refs": [
+          "o1"
+        ]
+      }
+    ],
+    "consistency": [],
+    "scene": "单人说话",
+    "unknown": "缺少音频质量、面部及动作数据，无法评估情绪或认知状态",
+    "unknownFamilies": [
+      "情绪",
+      "认知",
+      "投入",
+      "立场"
+    ],
+    "rejected": [],
+    "quality": {
+      "audio": false,
+      "video": false,
+      "face": "unavailable",
+      "faceSamples": 0,
+      "clipping": false,
+      "dark": false,
+      "speech": null,
+      "quiet": false
+    },
+    "partial": false,
+    "speakerBound": true,
+    "source": "model",
+    "model": "qwen3.8-omni-flash",
+    "latencyMs": 1463
+  },
+  {
+    "id": "explicit-curiosity",
+    "mode": "full",
+    "transcript": "我对这个识别方法很感兴趣，想深入了解它怎样把声音和画面结合起来，你能介绍一下原理吗？",
+    "segments": [
+      {
+        "start": 0,
+        "end": 5,
+        "text": "我对这个识别方法很感兴趣，想深入了解它怎样把声音和画面结合起来，你能介绍一下原理吗？"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "modality": "语意",
+        "text": "我对这个识别方法很感兴趣，想深入了解它怎样把声音和画面结合起来，你能介绍一下原理吗？",
+        "start": 0,
+        "end": 5,
+        "source": "model_observation"
+      }
+    ],
+    "signals": [
+      {
+        "label": "兴趣",
+        "family": "投入",
+        "start": 0,
+        "end": 5,
+        "target": "多模态识别方法的原理",
+        "anchor": "很感兴趣...想了解...介绍原理",
+        "evidence": "明确表达对该方法的兴趣并主动询问其结合音视频的具体机制",
+        "refs": [
+          "o1"
+        ],
+        "observations": [
+          {
+            "id": "o1",
+            "modality": "语意",
+            "text": "我对这个识别方法很感兴趣，想深入了解它怎样把声音和画面结合起来，你能介绍一下原理吗？",
+            "start": 0,
+            "end": 5,
+            "source": "model_observation"
+          }
+        ],
+        "modalities": [
+          "语意"
+        ],
+        "scope": "current_self",
+        "basis": "explicit",
+        "confidence": 0.95,
+        "tentative": false,
+        "source": "fusion"
+      }
+    ],
+    "behaviors": [
+      {
+        "start": 0,
+        "end": 5,
+        "label": "提问",
+        "target": "多模态识别方法的原理",
+        "refs": [
+          "o1"
+        ]
+      },
+      {
+        "start": 0,
+        "end": 5,
+        "label": "请求解释",
+        "target": "如何把声音和画面结合起来",
+        "refs": [
+          "o1"
+        ]
+      }
+    ],
+    "consistency": [],
+    "scene": "单人面对镜头说话",
+    "unknown": "缺少面部与声学特征数据",
+    "unknownFamilies": [
+      "情绪",
+      "认知",
+      "立场"
+    ],
+    "rejected": [],
+    "quality": {
+      "audio": false,
+      "video": false,
+      "face": "unavailable",
+      "faceSamples": 0,
+      "clipping": false,
+      "dark": false,
+      "speech": null,
+      "quiet": false
+    },
+    "partial": false,
+    "speakerBound": true,
+    "source": "model",
+    "model": "qwen3.8-omni-flash",
+    "latencyMs": 2465
+  },
+  {
+    "id": "polite-acknowledgement",
+    "mode": "full",
+    "transcript": "嗯，好的，谢谢你。",
+    "segments": [
+      {
+        "start": 0,
+        "end": 5,
+        "text": "嗯，好的，谢谢你。"
+      }
+    ],
+    "observations": [
+      {
+        "id": "o1",
+        "modality": "语意",
+        "text": "嗯，好的，谢谢你。",
+        "start": 0,
+        "end": 5,
+        "source": "model_observation"
+      }
+    ],
+    "signals": [],
+    "behaviors": [
+      {
+        "start": 0,
+        "end": 5,
+        "label": "确认",
+        "target": "对方刚才的说明或帮助",
+        "refs": [
+          "o1"
+        ]
+      }
+    ],
+    "consistency": [],
+    "scene": "人物进行口头回应与致谢",
+    "unknown": "缺少音频质量、面部及动作数据，无法判断情绪状态",
+    "unknownFamilies": [
+      "情绪",
+      "认知",
+      "投入",
+      "立场"
+    ],
+    "rejected": [],
+    "quality": {
+      "audio": false,
+      "video": false,
+      "face": "unavailable",
+      "faceSamples": 0,
+      "clipping": false,
+      "dark": false,
+      "speech": null,
+      "quiet": false
+    },
+    "partial": false,
+    "speakerBound": true,
+    "source": "model",
+    "model": "qwen3.8-omni-flash",
+    "latencyMs": 1407
+  }
+]

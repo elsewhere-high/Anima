@@ -1,0 +1,142 @@
+{
+  "generatedAt": "2026-10-08T01:53:57.643491+00:00",
+  "runs": [
+    {
+      "requestedSeconds": 20,
+      "createdAt": "2026-10-08T01:42:33.746Z",
+      "complete": true,
+      "files": [
+        "autosaved/b11bdef7bad21e74497d-1-yann-lecun-wef.json"
+      ],
+      "final": {
+        "phase": "完成",
+        "seconds": 20,
+        "cameraAccess": false,
+        "microphoneAccess": false,
+        "transcripts": 22,
+        "measurements": 90,
+        "displayUpdates": 5,
+        "notices": [
+          {
+            "code": "FAST_DELIVERY_UNAVAILABLE",
+            "message": "快速表达分析暂不可用，其余分析继续"
+          },
+          {
+            "code": "MODEL_ACCESS_UNAVAILABLE",
+            "message": "当前密钥未获准使用该模型，请在百炼检查模型开通状态。 本地观察继续。"
+          }
+        ],
+        "savedMinutes": 0,
+        "blankChecks": [],
+        "cloudVerified": false,
+        "elapsedSeconds": 20,
+        "recordedBytes": 2663491,
+        "recordedSeconds": 20.06020000000298,
+        "infrastructurePassed": true,
+        "fullMultimodalVerified": false,
+        "final": true
+      },
+      "eventCounts": {
+        "session.start": 1,
+        "quality": 3,
+        "state": 91,
+        "measurement": 89,
+        "notice": 2,
+        "transcript": 20
+      },
+      "asrWindowEndToReceiptMs": {
+        "count": 20,
+        "p50": 491.5,
+        "p95": 1184.9,
+        "max": 1184.9
+      },
+      "specialistComputeMs": {
+        "face": {
+          "count": 38,
+          "p50": 364.0,
+          "p95": 462,
+          "max": 523
+        },
+        "voice": {
+          "count": 19,
+          "p50": 353,
+          "p95": 607,
+          "max": 607
+        },
+        "speech": {
+          "count": 32,
+          "p50": 218.5,
+          "p95": 405,
+          "max": 432
+        }
+      },
+      "independentAccuracy": null,
+      "referenceLabelMatchRequired": false,
+      "limits": [
+        "ASR latency is measured from the end of captured input, not first phoneme or DOM display.",
+        "Specialist times exclude capture, queue and DOM display.",
+        "No successful cloud result means no multimodal quality or latency verdict.",
+        "Blank controls are sampled once per second after two seconds of blank input."
+      ]
+    },
+    {
+      "requestedSeconds": 600,
+      "createdAt": "2026-10-08T01:44:15.360Z",
+      "complete": false,
+      "files": [
+        "autosaved/67980614ad4a93a9b861-1-yann-continuous.json",
+        "autosaved/3c415f424af884ff475a-1-yann-continuous.json",
+        "autosaved/c944af9f590039192cb6-1-yann-continuous.json",
+        "autosaved/cbb7e5b075e31a014dbf-1-yann-continuous.json",
+        "autosaved/8bf9619dcb66e5efcd53-1-yann-continuous.json",
+        "autosaved/f340c5c9a3b767c23e2c-1-yann-continuous.json",
+        "autosaved/0c491c19c5dbe1785125-1-yann-continuous.json",
+        "autosaved/b1b62c69aaeaf7739f4a-1-yann-continuous.json",
+        "autosaved/14db165dfec5b42d5f8b-1-yann-continuous.json"
+      ],
+      "final": null,
+      "eventCounts": {
+        "session.start": 1,
+        "quality": 30,
+        "state": 1775,
+        "measurement": 2001,
+        "notice": 2,
+        "transcript": 425
+      },
+      "asrWindowEndToReceiptMs": {
+        "count": 425,
+        "p50": 726.6,
+        "p95": 6156.3,
+        "max": 12388.0
+      },
+      "specialistComputeMs": {
+        "face": {
+          "count": 787,
+          "p50": 362,
+          "p95": 1193,
+          "max": 3907
+        },
+        "voice": {
+          "count": 451,
+          "p50": 386,
+          "p95": 1457,
+          "max": 8034
+        },
+        "speech": {
+          "count": 763,
+          "p50": 230,
+          "p95": 948,
+          "max": 4678
+        }
+      },
+      "independentAccuracy": null,
+      "referenceLabelMatchRequired": false,
+      "limits": [
+        "ASR latency is measured from the end of captured input, not first phoneme or DOM display.",
+        "Specialist times exclude capture, queue and DOM display.",
+        "No successful cloud result means no multimodal quality or latency verdict.",
+        "Blank controls are sampled once per second after two seconds of blank input."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "createdAt": "2026-10-07T17:58:49.919428+00:00",
+  "model": "FunAudioLLM/SenseVoiceSmall",
+  "scope": "Local warm prefix latency and transcription, not independent recognition accuracy",
+  "runs": [
+    {
+      "clip": "elon-musk-wef",
+      "prefix": 1,
+      "ms": 815,
+      "transcript": "A.",
+      "model": "SenseVoiceSmall",
+      "quality": "ok"
+    },
+    {
+      "clip": "elon-musk-wef",
+      "prefix": 3,
+      "ms": 837,
+      "transcript": "Yeah, I mean, I would say.",
+      "model": "SenseVoiceSmall",
+      "quality": "ok"
+    },
+    {
+      "clip": "mark-zuckerberg-interview",
+      "prefix": 1,
+      "ms": 788,
+      "transcript": "Around the world.",
+      "model": "SenseVoiceSmall",
+      "quality": "ok"
+    },
+    {
+      "clip": "mark-zuckerberg-interview",
+      "prefix": 3,
+      "ms": 832,
+      "transcript": "Around the world and make progress in a way that.",
+      "model": "SenseVoiceSmall",
+      "quality": "ok"
+    },
+    {
+      "clip": "pep-guardiola-press",
+      "prefix": 1,
+      "ms": 814,
+      "transcript": "Switch of plays.",
+      "model": "SenseVoiceSmall",
+      "quality": "ok"
+    },
+    {
+      "clip": "pep-guardiola-press",
+      "prefix": 3,
+      "ms": 827,
+      "transcript": "Switch of plays with four, we could not control it.",
+      "model": "SenseVoiceSmall",
+      "quality": "ok"
+    },
+    {
+      "clip": "steve-jobs-interview",
+      "prefix": 1,
+      "ms": 788,
+      "transcript": "Competition that will.",
+      "model": "SenseVoiceSmall",
+      "quality": "ok"
+    },
+    {
+      "clip": "steve-jobs-interview",
+      "prefix": 3,
+      "ms": 834,
+      "transcript": "Competition that will attract the best people.",
+      "model": "SenseVoiceSmall",
+      "quality": "ok"
+    },
+    {
+      "clip": "yann-lecun-wef",
+      "prefix": 1,
+      "ms": 798,
+      "transcript": "U.",
+      "model": "SenseVoiceSmall",
+      "quality": "ok"
+    },
+    {
+      "clip": "yann-lecun-wef",
+      "prefix": 3,
+      "ms": 852,
+      "transcript": "So what are the limitationsal current systems?",
+      "model": "SenseVoiceSmall",
+      "quality": "ok"
+    },
+    {
+      "clip": "zh",
+      "prefix": 1,
+      "ms": 791,
+      "transcript": "系。",
+      "model": "SenseVoiceSmall",
+      "quality": "ok"
+    },
+    {
+      "clip": "zh",
+      "prefix": 3,
+      "ms": 830,
+      "transcript": "开饭时间早上九点。",
+      "model": "SenseVoiceSmall",
+      "quality": "ok"
+    }
+  ],
+  "loadMs": 3930
+}

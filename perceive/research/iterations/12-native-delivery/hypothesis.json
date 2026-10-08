@@ -1,0 +1,8 @@
+{
+  "hypothesis": "A persistent native-stream delivery-only pass can publish provisional confidence/hesitation before the two HTTP passes finish, with its own bounded scheduler and failure isolation.",
+  "sameBaseProvider": true,
+  "nativeDelivery": true,
+  "speechFast": true,
+  "heads": 2,
+  "backgroundDownload": "Nano-EmoX, first quality check only; latency must be remeasured without concurrent download."
+}

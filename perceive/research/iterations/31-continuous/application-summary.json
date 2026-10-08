@@ -1,0 +1,749 @@
+{
+  "profile": "cloud-asr-hybrid-balanced",
+  "createdAt": "2026-10-08T02:34:47.559Z",
+  "complete": true,
+  "models": {
+    "fusion": "qwen3.8-max-0902",
+    "fast": "qwen3.7-flash-2026-07-15",
+    "asr": "qwen3.8-omni-flash-realtime"
+  },
+  "files": [
+    "autosaved/3e5c9406d06aea6a594a-1-yann-continuous.json",
+    "autosaved/aaee15fc99ce66a8e944-1-yann-continuous.json",
+    "autosaved/31a206b926dcf0ec7296-1-yann-continuous.json",
+    "autosaved/418d2a96e1613dfa5416-1-yann-continuous.json",
+    "autosaved/cae03eb353653fec6729-1-yann-continuous.json",
+    "autosaved/466c359a0b8f891ace18-1-yann-continuous.json",
+    "autosaved/ee75fdaae0d50e3b19f4-1-yann-continuous.json",
+    "autosaved/a9d800ad32fc3756723e-1-yann-continuous.json",
+    "autosaved/6a8cba191702106bdf92-1-yann-continuous.json",
+    "autosaved/2b931fb155eb40578596-1-yann-continuous.json"
+  ],
+  "final": {
+    "phase": "完成",
+    "seconds": 600,
+    "profile": "cloud-asr-hybrid-balanced",
+    "cameraAccess": false,
+    "microphoneAccess": false,
+    "transcripts": 3318,
+    "measurements": 2700,
+    "displayUpdates": 468,
+    "notices": [
+      {
+        "code": "FAST_DELIVERY_WINDOW_DROPPED",
+        "message": "本次快速判断未能读取，下一段继续分析"
+      },
+      {
+        "code": "FAST_DELIVERY_WINDOW_DROPPED",
+        "message": "本次快速判断未能读取，下一段继续分析"
+      },
+      {
+        "code": "FAST_DELIVERY_WINDOW_DROPPED",
+        "message": "本次快速判断未能读取，下一段继续分析"
+      },
+      {
+        "code": "FAST_DELIVERY_WINDOW_DROPPED",
+        "message": "本次快速判断未能读取，下一段继续分析"
+      },
+      {
+        "code": "FAST_DELIVERY_UNAVAILABLE",
+        "message": "快速表达分析暂不可用，其余分析继续"
+      }
+    ],
+    "savedMinutes": 9,
+    "blankChecks": [
+      {
+        "at": 52.02710000000894,
+        "visibleTags": 0
+      },
+      {
+        "at": 53.02679999999702,
+        "visibleTags": 0
+      },
+      {
+        "at": 54.027,
+        "visibleTags": 0
+      },
+      {
+        "at": 112.02760000000895,
+        "visibleTags": 0
+      },
+      {
+        "at": 113.02629999999702,
+        "visibleTags": 0
+      },
+      {
+        "at": 114.02620000000299,
+        "visibleTags": 0
+      },
+      {
+        "at": 172.026700000003,
+        "visibleTags": 0
+      },
+      {
+        "at": 173.027,
+        "visibleTags": 0
+      },
+      {
+        "at": 174.026700000003,
+        "visibleTags": 0
+      },
+      {
+        "at": 232.02720000000298,
+        "visibleTags": 0
+      },
+      {
+        "at": 233.02679999999702,
+        "visibleTags": 0
+      },
+      {
+        "at": 234.02679999999702,
+        "visibleTags": 0
+      },
+      {
+        "at": 292.027200000003,
+        "visibleTags": 0
+      },
+      {
+        "at": 293.02670000000296,
+        "visibleTags": 0
+      },
+      {
+        "at": 294.0265,
+        "visibleTags": 0
+      },
+      {
+        "at": 352.026799999997,
+        "visibleTags": 0
+      },
+      {
+        "at": 353.026900000006,
+        "visibleTags": 0
+      },
+      {
+        "at": 354.030700000003,
+        "visibleTags": 0
+      },
+      {
+        "at": 412.02760000000893,
+        "visibleTags": 0
+      },
+      {
+        "at": 413.027299999997,
+        "visibleTags": 0
+      },
+      {
+        "at": 414.03079999999704,
+        "visibleTags": 0
+      },
+      {
+        "at": 472.0275,
+        "visibleTags": 0
+      },
+      {
+        "at": 473.02710000000894,
+        "visibleTags": 0
+      },
+      {
+        "at": 474.027299999997,
+        "visibleTags": 0
+      },
+      {
+        "at": 532.026900000006,
+        "visibleTags": 0
+      },
+      {
+        "at": 533.0275,
+        "visibleTags": 0
+      },
+      {
+        "at": 534.043200000003,
+        "visibleTags": 0
+      },
+      {
+        "at": 592.027900000006,
+        "visibleTags": 0
+      },
+      {
+        "at": 593.0266000000089,
+        "visibleTags": 0
+      },
+      {
+        "at": 594.027400000006,
+        "visibleTags": 0
+      }
+    ],
+    "cloudVerified": true,
+    "localRuntime": {
+      "torchThreads": 1,
+      "workers": 3
+    },
+    "elapsedSeconds": 600,
+    "reviewLiveResults": 291,
+    "fastLiveResults": 504,
+    "recordedBytes": 76908632,
+    "recordedSeconds": 600.0245,
+    "infrastructurePassed": true,
+    "fullMultimodalVerified": false,
+    "final": true
+  },
+  "savedParts": 10,
+  "liveEventCounts": {
+    "session.start": 1,
+    "display": 4468,
+    "quality": 23,
+    "state": 4031,
+    "measurement": 2699,
+    "transcript": 3318,
+    "fast.result": 504,
+    "result": 291,
+    "notice": 5
+  },
+  "notices": {
+    "FAST_DELIVERY_WINDOW_DROPPED": 4,
+    "FAST_DELIVERY_UNAVAILABLE": 1
+  },
+  "latency": {
+    "asrCompletedWindowEndToReceipt": {
+      "n": 277,
+      "p50Ms": 568.8,
+      "p95Ms": 659.9,
+      "maxMs": 1171.2
+    },
+    "fastInputEndToReceipt": {
+      "n": 504,
+      "p50Ms": 1229.0,
+      "p95Ms": 2027.4,
+      "maxMs": 5064.3
+    },
+    "fastRequest": {
+      "n": 504,
+      "p50Ms": 969.5,
+      "p95Ms": 1813,
+      "maxMs": 4703
+    },
+    "reviewInputEndToReceipt": {
+      "n": 291,
+      "p50Ms": 3169.9,
+      "p95Ms": 4184.8,
+      "maxMs": 10414.2
+    },
+    "specialistCompute": {
+      "face": {
+        "n": 1190,
+        "p50Ms": 162.0,
+        "p95Ms": 293,
+        "maxMs": 780
+      },
+      "voice": {
+        "n": 548,
+        "p50Ms": 290.5,
+        "p95Ms": 582,
+        "maxMs": 1012
+      },
+      "speech": {
+        "n": 961,
+        "p50Ms": 178,
+        "p95Ms": 402,
+        "maxMs": 767
+      }
+    }
+  },
+  "captionInputEndToFirstDOM": null,
+  "tagInputEndToFirstDOM": {
+    "fusion": {
+      "n": 138,
+      "p50Ms": 3795.2,
+      "p95Ms": 5366.7,
+      "maxMs": 5911.1
+    },
+    "speech_delivery": {
+      "n": 78,
+      "p50Ms": 618.8,
+      "p95Ms": 1014.0,
+      "maxMs": 1052.3
+    },
+    "visual_local_classifier": {
+      "n": 177,
+      "p50Ms": 1252.5,
+      "p95Ms": 1823.7,
+      "maxMs": 1987.4
+    },
+    "vocal_expression": {
+      "n": 61,
+      "p50Ms": 625.6,
+      "p95Ms": 841.5,
+      "maxMs": 1059.2
+    }
+  },
+  "minutes": {
+    "1": {
+      "asrCompletedWindowEndToReceipt": {
+        "n": 27,
+        "p50Ms": 321.4,
+        "p95Ms": 404.6,
+        "maxMs": 801.1
+      },
+      "fastInputEndToReceipt": {
+        "n": 51,
+        "p50Ms": 1040.9,
+        "p95Ms": 1943.8,
+        "maxMs": 2276.6
+      },
+      "fastRequest": {
+        "n": 51,
+        "p50Ms": 988,
+        "p95Ms": 1867,
+        "maxMs": 2219
+      },
+      "reviewInputEndToReceipt": {
+        "n": 27,
+        "p50Ms": 3137.9,
+        "p95Ms": 4168.1,
+        "maxMs": 6406.9
+      },
+      "specialistCompute": {
+        "face": {
+          "n": 117,
+          "p50Ms": 172,
+          "p95Ms": 327,
+          "maxMs": 509
+        },
+        "voice": {
+          "n": 53,
+          "p50Ms": 332,
+          "p95Ms": 625,
+          "maxMs": 867
+        },
+        "speech": {
+          "n": 95,
+          "p50Ms": 206,
+          "p95Ms": 436,
+          "maxMs": 625
+        }
+      }
+    },
+    "2": {
+      "asrCompletedWindowEndToReceipt": {
+        "n": 28,
+        "p50Ms": 351.1,
+        "p95Ms": 446.5,
+        "maxMs": 525.2
+      },
+      "fastInputEndToReceipt": {
+        "n": 50,
+        "p50Ms": 1040.1,
+        "p95Ms": 1693.0,
+        "maxMs": 3387.0
+      },
+      "fastRequest": {
+        "n": 50,
+        "p50Ms": 935.5,
+        "p95Ms": 1609,
+        "maxMs": 3274
+      },
+      "reviewInputEndToReceipt": {
+        "n": 27,
+        "p50Ms": 3220.2,
+        "p95Ms": 7695.4,
+        "maxMs": 10414.2
+      },
+      "specialistCompute": {
+        "face": {
+          "n": 117,
+          "p50Ms": 162,
+          "p95Ms": 231,
+          "maxMs": 780
+        },
+        "voice": {
+          "n": 55,
+          "p50Ms": 297,
+          "p95Ms": 581,
+          "maxMs": 987
+        },
+        "speech": {
+          "n": 96,
+          "p50Ms": 180.0,
+          "p95Ms": 351,
+          "maxMs": 706
+        }
+      }
+    },
+    "3": {
+      "asrCompletedWindowEndToReceipt": {
+        "n": 28,
+        "p50Ms": 446.4,
+        "p95Ms": 608.5,
+        "maxMs": 845.8
+      },
+      "fastInputEndToReceipt": {
+        "n": 51,
+        "p50Ms": 1115.8,
+        "p95Ms": 1975.2,
+        "maxMs": 3305.0
+      },
+      "fastRequest": {
+        "n": 51,
+        "p50Ms": 974,
+        "p95Ms": 1842,
+        "maxMs": 3107
+      },
+      "reviewInputEndToReceipt": {
+        "n": 30,
+        "p50Ms": 3086.1,
+        "p95Ms": 4015.5,
+        "maxMs": 4125.5
+      },
+      "specialistCompute": {
+        "face": {
+          "n": 119,
+          "p50Ms": 160,
+          "p95Ms": 327,
+          "maxMs": 537
+        },
+        "voice": {
+          "n": 56,
+          "p50Ms": 275.5,
+          "p95Ms": 823,
+          "maxMs": 884
+        },
+        "speech": {
+          "n": 95,
+          "p50Ms": 177,
+          "p95Ms": 448,
+          "maxMs": 767
+        }
+      }
+    },
+    "4": {
+      "asrCompletedWindowEndToReceipt": {
+        "n": 28,
+        "p50Ms": 470.9,
+        "p95Ms": 525.4,
+        "maxMs": 551.2
+      },
+      "fastInputEndToReceipt": {
+        "n": 51,
+        "p50Ms": 1138.9,
+        "p95Ms": 1960.1,
+        "maxMs": 2946.6
+      },
+      "fastRequest": {
+        "n": 51,
+        "p50Ms": 937,
+        "p95Ms": 1746,
+        "maxMs": 2707
+      },
+      "reviewInputEndToReceipt": {
+        "n": 29,
+        "p50Ms": 3065.1,
+        "p95Ms": 3966.8,
+        "maxMs": 4337.8
+      },
+      "specialistCompute": {
+        "face": {
+          "n": 119,
+          "p50Ms": 168,
+          "p95Ms": 419,
+          "maxMs": 527
+        },
+        "voice": {
+          "n": 54,
+          "p50Ms": 315.5,
+          "p95Ms": 892,
+          "maxMs": 1012
+        },
+        "speech": {
+          "n": 96,
+          "p50Ms": 193.0,
+          "p95Ms": 532,
+          "maxMs": 710
+        }
+      }
+    },
+    "5": {
+      "asrCompletedWindowEndToReceipt": {
+        "n": 28,
+        "p50Ms": 584.8,
+        "p95Ms": 661.6,
+        "maxMs": 664.1
+      },
+      "fastInputEndToReceipt": {
+        "n": 47,
+        "p50Ms": 1332.6,
+        "p95Ms": 2479.5,
+        "maxMs": 4565.5
+      },
+      "fastRequest": {
+        "n": 47,
+        "p50Ms": 1029,
+        "p95Ms": 2119,
+        "maxMs": 4279
+      },
+      "reviewInputEndToReceipt": {
+        "n": 31,
+        "p50Ms": 3156.9,
+        "p95Ms": 4251.8,
+        "maxMs": 4547.8
+      },
+      "specialistCompute": {
+        "face": {
+          "n": 118,
+          "p50Ms": 161.0,
+          "p95Ms": 359,
+          "maxMs": 516
+        },
+        "voice": {
+          "n": 56,
+          "p50Ms": 277.5,
+          "p95Ms": 626,
+          "maxMs": 763
+        },
+        "speech": {
+          "n": 97,
+          "p50Ms": 174,
+          "p95Ms": 450,
+          "maxMs": 619
+        }
+      }
+    },
+    "6": {
+      "asrCompletedWindowEndToReceipt": {
+        "n": 28,
+        "p50Ms": 610.5,
+        "p95Ms": 665.2,
+        "maxMs": 1129.3
+      },
+      "fastInputEndToReceipt": {
+        "n": 51,
+        "p50Ms": 1328.6,
+        "p95Ms": 2245.9,
+        "maxMs": 4039.5
+      },
+      "fastRequest": {
+        "n": 51,
+        "p50Ms": 994,
+        "p95Ms": 1852,
+        "maxMs": 3676
+      },
+      "reviewInputEndToReceipt": {
+        "n": 29,
+        "p50Ms": 3074.6,
+        "p95Ms": 4385.5,
+        "maxMs": 4673.4
+      },
+      "specialistCompute": {
+        "face": {
+          "n": 120,
+          "p50Ms": 162.0,
+          "p95Ms": 186,
+          "maxMs": 295
+        },
+        "voice": {
+          "n": 56,
+          "p50Ms": 292.0,
+          "p95Ms": 376,
+          "maxMs": 478
+        },
+        "speech": {
+          "n": 95,
+          "p50Ms": 176,
+          "p95Ms": 235,
+          "maxMs": 347
+        }
+      }
+    },
+    "7": {
+      "asrCompletedWindowEndToReceipt": {
+        "n": 28,
+        "p50Ms": 605.2,
+        "p95Ms": 659.2,
+        "maxMs": 669.1
+      },
+      "fastInputEndToReceipt": {
+        "n": 52,
+        "p50Ms": 1309.8,
+        "p95Ms": 1792.7,
+        "maxMs": 3579.8
+      },
+      "fastRequest": {
+        "n": 52,
+        "p50Ms": 943.5,
+        "p95Ms": 1459,
+        "maxMs": 3216
+      },
+      "reviewInputEndToReceipt": {
+        "n": 29,
+        "p50Ms": 3316.8,
+        "p95Ms": 5308.7,
+        "maxMs": 6400.1
+      },
+      "specialistCompute": {
+        "face": {
+          "n": 120,
+          "p50Ms": 162.0,
+          "p95Ms": 174,
+          "maxMs": 196
+        },
+        "voice": {
+          "n": 54,
+          "p50Ms": 283.5,
+          "p95Ms": 353,
+          "maxMs": 375
+        },
+        "speech": {
+          "n": 97,
+          "p50Ms": 173,
+          "p95Ms": 234,
+          "maxMs": 256
+        }
+      }
+    },
+    "8": {
+      "asrCompletedWindowEndToReceipt": {
+        "n": 28,
+        "p50Ms": 617.8,
+        "p95Ms": 718.7,
+        "maxMs": 1171.2
+      },
+      "fastInputEndToReceipt": {
+        "n": 51,
+        "p50Ms": 1313.8,
+        "p95Ms": 2006.8,
+        "maxMs": 3187.3
+      },
+      "fastRequest": {
+        "n": 51,
+        "p50Ms": 949,
+        "p95Ms": 1643,
+        "maxMs": 2826
+      },
+      "reviewInputEndToReceipt": {
+        "n": 29,
+        "p50Ms": 3199.2,
+        "p95Ms": 4549.8,
+        "maxMs": 5234.1
+      },
+      "specialistCompute": {
+        "face": {
+          "n": 120,
+          "p50Ms": 162.0,
+          "p95Ms": 175,
+          "maxMs": 237
+        },
+        "voice": {
+          "n": 55,
+          "p50Ms": 293,
+          "p95Ms": 321,
+          "maxMs": 373
+        },
+        "speech": {
+          "n": 96,
+          "p50Ms": 178.0,
+          "p95Ms": 219,
+          "maxMs": 262
+        }
+      }
+    },
+    "9": {
+      "asrCompletedWindowEndToReceipt": {
+        "n": 27,
+        "p50Ms": 608.9,
+        "p95Ms": 655.5,
+        "maxMs": 659.5
+      },
+      "fastInputEndToReceipt": {
+        "n": 47,
+        "p50Ms": 1338.4,
+        "p95Ms": 2730.8,
+        "maxMs": 5064.3
+      },
+      "fastRequest": {
+        "n": 47,
+        "p50Ms": 978,
+        "p95Ms": 2402,
+        "maxMs": 4703
+      },
+      "reviewInputEndToReceipt": {
+        "n": 29,
+        "p50Ms": 3041.9,
+        "p95Ms": 4324.6,
+        "maxMs": 5696.9
+      },
+      "specialistCompute": {
+        "face": {
+          "n": 120,
+          "p50Ms": 163.0,
+          "p95Ms": 182,
+          "maxMs": 239
+        },
+        "voice": {
+          "n": 56,
+          "p50Ms": 281.5,
+          "p95Ms": 385,
+          "maxMs": 424
+        },
+        "speech": {
+          "n": 97,
+          "p50Ms": 169,
+          "p95Ms": 256,
+          "maxMs": 306
+        }
+      }
+    },
+    "10": {
+      "asrCompletedWindowEndToReceipt": {
+        "n": 27,
+        "p50Ms": 602.1,
+        "p95Ms": 660.2,
+        "maxMs": 661.4
+      },
+      "fastInputEndToReceipt": {
+        "n": 53,
+        "p50Ms": 1292.2,
+        "p95Ms": 2113.4,
+        "maxMs": 2417.6
+      },
+      "fastRequest": {
+        "n": 53,
+        "p50Ms": 931,
+        "p95Ms": 1760,
+        "maxMs": 2104
+      },
+      "reviewInputEndToReceipt": {
+        "n": 31,
+        "p50Ms": 3170.5,
+        "p95Ms": 4126.6,
+        "maxMs": 4184.8
+      },
+      "specialistCompute": {
+        "face": {
+          "n": 120,
+          "p50Ms": 161.0,
+          "p95Ms": 202,
+          "maxMs": 293
+        },
+        "voice": {
+          "n": 53,
+          "p50Ms": 286,
+          "p95Ms": 374,
+          "maxMs": 458
+        },
+        "speech": {
+          "n": 97,
+          "p50Ms": 174,
+          "p95Ms": 229,
+          "maxMs": 319
+        }
+      }
+    }
+  },
+  "independentAccuracy": null,
+  "limits": [
+    "Input-end latency excludes waiting to collect a roughly 2s ASR chunk.",
+    "Draft timestamps based on receipt are excluded from caption DOM latency. Older runs without timing provenance have no accepted caption DOM latency.",
+    "Label onset is model estimated; input-end-to-DOM is not physical expression onset latency.",
+    "Local model time excludes capture and queue.",
+    "Repeated public clip stress test is not held-out accuracy."
+  ]
+}

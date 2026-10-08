@@ -1,0 +1,52 @@
+{
+  "at": "2026-10-08T02:29:45.374Z",
+  "model": "qwen3.8-omni-flash-realtime",
+  "events": [
+    {
+      "type": "session.created",
+      "ms": 142
+    },
+    {
+      "type": "session.updated",
+      "ms": 253
+    },
+    {
+      "type": "input_audio_buffer.committed",
+      "ms": 1426
+    },
+    {
+      "type": "conversation.item.created",
+      "ms": 1426
+    },
+    {
+      "type": "conversation.item.input_audio_transcription.delta",
+      "ms": 1930
+    },
+    {
+      "type": "conversation.item.input_audio_transcription.delta",
+      "ms": 1935
+    },
+    {
+      "type": "conversation.item.input_audio_transcription.delta",
+      "ms": 1937
+    },
+    {
+      "type": "conversation.item.input_audio_transcription.delta",
+      "ms": 1943
+    },
+    {
+      "type": "conversation.item.input_audio_transcription.delta",
+      "ms": 1956
+    },
+    {
+      "type": "conversation.item.input_audio_transcription.delta",
+      "ms": 1956
+    },
+    {
+      "type": "conversation.item.input_audio_transcription.completed",
+      "ms": 1960
+    }
+  ],
+  "transcript": "So what are the limitations?",
+  "success": true
+}

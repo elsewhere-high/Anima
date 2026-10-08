@@ -1,0 +1,8 @@
+{
+  "hypothesis": "Protocol repair: prevent initialization silence from entering model media time before playback starts. No model or live default behavior change. Prior wall-clock label measurements stand as observed displays, but their media-window alignment includes a variable setup offset.",
+  "presence": "detector",
+  "nativeDelivery": true,
+  "speechFast": true,
+  "heads": 2,
+  "requiredAudioClockToleranceSeconds": 0.15
+}

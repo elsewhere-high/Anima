@@ -1,0 +1,24 @@
+{
+  "createdAt": "2026-10-08T02:13:35.893Z",
+  "clips": 5,
+  "fast": {
+    "n": 28,
+    "p50Ms": 977.0,
+    "p95Ms": 1701
+  },
+  "fastNonempty": {
+    "n": 22,
+    "p50Ms": 1030.5,
+    "p95Ms": 1701
+  },
+  "slow": {
+    "n": 31,
+    "p50Ms": 2261,
+    "p95Ms": 3522
+  },
+  "notices": {
+    "FAST_DELIVERY_WINDOW_DROPPED": 1,
+    "ANALYSIS_UNAVAILABLE": 1
+  },
+  "independentAccuracy": null
+}

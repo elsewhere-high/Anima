@@ -1,0 +1,10 @@
+{"scope":"文字边界冒烟检查；人工编写语句，不是人的多模态状态真值或留出科研数据","samples":[
+{"id":"neutral-confirmation","input":{"duration":5,"transcript":"你在测试是吧？"},"forbidden":["兴趣","怀疑","困惑"]},
+{"id":"calm-disagreement","input":{"duration":5,"transcript":"第二个方案我不同意。成本太高了。"},"expected":["反对"],"forbidden":["愉悦","紧张"]},
+{"id":"fluent-uncertainty","input":{"duration":5,"transcript":"我还不能确定这个数字是否准确，需要再核对一次原始记录。"},"expected":["不确定"],"forbidden":["确信"]},
+{"id":"quoted-past-sadness","input":{"duration":5,"transcript":"她去年说过，当时自己很悲伤。我现在只是给你复述这句话。"},"forbidden":["低落","不满","挫败"]},
+{"id":"correction-not-deception","input":{"duration":5,"transcript":"刚才说成周三了，口误，是周四交付。"},"forbidden":["紧张","怀疑"]},
+{"id":"understanding-claim","input":{"duration":5,"transcript":"我懂了。"},"forbidden":["专注","兴趣"]},
+{"id":"explicit-curiosity","input":{"duration":5,"transcript":"我对这个识别方法很感兴趣，想深入了解它怎样把声音和画面结合起来，你能介绍一下原理吗？"},"expected":["兴趣"]},
+{"id":"polite-acknowledgement","input":{"duration":5,"transcript":"嗯，好的，谢谢你。"},"forbidden":["兴趣","愉悦","确信"]}
+]}

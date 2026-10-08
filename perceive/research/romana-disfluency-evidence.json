@@ -1,0 +1,42 @@
+{
+  "model": "Romana-TASLP2024-acoustic-WavLM-base",
+  "parameters": 94385781,
+  "weights": {
+    "source": "https://drive.google.com/uc?id=1wWrmopvvdhlBw-cL7EDyih9zn_IJu5Wr",
+    "sha256": "8724aaac4da9ae4d6e04f55dc394650a2517fbf529f5f4cd00b1353c74547036"
+  },
+  "config": {
+    "source": "https://huggingface.co/microsoft/wavlm-base/resolve/main/config.json",
+    "sha256": "cfed33769f4e9ba561b6dee7e37f86e8d7cbef28543515b18d950ceb0f5637f9"
+  },
+  "code": "https://github.com/amritkromana/disfluency_detection_from_audio",
+  "paper": "https://www.microsoft.com/applied-sciences/uploads/publications/134/automatic-disfluency-detection.pdf",
+  "publicationVerification": "https://www.microsoft.com/applied-sciences/people/amrit-romana",
+  "paperVersion": "Downloaded PDF is 2023 preprint, not final journal typeset version",
+  "publishedBenchmark": {
+    "dataset": "Switchboard test",
+    "table": "IVa",
+    "metric": "frame-level F1",
+    "unweightedMacro": 0.45,
+    "weightedMacro": 0.64,
+    "filledPause": 0.87,
+    "repetition": 0.64,
+    "revision": 0.44,
+    "restart": 0,
+    "partialWord": 0.32
+  },
+  "localTest": {
+    "windows": 62,
+    "p50Ms": 99,
+    "p95Ms": 108,
+    "silence": []
+  },
+  "limits": [
+    "No independent accuracy labels for public demo clips",
+    "Frame stride 20ms is not 20ms end-to-end latency",
+    "Bidirectional only inside the received window; no future media",
+    "English telephone-speech training; Chinese and video interview transfer unverified",
+    "Auxiliary acoustic evidence, no diagnosis or truthfulness judgment"
+  ],
+  "decision": "Trial integration as evidence only; no direct psychological label"
+}

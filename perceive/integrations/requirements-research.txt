@@ -1,0 +1,4 @@
+# Optional research candidates; not required by the production specialist worker.
+opensmile==2.6.0
+crisperwhisper[transformers]==2.0.3
+imageio-ffmpeg==0.6.0

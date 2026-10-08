@@ -1,0 +1,221 @@
+{
+  "createdAt": "2026-10-07T16:57:58.575Z",
+  "input": "research/iterations/12-native-delivery/live-vad.json",
+  "protocol": "candidate-core-causal-live-with-silero-v6",
+  "runs": [
+    {
+      "id": "yann-lecun-wef",
+      "round": 1,
+      "duration": 6.869375,
+      "expected": {
+        "confidence": 2.5
+      },
+      "firstShown": {
+        "hesitation": 2.2042999999970196,
+        "confidence": 5.60179999999702
+      },
+      "liveMatches": [
+        "confidence"
+      ],
+      "timelyMatches": [],
+      "allMatches": [
+        "confidence"
+      ],
+      "publishedStateMatches": [
+        "confidence"
+      ],
+      "extraLabels": [
+        "hesitation"
+      ],
+      "finalResults": 12,
+      "afterStop": 3,
+      "notices": 0,
+      "error": null
+    },
+    {
+      "id": "steve-jobs-interview",
+      "round": 1,
+      "duration": 12.538,
+      "expected": {
+        "confidence": 3.453,
+        "frustration": 6.103
+      },
+      "firstShown": {
+        "confidence": 1.6044000000059604,
+        "frustration": 5.01179999999702,
+        "hesitation": 8.10609999999404
+      },
+      "liveMatches": [
+        "confidence",
+        "frustration"
+      ],
+      "timelyMatches": [
+        "confidence",
+        "frustration"
+      ],
+      "allMatches": [
+        "confidence",
+        "frustration"
+      ],
+      "publishedStateMatches": [
+        "confidence",
+        "frustration"
+      ],
+      "extraLabels": [
+        "hesitation"
+      ],
+      "finalResults": 21,
+      "afterStop": 2,
+      "notices": 0,
+      "error": null
+    },
+    {
+      "id": "elon-musk-wef",
+      "round": 1,
+      "duration": 4.013,
+      "expected": {
+        "hesitation": 2.366
+      },
+      "firstShown": {
+        "hesitation": 2.0134000000059604,
+        "agreement": 3.5105
+      },
+      "liveMatches": [
+        "hesitation"
+      ],
+      "timelyMatches": [
+        "hesitation"
+      ],
+      "allMatches": [
+        "hesitation"
+      ],
+      "publishedStateMatches": [
+        "hesitation"
+      ],
+      "extraLabels": [
+        "agreement"
+      ],
+      "finalResults": 7,
+      "afterStop": 3,
+      "notices": 0,
+      "error": null
+    },
+    {
+      "id": "pep-guardiola-press",
+      "round": 1,
+      "duration": 4.999,
+      "expected": {
+        "confidence": 1.24,
+        "hesitation": 3.02,
+        "frustration": 4.18
+      },
+      "firstShown": {
+        "hesitation": 4.8035
+      },
+      "liveMatches": [
+        "hesitation"
+      ],
+      "timelyMatches": [],
+      "allMatches": [
+        "hesitation"
+      ],
+      "publishedStateMatches": [
+        "hesitation"
+      ],
+      "extraLabels": [],
+      "finalResults": 8,
+      "afterStop": 3,
+      "notices": 0,
+      "error": null
+    },
+    {
+      "id": "mark-zuckerberg-interview",
+      "round": 1,
+      "duration": 5.12,
+      "expected": {
+        "confidence": 1.14,
+        "hesitation": 2.92,
+        "uncertainty": 4.64
+      },
+      "firstShown": {
+        "hesitation": 3.6025999999940397
+      },
+      "liveMatches": [
+        "hesitation"
+      ],
+      "timelyMatches": [],
+      "allMatches": [
+        "hesitation"
+      ],
+      "publishedStateMatches": [
+        "hesitation"
+      ],
+      "extraLabels": [],
+      "finalResults": 9,
+      "afterStop": 4,
+      "notices": 0,
+      "error": null
+    }
+  ],
+  "referenceCoverageNotAccuracy": {
+    "denominator": 10,
+    "live": 6,
+    "timely": 3,
+    "allIncludingAfterStop": 6,
+    "extraLabelsNotAutomaticallyFalsePositives": 3
+  },
+  "requestLatencyMs": {
+    "n": 57,
+    "p50": 1413,
+    "p95": 1853
+  },
+  "windowEndToFinalMs": {
+    "n": 57,
+    "p50": 1387.0999999940404,
+    "p95": 2245.7000000029802
+  },
+  "notices": 0,
+  "independentAccuracy": null,
+  "sourceHashes": {
+    "social.mjs": "9fb4566499c18389f97dcce4663a9b923df2c045596579a4d7e32b75d5b46172",
+    "realtime.mjs": "04fcd1215261ac40a63bbe0a6b4e3d685b1c2e6fb7ed10ef2d60d26fda323a2f",
+    "evidence.mjs": "c31542441585b13ea34db1c15a12417fa0bfb51e356b0cc4598f2dce7e8c28ff",
+    "speech-delivery.mjs": "6acd712a41aba6632e5e8049ce0540f3a78ffd50fe79561e9de1c765ae34693c",
+    "specialists.mjs": "1806855ce6f71473e9903fce2fd6c50a92d10116527e63a1a62258df3c344a51",
+    "integrations/disfluency.py": "ddcb0a50ac07780c0017bdcc2c34bb96f8992fb981f7c75046be5e0c6f7613e1",
+    "window-scheduler.mjs": "49b86dd1eed844d87f920bd69a6f7904b370f22d2ca221d078faeca4ed706be6",
+    "state-engine.mjs": "5368ab2a1eb6a0e21e57b1d626a95bf3de09c17a8161657beeb63a0ed88fe17b",
+    "public/live-state.js": "2649a848dda61ec955773cb8da273d3e72c4a9e4e9514f508bea10d94df50a92",
+    "public/iteration-qa.js": "db23f6ce6984138b47c582662f1a60190af1989fe5b614f41b8bf4be8d821a1e",
+    "research/candidate-server.mjs": "d42a39d36b99eca8e64d79deb5745079c5ea2142e54de225d2ce2b93d293f46e"
+  },
+  "variant": "native-delivery-quality-during-download",
+  "metricNotes": {
+    "allIncludingAfterStop": "Legacy metric: final multimodal results only, excludes tentative local-only states.",
+    "publishedStateCoverage": "Any actually published current state, including partial and local specialist proposals; not necessarily final or live-visible."
+  },
+  "publishedStateCoverage": 6,
+  "observedModels": [
+    "qwen3.8-omni-flash"
+  ],
+  "nonemptyRequestLatencyMs": {
+    "n": 22,
+    "p50": 1380,
+    "p95": 1874
+  },
+  "emptyRequestLatencyMs": {
+    "n": 35,
+    "p50": 1437,
+    "p95": 1833
+  },
+  "fastDeliveryRequestLatencyMs": {
+    "n": 46,
+    "p50": 561,
+    "p95": 935
+  },
+  "fastDeliveryNonemptyLatencyMs": {
+    "n": 3,
+    "p50": 774,
+    "p95": 795
+  }
+}

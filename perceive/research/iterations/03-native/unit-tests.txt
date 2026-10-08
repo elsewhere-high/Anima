@@ -1,0 +1,310 @@
+TAP version 13
+# Subtest: 新字幕不清掉状态；过期清除；旧字幕不倒退；标签不错误锚到下一句话
+ok 1 - 新字幕不清掉状态；过期清除；旧字幕不倒退；标签不错误锚到下一句话
+  ---
+  duration_ms: 2.014917
+  type: 'test'
+  ...
+# Subtest: “你在测试是吧”可保留确认行为，不能由一句确认推出兴趣
+ok 2 - “你在测试是吧”可保留确认行为，不能由一句确认推出兴趣
+  ---
+  duration_ms: 1.204542
+  type: 'test'
+  ...
+# Subtest: 平静反对仅产生有依据的反对，不自动补情绪；引用、历史与归属不明均拒绝
+ok 3 - 平静反对仅产生有依据的反对，不自动补情绪；引用、历史与归属不明均拒绝
+  ---
+  duration_ms: 1.96525
+  type: 'test'
+  ...
+# Subtest: 缺画面不能声称画面依据；伪造引用、纯系数推出情绪、微表情声明被拒绝
+ok 4 - 缺画面不能声称画面依据；伪造引用、纯系数推出情绪、微表情声明被拒绝
+  ---
+  duration_ms: 0.927584
+  type: 'test'
+  ...
+# Subtest: 投入变化要前后证据，反话要多模态依据，零长度结果不能漏出
+ok 5 - 投入变化要前后证据，反话要多模态依据，零长度结果不能漏出
+  ---
+  duration_ms: 0.208208
+  type: 'test'
+  ...
+# Subtest: 内容冲突必须在本次短期上下文中找到逐字引文，不能编造前情
+ok 6 - 内容冲突必须在本次短期上下文中找到逐字引文，不能编造前情
+  ---
+  duration_ms: 0.408125
+  type: 'test'
+  ...
+# Subtest: 增量解析完整信号，能处理引号、花括号和被截断的下一个条目
+ok 7 - 增量解析完整信号，能处理引号、花括号和被截断的下一个条目
+  ---
+  duration_ms: 0.4015
+  type: 'test'
+  ...
+# Subtest: 状态出现、稳定更新、结束、初步撤回；拒绝迟到覆盖并隔离会话
+ok 8 - 状态出现、稳定更新、结束、初步撤回；拒绝迟到覆盖并隔离会话
+  ---
+  duration_ms: 1.150833
+  type: 'test'
+  ...
+# Subtest: 独立时钟能使断流后的标签过期，不把旧标签无限保留
+ok 9 - 独立时钟能使断流后的标签过期，不把旧标签无限保留
+  ---
+  duration_ms: 0.710209
+  type: 'test'
+  ...
+# Subtest: 滚动窗口严格只有已接收的5秒媒体；上下文清到45秒，结束重置
+ok 10 - 滚动窗口严格只有已接收的5秒媒体；上下文清到45秒，结束重置
+  ---
+  duration_ms: 18.67875
+  type: 'test'
+  ...
+# Subtest: 声音测量：静音不生成基频，正弦基频可检测，WAV长度正确
+ok 11 - 声音测量：静音不生成基频，正弦基频可检测，WAV长度正确
+  ---
+  duration_ms: 10.221416
+  type: 'test'
+  ...
+# Subtest: 真实请求形状携带原声、帧和本地测量；完整信号到达即发布，无需等全段JSON
+ok 12 - 真实请求形状携带原声、帧和本地测量；完整信号到达即发布，无需等全段JSON
+  ---
+  duration_ms: 31.684334
+  type: 'test'
+  ...
+# Subtest: 回放严格按当时收到的版本，不提前显示未来的字幕或结束后返回的标签
+ok 13 - 回放严格按当时收到的版本，不提前显示未来的字幕或结束后返回的标签
+  ---
+  duration_ms: 0.174584
+  type: 'test'
+  ...
+# Subtest: 无法控制局面的结果陈述不是认知不确定；单个um也不是犹豫状态
+ok 14 - 无法控制局面的结果陈述不是认知不确定；单个um也不是犹豫状态
+  ---
+  duration_ms: 0.241042
+  type: 'test'
+  ...
+# Subtest: persistent path sends media once, commits the bound prefix, streams rows and closes cleanly
+ok 15 - persistent path sends media once, commits the bound prefix, streams rows and closes cleanly
+  ---
+  duration_ms: 4.71425
+  type: 'test'
+  ...
+# Subtest: finer clock starts at half a second and cannot grow an unbounded queue
+ok 16 - finer clock starts at half a second and cannot grow an unbounded queue
+  ---
+  duration_ms: 0.372083
+  type: 'test'
+  ...
+# Subtest: 仅沿用已经启用的系统代理，不启用关闭或无效的配置
+ok 17 - 仅沿用已经启用的系统代理，不启用关闭或无效的配置
+  ---
+  duration_ms: 2.405084
+  type: 'test'
+  ...
+# Subtest: 显式代理设置优先；保留绕过列表，系统设置读取失败仍能启动
+ok 18 - 显式代理设置优先；保留绕过列表，系统设置读取失败仍能启动
+  ---
+  duration_ms: 0.190958
+  type: 'test'
+  ...
+# Subtest: 区分密钥与配额错误，避免回显上游敏感响应
+ok 19 - 区分密钥与配额错误，避免回显上游敏感响应
+  ---
+  duration_ms: 24.11125
+  type: 'test'
+  ...
+# Subtest: 20个信号；拒绝编造说谎、无对象立场与无证据标签
+ok 20 - 20个信号；拒绝编造说谎、无对象立场与无证据标签
+  ---
+  duration_ms: 1.906084
+  type: 'test'
+  ...
+# Subtest: 时间限制在窗口内；锚点必须在原话中，数据可安全显示
+ok 21 - 时间限制在窗口内；锚点必须在原话中，数据可安全显示
+  ---
+  duration_ms: 1.293416
+  type: 'test'
+  ...
+# Subtest: 音视频输入与短期上下文有界
+ok 22 - 音视频输入与短期上下文有界
+  ---
+  duration_ms: 0.787292
+  type: 'test'
+  ...
+# Subtest: 真实适配器发送原始声音和时序画面，解析与过滤结构化结果（模拟外部传输）
+ok 23 - 真实适配器发送原始声音和时序画面，解析与过滤结构化结果（模拟外部传输）
+  ---
+  duration_ms: 3.565667
+  type: 'test'
+  ...
+# Subtest: 模型错误不回显服务商响应或密钥
+ok 24 - 模型错误不回显服务商响应或密钥
+  ---
+  duration_ms: 1.673292
+  type: 'test'
+  ...
+# Subtest: 本地服务：来源保护、无密钥拒绝假结果、Range播放与路径限制
+ok 25 - 本地服务：来源保护、无密钥拒绝假结果、Range播放与路径限制
+  ---
+  duration_ms: 67.066333
+  type: 'test'
+  ...
+# Subtest: 本地 HTTP 到模型适配器端到端（模拟模型），密钥不返回客户端
+ok 26 - 本地 HTTP 到模型适配器端到端（模拟模型），密钥不返回客户端
+  ---
+  duration_ms: 10.822084
+  type: 'test'
+  ...
+# Subtest: 音频编码与案例跨段定位
+ok 27 - 音频编码与案例跨段定位
+  ---
+  duration_ms: 0.699708
+  type: 'test'
+  ...
+# Subtest: MiniCPM 推理保留原声和画面，绝不把千问密钥转发给另一个模型服务
+ok 28 - MiniCPM 推理保留原声和画面，绝不把千问密钥转发给另一个模型服务
+  ---
+  duration_ms: 1.795667
+  type: 'test'
+  ...
+# Subtest: 未配置候选模型就明确使用现有模型，拒绝携带密码或明文远程地址
+ok 29 - 未配置候选模型就明确使用现有模型，拒绝携带密码或明文远程地址
+  ---
+  duration_ms: 0.342166
+  type: 'test'
+  ...
+# Subtest: 百炼地址绑定官方业务空间；拒绝重定向、凭证和非官方域名
+ok 30 - 百炼地址绑定官方业务空间；拒绝重定向、凭证和非官方域名
+  ---
+  duration_ms: 1.847292
+  type: 'test'
+  ...
+# Subtest: 千问回看适配器发送原始声音和画面，并解析跨字节的流式 JSON
+ok 31 - 千问回看适配器发送原始声音和画面，并解析跨字节的流式 JSON
+  ---
+  duration_ms: 6.274583
+  type: 'test'
+  ...
+# Subtest: 边到达边显示原话；不把半截 JSON 或错误响应显示到画面
+ok 32 - 边到达边显示原话；不把半截 JSON 或错误响应显示到画面
+  ---
+  duration_ms: 0.645167
+  type: 'test'
+  ...
+# Subtest: 连续音频重采样：48k 和 44.1k 均每秒产生 16k PCM，分块边界不丢样
+ok 33 - 连续音频重采样：48k 和 44.1k 均每秒产生 16k PCM，分块边界不丢样
+  ---
+  duration_ms: 36.435625
+  type: 'test'
+  ...
+# Subtest: 实时端到端：长连接持续音视频、流式字幕、判断结果、结束前冲刷最后输入
+ok 34 - 实时端到端：长连接持续音视频、流式字幕、判断结果、结束前冲刷最后输入
+  ---
+  duration_ms: 935.908709
+  type: 'test'
+  ...
+# Subtest: 实时连接拒绝跨站和错误令牌
+ok 35 - 实时连接拒绝跨站和错误令牌
+  ---
+  duration_ms: 8.074584
+  type: 'test'
+  ...
+# Subtest: 机器人订阅只收到状态与文本事件，不含密钥或原始音视频；结束清空状态
+ok 36 - 机器人订阅只收到状态与文本事件，不含密钥或原始音视频；结束清空状态
+  ---
+  duration_ms: 801.629041
+  type: 'test'
+  ...
+# Subtest: 评测禁止同人跨开发集与验收集、单标注者和重复样本
+ok 37 - 评测禁止同人跨开发集与验收集、单标注者和重复样本
+  ---
+  duration_ms: 1.623542
+  type: 'test'
+  ...
+# Subtest: 评测报告误报、漏报、覆盖率与失败率；不能靠全部未知获得高分
+ok 38 - 评测报告误报、漏报、覆盖率与失败率；不能靠全部未知获得高分
+  ---
+  duration_ms: 0.661
+  type: 'test'
+  ...
+# Subtest: 对照不把同一人的不同片段当作独立人群
+ok 39 - 对照不把同一人的不同片段当作独立人群
+  ---
+  duration_ms: 0.280916
+  type: 'test'
+  ...
+# Subtest: social detector preserves audible word-search evidence without inventing a semantic statement
+ok 40 - social detector preserves audible word-search evidence without inventing a semantic statement
+  ---
+  duration_ms: 2.609417
+  type: 'test'
+  ...
+# Subtest: final stream token without a newline is not lost
+ok 41 - final stream token without a newline is not lost
+  ---
+  duration_ms: 24.506292
+  type: 'test'
+  ...
+# Subtest: only a complete compact array can recover a missing outer brace
+ok 42 - only a complete compact array can recover a missing outer brace
+  ---
+  duration_ms: 0.662792
+  type: 'test'
+  ...
+# Subtest: compact stream emits completed rows before final JSON and preserves modality evidence
+ok 43 - compact stream emits completed rows before final JSON and preserves modality evidence
+  ---
+  duration_ms: 2.538625
+  type: 'test'
+  ...
+# Subtest: 短暂且迟到的变化留档，不重新显示成当前状态，也不覆盖较新判断
+ok 44 - 短暂且迟到的变化留档，不重新显示成当前状态，也不覆盖较新判断
+  ---
+  duration_ms: 2.441292
+  type: 'test'
+  ...
+# Subtest: 完整记录超过三个状态；面部和融合判断互不清空
+ok 45 - 完整记录超过三个状态；面部和融合判断互不清空
+  ---
+  duration_ms: 0.822917
+  type: 'test'
+  ...
+# Subtest: 两个重叠窗口并发；慢服务不会积累旧请求，空位直接看最新输入
+ok 46 - 两个重叠窗口并发；慢服务不会积累旧请求，空位直接看最新输入
+  ---
+  duration_ms: 0.374833
+  type: 'test'
+  ...
+# Subtest: 采样覆盖整个窗口；专用模型依据使用相对时间，不引用未来分类
+ok 47 - 采样覆盖整个窗口；专用模型依据使用相对时间，不引用未来分类
+  ---
+  duration_ms: 11.621541
+  type: 'test'
+  ...
+# Subtest: 专用分类只显示表情或语调；中性、弱分数、多人不会硬贴心理标签
+ok 48 - 专用分类只显示表情或语调；中性、弱分数、多人不会硬贴心理标签
+  ---
+  duration_ms: 0.686125
+  type: 'test'
+  ...
+# Subtest: 第一段静音、未知或中性输入不会造成专用分析异常
+ok 49 - 第一段静音、未知或中性输入不会造成专用分析异常
+  ---
+  duration_ms: 1.205958
+  type: 'test'
+  ...
+# Subtest: 完整的一条信号及其内嵌依据可先显示，不等待转写和其余字段
+ok 50 - 完整的一条信号及其内嵌依据可先显示，不等待转写和其余字段
+  ---
+  duration_ms: 29.360417
+  type: 'test'
+  ...
+1..50
+# tests 50
+# suites 0
+# pass 50
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2174.260333

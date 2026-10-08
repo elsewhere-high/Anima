@@ -1,0 +1,1 @@
+{"purpose": "运行速度与覆盖检查，无独立人工真值，不计算准确率", "device": "M5 MacBook Air / CPU / 3 threads", "models": ["OpenFace-3.0", "EmotiEffLib-enet-b2-8", "emotion2vec-plus-large"], "voiceParameters": 164048921, "face": {"requests": 71, "p50Ms": 244.6, "p95Ms": 252.5, "maxMs": 310.0}, "voice": {"requests": 31, "p50Ms": 143.9, "p95Ms": 172.7, "maxMs": 187.2}}

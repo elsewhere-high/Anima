@@ -1,0 +1,265 @@
+{
+  "createdAt": "2026-10-07T18:07:02.284Z",
+  "input": "research/iterations/20-local-compact/live-vad.json",
+  "scope": "Display timeline agreement with prerecorded reference, not model latency or human accuracy. Early extra time is a difference, not automatically a false positive. Repeated visible transitions can be flicker, not useful granularity.",
+  "referenceTimeCoverage": 0.2558395976244916,
+  "macroDisplayTimelineIoU": 0.17501179970728545,
+  "runs": [
+    {
+      "id": "yann-lecun-wef",
+      "round": 1,
+      "error": null,
+      "labels": [
+        {
+          "code": "confidence",
+          "referenceIntervals": [
+            [
+              2.5,
+              6.869375
+            ]
+          ],
+          "candidateIntervals": [
+            [
+              6.602600000008941,
+              6.869375
+            ]
+          ],
+          "referenceSeconds": 4.369375,
+          "candidateSeconds": 0.2667749999910587,
+          "overlapSeconds": 0.2667749999910587,
+          "displayedReferenceTimeCoverage": 0.0610556429674859,
+          "displayTimelineIoU": 0.0610556429674859,
+          "candidateAppearances": 1
+        }
+      ],
+      "additionalCandidateLabels": [
+        "hesitation",
+        "interest"
+      ]
+    },
+    {
+      "id": "steve-jobs-interview",
+      "round": 1,
+      "error": null,
+      "labels": [
+        {
+          "code": "frustration",
+          "referenceIntervals": [
+            [
+              6.103,
+              10.332
+            ],
+            [
+              11.42,
+              12.538
+            ]
+          ],
+          "candidateIntervals": [
+            [
+              7.0055,
+              12.538
+            ]
+          ],
+          "referenceSeconds": 5.347000000000003,
+          "candidateSeconds": 5.532500000000001,
+          "overlapSeconds": 4.4445000000000014,
+          "displayedReferenceTimeCoverage": 0.8312137647278846,
+          "displayTimelineIoU": 0.6906759906759906,
+          "candidateAppearances": 1
+        },
+        {
+          "code": "confidence",
+          "referenceIntervals": [
+            [
+              3.453,
+              12.538
+            ]
+          ],
+          "candidateIntervals": [
+            [
+              4.50820000000298,
+              4.7037999999970195
+            ],
+            [
+              10.70370000000298,
+              11.00579999999702
+            ],
+            [
+              12.40570000000298,
+              12.538
+            ]
+          ],
+          "referenceSeconds": 9.085,
+          "candidateSeconds": 0.6299999999850989,
+          "overlapSeconds": 0.6299999999850989,
+          "displayedReferenceTimeCoverage": 0.0693450742966537,
+          "displayTimelineIoU": 0.0693450742966537,
+          "candidateAppearances": 3
+        }
+      ],
+      "additionalCandidateLabels": []
+    },
+    {
+      "id": "elon-musk-wef",
+      "round": 1,
+      "error": null,
+      "labels": [
+        {
+          "code": "hesitation",
+          "referenceIntervals": [
+            [
+              2.366,
+              4.013
+            ]
+          ],
+          "candidateIntervals": [
+            [
+              3.1018999999910593,
+              4.01029999999702
+            ]
+          ],
+          "referenceSeconds": 1.6469999999999998,
+          "candidateSeconds": 0.9084000000059609,
+          "overlapSeconds": 0.9084000000059609,
+          "displayedReferenceTimeCoverage": 0.5515482695846757,
+          "displayTimelineIoU": 0.5515482695846757,
+          "candidateAppearances": 1
+        }
+      ],
+      "additionalCandidateLabels": []
+    },
+    {
+      "id": "pep-guardiola-press",
+      "round": 1,
+      "error": null,
+      "labels": [
+        {
+          "code": "confidence",
+          "referenceIntervals": [
+            [
+              1.24,
+              2.9
+            ]
+          ],
+          "candidateIntervals": [],
+          "referenceSeconds": 1.66,
+          "candidateSeconds": 0,
+          "overlapSeconds": 0,
+          "displayedReferenceTimeCoverage": 0,
+          "displayTimelineIoU": 0,
+          "candidateAppearances": 0
+        },
+        {
+          "code": "hesitation",
+          "referenceIntervals": [
+            [
+              3.02,
+              3.86
+            ]
+          ],
+          "candidateIntervals": [
+            [
+              4.3033999999910595,
+              4.999
+            ]
+          ],
+          "referenceSeconds": 0.8399999999999999,
+          "candidateSeconds": 0.6956000000089402,
+          "overlapSeconds": 0,
+          "displayedReferenceTimeCoverage": 0,
+          "displayTimelineIoU": 0,
+          "candidateAppearances": 1
+        },
+        {
+          "code": "frustration",
+          "referenceIntervals": [
+            [
+              4.18,
+              4.999
+            ]
+          ],
+          "candidateIntervals": [],
+          "referenceSeconds": 0.819,
+          "candidateSeconds": 0,
+          "overlapSeconds": 0,
+          "displayedReferenceTimeCoverage": 0,
+          "displayTimelineIoU": 0,
+          "candidateAppearances": 0
+        }
+      ],
+      "additionalCandidateLabels": [
+        "愉悦语调"
+      ]
+    },
+    {
+      "id": "mark-zuckerberg-interview",
+      "round": 1,
+      "error": null,
+      "labels": [
+        {
+          "code": "confidence",
+          "referenceIntervals": [
+            [
+              1.14,
+              2.74
+            ]
+          ],
+          "candidateIntervals": [
+            [
+              4.906,
+              5.100399999991059
+            ]
+          ],
+          "referenceSeconds": 1.6000000000000003,
+          "candidateSeconds": 0.1943999999910595,
+          "overlapSeconds": 0,
+          "displayedReferenceTimeCoverage": 0,
+          "displayTimelineIoU": 0,
+          "candidateAppearances": 1
+        },
+        {
+          "code": "hesitation",
+          "referenceIntervals": [
+            [
+              2.92,
+              4.46
+            ]
+          ],
+          "candidateIntervals": [
+            [
+              3.7028999999910592,
+              4.906
+            ],
+            [
+              5.100399999991059,
+              5.12
+            ]
+          ],
+          "referenceSeconds": 1.54,
+          "candidateSeconds": 1.2227000000178814,
+          "overlapSeconds": 0.7571000000089407,
+          "displayedReferenceTimeCoverage": 0.49162337662918226,
+          "displayTimelineIoU": 0.3774930195480483,
+          "candidateAppearances": 2
+        },
+        {
+          "code": "uncertainty",
+          "referenceIntervals": [
+            [
+              4.64,
+              5.12
+            ]
+          ],
+          "candidateIntervals": [],
+          "referenceSeconds": 0.4800000000000004,
+          "candidateSeconds": 0,
+          "overlapSeconds": 0,
+          "displayedReferenceTimeCoverage": 0,
+          "displayTimelineIoU": 0,
+          "candidateAppearances": 0
+        }
+      ],
+      "additionalCandidateLabels": []
+    }
+  ]
+}

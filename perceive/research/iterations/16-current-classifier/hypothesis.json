@@ -1,0 +1,9 @@
+{
+  "hypothesis": "Replace native fast-pass generated rationale and localized intervals with two ordinal current-delivery judgments; slower verification still provides full evidence. All fast states remain explicitly provisional and window-level, not precisely localized cues.",
+  "nativeCompact": true,
+  "presence": "detector",
+  "speechFast": true,
+  "heads": 2,
+  "protocol": "aligned media clock",
+  "outputScores": "0 absent, 1 weak, 2 moderate, 3 strong; not calibrated probabilities"
+}

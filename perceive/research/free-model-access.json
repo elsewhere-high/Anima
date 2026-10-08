@@ -1,0 +1,30 @@
+{
+  "at": "2026-10-08T01:31:17.697Z",
+  "scope": "User-selected free-allowance model access probes; three tiny text requests, no private media.",
+  "results": [
+    {
+      "model": "qwen3.7-flash",
+      "status": 403,
+      "code": "AccessDenied.Unpurchased",
+      "hasOutput": false,
+      "usage": null,
+      "latencyMs": 170
+    },
+    {
+      "model": "qwen3.8-27b",
+      "status": 403,
+      "code": "AccessDenied.Unpurchased",
+      "hasOutput": false,
+      "usage": null,
+      "latencyMs": 191
+    },
+    {
+      "model": "qwen3.8-max",
+      "status": 403,
+      "code": "AccessDenied.Unpurchased",
+      "hasOutput": false,
+      "usage": null,
+      "latencyMs": 191
+    }
+  ]
+}

@@ -41,3 +41,21 @@ research/
 *.docx
 *.pdf
 **/artifact_manifest.json
+
+# Current Perceive source and reviewed research evidence are versioned.
+!perceive/research/
+!perceive/research/**
+perceive/node_modules/
+perceive/public/assets/
+perceive/public/models/
+perceive/public/vendor/
+perceive/public/research-assets/
+perceive/integrations/models/
+perceive/integrations/vendor/
+perceive/integrations/.venv/
+perceive/research/**/source*/
+perceive/research/candidate-trace.jsonl
+perceive/research/minicpm-probe/
+perceive/**/*.log
+perceive/**/__pycache__/
+.DS_Store

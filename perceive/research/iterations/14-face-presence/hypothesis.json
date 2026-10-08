@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Separate current-frame face presence from successful landmark fitting, using the detector already bundled with MediaPipe. Retain no-person and multiple-person suppression, and never fabricate missing face actions.",
+  "presence": "detector",
+  "nativeDelivery": true,
+  "speechFast": true,
+  "heads": 2,
+  "downloadContention": false,
+  "heavyInferenceContention": false,
+  "faceDetectorSha256": "b4578f35940bf5a1a655214a1cce5cab13eba73c1297cd78e1a04c2380b0152f",
+  "changeToControls": "Black images now pass through the real worker instead of forcing faces=0."
+}

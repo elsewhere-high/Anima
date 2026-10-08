@@ -1,0 +1,103 @@
+{
+  "purpose": "真实链路与计算耗时验证，无人工真值，不计算准确率",
+  "inputSeconds": 22,
+  "passed": true,
+  "checks": {
+    "face": true,
+    "fusion": true,
+    "labelsWhileLive": true,
+    "noErrors": true,
+    "transcription": true,
+    "voice": true
+  },
+  "transcriptUpdates": 129,
+  "fusionRequests": 12,
+  "liveDetectionEvents": 11,
+  "notices": [],
+  "face": {
+    "count": 44,
+    "p50Ms": 264.5,
+    "p95Ms": 322,
+    "maxMs": 324
+  },
+  "voice": {
+    "count": 21,
+    "p50Ms": 159,
+    "p95Ms": 204,
+    "maxMs": 213
+  },
+  "fusion": {
+    "count": 12,
+    "p50Ms": 4339.5,
+    "p95Ms": 5552,
+    "maxMs": 5552
+  },
+  "models": [
+    "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+    "emotion2vec-plus-large"
+  ],
+  "baselineComparison": [
+    {
+      "id": "elon-musk-wef",
+      "baseline": [
+        "犹豫"
+      ],
+      "full": [
+        "平静",
+        "犹豫"
+      ],
+      "specialistFailures": 0,
+      "localModels": [
+        "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+        "emotion2vec-plus-large"
+      ]
+    },
+    {
+      "id": "mark-zuckerberg-interview",
+      "baseline": [],
+      "full": [],
+      "specialistFailures": 0,
+      "localModels": [
+        "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+        "emotion2vec-plus-large"
+      ]
+    },
+    {
+      "id": "pep-guardiola-press",
+      "baseline": [
+        "平静",
+        "确信"
+      ],
+      "full": [],
+      "specialistFailures": 0,
+      "localModels": [
+        "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+        "emotion2vec-plus-large"
+      ]
+    },
+    {
+      "id": "steve-jobs-interview",
+      "baseline": [
+        "确信"
+      ],
+      "full": [],
+      "specialistFailures": 0,
+      "localModels": [
+        "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+        "emotion2vec-plus-large"
+      ]
+    },
+    {
+      "id": "yann-lecun-wef",
+      "baseline": [],
+      "full": [
+        "专注"
+      ],
+      "specialistFailures": 0,
+      "localModels": [
+        "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+        "emotion2vec-plus-large"
+      ]
+    }
+  ]
+}

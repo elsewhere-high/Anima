@@ -1,0 +1,110 @@
+{
+  "scope": "文字边界冒烟检查；人工编写语句，不是人的多模态状态真值或留出科研数据",
+  "runs": [
+    {
+      "mode": "full",
+      "results": [
+        {
+          "id": "neutral-confirmation",
+          "labels": [],
+          "pass": true
+        },
+        {
+          "id": "calm-disagreement",
+          "labels": [
+            "反对"
+          ],
+          "pass": true
+        },
+        {
+          "id": "fluent-uncertainty",
+          "labels": [
+            "不确定"
+          ],
+          "pass": true
+        },
+        {
+          "id": "quoted-past-sadness",
+          "labels": [],
+          "pass": true
+        },
+        {
+          "id": "correction-not-deception",
+          "labels": [],
+          "pass": true
+        },
+        {
+          "id": "understanding-claim",
+          "labels": [],
+          "pass": true
+        },
+        {
+          "id": "explicit-curiosity",
+          "labels": [
+            "兴趣"
+          ],
+          "pass": true
+        },
+        {
+          "id": "polite-acknowledgement",
+          "labels": [],
+          "pass": true
+        }
+      ]
+    },
+    {
+      "mode": "baseline",
+      "results": [
+        {
+          "id": "neutral-confirmation",
+          "labels": [],
+          "pass": true
+        },
+        {
+          "id": "calm-disagreement",
+          "labels": [
+            "反对"
+          ],
+          "pass": true
+        },
+        {
+          "id": "fluent-uncertainty",
+          "labels": [
+            "不确定",
+            "专注"
+          ],
+          "pass": true
+        },
+        {
+          "id": "quoted-past-sadness",
+          "labels": [],
+          "pass": true
+        },
+        {
+          "id": "correction-not-deception",
+          "labels": [
+            "确信"
+          ],
+          "pass": true
+        },
+        {
+          "id": "understanding-claim",
+          "labels": [],
+          "pass": true
+        },
+        {
+          "id": "explicit-curiosity",
+          "labels": [
+            "兴趣"
+          ],
+          "pass": true
+        },
+        {
+          "id": "polite-acknowledgement",
+          "labels": [],
+          "pass": true
+        }
+      ]
+    }
+  ]
+}

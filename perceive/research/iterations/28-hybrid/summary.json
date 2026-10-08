@@ -1,0 +1,121 @@
+{
+  "variant": "hybrid-snapshots",
+  "createdAt": "2026-10-08T02:17:00.960Z",
+  "sessions": 5,
+  "models": {
+    "fusion": "qwen3.8-max-0902",
+    "fast": "qwen3.7-flash-2026-07-15",
+    "specialists": {
+      "face": {
+        "status": "ready"
+      },
+      "voice": {
+        "status": "ready"
+      }
+    }
+  },
+  "rounds": {
+    "1-elon-musk-wef": {
+      "duration": 4.013,
+      "displayChanges": 3,
+      "labels": [
+        "犹豫",
+        "表达自信"
+      ],
+      "error": null
+    },
+    "1-mark-zuckerberg-interview": {
+      "duration": 5.12,
+      "displayChanges": 3,
+      "labels": [
+        "表达自信"
+      ],
+      "error": null
+    },
+    "1-pep-guardiola-press": {
+      "duration": 4.999,
+      "displayChanges": 5,
+      "labels": [
+        "兴趣",
+        "压力",
+        "愉悦语调",
+        "表达自信"
+      ],
+      "error": null
+    },
+    "1-steve-jobs-interview": {
+      "duration": 12.538,
+      "displayChanges": 17,
+      "labels": [
+        "兴趣",
+        "压力",
+        "挫败",
+        "表达自信"
+      ],
+      "error": null
+    },
+    "1-yann-lecun-wef": {
+      "duration": 6.869375,
+      "displayChanges": 6,
+      "labels": [
+        "犹豫",
+        "表达自信"
+      ],
+      "error": null
+    }
+  },
+  "notices": {
+    "FAST_DELIVERY_WINDOW_DROPPED": 1
+  },
+  "independentAccuracy": null,
+  "exactReferenceMatching": false,
+  "fast.result": {
+    "total": 26,
+    "live": 21,
+    "liveNonempty": 16,
+    "requestLatency": {
+      "n": 21,
+      "p50Ms": 943,
+      "p95Ms": 1969,
+      "maxMs": 2439
+    },
+    "inputEndToReceipt": {
+      "n": 21,
+      "p50Ms": 1029.7,
+      "p95Ms": 1986.1,
+      "maxMs": 2466.0
+    },
+    "stale": 0
+  },
+  "result": {
+    "total": 29,
+    "live": 15,
+    "liveNonempty": 6,
+    "requestLatency": {
+      "n": 15,
+      "p50Ms": 2011,
+      "p95Ms": 3355,
+      "maxMs": 3355
+    },
+    "inputEndToReceipt": {
+      "n": 15,
+      "p50Ms": 2057.6,
+      "p95Ms": 3441.3,
+      "maxMs": 3441.3
+    },
+    "stale": 1
+  },
+  "transcript": {
+    "total": 28,
+    "live": 17,
+    "liveNonempty": 17,
+    "requestLatency": null,
+    "inputEndToReceipt": {
+      "n": 17,
+      "p50Ms": 1024.0,
+      "p95Ms": 3004.0,
+      "maxMs": 3004.0
+    },
+    "stale": 0
+  }
+}

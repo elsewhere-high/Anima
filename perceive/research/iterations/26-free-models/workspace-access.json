@@ -1,0 +1,10 @@
+{
+  "at": "2026-10-08T01:48:59.553Z",
+  "source": "Exact API Host displayed by account workspace console",
+  "model": "qwen3.7-flash",
+  "status": 403,
+  "code": "AccessDenied.Unpurchased",
+  "hasOutput": false,
+  "usage": null,
+  "latencyMs": 202
+}

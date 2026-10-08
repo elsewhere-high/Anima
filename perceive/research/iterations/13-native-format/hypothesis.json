@@ -1,0 +1,7 @@
+{
+  "hypothesis": "Enforce complete named-field native delivery output and accept semantically equivalent fully specified object rows; never infer a missing label from its cue. All other candidate settings unchanged.",
+  "nativeDelivery": true,
+  "speechFast": true,
+  "heads": 2,
+  "backgroundDownload": "Nano-EmoX finishing; record timing condition per run"
+}

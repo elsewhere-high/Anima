@@ -1,0 +1,1446 @@
+[
+  {
+    "at": "2026-10-08T02:13:38.431Z",
+    "lane": "visual_local_classifier",
+    "frameLimit": 2,
+    "start": 0,
+    "end": 0.6,
+    "firstTokenMs": 757,
+    "totalMs": 915,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": []\n}",
+    "usage": {
+      "prompt_tokens": 1127,
+      "total_tokens": 1142,
+      "completion_tokens": 15,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 222,
+        "text_tokens": 905
+      },
+      "completion_tokens_details": {
+        "text_tokens": 15
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:13:38.453Z",
+    "start": 0,
+    "end": 0.6,
+    "firstTokenMs": 671,
+    "totalMs": 849,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": []\n}",
+    "usage": {
+      "prompt_tokens": 1123,
+      "total_tokens": 1138,
+      "completion_tokens": 15,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 222,
+        "text_tokens": 901
+      },
+      "completion_tokens_details": {
+        "text_tokens": 15
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:13:39.164Z",
+    "lane": "visual_local_classifier",
+    "frameLimit": 2,
+    "start": 0,
+    "end": 1.7,
+    "firstTokenMs": 493,
+    "totalMs": 643,
+    "model": "qwen3.7-flash",
+    "output": "{\n  \"p\": 1,\n  \"s\": [3, 2, 2]\n}",
+    "usage": {
+      "prompt_tokens": 1415,
+      "total_tokens": 1441,
+      "completion_tokens": 26,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 444,
+        "text_tokens": 971
+      },
+      "completion_tokens_details": {
+        "text_tokens": 26
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:13:40.234Z",
+    "start": 0,
+    "end": 1.7,
+    "firstTokenMs": 499,
+    "totalMs": 1708,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  [\n    \"confidence\",\n    0.0,\n    1.7,\n    \"medium\",\n    \"visual\",\n    \"Steady posture and focused gaze; no visible hesitation or stress cues.\"\n  ]\n]\n}",
+    "usage": {
+      "prompt_tokens": 1638,
+      "total_tokens": 1708,
+      "completion_tokens": 70,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 666,
+        "text_tokens": 972
+      },
+      "completion_tokens_details": {
+        "text_tokens": 70
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:13:40.409Z",
+    "lane": "visual_local_classifier",
+    "frameLimit": 2,
+    "start": 0,
+    "end": 2.4,
+    "firstTokenMs": 480,
+    "totalMs": 1087,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  {\n    \"code\": 4,\n    \"level\": 2,\n    \"evidence\": 1\n  }\n]\n}",
+    "usage": {
+      "prompt_tokens": 1582,
+      "total_tokens": 1629,
+      "completion_tokens": 47,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 444,
+        "text_tokens": 1138
+      },
+      "completion_tokens_details": {
+        "text_tokens": 47
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:13:41.402Z",
+    "lane": "visual_local_classifier",
+    "frameLimit": 2,
+    "start": 0.7000000000000002,
+    "end": 3.7,
+    "firstTokenMs": 505,
+    "totalMs": 862,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  [3, 2, 4],\n  [6, 1, 4]\n]\n}",
+    "usage": {
+      "prompt_tokens": 2040,
+      "total_tokens": 2079,
+      "completion_tokens": 39,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 444,
+        "text_tokens": 1596
+      },
+      "completion_tokens_details": {
+        "text_tokens": 39
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:13:41.656Z",
+    "start": 0,
+    "end": 2.7,
+    "firstTokenMs": 510,
+    "totalMs": 2131,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  [\n    \"hesitation\",\n    0.16,\n    0.98,\n    \"medium\",\n    \"text+acoustic\",\n    \"Acoustic classifier detects filled pause; visual shows static listening posture without speech.\"\n  ]\n]\n}",
+    "usage": {
+      "prompt_tokens": 2259,
+      "total_tokens": 2335,
+      "completion_tokens": 76,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 1110,
+        "text_tokens": 1149
+      },
+      "completion_tokens_details": {
+        "text_tokens": 76
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:13:42.655Z",
+    "lane": "visual_local_classifier",
+    "frameLimit": 2,
+    "start": 1.7000000000000002,
+    "end": 4.7,
+    "firstTokenMs": 502,
+    "totalMs": 1104,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  {\n    \"code\": 3,\n    \"level\": 2,\n    \"evidence\": 5\n  }\n]\n}",
+    "usage": {
+      "prompt_tokens": 1935,
+      "total_tokens": 1982,
+      "completion_tokens": 47,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 444,
+        "text_tokens": 1491
+      },
+      "completion_tokens_details": {
+        "text_tokens": 47
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:13:43.404Z",
+    "start": 0.7000000000000002,
+    "end": 3.7,
+    "firstTokenMs": 568,
+    "totalMs": 2857,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  [\n    \"hesitation\",\n    0.0,\n    0.3,\n    \"medium\",\n    \"acoustic+text\",\n    \"Acoustic classifier detects filled pause with high confidence score at start of clip.\"\n  ],\n  [\n    \"confidence\",\n    0.3,\n    3.0,\n    \"medium\",\n    \"visual+text\",\n    \"Steady gaze and purposeful hand gestures indicate assured delivery during speech.\"\n  ]\n]\n}",
+    "usage": {
+      "prompt_tokens": 2944,
+      "total_tokens": 3073,
+      "completion_tokens": 129,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 1332,
+        "text_tokens": 1612
+      },
+      "completion_tokens_details": {
+        "text_tokens": 129
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:13:43.780Z",
+    "lane": "visual_local_classifier",
+    "frameLimit": 2,
+    "start": 2.9000000000000004,
+    "end": 5.9,
+    "firstTokenMs": 463,
+    "totalMs": 1012,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  {\n    \"code\": 9,\n    \"level\": 2,\n    \"evidence\": 2\n  }\n]\n}",
+    "usage": {
+      "prompt_tokens": 1958,
+      "total_tokens": 2005,
+      "completion_tokens": 47,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 444,
+        "text_tokens": 1514
+      },
+      "completion_tokens_details": {
+        "text_tokens": 47
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:13:44.096Z",
+    "start": 1.9000000000000004,
+    "end": 4.9,
+    "firstTokenMs": 658,
+    "totalMs": 2332,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  {\n    \"signal_code\": \"confidence\",\n    \"onset_seconds\": 0.0,\n    \"end_seconds\": 3.0,\n    \"support_level\": \"medium\",\n    \"used_modalities\": \"visual,text\",\n    \"observed_cue\": \"Steady gaze and continuous hand gestures while delivering a question.\"\n  }\n]\n}",
+    "usage": {
+      "prompt_tokens": 2840,
+      "total_tokens": 2937,
+      "completion_tokens": 97,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 1332,
+        "text_tokens": 1508
+      },
+      "completion_tokens_details": {
+        "text_tokens": 97
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:13:46.175Z",
+    "start": 3.7,
+    "end": 6.7,
+    "firstTokenMs": 723,
+    "totalMs": 2600,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  {\n    \"signal_code\": \"confidence\",\n    \"onset_seconds\": 0.0,\n    \"end_seconds\": 3.0,\n    \"support_level\": \"high\",\n    \"used_modalities\": \"text+visual\",\n    \"observed_cue\": \"Steady speech flow and open hand gestures indicating assured delivery.\"\n  }\n]\n}",
+    "usage": {
+      "prompt_tokens": 2733,
+      "total_tokens": 2831,
+      "completion_tokens": 98,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 1332,
+        "text_tokens": 1401
+      },
+      "completion_tokens_details": {
+        "text_tokens": 98
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:13:49.265Z",
+    "lane": "visual_local_classifier",
+    "frameLimit": 2,
+    "start": 0,
+    "end": 0.5,
+    "firstTokenMs": 467,
+    "totalMs": 1701,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  {\n    \"code\": 9,\n    \"level\": 2,\n    \"evidence\": 2\n  }\n]\n}",
+    "usage": {
+      "prompt_tokens": 1180,
+      "total_tokens": 1227,
+      "completion_tokens": 47,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 162,
+        "text_tokens": 1018
+      },
+      "completion_tokens_details": {
+        "text_tokens": 47
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:13:49.824Z",
+    "start": 0,
+    "end": 0.5,
+    "firstTokenMs": 412,
+    "totalMs": 2259,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  {\n    \"signal_code\": \"stress\",\n    \"onset_seconds\": 0.0,\n    \"end_seconds\": 0.5,\n    \"support_level\": \"medium\",\n    \"used_modalities\": \"visual\",\n    \"observed_cue\": \"Sustained brow furrowing (0.54) and eye closure during speech.\"\n  }\n]\n}",
+    "usage": {
+      "prompt_tokens": 1176,
+      "total_tokens": 1277,
+      "completion_tokens": 101,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 162,
+        "text_tokens": 1014
+      },
+      "completion_tokens_details": {
+        "text_tokens": 101
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:13:50.175Z",
+    "start": 0,
+    "end": 1.3,
+    "firstTokenMs": 605,
+    "totalMs": 1809,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  [\n    \"interest\",\n    0.0,\n    1.3,\n    \"medium\",\n    \"visual,text\",\n    \"Hand gestures and focused gaze directed at the topic of competition.\"\n  ]\n]\n}",
+    "usage": {
+      "prompt_tokens": 1556,
+      "total_tokens": 1624,
+      "completion_tokens": 68,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 324,
+        "text_tokens": 1232
+      },
+      "completion_tokens_details": {
+        "text_tokens": 68
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:13:50.414Z",
+    "lane": "visual_local_classifier",
+    "frameLimit": 2,
+    "start": 0,
+    "end": 2.3,
+    "firstTokenMs": 452,
+    "totalMs": 1043,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  {\n    \"code\": 3,\n    \"level\": 2,\n    \"evidence\": 6\n  }\n]\n}",
+    "usage": {
+      "prompt_tokens": 2042,
+      "total_tokens": 2089,
+      "completion_tokens": 47,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 324,
+        "text_tokens": 1718
+      },
+      "completion_tokens_details": {
+        "text_tokens": 47
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:13:51.784Z",
+    "lane": "visual_local_classifier",
+    "frameLimit": 2,
+    "start": 0.5,
+    "end": 3.5,
+    "firstTokenMs": 431,
+    "totalMs": 1197,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  {\n    \"code\": 3,\n    \"level\": 2,\n    \"evidence\": 5\n  }\n]\n}",
+    "usage": {
+      "prompt_tokens": 2298,
+      "total_tokens": 2345,
+      "completion_tokens": 47,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 324,
+        "text_tokens": 1974
+      },
+      "completion_tokens_details": {
+        "text_tokens": 47
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:13:52.254Z",
+    "start": 0,
+    "end": 2.9,
+    "firstTokenMs": 523,
+    "totalMs": 2266,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  {\n    \"signal_code\": \"confidence\",\n    \"onset_seconds\": 0.5,\n    \"end_seconds\": 2.9,\n    \"support_level\": \"medium\",\n    \"used_modalities\": \"visual,text\",\n    \"observed_cue\": \"Steady gaze and continuous hand gestures while speaking 'Competition'.\"\n  }\n]\n}",
+    "usage": {
+      "prompt_tokens": 2483,
+      "total_tokens": 2582,
+      "completion_tokens": 99,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 810,
+        "text_tokens": 1673
+      },
+      "completion_tokens_details": {
+        "text_tokens": 99
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:13:53.313Z",
+    "lane": "visual_local_classifier",
+    "frameLimit": 2,
+    "start": 1.7000000000000002,
+    "end": 4.7,
+    "firstTokenMs": 410,
+    "totalMs": 1523,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  {\n    \"code\": 3,\n    \"level\": 2,\n    \"evidence\": 5\n  },\n  {\n    \"code\": 6,\n    \"level\": 1,\n    \"evidence\": 5\n  }\n]\n}",
+    "usage": {
+      "prompt_tokens": 1954,
+      "total_tokens": 2031,
+      "completion_tokens": 77,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 324,
+        "text_tokens": 1630
+      },
+      "completion_tokens_details": {
+        "text_tokens": 77
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:13:53.681Z",
+    "start": 0.7000000000000002,
+    "end": 3.7,
+    "firstTokenMs": 567,
+    "totalMs": 2895,
+    "model": "qwen3.7-flash",
+    "output": "{\n  \"p\": 1,\n  \"s\": [\n    [\n      \"confidence\",\n      0.0,\n      3.0,\n      \"high\",\n      \"text+visual\",\n      \"Steady delivery of proposition with purposeful hand gestures and direct gaze.\"\n    ],\n    [\n      \"interest\",\n      0.0,\n      3.0,\n      \"medium\",\n      \"visual\",\n      \"Active engagement and forward lean suggest positive curiosity about the topic.\"\n    ]\n  ]\n}",
+    "usage": {
+      "prompt_tokens": 2978,
+      "total_tokens": 3104,
+      "completion_tokens": 126,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 972,
+        "text_tokens": 2006
+      },
+      "completion_tokens_details": {
+        "text_tokens": 126
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:13:54.773Z",
+    "start": 2.3,
+    "end": 5.3,
+    "firstTokenMs": 567,
+    "totalMs": 2372,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  {\n    \"signal_code\": \"confidence\",\n    \"onset_seconds\": 0.0,\n    \"end_seconds\": 3.0,\n    \"support_level\": \"high\",\n    \"used_modalities\": \"visual\",\n    \"observed_cue\": \"Steady gaze and continuous hand gestures indicate assured delivery.\"\n  }\n]\n}",
+    "usage": {
+      "prompt_tokens": 2417,
+      "total_tokens": 2512,
+      "completion_tokens": 95,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 972,
+        "text_tokens": 1445
+      },
+      "completion_tokens_details": {
+        "text_tokens": 95
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:13:56.252Z",
+    "start": 3.7,
+    "end": 6.7,
+    "firstTokenMs": 525,
+    "totalMs": 2443,
+    "model": "qwen3.7-flash",
+    "output": "{\n  \"p\": 1,\n  \"s\": [\n    {\n      \"signal_code\": \"confidence\",\n      \"onset_seconds\": 0.8,\n      \"end_seconds\": 2.3,\n      \"support_level\": \"medium\",\n      \"used_modalities\": \"visual\",\n      \"observed_cue\": \"Steady gaze and continuous hand gestures indicate assured delivery.\"\n    }\n  ]\n}",
+    "usage": {
+      "prompt_tokens": 2106,
+      "total_tokens": 2205,
+      "completion_tokens": 99,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 972,
+        "text_tokens": 1134
+      },
+      "completion_tokens_details": {
+        "text_tokens": 99
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:13:56.255Z",
+    "lane": "visual_local_classifier",
+    "frameLimit": 2,
+    "start": 3.3,
+    "end": 6.3,
+    "firstTokenMs": 2104,
+    "totalMs": 2848,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  {\n    \"code\": 3,\n    \"level\": 2,\n    \"evidence\": 2\n  }\n]\n}",
+    "usage": {
+      "prompt_tokens": 1444,
+      "total_tokens": 1491,
+      "completion_tokens": 47,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 324,
+        "text_tokens": 1120
+      },
+      "completion_tokens_details": {
+        "text_tokens": 47
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:13:56.656Z",
+    "start": 4.7,
+    "end": 7.7,
+    "firstTokenMs": 562,
+    "totalMs": 1843,
+    "model": "qwen3.7-flash",
+    "output": "{\n  \"p\": 1,\n  \"s\": [\n    [\n      \"confidence\",\n      0.0,\n      3.0,\n      \"medium\",\n      \"visual\",\n      \"Steady gaze and continuous speech without visible hesitation or search\"\n    ]\n  ]\n}",
+    "usage": {
+      "prompt_tokens": 2419,
+      "total_tokens": 2491,
+      "completion_tokens": 72,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 972,
+        "text_tokens": 1447
+      },
+      "completion_tokens_details": {
+        "text_tokens": 72
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:13:57.413Z",
+    "lane": "visual_local_classifier",
+    "frameLimit": 2,
+    "start": 6.300000000000001,
+    "end": 9.3,
+    "firstTokenMs": 485,
+    "totalMs": 992,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n3,\n2,\n2,\n[\n4,\n\"video\",\n\"faceMotion\"\n]\n]\n}",
+    "usage": {
+      "prompt_tokens": 1862,
+      "total_tokens": 1904,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 324,
+        "text_tokens": 1538
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:13:58.302Z",
+    "lane": "visual_local_classifier",
+    "frameLimit": 2,
+    "start": 7.300000000000001,
+    "end": 10.3,
+    "firstTokenMs": 514,
+    "totalMs": 875,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  [3, 2, 2]\n]\n}",
+    "usage": {
+      "prompt_tokens": 1857,
+      "total_tokens": 1885,
+      "completion_tokens": 28,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 324,
+        "text_tokens": 1533
+      },
+      "completion_tokens_details": {
+        "text_tokens": 28
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:13:58.761Z",
+    "start": 6.300000000000001,
+    "end": 9.3,
+    "firstTokenMs": 512,
+    "totalMs": 2338,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  {\n    \"signal_code\": \"confidence\",\n    \"onset_seconds\": 0.0,\n    \"end_seconds\": 2.7,\n    \"support_level\": \"medium\",\n    \"used_modalities\": \"visual\",\n    \"observed_cue\": \"Steady gaze and continuous speech delivery without visible hesitation or repair.\"\n  }\n]\n}",
+    "usage": {
+      "prompt_tokens": 2526,
+      "total_tokens": 2623,
+      "completion_tokens": 97,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 972,
+        "text_tokens": 1554
+      },
+      "completion_tokens_details": {
+        "text_tokens": 97
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:13:59.152Z",
+    "lane": "visual_local_classifier",
+    "frameLimit": 2,
+    "start": 8.3,
+    "end": 11.3,
+    "firstTokenMs": 411,
+    "totalMs": 716,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n[3, 2, 4],\n[6, 1, 4]\n]\n}",
+    "usage": {
+      "prompt_tokens": 1852,
+      "total_tokens": 1889,
+      "completion_tokens": 37,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 324,
+        "text_tokens": 1528
+      },
+      "completion_tokens_details": {
+        "text_tokens": 37
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:13:59.239Z",
+    "start": 7.300000000000001,
+    "end": 10.3,
+    "firstTokenMs": 494,
+    "totalMs": 1810,
+    "model": "qwen3.7-flash",
+    "output": "{\n  \"p\": 1,\n  \"s\": [\n    [\n      \"interest\",\n      0.0,\n      2.8,\n      \"medium\",\n      \"visual\",\n      \"Sustained gaze and hand gesture indicate active engagement with topic\"\n    ]\n  ]\n}",
+    "usage": {
+      "prompt_tokens": 2521,
+      "total_tokens": 2593,
+      "completion_tokens": 72,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 972,
+        "text_tokens": 1549
+      },
+      "completion_tokens_details": {
+        "text_tokens": 72
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:14:00.273Z",
+    "lane": "visual_local_classifier",
+    "frameLimit": 2,
+    "start": 9.1,
+    "end": 12.1,
+    "firstTokenMs": 425,
+    "totalMs": 1036,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  {\n    \"code\": 3,\n    \"level\": 2,\n    \"evidence\": 2\n  }\n]\n}",
+    "usage": {
+      "prompt_tokens": 1853,
+      "total_tokens": 1900,
+      "completion_tokens": 47,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 324,
+        "text_tokens": 1529
+      },
+      "completion_tokens_details": {
+        "text_tokens": 47
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:14:00.597Z",
+    "start": 8.7,
+    "end": 11.7,
+    "firstTokenMs": 554,
+    "totalMs": 1759,
+    "model": "qwen3.7-flash",
+    "output": "{\n  \"p\": 1,\n  \"s\": [\n    [\n      \"confidence\",\n      0.3,\n      2.8,\n      \"high\",\n      \"visual\",\n      \"Steady gaze and continuous speech without visible hesitation or repair\"\n    ]\n  ]\n}",
+    "usage": {
+      "prompt_tokens": 2452,
+      "total_tokens": 2524,
+      "completion_tokens": 72,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 972,
+        "text_tokens": 1480
+      },
+      "completion_tokens_details": {
+        "text_tokens": 72
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:14:12.473Z",
+    "start": 9.5,
+    "end": 12.5,
+    "firstTokenMs": 8079,
+    "totalMs": 11611,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  {\n    \"signal_code\": \"frustration\",\n    \"onset_seconds\": 0.5,\n    \"end_seconds\": 2.8,\n    \"support_level\": \"high\",\n    \"used_modalities\": \"text\",\n    \"observed_cue\": \"Critical complaint about losing teachers' spirit and pushing them out.\"\n  },\n  {\n    \"signal_code\": \"confidence\",\n    \"onset_seconds\": 0.0,\n    \"end_seconds\": 3.0,\n    \"support_level\": \"medium\",\n    \"used_modalities\": \"text visual\",\n    \"observed_cue\": \"Steady delivery of a critical position with clear conviction.\"\n  }\n]\n}",
+    "usage": {
+      "prompt_tokens": 2981,
+      "total_tokens": 3157,
+      "completion_tokens": 176,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 972,
+        "text_tokens": 2009
+      },
+      "completion_tokens_details": {
+        "text_tokens": 176
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:14:14.973Z",
+    "lane": "visual_local_classifier",
+    "frameLimit": 2,
+    "start": 0,
+    "end": 0.5,
+    "firstTokenMs": 471,
+    "totalMs": 953,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": []\n}",
+    "usage": {
+      "prompt_tokens": 1126,
+      "total_tokens": 1141,
+      "completion_tokens": 15,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 222,
+        "text_tokens": 904
+      },
+      "completion_tokens_details": {
+        "text_tokens": 15
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:14:15.026Z",
+    "start": 0,
+    "end": 0.5,
+    "firstTokenMs": 674,
+    "totalMs": 1004,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": []\n}",
+    "usage": {
+      "prompt_tokens": 1122,
+      "total_tokens": 1137,
+      "completion_tokens": 15,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 222,
+        "text_tokens": 900
+      },
+      "completion_tokens_details": {
+        "text_tokens": 15
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:14:15.860Z",
+    "lane": "visual_local_classifier",
+    "frameLimit": 2,
+    "start": 0,
+    "end": 1.5,
+    "firstTokenMs": 438,
+    "totalMs": 832,
+    "model": "qwen3.7-flash",
+    "output": "{\n  \"p\": 1,\n  \"s\": [\n    9,\n    2,\n    4\n  ]\n}",
+    "usage": {
+      "prompt_tokens": 1457,
+      "total_tokens": 1492,
+      "completion_tokens": 35,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 444,
+        "text_tokens": 1013
+      },
+      "completion_tokens_details": {
+        "text_tokens": 35
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:14:16.087Z",
+    "start": 0,
+    "end": 1.3,
+    "firstTokenMs": 865,
+    "totalMs": 1253,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": []\n}",
+    "usage": {
+      "prompt_tokens": 1349,
+      "total_tokens": 1364,
+      "completion_tokens": 15,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 444,
+        "text_tokens": 905
+      },
+      "completion_tokens_details": {
+        "text_tokens": 15
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:14:16.885Z",
+    "lane": "visual_local_classifier",
+    "frameLimit": 2,
+    "start": 0,
+    "end": 2.5,
+    "firstTokenMs": 521,
+    "totalMs": 852,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n[4, 1, 4],\n[9, 1, 2]\n]\n}",
+    "usage": {
+      "prompt_tokens": 2055,
+      "total_tokens": 2092,
+      "completion_tokens": 37,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 444,
+        "text_tokens": 1611
+      },
+      "completion_tokens_details": {
+        "text_tokens": 37
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:14:17.155Z",
+    "start": 0,
+    "end": 2.1,
+    "firstTokenMs": 525,
+    "totalMs": 1523,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n[\n\"hesitation\",\n0.74,\n1.0,\n\"medium\",\n\"text+acoustic\",\n\"ASR identifies filled pause '嗯' with high confidence score (0.8951)\"\n]\n]\n}",
+    "usage": {
+      "prompt_tokens": 2505,
+      "total_tokens": 2574,
+      "completion_tokens": 69,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 888,
+        "text_tokens": 1617
+      },
+      "completion_tokens_details": {
+        "text_tokens": 69
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:14:18.197Z",
+    "lane": "visual_local_classifier",
+    "frameLimit": 2,
+    "start": 0.5,
+    "end": 3.5,
+    "firstTokenMs": 682,
+    "totalMs": 1150,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  [4, 2, 3],\n  [9, 1, 2]\n]\n}",
+    "usage": {
+      "prompt_tokens": 2458,
+      "total_tokens": 2497,
+      "completion_tokens": 39,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 444,
+        "text_tokens": 2014
+      },
+      "completion_tokens_details": {
+        "text_tokens": 39
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:14:19.055Z",
+    "start": 1,
+    "end": 4,
+    "error": "百炼调用失败，请检查业务空间、模型权限和输入格式。"
+  },
+  {
+    "at": "2026-10-08T02:14:20.160Z",
+    "start": 0.10000000000000009,
+    "end": 3.1,
+    "firstTokenMs": 665,
+    "totalMs": 3518,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  [\n    \"hesitation\",\n    0.64,\n    0.9,\n    \"high\",\n    \"text+acoustic\",\n    \"ASR shows 'Yeah, I mean, I.' with detected filled pause at 0.64s indicating word-search\"\n  ],\n  [\n    \"uncertainty\",\n    0.64,\n    0.9,\n    \"medium\",\n    \"text+acoustic\",\n    \"Disrupted commitment and filler usage suggest searching for wording or phrasing\"\n  ]\n]\n}",
+    "usage": {
+      "prompt_tokens": 3372,
+      "total_tokens": 3515,
+      "completion_tokens": 143,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 1332,
+        "text_tokens": 2040
+      },
+      "completion_tokens_details": {
+        "text_tokens": 143
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:14:22.723Z",
+    "lane": "visual_local_classifier",
+    "frameLimit": 2,
+    "start": 0,
+    "end": 0.5,
+    "firstTokenMs": 436,
+    "totalMs": 1044,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  {\n    \"code\": 9,\n    \"level\": 2,\n    \"evidence\": 2\n  }\n]\n}",
+    "usage": {
+      "prompt_tokens": 1240,
+      "total_tokens": 1287,
+      "completion_tokens": 47,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 222,
+        "text_tokens": 1018
+      },
+      "completion_tokens_details": {
+        "text_tokens": 47
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:14:23.738Z",
+    "lane": "visual_local_classifier",
+    "frameLimit": 2,
+    "start": 0,
+    "end": 1.7,
+    "firstTokenMs": 466,
+    "totalMs": 851,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  [3, 2, 4],\n  [9, 1, 2]\n]\n}",
+    "usage": {
+      "prompt_tokens": 2029,
+      "total_tokens": 2068,
+      "completion_tokens": 39,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 444,
+        "text_tokens": 1585
+      },
+      "completion_tokens_details": {
+        "text_tokens": 39
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:14:23.979Z",
+    "start": 0,
+    "end": 0.5,
+    "firstTokenMs": 491,
+    "totalMs": 2298,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  {\n    \"signal_code\": \"stress\",\n    \"onset_seconds\": 0.0,\n    \"end_seconds\": 0.5,\n    \"support_level\": \"medium\",\n    \"used_modalities\": \"visual\",\n    \"observed_cue\": \"Sustained brow furrow action coefficient reaching 0.783 indicates visible strain.\"\n  }\n]\n}",
+    "usage": {
+      "prompt_tokens": 1236,
+      "total_tokens": 1338,
+      "completion_tokens": 102,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 222,
+        "text_tokens": 1014
+      },
+      "completion_tokens_details": {
+        "text_tokens": 102
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:14:24.230Z",
+    "start": 0,
+    "end": 1.3,
+    "firstTokenMs": 501,
+    "totalMs": 1745,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  [\n    \"stress\",\n    0.0,\n    1.3,\n    \"medium\",\n    \"visual,f-1,f-3,f-4\",\n    \"Sustained brow furrowing (0.27-0.78) and lip pressing observed throughout clip.\"\n  ]\n]\n}",
+    "usage": {
+      "prompt_tokens": 1598,
+      "total_tokens": 1686,
+      "completion_tokens": 88,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 444,
+        "text_tokens": 1154
+      },
+      "completion_tokens_details": {
+        "text_tokens": 88
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:14:24.828Z",
+    "lane": "visual_local_classifier",
+    "frameLimit": 2,
+    "start": 0,
+    "end": 2.7,
+    "firstTokenMs": 554,
+    "totalMs": 936,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  [3, 2, 4],\n  [9, 1, 2]\n]\n}",
+    "usage": {
+      "prompt_tokens": 2084,
+      "total_tokens": 2123,
+      "completion_tokens": 39,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 444,
+        "text_tokens": 1640
+      },
+      "completion_tokens_details": {
+        "text_tokens": 39
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:14:25.870Z",
+    "lane": "visual_local_classifier",
+    "frameLimit": 2,
+    "start": 0.7000000000000002,
+    "end": 3.7,
+    "firstTokenMs": 509,
+    "totalMs": 964,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  [3, 2, 4],\n  [9, 1, 2]\n]\n}",
+    "usage": {
+      "prompt_tokens": 2462,
+      "total_tokens": 2501,
+      "completion_tokens": 39,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 444,
+        "text_tokens": 2018
+      },
+      "completion_tokens_details": {
+        "text_tokens": 39
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:14:26.030Z",
+    "start": 0,
+    "end": 2.9,
+    "firstTokenMs": 719,
+    "totalMs": 1933,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  [\n    \"stress\",\n    0.0,\n    2.9,\n    \"medium\",\n    \"visual,f-1,f-4\",\n    \"Sustained brow furrowing and eye closure indicating physical strain or concentration.\"\n  ]\n]\n}",
+    "usage": {
+      "prompt_tokens": 2761,
+      "total_tokens": 2837,
+      "completion_tokens": 76,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 1110,
+        "text_tokens": 1651
+      },
+      "completion_tokens_details": {
+        "text_tokens": 76
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:14:26.899Z",
+    "lane": "visual_local_classifier",
+    "frameLimit": 2,
+    "start": 1.7000000000000002,
+    "end": 4.7,
+    "firstTokenMs": 583,
+    "totalMs": 989,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  [3, 2, 4],\n  [5, 2, 2]\n]\n}",
+    "usage": {
+      "prompt_tokens": 2431,
+      "total_tokens": 2470,
+      "completion_tokens": 39,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 444,
+        "text_tokens": 1987
+      },
+      "completion_tokens_details": {
+        "text_tokens": 39
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:14:27.685Z",
+    "start": 0.7000000000000002,
+    "end": 3.7,
+    "firstTokenMs": 767,
+    "totalMs": 2774,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  {\n    \"signal_code\": \"stress\",\n    \"onset_seconds\": 0.0,\n    \"end_seconds\": 1.5,\n    \"support_level\": \"medium\",\n    \"used_modalities\": \"visual\",\n    \"observed_cue\": \"Sustained brow furrowing and closed eyes indicate visible strain or concentration.\"\n  }\n]\n}",
+    "usage": {
+      "prompt_tokens": 3366,
+      "total_tokens": 3464,
+      "completion_tokens": 98,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 1332,
+        "text_tokens": 2034
+      },
+      "completion_tokens_details": {
+        "text_tokens": 98
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:14:28.681Z",
+    "start": 1.9000000000000004,
+    "end": 4.9,
+    "firstTokenMs": 759,
+    "totalMs": 2544,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n[0.0, 0.3, \"眉间收紧与闭眼动作显著，配合中性语调陈述负面结果\", \"high\", \"visual+text\", \"f-1/f-4 coefficients high; ASR: 'could not control it'\"],\n[2.4, 3.0, \"抿嘴动作伴随轻微面部肌肉收缩，维持严肃表达状态\", \"medium\", \"visual\", \"f-3 coefficient 0.396 at t=2.6; neutral acoustic\"]\n]\n}",
+    "usage": {
+      "prompt_tokens": 3383,
+      "total_tokens": 3509,
+      "completion_tokens": 126,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 1332,
+        "text_tokens": 2051
+      },
+      "completion_tokens_details": {
+        "text_tokens": 126
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:14:31.229Z",
+    "lane": "visual_local_classifier",
+    "frameLimit": 2,
+    "start": 0,
+    "end": 0.6,
+    "firstTokenMs": 460,
+    "totalMs": 772,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": []\n}",
+    "usage": {
+      "prompt_tokens": 1179,
+      "total_tokens": 1194,
+      "completion_tokens": 15,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 222,
+        "text_tokens": 957
+      },
+      "completion_tokens_details": {
+        "text_tokens": 15
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:14:32.294Z",
+    "lane": "visual_local_classifier",
+    "frameLimit": 2,
+    "start": 0,
+    "end": 1.4,
+    "firstTokenMs": 448,
+    "totalMs": 1024,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  {\n    \"code\": 3,\n    \"level\": 2,\n    \"evidence\": 2\n  }\n]\n}",
+    "usage": {
+      "prompt_tokens": 1437,
+      "total_tokens": 1484,
+      "completion_tokens": 47,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 444,
+        "text_tokens": 993
+      },
+      "completion_tokens_details": {
+        "text_tokens": 47
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:14:32.579Z",
+    "start": 0,
+    "end": 0.6,
+    "firstTokenMs": 460,
+    "totalMs": 2121,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  {\n    \"signal_code\": \"interest\",\n    \"onset_seconds\": 0.0,\n    \"end_seconds\": 0.6,\n    \"support_level\": \"medium\",\n    \"used_modalities\": \"visual\",\n    \"observed_cue\": \"Sustained direct gaze and engaged facial expression directed at interlocutor.\"\n  }\n]\n}",
+    "usage": {
+      "prompt_tokens": 1175,
+      "total_tokens": 1272,
+      "completion_tokens": 97,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 222,
+        "text_tokens": 953
+      },
+      "completion_tokens_details": {
+        "text_tokens": 97
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:14:33.748Z",
+    "lane": "visual_local_classifier",
+    "frameLimit": 2,
+    "start": 0,
+    "end": 2.7,
+    "firstTokenMs": 514,
+    "totalMs": 1266,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  {\n    \"code\": 3,\n    \"level\": 2,\n    \"evidence\": 5\n  }\n]\n}",
+    "usage": {
+      "prompt_tokens": 1850,
+      "total_tokens": 1897,
+      "completion_tokens": 47,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 444,
+        "text_tokens": 1406
+      },
+      "completion_tokens_details": {
+        "text_tokens": 47
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:14:33.839Z",
+    "start": 0,
+    "end": 1.6,
+    "firstTokenMs": 550,
+    "totalMs": 2367,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  {\n    \"signal_code\": \"interest\",\n    \"onset_seconds\": 0.0,\n    \"end_seconds\": 1.5,\n    \"support_level\": \"medium\",\n    \"used_modalities\": \"visual\",\n    \"observed_cue\": \"Sustained direct gaze toward interlocutor with engaged facial expression.\"\n  }\n]\n}",
+    "usage": {
+      "prompt_tokens": 1660,
+      "total_tokens": 1756,
+      "completion_tokens": 96,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 666,
+        "text_tokens": 994
+      },
+      "completion_tokens_details": {
+        "text_tokens": 96
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:14:34.760Z",
+    "lane": "visual_local_classifier",
+    "frameLimit": 2,
+    "start": 1,
+    "end": 4,
+    "firstTokenMs": 440,
+    "totalMs": 868,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  [\n    3,\n    1,\n    5\n  ]\n]\n}",
+    "usage": {
+      "prompt_tokens": 1975,
+      "total_tokens": 2012,
+      "completion_tokens": 37,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 444,
+        "text_tokens": 1531
+      },
+      "completion_tokens_details": {
+        "text_tokens": 37
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:14:34.819Z",
+    "start": 0,
+    "end": 2.9,
+    "firstTokenMs": 581,
+    "totalMs": 2130,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n[0.0, 2.9, \"high\", \"visual, text\", \"Steady gaze and neutral facial expression while speaking brief phrase\"],\n[0.4, 0.8, \"medium\", \"visual\", \"Mouth opens wider at onset suggesting emphasis or articulation effort\"]\n]\n}",
+    "usage": {
+      "prompt_tokens": 2593,
+      "total_tokens": 2674,
+      "completion_tokens": 81,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 1110,
+        "text_tokens": 1483
+      },
+      "completion_tokens_details": {
+        "text_tokens": 81
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:14:35.571Z",
+    "lane": "visual_local_classifier",
+    "frameLimit": 2,
+    "start": 2.0999999999999996,
+    "end": 5.1,
+    "firstTokenMs": 469,
+    "totalMs": 675,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": []\n}",
+    "usage": {
+      "prompt_tokens": 1616,
+      "total_tokens": 1631,
+      "completion_tokens": 15,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 444,
+        "text_tokens": 1172
+      },
+      "completion_tokens_details": {
+        "text_tokens": 15
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:14:36.258Z",
+    "start": 1,
+    "end": 4,
+    "firstTokenMs": 584,
+    "totalMs": 2358,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  {\n    \"signal_code\": \"confidence\",\n    \"onset_seconds\": 0.0,\n    \"end_seconds\": 3.0,\n    \"support_level\": \"medium\",\n    \"used_modalities\": \"text+visual\",\n    \"observed_cue\": \"Steady gaze and fluent delivery of short phrase without visible hesitation.\"\n  }\n]\n}",
+    "usage": {
+      "prompt_tokens": 2879,
+      "total_tokens": 2978,
+      "completion_tokens": 99,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 1332,
+        "text_tokens": 1547
+      },
+      "completion_tokens_details": {
+        "text_tokens": 99
+      }
+    },
+    "rawAudioReceived": false
+  },
+  {
+    "at": "2026-10-08T02:14:36.767Z",
+    "start": 2.0999999999999996,
+    "end": 5.1,
+    "firstTokenMs": 706,
+    "totalMs": 1868,
+    "model": "qwen3.7-flash",
+    "output": "{\n\"p\": 1,\n\"s\": [\n  [\n    \"interest\",\n    0.0,\n    3.0,\n    \"medium\",\n    \"visual\",\n    \"Sustained gaze directed at interlocutor with engaged facial expression\"\n  ]\n]\n}",
+    "usage": {
+      "prompt_tokens": 2520,
+      "total_tokens": 2588,
+      "completion_tokens": 68,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 1332,
+        "text_tokens": 1188
+      },
+      "completion_tokens_details": {
+        "text_tokens": 68
+      }
+    },
+    "rawAudioReceived": false
+  }
+]

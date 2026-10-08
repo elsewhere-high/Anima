@@ -1,0 +1,2552 @@
+{
+  "createdAt": "2026-10-07T15:05:59.181Z",
+  "scope": "真实模型对公开案例的离线分析，不是人工真值，不代表实时提前识别",
+  "results": [
+    {
+      "id": "yann-lecun-wef",
+      "duration": 6.869375,
+      "status": 200,
+      "transcript": "Um, so what are limitations of current AI systems? There are four things that are essential to intelligent behavior that they really don't do very well.",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6.869375,
+          "text": "Um, so what are limitations of current AI systems? There are four things that are essential to intelligent behavior that they really don't do very well."
+        }
+      ],
+      "observations": [
+        {
+          "id": "o1",
+          "modality": "语意",
+          "text": "There are four things that are essential to intelligent behavior that they really don't do very well.",
+          "start": 2,
+          "end": 6.8,
+          "source": "model_observation"
+        },
+        {
+          "id": "o2",
+          "modality": "画面",
+          "text": "演讲者持续面向观众，配合手势进行讲解",
+          "start": 0,
+          "end": 6.8,
+          "source": "model_observation"
+        }
+      ],
+      "signals": [
+        {
+          "label": "专注",
+          "family": "投入",
+          "start": 0,
+          "end": 6.8,
+          "target": "阐述当前AI系统的局限性",
+          "anchor": "So what are limitations.",
+          "evidence": "全程保持连贯的讲解节奏与肢体语言，专注于当前话题",
+          "refs": [
+            "o2"
+          ],
+          "observations": [
+            {
+              "id": "o2",
+              "modality": "画面",
+              "text": "演讲者持续面向观众，配合手势进行讲解",
+              "start": 0,
+              "end": 6.8,
+              "source": "model_observation"
+            }
+          ],
+          "modalities": [
+            "画面"
+          ],
+          "scope": "current_self",
+          "basis": "implicit",
+          "confidence": 0.8,
+          "tentative": false,
+          "source": "fusion"
+        }
+      ],
+      "behaviors": [],
+      "consistency": [],
+      "scene": "演讲者在世界经济论坛阐述当前AI系统的局限性",
+      "unknown": "",
+      "unknownFamilies": [
+        "情绪",
+        "认知",
+        "立场"
+      ],
+      "rejected": [
+        {
+          "label": "确信",
+          "reason": "声音说明缺少对应声音依据"
+        }
+      ],
+      "quality": {
+        "audio": true,
+        "video": true,
+        "face": "absent",
+        "faceSamples": 7,
+        "clipping": false,
+        "dark": false,
+        "speech": null,
+        "quiet": false
+      },
+      "partial": false,
+      "speakerBound": true,
+      "source": "model",
+      "model": "qwen3.8-omni-flash",
+      "latencyMs": 7433,
+      "specialistEvidence": [
+        {
+          "id": "sf-0",
+          "modality": "画面",
+          "text": "面部表情分类：disgust 0.46，anger 0.12，contempt 0.11；分类分数未校准，不等于心理状态；AU1 0.02，AU2 0.01，AU4 0.09，AU6 0.05，AU9 0.05，AU12 0.03，AU25 0.46，AU26 0.22",
+          "start": 0,
+          "end": 0.4,
+          "source": "specialist",
+          "model": "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+          "details": {
+            "scores": {
+              "anger": 0.11640633642673492,
+              "contempt": 0.11173930019140244,
+              "disgust": 0.4634203016757965,
+              "fear": 0.07530980557203293,
+              "happy": 0.038736678659915924,
+              "neutral": 0.08143292367458344,
+              "sad": 0.03033973090350628,
+              "surprise": 0.0826149582862854
+            },
+            "expressionModels": {
+              "OpenFace-3.0": {
+                "neutral": 0.1722206026315689,
+                "happy": 0.029358835890889168,
+                "sad": 0.029192060232162476,
+                "surprise": 0.037759486585855484,
+                "fear": 0.06960894912481308,
+                "disgust": 0.2628474831581116,
+                "anger": 0.27904221415519714,
+                "contempt": 0.11997044086456299
+              },
+              "EmotiEffLib-enet-b2-8": {
+                "anger": 0.11640633642673492,
+                "contempt": 0.11173930019140244,
+                "disgust": 0.4634203016757965,
+                "fear": 0.07530980557203293,
+                "happy": 0.038736678659915924,
+                "neutral": 0.08143292367458344,
+                "sad": 0.03033973090350628,
+                "surprise": 0.0826149582862854
+              }
+            },
+            "aus": {
+              "AU1": 0.017094969749450684,
+              "AU2": 0.005902301054447889,
+              "AU4": 0.08696406334638596,
+              "AU6": 0.050921354442834854,
+              "AU9": 0.047936707735061646,
+              "AU12": 0.03191312402486801,
+              "AU25": 0.45516714453697205,
+              "AU26": 0.2190612256526947
+            },
+            "gaze": [
+              -0.09876635670661926,
+              0.005071516148746014
+            ],
+            "quality": "ok"
+          },
+          "latencyMs": 446
+        },
+        {
+          "id": "sv-1",
+          "modality": "声音",
+          "text": "原声情绪分类：中立/neutral 1.00，难过/sad 0.00，生气/angry 0.00；分类分数未校准，不等于心理状态",
+          "start": 0,
+          "end": 6.869375,
+          "source": "specialist",
+          "model": "emotion2vec-plus-large",
+          "details": {
+            "scores": {
+              "生气/angry": 4.373318915895652e-7,
+              "厌恶/disgusted": 2.550062205841641e-8,
+              "恐惧/fearful": 4.145114473885769e-9,
+              "开心/happy": 8.282381713797804e-8,
+              "中立/neutral": 0.9999970197677612,
+              "其他/other": 3.999703039880842e-7,
+              "难过/sad": 0.000002005816668315674,
+              "吃惊/surprised": 4.7747431008993146e-11,
+              "<unk>": 1.0489970003746407e-9
+            },
+            "quality": "ok"
+          },
+          "latencyMs": 780
+        },
+        {
+          "id": "sf-1",
+          "modality": "画面",
+          "text": "面部表情分类：disgust 0.34，contempt 0.19，happy 0.13；分类分数未校准，不等于心理状态；AU1 0.02，AU2 0.04，AU4 0.02，AU6 0.01，AU9 0.00，AU12 0.03，AU25 0.78，AU26 0.25",
+          "start": 0.8813392857142857,
+          "end": 1.3813392857142857,
+          "source": "specialist",
+          "model": "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+          "details": {
+            "scores": {
+              "anger": 0.06802254170179367,
+              "contempt": 0.18686886131763458,
+              "disgust": 0.3397448658943176,
+              "fear": 0.07846920937299728,
+              "happy": 0.12957386672496796,
+              "neutral": 0.07288974523544312,
+              "sad": 0.028890831395983696,
+              "surprise": 0.09554009884595871
+            },
+            "expressionModels": {
+              "OpenFace-3.0": {
+                "neutral": 0.1471390724182129,
+                "happy": 0.11538442224264145,
+                "sad": 0.014105653390288353,
+                "surprise": 0.17257387936115265,
+                "fear": 0.06733991950750351,
+                "disgust": 0.11522077023983002,
+                "anger": 0.0615604929625988,
+                "contempt": 0.3066757321357727
+              },
+              "EmotiEffLib-enet-b2-8": {
+                "anger": 0.06802254170179367,
+                "contempt": 0.18686886131763458,
+                "disgust": 0.3397448658943176,
+                "fear": 0.07846920937299728,
+                "happy": 0.12957386672496796,
+                "neutral": 0.07288974523544312,
+                "sad": 0.028890831395983696,
+                "surprise": 0.09554009884595871
+              }
+            },
+            "aus": {
+              "AU1": 0.0160438921302557,
+              "AU2": 0.0440732017159462,
+              "AU4": 0.022957907989621162,
+              "AU6": 0.014628720469772816,
+              "AU9": 0,
+              "AU12": 0.032819513231515884,
+              "AU25": 0.7760565280914307,
+              "AU26": 0.24571186304092407
+            },
+            "gaze": [
+              -0.2151314914226532,
+              -0.032966580241918564
+            ],
+            "quality": "ok"
+          },
+          "latencyMs": 412
+        },
+        {
+          "id": "sf-2",
+          "modality": "画面",
+          "text": "面部表情分类：happy 0.25，contempt 0.24，disgust 0.22；分类分数未校准，不等于心理状态；AU1 0.02，AU2 0.01，AU4 0.13，AU6 0.04，AU9 0.01，AU12 0.05，AU25 0.34，AU26 0.38",
+          "start": 1.8626785714285714,
+          "end": 2.3626785714285714,
+          "source": "specialist",
+          "model": "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+          "details": {
+            "scores": {
+              "anger": 0.04038229584693909,
+              "contempt": 0.24210843443870544,
+              "disgust": 0.2224191129207611,
+              "fear": 0.08162946999073029,
+              "happy": 0.2468494474887848,
+              "neutral": 0.04288313165307045,
+              "sad": 0.023366132751107216,
+              "surprise": 0.10036197304725647
+            },
+            "expressionModels": {
+              "OpenFace-3.0": {
+                "neutral": 0.15648417174816132,
+                "happy": 0.03827439993619919,
+                "sad": 0.0306672565639019,
+                "surprise": 0.31681185960769653,
+                "fear": 0.07973619550466537,
+                "disgust": 0.11342772096395493,
+                "anger": 0.09265167266130447,
+                "contempt": 0.17194676399230957
+              },
+              "EmotiEffLib-enet-b2-8": {
+                "anger": 0.04038229584693909,
+                "contempt": 0.24210843443870544,
+                "disgust": 0.2224191129207611,
+                "fear": 0.08162946999073029,
+                "happy": 0.2468494474887848,
+                "neutral": 0.04288313165307045,
+                "sad": 0.023366132751107216,
+                "surprise": 0.10036197304725647
+              }
+            },
+            "aus": {
+              "AU1": 0.02044649049639702,
+              "AU2": 0.010064189322292805,
+              "AU4": 0.1305251568555832,
+              "AU6": 0.04160269349813461,
+              "AU9": 0.014858245849609375,
+              "AU12": 0.05141871050000191,
+              "AU25": 0.3386346697807312,
+              "AU26": 0.37715843319892883
+            },
+            "gaze": [
+              -0.12626689672470093,
+              -0.055253613740205765
+            ],
+            "quality": "ok"
+          },
+          "latencyMs": 301
+        },
+        {
+          "id": "sf-3",
+          "modality": "画面",
+          "text": "面部表情分类：disgust 0.24，contempt 0.17，neutral 0.14；分类分数未校准，不等于心理状态；AU1 0.01，AU2 0.00，AU4 0.07，AU6 0.01，AU9 0.05，AU12 0.02，AU25 0.90，AU26 0.04",
+          "start": 2.844017857142857,
+          "end": 3.344017857142857,
+          "source": "specialist",
+          "model": "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+          "details": {
+            "scores": {
+              "anger": 0.07319527119398117,
+              "contempt": 0.1714106649160385,
+              "disgust": 0.23516815900802612,
+              "fear": 0.0735071450471878,
+              "happy": 0.13977034389972687,
+              "neutral": 0.14474047720432281,
+              "sad": 0.02929464727640152,
+              "surprise": 0.1329132616519928
+            },
+            "expressionModels": {
+              "OpenFace-3.0": {
+                "neutral": 0.30059197545051575,
+                "happy": 0.09248743206262589,
+                "sad": 0.03427660092711449,
+                "surprise": 0.043318137526512146,
+                "fear": 0.07598023116588593,
+                "disgust": 0.16581405699253082,
+                "anger": 0.11531222611665726,
+                "contempt": 0.1722194254398346
+              },
+              "EmotiEffLib-enet-b2-8": {
+                "anger": 0.07319527119398117,
+                "contempt": 0.1714106649160385,
+                "disgust": 0.23516815900802612,
+                "fear": 0.0735071450471878,
+                "happy": 0.13977034389972687,
+                "neutral": 0.14474047720432281,
+                "sad": 0.02929464727640152,
+                "surprise": 0.1329132616519928
+              }
+            },
+            "aus": {
+              "AU1": 0.005704285576939583,
+              "AU2": 0.0008875780622474849,
+              "AU4": 0.06807925552129745,
+              "AU6": 0.00979896541684866,
+              "AU9": 0.047924626618623734,
+              "AU12": 0.019874325022101402,
+              "AU25": 0.8973078727722168,
+              "AU26": 0.036689575761556625
+            },
+            "gaze": [
+              -0.14119943976402283,
+              0.007619823329150677
+            ],
+            "quality": "ok"
+          },
+          "latencyMs": 309
+        },
+        {
+          "id": "sf-4",
+          "modality": "画面",
+          "text": "面部表情分类：disgust 0.27，contempt 0.20，happy 0.16；分类分数未校准，不等于心理状态；AU1 0.00，AU2 0.00，AU4 0.03，AU6 0.09，AU9 0.20，AU12 0.02，AU25 0.05，AU26 0.08",
+          "start": 3.8253571428571425,
+          "end": 4.3253571428571425,
+          "source": "specialist",
+          "model": "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+          "details": {
+            "scores": {
+              "anger": 0.08107887208461761,
+              "contempt": 0.19732825458049774,
+              "disgust": 0.265971839427948,
+              "fear": 0.06100456789135933,
+              "happy": 0.16489310562610626,
+              "neutral": 0.11666284501552582,
+              "sad": 0.028494635596871376,
+              "surprise": 0.0845659077167511
+            },
+            "expressionModels": {
+              "OpenFace-3.0": {
+                "neutral": 0.15774394571781158,
+                "happy": 0.040649380534887314,
+                "sad": 0.016652850434184074,
+                "surprise": 0.014140228740870953,
+                "fear": 0.043312542140483856,
+                "disgust": 0.3832153379917145,
+                "anger": 0.12820139527320862,
+                "contempt": 0.2160843014717102
+              },
+              "EmotiEffLib-enet-b2-8": {
+                "anger": 0.08107887208461761,
+                "contempt": 0.19732825458049774,
+                "disgust": 0.265971839427948,
+                "fear": 0.06100456789135933,
+                "happy": 0.16489310562610626,
+                "neutral": 0.11666284501552582,
+                "sad": 0.028494635596871376,
+                "surprise": 0.0845659077167511
+              }
+            },
+            "aus": {
+              "AU1": 0,
+              "AU2": 0,
+              "AU4": 0.027100102975964546,
+              "AU6": 0.08994103223085403,
+              "AU9": 0.20001903176307678,
+              "AU12": 0.018656328320503235,
+              "AU25": 0.047107502818107605,
+              "AU26": 0.075306236743927
+            },
+            "gaze": [
+              -0.15861746668815613,
+              -0.05536612868309021
+            ],
+            "quality": "ok"
+          },
+          "latencyMs": 273
+        },
+        {
+          "id": "sf-5",
+          "modality": "画面",
+          "text": "面部表情分类：disgust 0.23，contempt 0.19，happy 0.17；分类分数未校准，不等于心理状态；AU1 0.01，AU2 0.00，AU4 0.11，AU6 0.05，AU9 0.21，AU12 0.03，AU25 0.98，AU26 0.06",
+          "start": 4.806696428571428,
+          "end": 5.306696428571428,
+          "source": "specialist",
+          "model": "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+          "details": {
+            "scores": {
+              "anger": 0.0627746507525444,
+              "contempt": 0.18614643812179565,
+              "disgust": 0.23331467807292938,
+              "fear": 0.06686189025640488,
+              "happy": 0.165294349193573,
+              "neutral": 0.12361764162778854,
+              "sad": 0.030898870900273323,
+              "surprise": 0.13109147548675537
+            },
+            "expressionModels": {
+              "OpenFace-3.0": {
+                "neutral": 0.051767971366643906,
+                "happy": 0.06389382481575012,
+                "sad": 0.021883422508835793,
+                "surprise": 0.022875819355249405,
+                "fear": 0.04822630435228348,
+                "disgust": 0.5974956154823303,
+                "anger": 0.1043083593249321,
+                "contempt": 0.08954868465662003
+              },
+              "EmotiEffLib-enet-b2-8": {
+                "anger": 0.0627746507525444,
+                "contempt": 0.18614643812179565,
+                "disgust": 0.23331467807292938,
+                "fear": 0.06686189025640488,
+                "happy": 0.165294349193573,
+                "neutral": 0.12361764162778854,
+                "sad": 0.030898870900273323,
+                "surprise": 0.13109147548675537
+              }
+            },
+            "aus": {
+              "AU1": 0.006650801748037338,
+              "AU2": 0,
+              "AU4": 0.1096760556101799,
+              "AU6": 0.04880664870142937,
+              "AU9": 0.20895636081695557,
+              "AU12": 0.03448398783802986,
+              "AU25": 0.9780313372612,
+              "AU26": 0.05980142205953598
+            },
+            "gaze": [
+              -0.14864447712898254,
+              -0.040713392198085785
+            ],
+            "quality": "ok"
+          },
+          "latencyMs": 274
+        },
+        {
+          "id": "sf-6",
+          "modality": "画面",
+          "text": "面部表情分类：happy 0.24，contempt 0.23，disgust 0.20；分类分数未校准，不等于心理状态；AU1 0.00，AU2 0.00，AU4 0.03，AU6 0.00，AU9 0.06，AU12 0.01，AU25 0.73，AU26 0.00",
+          "start": 5.788035714285713,
+          "end": 6.288035714285713,
+          "source": "specialist",
+          "model": "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+          "details": {
+            "scores": {
+              "anger": 0.05961977317929268,
+              "contempt": 0.23101377487182617,
+              "disgust": 0.20017613470554352,
+              "fear": 0.06823835521936417,
+              "happy": 0.2386404275894165,
+              "neutral": 0.10027869045734406,
+              "sad": 0.029595373198390007,
+              "surprise": 0.07243753224611282
+            },
+            "expressionModels": {
+              "OpenFace-3.0": {
+                "neutral": 0.18247602880001068,
+                "happy": 0.03867673501372337,
+                "sad": 0.03767818585038185,
+                "surprise": 0.02398650161921978,
+                "fear": 0.060151439160108566,
+                "disgust": 0.3088947534561157,
+                "anger": 0.19299164414405823,
+                "contempt": 0.1551446169614792
+              },
+              "EmotiEffLib-enet-b2-8": {
+                "anger": 0.05961977317929268,
+                "contempt": 0.23101377487182617,
+                "disgust": 0.20017613470554352,
+                "fear": 0.06823835521936417,
+                "happy": 0.2386404275894165,
+                "neutral": 0.10027869045734406,
+                "sad": 0.029595373198390007,
+                "surprise": 0.07243753224611282
+              }
+            },
+            "aus": {
+              "AU1": 0,
+              "AU2": 0,
+              "AU4": 0.03340199962258339,
+              "AU6": 0.0027997016441076994,
+              "AU9": 0.059861429035663605,
+              "AU12": 0.005492043681442738,
+              "AU25": 0.7318786382675171,
+              "AU26": 0.004053316079080105
+            },
+            "gaze": [
+              -0.18862715363502502,
+              -0.1034269705414772
+            ],
+            "quality": "ok"
+          },
+          "latencyMs": 259
+        }
+      ],
+      "specialistFailures": 0
+    },
+    {
+      "id": "steve-jobs-interview",
+      "duration": 12.538,
+      "status": 200,
+      "transcript": "competition that will attract the best people, unfortunately the side effect of pushing out a lot of 46 year old teachers that lost their spirit, you know, 15 years ago and shouldn't be teaching right now.",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12.538,
+          "text": "competition that will attract the best people, unfortunately the side effect of pushing out a lot of 46 year old teachers that lost their spirit, you know, 15 years ago and shouldn't be teaching right now."
+        }
+      ],
+      "observations": [
+        {
+          "id": "o1",
+          "modality": "语意",
+          "text": "competition that will attract the best people, unfortunately the side effect of pushing out a lot of 46 year old teachers that lost their spirit, you know, 15 y",
+          "start": 0,
+          "end": 12.538,
+          "source": "model_observation"
+        },
+        {
+          "id": "o2",
+          "modality": "语意",
+          "text": "teachers that lost their spirit, you know, 15 years ago and shouldn't be teaching right now.",
+          "start": 7,
+          "end": 12.538,
+          "source": "model_observation"
+        }
+      ],
+      "signals": [
+        {
+          "label": "不满",
+          "family": "情绪",
+          "start": 7,
+          "end": 12.538,
+          "target": "部分教师失去教学热情且不应继续任教",
+          "anchor": "lost their spirit... sho",
+          "evidence": "说话人对特定对象（失去热情的教师）表达了明确的负面评价和不悦态度。",
+          "refs": [
+            "o2"
+          ],
+          "observations": [
+            {
+              "id": "o2",
+              "modality": "语意",
+              "text": "teachers that lost their spirit, you know, 15 years ago and shouldn't be teaching right now.",
+              "start": 7,
+              "end": 12.538,
+              "source": "model_observation"
+            }
+          ],
+          "modalities": [
+            "语意"
+          ],
+          "scope": "current_self",
+          "basis": "explicit",
+          "confidence": 0.75,
+          "tentative": false,
+          "source": "fusion"
+        }
+      ],
+      "behaviors": [],
+      "consistency": [],
+      "scene": "人物面对镜头讲述关于教育与教师的看法",
+      "unknown": "",
+      "unknownFamilies": [
+        "认知",
+        "投入",
+        "立场"
+      ],
+      "rejected": [
+        {
+          "label": "确信",
+          "reason": "声音说明缺少对应声音依据"
+        }
+      ],
+      "quality": {
+        "audio": true,
+        "video": true,
+        "face": "unavailable",
+        "faceSamples": 7,
+        "clipping": false,
+        "dark": false,
+        "speech": null,
+        "quiet": false
+      },
+      "partial": false,
+      "speakerBound": true,
+      "source": "model",
+      "model": "qwen3.8-omni-flash",
+      "latencyMs": 7746,
+      "specialistEvidence": [
+        {
+          "id": "sf-0",
+          "modality": "画面",
+          "text": "面部表情分类：anger 0.20，sad 0.20，disgust 0.19；分类分数未校准，不等于心理状态；AU1 0.00，AU2 0.00，AU4 0.01，AU6 0.00，AU9 0.00，AU12 0.00，AU25 0.03，AU26 0.06",
+          "start": 0,
+          "end": 0.4,
+          "source": "specialist",
+          "model": "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+          "details": {
+            "scores": {
+              "anger": 0.20329058170318604,
+              "contempt": 0.10927382111549377,
+              "disgust": 0.1851549595594406,
+              "fear": 0.07447638362646103,
+              "happy": 0.011960411444306374,
+              "neutral": 0.16900430619716644,
+              "sad": 0.20028311014175415,
+              "surprise": 0.046556439250707626
+            },
+            "expressionModels": {
+              "OpenFace-3.0": {
+                "neutral": 0.20609889924526215,
+                "happy": 0.009202282875776291,
+                "sad": 0.17696425318717957,
+                "surprise": 0.08678291738033295,
+                "fear": 0.08344805985689163,
+                "disgust": 0.16354800760746002,
+                "anger": 0.16321894526481628,
+                "contempt": 0.11073651909828186
+              },
+              "EmotiEffLib-enet-b2-8": {
+                "anger": 0.20329058170318604,
+                "contempt": 0.10927382111549377,
+                "disgust": 0.1851549595594406,
+                "fear": 0.07447638362646103,
+                "happy": 0.011960411444306374,
+                "neutral": 0.16900430619716644,
+                "sad": 0.20028311014175415,
+                "surprise": 0.046556439250707626
+              }
+            },
+            "aus": {
+              "AU1": 0,
+              "AU2": 0,
+              "AU4": 0.0057823387905955315,
+              "AU6": 0,
+              "AU9": 0,
+              "AU12": 0,
+              "AU25": 0.034175485372543335,
+              "AU26": 0.06205741688609123
+            },
+            "gaze": [
+              -0.11447151005268097,
+              -0.005560803227126598
+            ],
+            "quality": "ok"
+          },
+          "latencyMs": 252
+        },
+        {
+          "id": "sf-1",
+          "modality": "画面",
+          "text": "面部表情分类：anger 0.24，disgust 0.19，fear 0.16；分类分数未校准，不等于心理状态；AU1 0.03，AU2 0.00，AU4 0.08，AU6 0.00，AU9 0.00，AU12 0.00，AU25 0.35，AU26 0.93",
+          "start": 1.691142857142857,
+          "end": 2.1911428571428573,
+          "source": "specialist",
+          "model": "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+          "details": {
+            "scores": {
+              "anger": 0.23818594217300415,
+              "contempt": 0.10427942126989365,
+              "disgust": 0.18565575778484344,
+              "fear": 0.16077816486358643,
+              "happy": 0.010487782768905163,
+              "neutral": 0.1475255936384201,
+              "sad": 0.08838944882154465,
+              "surprise": 0.06469780951738358
+            },
+            "expressionModels": {
+              "OpenFace-3.0": {
+                "neutral": 0.0761915072798729,
+                "happy": 0.004777379333972931,
+                "sad": 0.06468422710895538,
+                "surprise": 0.20803286135196686,
+                "fear": 0.23192837834358215,
+                "disgust": 0.1286550611257553,
+                "anger": 0.22013400495052338,
+                "contempt": 0.06559660285711288
+              },
+              "EmotiEffLib-enet-b2-8": {
+                "anger": 0.23818594217300415,
+                "contempt": 0.10427942126989365,
+                "disgust": 0.18565575778484344,
+                "fear": 0.16077816486358643,
+                "happy": 0.010487782768905163,
+                "neutral": 0.1475255936384201,
+                "sad": 0.08838944882154465,
+                "surprise": 0.06469780951738358
+              }
+            },
+            "aus": {
+              "AU1": 0.027545107528567314,
+              "AU2": 0,
+              "AU4": 0.07660798728466034,
+              "AU6": 0.003823730628937483,
+              "AU9": 0,
+              "AU12": 0.0033768685534596443,
+              "AU25": 0.35403385758399963,
+              "AU26": 0.9305108785629272
+            },
+            "gaze": [
+              -0.03911644220352173,
+              0.013400970958173275
+            ],
+            "quality": "ok"
+          },
+          "latencyMs": 251
+        },
+        {
+          "id": "sf-2",
+          "modality": "画面",
+          "text": "面部表情分类：contempt 0.29，disgust 0.18，happy 0.15；分类分数未校准，不等于心理状态；AU1 0.02，AU2 0.03，AU4 0.03，AU6 0.06，AU9 0.05，AU12 0.02，AU25 0.39，AU26 0.02",
+          "start": 3.482285714285714,
+          "end": 3.982285714285714,
+          "source": "specialist",
+          "model": "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+          "details": {
+            "scores": {
+              "anger": 0.146510049700737,
+              "contempt": 0.29028382897377014,
+              "disgust": 0.17610345780849457,
+              "fear": 0.06755336374044418,
+              "happy": 0.14916354417800903,
+              "neutral": 0.10198985040187836,
+              "sad": 0.021154357120394707,
+              "surprise": 0.04724157229065895
+            },
+            "expressionModels": {
+              "OpenFace-3.0": {
+                "neutral": 0.11884359270334244,
+                "happy": 0.07170497626066208,
+                "sad": 0.035719916224479675,
+                "surprise": 0.028244812041521072,
+                "fear": 0.07958642393350601,
+                "disgust": 0.23204851150512695,
+                "anger": 0.28262197971343994,
+                "contempt": 0.15122976899147034
+              },
+              "EmotiEffLib-enet-b2-8": {
+                "anger": 0.146510049700737,
+                "contempt": 0.29028382897377014,
+                "disgust": 0.17610345780849457,
+                "fear": 0.06755336374044418,
+                "happy": 0.14916354417800903,
+                "neutral": 0.10198985040187836,
+                "sad": 0.021154357120394707,
+                "surprise": 0.04724157229065895
+              }
+            },
+            "aus": {
+              "AU1": 0.023021109402179718,
+              "AU2": 0.025190571323037148,
+              "AU4": 0.02892100065946579,
+              "AU6": 0.05891255661845207,
+              "AU9": 0.04983416944742203,
+              "AU12": 0.023466531187295914,
+              "AU25": 0.3946424126625061,
+              "AU26": 0.01538116205483675
+            },
+            "gaze": [
+              -0.11589080095291138,
+              0.16158714890480042
+            ],
+            "quality": "ok"
+          },
+          "latencyMs": 251
+        },
+        {
+          "id": "sf-3",
+          "modality": "画面",
+          "text": "面部表情分类：anger 0.32，disgust 0.19，contempt 0.15；分类分数未校准，不等于心理状态；AU1 0.03，AU2 0.00，AU4 0.12，AU6 0.13，AU9 0.30，AU12 0.05，AU25 0.97，AU26 0.25",
+          "start": 5.273428571428571,
+          "end": 5.773428571428571,
+          "source": "specialist",
+          "model": "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+          "details": {
+            "scores": {
+              "anger": 0.316013365983963,
+              "contempt": 0.14517813920974731,
+              "disgust": 0.19210278987884521,
+              "fear": 0.06742849200963974,
+              "happy": 0.037904512137174606,
+              "neutral": 0.12586931884288788,
+              "sad": 0.03558247163891792,
+              "surprise": 0.0799209326505661
+            },
+            "expressionModels": {
+              "OpenFace-3.0": {
+                "neutral": 0.03573397919535637,
+                "happy": 0.08010909706354141,
+                "sad": 0.024348918348550797,
+                "surprise": 0.03554007038474083,
+                "fear": 0.05853831022977829,
+                "disgust": 0.5354722142219543,
+                "anger": 0.14571762084960938,
+                "contempt": 0.08453983068466187
+              },
+              "EmotiEffLib-enet-b2-8": {
+                "anger": 0.316013365983963,
+                "contempt": 0.14517813920974731,
+                "disgust": 0.19210278987884521,
+                "fear": 0.06742849200963974,
+                "happy": 0.037904512137174606,
+                "neutral": 0.12586931884288788,
+                "sad": 0.03558247163891792,
+                "surprise": 0.0799209326505661
+              }
+            },
+            "aus": {
+              "AU1": 0.03378085419535637,
+              "AU2": 0,
+              "AU4": 0.12398762255907059,
+              "AU6": 0.12886205315589905,
+              "AU9": 0.3049333691596985,
+              "AU12": 0.053240712732076645,
+              "AU25": 0.9686955213546753,
+              "AU26": 0.24603162705898285
+            },
+            "gaze": [
+              -0.10214501619338989,
+              0.1762673258781433
+            ],
+            "quality": "ok"
+          },
+          "latencyMs": 306
+        },
+        {
+          "id": "sf-4",
+          "modality": "画面",
+          "text": "面部表情分类：contempt 0.25，disgust 0.24，happy 0.17；分类分数未校准，不等于心理状态；AU1 0.07，AU2 0.20，AU4 0.00，AU6 0.01，AU9 0.00，AU12 0.02，AU25 0.29，AU26 0.03",
+          "start": 7.064571428571428,
+          "end": 7.564571428571428,
+          "source": "specialist",
+          "model": "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+          "details": {
+            "scores": {
+              "anger": 0.09013593196868896,
+              "contempt": 0.2533094882965088,
+              "disgust": 0.23701655864715576,
+              "fear": 0.0699409544467926,
+              "happy": 0.16824986040592194,
+              "neutral": 0.09569819271564484,
+              "sad": 0.02345636487007141,
+              "surprise": 0.06219259649515152
+            },
+            "expressionModels": {
+              "OpenFace-3.0": {
+                "neutral": 0.27081164717674255,
+                "happy": 0.07998567819595337,
+                "sad": 0.049888771027326584,
+                "surprise": 0.08868110924959183,
+                "fear": 0.08283843845129013,
+                "disgust": 0.1519443392753601,
+                "anger": 0.09777110815048218,
+                "contempt": 0.17807890474796295
+              },
+              "EmotiEffLib-enet-b2-8": {
+                "anger": 0.09013593196868896,
+                "contempt": 0.2533094882965088,
+                "disgust": 0.23701655864715576,
+                "fear": 0.0699409544467926,
+                "happy": 0.16824986040592194,
+                "neutral": 0.09569819271564484,
+                "sad": 0.02345636487007141,
+                "surprise": 0.06219259649515152
+              }
+            },
+            "aus": {
+              "AU1": 0.06604760140180588,
+              "AU2": 0.19749900698661804,
+              "AU4": 0.0017345731612294912,
+              "AU6": 0.005168160889297724,
+              "AU9": 0,
+              "AU12": 0.02199043333530426,
+              "AU25": 0.2942619323730469,
+              "AU26": 0.02919905260205269
+            },
+            "gaze": [
+              -0.06340661644935608,
+              0.14605848491191864
+            ],
+            "quality": "ok"
+          },
+          "latencyMs": 253
+        },
+        {
+          "id": "sf-5",
+          "modality": "画面",
+          "text": "面部表情分类：contempt 0.32，neutral 0.20，disgust 0.14；分类分数未校准，不等于心理状态；AU1 0.07，AU2 0.04，AU4 0.02，AU6 0.02，AU9 0.00，AU12 0.01，AU25 0.08，AU26 0.49",
+          "start": 8.855714285714285,
+          "end": 9.355714285714285,
+          "source": "specialist",
+          "model": "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+          "details": {
+            "scores": {
+              "anger": 0.05593506991863251,
+              "contempt": 0.3230876624584198,
+              "disgust": 0.14015264809131622,
+              "fear": 0.07189314812421799,
+              "happy": 0.10040454566478729,
+              "neutral": 0.19759419560432434,
+              "sad": 0.030054543167352676,
+              "surprise": 0.08087816089391708
+            },
+            "expressionModels": {
+              "OpenFace-3.0": {
+                "neutral": 0.2570112943649292,
+                "happy": 0.03288957104086876,
+                "sad": 0.03126339614391327,
+                "surprise": 0.1900913268327713,
+                "fear": 0.08078188449144363,
+                "disgust": 0.1481410562992096,
+                "anger": 0.12452100962400436,
+                "contempt": 0.1353004425764084
+              },
+              "EmotiEffLib-enet-b2-8": {
+                "anger": 0.05593506991863251,
+                "contempt": 0.3230876624584198,
+                "disgust": 0.14015264809131622,
+                "fear": 0.07189314812421799,
+                "happy": 0.10040454566478729,
+                "neutral": 0.19759419560432434,
+                "sad": 0.030054543167352676,
+                "surprise": 0.08087816089391708
+              }
+            },
+            "aus": {
+              "AU1": 0.06993608176708221,
+              "AU2": 0.04052652046084404,
+              "AU4": 0.017408622428774834,
+              "AU6": 0.018415383994579315,
+              "AU9": 0.00009576276352163404,
+              "AU12": 0.014721538871526718,
+              "AU25": 0.07622157037258148,
+              "AU26": 0.4901846647262573
+            },
+            "gaze": [
+              -0.0412139818072319,
+              0.0860445573925972
+            ],
+            "quality": "ok"
+          },
+          "latencyMs": 265
+        },
+        {
+          "id": "sf-6",
+          "modality": "画面",
+          "text": "面部表情分类：disgust 0.22，neutral 0.21，contempt 0.19；分类分数未校准，不等于心理状态；AU1 0.04，AU2 0.02，AU4 0.01，AU6 0.04，AU9 0.01，AU12 0.03，AU25 0.19，AU26 0.38",
+          "start": 10.646857142857142,
+          "end": 11.146857142857142,
+          "source": "specialist",
+          "model": "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+          "details": {
+            "scores": {
+              "anger": 0.12299086153507233,
+              "contempt": 0.18577302992343903,
+              "disgust": 0.2196505218744278,
+              "fear": 0.09999998658895493,
+              "happy": 0.05151980370283127,
+              "neutral": 0.20567210018634796,
+              "sad": 0.043343424797058105,
+              "surprise": 0.07105033099651337
+            },
+            "expressionModels": {
+              "OpenFace-3.0": {
+                "neutral": 0.15298941731452942,
+                "happy": 0.03120393678545952,
+                "sad": 0.03006371669471264,
+                "surprise": 0.459629088640213,
+                "fear": 0.07000478357076645,
+                "disgust": 0.097676582634449,
+                "anger": 0.05818631500005722,
+                "contempt": 0.10024617612361908
+              },
+              "EmotiEffLib-enet-b2-8": {
+                "anger": 0.12299086153507233,
+                "contempt": 0.18577302992343903,
+                "disgust": 0.2196505218744278,
+                "fear": 0.09999998658895493,
+                "happy": 0.05151980370283127,
+                "neutral": 0.20567210018634796,
+                "sad": 0.043343424797058105,
+                "surprise": 0.07105033099651337
+              }
+            },
+            "aus": {
+              "AU1": 0.03860945999622345,
+              "AU2": 0.01939690113067627,
+              "AU4": 0.0077568767592310905,
+              "AU6": 0.038899607956409454,
+              "AU9": 0.010153325274586678,
+              "AU12": 0.03221861645579338,
+              "AU25": 0.18712681531906128,
+              "AU26": 0.376695454120636
+            },
+            "gaze": [
+              -0.024210015311837196,
+              0.026776110753417015
+            ],
+            "quality": "ok"
+          },
+          "latencyMs": 273
+        }
+      ],
+      "specialistFailures": 0
+    },
+    {
+      "id": "elon-musk-wef",
+      "duration": 4.013,
+      "status": 200,
+      "transcript": "Uh yeah, I mean I would say like, uh, you know, I don't... That's a long...",
+      "segments": [
+        {
+          "start": 0,
+          "end": 4.013,
+          "text": "Uh yeah, I mean I would say like, uh, you know, I don't... That's a long..."
+        }
+      ],
+      "observations": [
+        {
+          "id": "o1",
+          "modality": "语意",
+          "text": "Uh yeah, I mean I would say like, uh, you know, I don't...",
+          "start": 0.5,
+          "end": 3.5,
+          "source": "model_observation"
+        }
+      ],
+      "signals": [
+        {
+          "label": "犹豫",
+          "family": "认知",
+          "start": 0.5,
+          "end": 3.5,
+          "target": "组织表达以回应提问",
+          "anchor": "I mean I would say like.",
+          "evidence": "说话人在尝试组织语言时使用了多个填充词（uh, I mean, you know），且句子未能完整说完即被打断，表现出明显的迟疑。",
+          "refs": [
+            "o1"
+          ],
+          "observations": [
+            {
+              "id": "o1",
+              "modality": "语意",
+              "text": "Uh yeah, I mean I would say like, uh, you know, I don't...",
+              "start": 0.5,
+              "end": 3.5,
+              "source": "model_observation"
+            }
+          ],
+          "modalities": [
+            "语意"
+          ],
+          "scope": "current_self",
+          "basis": "explicit",
+          "confidence": 0.85,
+          "tentative": false,
+          "source": "fusion"
+        }
+      ],
+      "behaviors": [],
+      "consistency": [],
+      "scene": "世界经济论坛访谈现场，男子正在发言",
+      "unknown": "",
+      "unknownFamilies": [
+        "情绪",
+        "投入",
+        "立场"
+      ],
+      "rejected": [],
+      "quality": {
+        "audio": true,
+        "video": true,
+        "face": "single",
+        "faceSamples": 5,
+        "clipping": false,
+        "dark": false,
+        "speech": null,
+        "quiet": false
+      },
+      "partial": false,
+      "speakerBound": true,
+      "source": "model",
+      "model": "qwen3.8-omni-flash",
+      "latencyMs": 5533,
+      "specialistEvidence": [
+        {
+          "id": "sv-1",
+          "modality": "声音",
+          "text": "原声情绪分类：中立/neutral 0.92，开心/happy 0.05，<unk> 0.02；分类分数未校准，不等于心理状态",
+          "start": 0,
+          "end": 4.013,
+          "source": "specialist",
+          "model": "emotion2vec-plus-large",
+          "details": {
+            "scores": {
+              "生气/angry": 0.00017050236056093127,
+              "厌恶/disgusted": 0.0005799531936645508,
+              "恐惧/fearful": 0.001802294165827334,
+              "开心/happy": 0.05492048338055611,
+              "中立/neutral": 0.9163627028465271,
+              "其他/other": 0.0010557005880400538,
+              "难过/sad": 0.0050258091650903225,
+              "吃惊/surprised": 0.0001168756207334809,
+              "<unk>": 0.019965598359704018
+            },
+            "quality": "ok"
+          },
+          "latencyMs": 378
+        },
+        {
+          "id": "sf-0",
+          "modality": "画面",
+          "text": "面部表情分类：neutral 0.40，contempt 0.17，disgust 0.15；分类分数未校准，不等于心理状态；AU1 0.00，AU2 0.00，AU4 0.00，AU6 0.00，AU9 0.00，AU12 0.00，AU25 0.01，AU26 0.01",
+          "start": 0,
+          "end": 0.4,
+          "source": "specialist",
+          "model": "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+          "details": {
+            "scores": {
+              "anger": 0.049766428768634796,
+              "contempt": 0.16917839646339417,
+              "disgust": 0.1483732908964157,
+              "fear": 0.08345386385917664,
+              "happy": 0.04032658413052559,
+              "neutral": 0.40102994441986084,
+              "sad": 0.030544979497790337,
+              "surprise": 0.07732650637626648
+            },
+            "expressionModels": {
+              "OpenFace-3.0": {
+                "neutral": 0.4165843725204468,
+                "happy": 0.03666818514466286,
+                "sad": 0.047972943633794785,
+                "surprise": 0.07269152998924255,
+                "fear": 0.07630318403244019,
+                "disgust": 0.13441960513591766,
+                "anger": 0.06099658086895943,
+                "contempt": 0.1543634980916977
+              },
+              "EmotiEffLib-enet-b2-8": {
+                "anger": 0.049766428768634796,
+                "contempt": 0.16917839646339417,
+                "disgust": 0.1483732908964157,
+                "fear": 0.08345386385917664,
+                "happy": 0.04032658413052559,
+                "neutral": 0.40102994441986084,
+                "sad": 0.030544979497790337,
+                "surprise": 0.07732650637626648
+              }
+            },
+            "aus": {
+              "AU1": 0,
+              "AU2": 0,
+              "AU4": 0,
+              "AU6": 0.0002542703878134489,
+              "AU9": 0,
+              "AU12": 0.003511769464239478,
+              "AU25": 0.005718361120671034,
+              "AU26": 0.007123969495296478
+            },
+            "gaze": [
+              -0.037294987589120865,
+              -0.035890188068151474
+            ],
+            "quality": "ok"
+          },
+          "latencyMs": 437
+        },
+        {
+          "id": "sf-1",
+          "modality": "画面",
+          "text": "面部表情分类：surprise 0.26，neutral 0.16，disgust 0.15；分类分数未校准，不等于心理状态；AU1 0.01，AU2 0.00，AU4 0.00，AU6 0.01，AU9 0.00，AU12 0.04，AU25 0.98，AU26 0.86",
+          "start": 0.7000000000000001,
+          "end": 1.2000000000000002,
+          "source": "specialist",
+          "model": "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+          "details": {
+            "scores": {
+              "anger": 0.04043778404593468,
+              "contempt": 0.13716502487659454,
+              "disgust": 0.14720475673675537,
+              "fear": 0.1084328293800354,
+              "happy": 0.11748187243938446,
+              "neutral": 0.1616888791322708,
+              "sad": 0.024196693673729897,
+              "surprise": 0.26339221000671387
+            },
+            "expressionModels": {
+              "OpenFace-3.0": {
+                "neutral": 0.09983636438846588,
+                "happy": 0.03396635875105858,
+                "sad": 0.01794661581516266,
+                "surprise": 0.5805559754371643,
+                "fear": 0.05155739188194275,
+                "disgust": 0.09155026078224182,
+                "anger": 0.02139080874621868,
+                "contempt": 0.10319621860980988
+              },
+              "EmotiEffLib-enet-b2-8": {
+                "anger": 0.04043778404593468,
+                "contempt": 0.13716502487659454,
+                "disgust": 0.14720475673675537,
+                "fear": 0.1084328293800354,
+                "happy": 0.11748187243938446,
+                "neutral": 0.1616888791322708,
+                "sad": 0.024196693673729897,
+                "surprise": 0.26339221000671387
+              }
+            },
+            "aus": {
+              "AU1": 0.0069840154610574245,
+              "AU2": 0.002696798648685217,
+              "AU4": 0.0011440672678872943,
+              "AU6": 0.007670258637517691,
+              "AU9": 0,
+              "AU12": 0.036921825259923935,
+              "AU25": 0.9762215614318848,
+              "AU26": 0.8592959046363831
+            },
+            "gaze": [
+              -0.10149739682674408,
+              -0.043436456471681595
+            ],
+            "quality": "ok"
+          },
+          "latencyMs": 294
+        },
+        {
+          "id": "sf-2",
+          "modality": "画面",
+          "text": "面部表情分类：happy 0.24，contempt 0.22，disgust 0.20；分类分数未校准，不等于心理状态；AU1 0.02，AU2 0.00，AU4 0.03，AU6 0.19，AU9 0.04，AU12 0.25，AU25 0.99，AU26 0.19",
+          "start": 1.5,
+          "end": 2,
+          "source": "specialist",
+          "model": "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+          "details": {
+            "scores": {
+              "anger": 0.04463239014148712,
+              "contempt": 0.21664777398109436,
+              "disgust": 0.19537508487701416,
+              "fear": 0.10301297903060913,
+              "happy": 0.24322718381881714,
+              "neutral": 0.09769169241189957,
+              "sad": 0.045352425426244736,
+              "surprise": 0.05406051129102707
+            },
+            "expressionModels": {
+              "OpenFace-3.0": {
+                "neutral": 0.09802693873643875,
+                "happy": 0.18146036565303802,
+                "sad": 0.03866387531161308,
+                "surprise": 0.09155197441577911,
+                "fear": 0.09834519028663635,
+                "disgust": 0.23936255276203156,
+                "anger": 0.10571744292974472,
+                "contempt": 0.14687161147594452
+              },
+              "EmotiEffLib-enet-b2-8": {
+                "anger": 0.04463239014148712,
+                "contempt": 0.21664777398109436,
+                "disgust": 0.19537508487701416,
+                "fear": 0.10301297903060913,
+                "happy": 0.24322718381881714,
+                "neutral": 0.09769169241189957,
+                "sad": 0.045352425426244736,
+                "surprise": 0.05406051129102707
+              }
+            },
+            "aus": {
+              "AU1": 0.015792515128850937,
+              "AU2": 0,
+              "AU4": 0.03142007812857628,
+              "AU6": 0.1927938163280487,
+              "AU9": 0.035365164279937744,
+              "AU12": 0.24752682447433472,
+              "AU25": 0.9933515787124634,
+              "AU26": 0.1868269443511963
+            },
+            "gaze": [
+              -0.05561390146613121,
+              -0.0762723833322525
+            ],
+            "quality": "ok"
+          },
+          "latencyMs": 266
+        },
+        {
+          "id": "sf-3",
+          "modality": "画面",
+          "text": "面部表情分类：happy 0.21，contempt 0.20，disgust 0.19；分类分数未校准，不等于心理状态；AU1 0.01，AU2 0.00，AU4 0.04，AU6 0.03，AU9 0.01，AU12 0.05，AU25 0.98，AU26 0.97",
+          "start": 2.3,
+          "end": 2.8,
+          "source": "specialist",
+          "model": "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+          "details": {
+            "scores": {
+              "anger": 0.04382673650979996,
+              "contempt": 0.1981322020292282,
+              "disgust": 0.18533065915107727,
+              "fear": 0.1132996454834938,
+              "happy": 0.21010610461235046,
+              "neutral": 0.10610850155353546,
+              "sad": 0.04308402165770531,
+              "surprise": 0.10011208057403564
+            },
+            "expressionModels": {
+              "OpenFace-3.0": {
+                "neutral": 0.17990180850028992,
+                "happy": 0.1339017152786255,
+                "sad": 0.05474202707409859,
+                "surprise": 0.1233615055680275,
+                "fear": 0.08923029899597168,
+                "disgust": 0.18161827325820923,
+                "anger": 0.07615719735622406,
+                "contempt": 0.16108720004558563
+              },
+              "EmotiEffLib-enet-b2-8": {
+                "anger": 0.04382673650979996,
+                "contempt": 0.1981322020292282,
+                "disgust": 0.18533065915107727,
+                "fear": 0.1132996454834938,
+                "happy": 0.21010610461235046,
+                "neutral": 0.10610850155353546,
+                "sad": 0.04308402165770531,
+                "surprise": 0.10011208057403564
+              }
+            },
+            "aus": {
+              "AU1": 0.0119793014600873,
+              "AU2": 0,
+              "AU4": 0.039966776967048645,
+              "AU6": 0.025523174554109573,
+              "AU9": 0.014530611224472523,
+              "AU12": 0.050152335315942764,
+              "AU25": 0.981698751449585,
+              "AU26": 0.9717779159545898
+            },
+            "gaze": [
+              -0.14973340928554535,
+              -0.044108759611845016
+            ],
+            "quality": "ok"
+          },
+          "latencyMs": 325
+        },
+        {
+          "id": "sf-4",
+          "modality": "画面",
+          "text": "面部表情分类：disgust 0.19，contempt 0.19，happy 0.17；分类分数未校准，不等于心理状态；AU1 0.01，AU2 0.00，AU4 0.14，AU6 0.02，AU9 0.02，AU12 0.05，AU25 0.96，AU26 0.63",
+          "start": 3.0999999999999996,
+          "end": 3.5999999999999996,
+          "source": "specialist",
+          "model": "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+          "details": {
+            "scores": {
+              "anger": 0.051761332899332047,
+              "contempt": 0.18824784457683563,
+              "disgust": 0.19073940813541412,
+              "fear": 0.10756047815084457,
+              "happy": 0.17283764481544495,
+              "neutral": 0.16111305356025696,
+              "sad": 0.05881080403923988,
+              "surprise": 0.06892941892147064
+            },
+            "expressionModels": {
+              "OpenFace-3.0": {
+                "neutral": 0.08892691135406494,
+                "happy": 0.026679620146751404,
+                "sad": 0.3074972629547119,
+                "surprise": 0.10819883644580841,
+                "fear": 0.08689581602811813,
+                "disgust": 0.2200624942779541,
+                "anger": 0.023491239175200462,
+                "contempt": 0.13824790716171265
+              },
+              "EmotiEffLib-enet-b2-8": {
+                "anger": 0.051761332899332047,
+                "contempt": 0.18824784457683563,
+                "disgust": 0.19073940813541412,
+                "fear": 0.10756047815084457,
+                "happy": 0.17283764481544495,
+                "neutral": 0.16111305356025696,
+                "sad": 0.05881080403923988,
+                "surprise": 0.06892941892147064
+              }
+            },
+            "aus": {
+              "AU1": 0.011662159115076065,
+              "AU2": 0,
+              "AU4": 0.13515383005142212,
+              "AU6": 0.015016954392194748,
+              "AU9": 0.021898500621318817,
+              "AU12": 0.04771193116903305,
+              "AU25": 0.9583909511566162,
+              "AU26": 0.6275309920310974
+            },
+            "gaze": [
+              -0.15579430758953094,
+              -0.12445442378520966
+            ],
+            "quality": "ok"
+          },
+          "latencyMs": 269
+        }
+      ],
+      "specialistFailures": 0
+    },
+    {
+      "id": "pep-guardiola-press",
+      "duration": 4.999,
+      "status": 200,
+      "transcript": "switch of plays with four we could not control it Um but apart of that",
+      "segments": [
+        {
+          "start": 0,
+          "end": 4.999,
+          "text": "switch of plays with four we could not control it Um but apart of that"
+        }
+      ],
+      "observations": [
+        {
+          "id": "o1",
+          "modality": "语意",
+          "text": "with four we could not control it",
+          "start": 0,
+          "end": 2.5,
+          "source": "model_observation"
+        },
+        {
+          "id": "o2",
+          "modality": "画面",
+          "text": "说话人眉头紧锁，嘴角下垂，神情严肃且带有失落感",
+          "start": 0,
+          "end": 2.5,
+          "source": "model_observation"
+        },
+        {
+          "id": "o3",
+          "modality": "语意",
+          "text": "but apart of that",
+          "start": 3,
+          "end": 4.999,
+          "source": "model_observation"
+        },
+        {
+          "id": "o4",
+          "modality": "声音",
+          "text": "原声情绪分类：中立/neutral 0.97",
+          "start": 0,
+          "end": 4.999,
+          "source": "model_observation"
+        }
+      ],
+      "signals": [
+        {
+          "label": "低落",
+          "family": "情绪",
+          "start": 0,
+          "end": 2.5,
+          "target": "球队无法控制比赛节奏的局面",
+          "anchor": "we could not control it",
+          "evidence": "明确表达未能控制局面的挫败事实，伴随低沉失落的表情特征",
+          "refs": [
+            "o1",
+            "o2"
+          ],
+          "observations": [
+            {
+              "id": "o1",
+              "modality": "语意",
+              "text": "with four we could not control it",
+              "start": 0,
+              "end": 2.5,
+              "source": "model_observation"
+            },
+            {
+              "id": "o2",
+              "modality": "画面",
+              "text": "说话人眉头紧锁，嘴角下垂，神情严肃且带有失落感",
+              "start": 0,
+              "end": 2.5,
+              "source": "model_observation"
+            }
+          ],
+          "modalities": [
+            "语意",
+            "画面"
+          ],
+          "scope": "current_self",
+          "basis": "explicit",
+          "confidence": 0.75,
+          "tentative": false,
+          "source": "fusion"
+        },
+        {
+          "label": "确信",
+          "family": "认知",
+          "start": 3,
+          "end": 4.999,
+          "target": "对当前局势的陈述",
+          "anchor": "but apart of that",
+          "evidence": "语气平稳坚定，无明显迟疑或波动，对正在表达的转折判断持肯定态度",
+          "refs": [
+            "o3",
+            "o4"
+          ],
+          "observations": [
+            {
+              "id": "o3",
+              "modality": "语意",
+              "text": "but apart of that",
+              "start": 3,
+              "end": 4.999,
+              "source": "model_observation"
+            },
+            {
+              "id": "o4",
+              "modality": "声音",
+              "text": "原声情绪分类：中立/neutral 0.97",
+              "start": 0,
+              "end": 4.999,
+              "source": "model_observation"
+            }
+          ],
+          "modalities": [
+            "语意",
+            "声音"
+          ],
+          "scope": "current_self",
+          "basis": "implicit",
+          "confidence": 0.65,
+          "tentative": false,
+          "source": "fusion"
+        }
+      ],
+      "behaviors": [],
+      "consistency": [],
+      "scene": "单人面对镜头讲话",
+      "unknown": "",
+      "unknownFamilies": [
+        "投入",
+        "立场"
+      ],
+      "rejected": [],
+      "quality": {
+        "audio": true,
+        "video": true,
+        "face": "single",
+        "faceSamples": 7,
+        "clipping": false,
+        "dark": false,
+        "speech": null,
+        "quiet": false
+      },
+      "partial": false,
+      "speakerBound": true,
+      "source": "model",
+      "model": "qwen3.8-omni-flash",
+      "latencyMs": 8335,
+      "specialistEvidence": [
+        {
+          "id": "sf-0",
+          "modality": "画面",
+          "text": "面部表情分类：contempt 0.28，neutral 0.23，sad 0.13；分类分数未校准，不等于心理状态；AU1 0.01，AU2 0.03，AU4 0.00，AU6 0.04，AU9 0.00，AU12 0.03，AU25 0.31，AU26 0.01",
+          "start": 0,
+          "end": 0.4,
+          "source": "specialist",
+          "model": "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+          "details": {
+            "scores": {
+              "anger": 0.06235786899924278,
+              "contempt": 0.2848944365978241,
+              "disgust": 0.12377304583787918,
+              "fear": 0.06267388164997101,
+              "happy": 0.07751405984163284,
+              "neutral": 0.2296578288078308,
+              "sad": 0.12607847154140472,
+              "surprise": 0.03305038437247276
+            },
+            "expressionModels": {
+              "OpenFace-3.0": {
+                "neutral": 0.31445127725601196,
+                "happy": 0.1304522305727005,
+                "sad": 0.05907139182090759,
+                "surprise": 0.047872304916381836,
+                "fear": 0.06442796438932419,
+                "disgust": 0.1223267912864685,
+                "anger": 0.05072254687547684,
+                "contempt": 0.2106754332780838
+              },
+              "EmotiEffLib-enet-b2-8": {
+                "anger": 0.06235786899924278,
+                "contempt": 0.2848944365978241,
+                "disgust": 0.12377304583787918,
+                "fear": 0.06267388164997101,
+                "happy": 0.07751405984163284,
+                "neutral": 0.2296578288078308,
+                "sad": 0.12607847154140472,
+                "surprise": 0.03305038437247276
+              }
+            },
+            "aus": {
+              "AU1": 0.005255645141005516,
+              "AU2": 0.029478099197149277,
+              "AU4": 0.004794089589267969,
+              "AU6": 0.04007056728005409,
+              "AU9": 0,
+              "AU12": 0.026183070614933968,
+              "AU25": 0.3050328195095062,
+              "AU26": 0.008738222531974316
+            },
+            "gaze": [
+              -0.23724707961082458,
+              -0.08456463366746902
+            ],
+            "quality": "ok"
+          },
+          "latencyMs": 401
+        },
+        {
+          "id": "sv-1",
+          "modality": "声音",
+          "text": "原声情绪分类：中立/neutral 0.97，<unk> 0.03，开心/happy 0.00；分类分数未校准，不等于心理状态",
+          "start": 0,
+          "end": 4.999,
+          "source": "specialist",
+          "model": "emotion2vec-plus-large",
+          "details": {
+            "scores": {
+              "生气/angry": 0.00011969391925958917,
+              "厌恶/disgusted": 0.0002552065416239202,
+              "恐惧/fearful": 0.00032989634200930595,
+              "开心/happy": 0.0014432260068133473,
+              "中立/neutral": 0.9664385318756104,
+              "其他/other": 0.00010737789853010327,
+              "难过/sad": 0.0013574401382356882,
+              "吃惊/surprised": 0.00005168499410501681,
+              "<unk>": 0.029896968975663185
+            },
+            "quality": "ok"
+          },
+          "latencyMs": 477
+        },
+        {
+          "id": "sf-1",
+          "modality": "画面",
+          "text": "面部表情分类：contempt 0.28，disgust 0.17，neutral 0.16；分类分数未校准，不等于心理状态；AU1 0.02，AU2 0.01，AU4 0.01，AU6 0.01，AU9 0.01，AU12 0.00，AU25 0.02，AU26 0.00",
+          "start": 0.7000000000000001,
+          "end": 1.2000000000000002,
+          "source": "specialist",
+          "model": "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+          "details": {
+            "scores": {
+              "anger": 0.04386259615421295,
+              "contempt": 0.2803190052509308,
+              "disgust": 0.1707286834716797,
+              "fear": 0.07871729135513306,
+              "happy": 0.1251370757818222,
+              "neutral": 0.15790443122386932,
+              "sad": 0.10352996736764908,
+              "surprise": 0.03980089724063873
+            },
+            "expressionModels": {
+              "OpenFace-3.0": {
+                "neutral": 0.30934301018714905,
+                "happy": 0.040703922510147095,
+                "sad": 0.10744183510541916,
+                "surprise": 0.05468842014670372,
+                "fear": 0.07516634464263916,
+                "disgust": 0.14364361763000488,
+                "anger": 0.07382366061210632,
+                "contempt": 0.19518917798995972
+              },
+              "EmotiEffLib-enet-b2-8": {
+                "anger": 0.04386259615421295,
+                "contempt": 0.2803190052509308,
+                "disgust": 0.1707286834716797,
+                "fear": 0.07871729135513306,
+                "happy": 0.1251370757818222,
+                "neutral": 0.15790443122386932,
+                "sad": 0.10352996736764908,
+                "surprise": 0.03980089724063873
+              }
+            },
+            "aus": {
+              "AU1": 0.021344110369682312,
+              "AU2": 0.012655332684516907,
+              "AU4": 0.014898134395480156,
+              "AU6": 0.009451868943870068,
+              "AU9": 0.005084882024675608,
+              "AU12": 0.002714076079428196,
+              "AU25": 0.017063964158296585,
+              "AU26": 0
+            },
+            "gaze": [
+              -0.2755657136440277,
+              -0.17902010679244995
+            ],
+            "quality": "ok"
+          },
+          "latencyMs": 302
+        },
+        {
+          "id": "sf-2",
+          "modality": "画面",
+          "text": "面部表情分类：neutral 0.32，contempt 0.23，disgust 0.13；分类分数未校准，不等于心理状态；AU1 0.03，AU2 0.05，AU4 0.01，AU6 0.00，AU9 0.00，AU12 0.01，AU25 0.12，AU26 0.86",
+          "start": 1.5,
+          "end": 2,
+          "source": "specialist",
+          "model": "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+          "details": {
+            "scores": {
+              "anger": 0.05297953635454178,
+              "contempt": 0.23313772678375244,
+              "disgust": 0.12720830738544464,
+              "fear": 0.07454629242420197,
+              "happy": 0.06862983107566833,
+              "neutral": 0.31985005736351013,
+              "sad": 0.0719662755727768,
+              "surprise": 0.051682017743587494
+            },
+            "expressionModels": {
+              "OpenFace-3.0": {
+                "neutral": 0.21595361828804016,
+                "happy": 0.03115638718008995,
+                "sad": 0.05383087694644928,
+                "surprise": 0.17559660971164703,
+                "fear": 0.07620521634817123,
+                "disgust": 0.11551327258348465,
+                "anger": 0.05256865546107292,
+                "contempt": 0.279175341129303
+              },
+              "EmotiEffLib-enet-b2-8": {
+                "anger": 0.05297953635454178,
+                "contempt": 0.23313772678375244,
+                "disgust": 0.12720830738544464,
+                "fear": 0.07454629242420197,
+                "happy": 0.06862983107566833,
+                "neutral": 0.31985005736351013,
+                "sad": 0.0719662755727768,
+                "surprise": 0.051682017743587494
+              }
+            },
+            "aus": {
+              "AU1": 0.033317044377326965,
+              "AU2": 0.05064675211906433,
+              "AU4": 0.005633666180074215,
+              "AU6": 0,
+              "AU9": 0,
+              "AU12": 0.006179731339216232,
+              "AU25": 0.11627072095870972,
+              "AU26": 0.8612362146377563
+            },
+            "gaze": [
+              -0.18165373802185059,
+              -0.191370889544487
+            ],
+            "quality": "ok"
+          },
+          "latencyMs": 258
+        },
+        {
+          "id": "sf-3",
+          "modality": "画面",
+          "text": "面部表情分类：neutral 0.22，contempt 0.20，disgust 0.16；分类分数未校准，不等于心理状态；AU1 0.03，AU2 0.04，AU4 0.01，AU6 0.01，AU9 0.00，AU12 0.02，AU25 0.21，AU26 0.16",
+          "start": 2.3,
+          "end": 2.8,
+          "source": "specialist",
+          "model": "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+          "details": {
+            "scores": {
+              "anger": 0.0665721520781517,
+              "contempt": 0.19628222286701202,
+              "disgust": 0.16050328314304352,
+              "fear": 0.07617437839508057,
+              "happy": 0.06379876285791397,
+              "neutral": 0.22354188561439514,
+              "sad": 0.15256038308143616,
+              "surprise": 0.06056691333651543
+            },
+            "expressionModels": {
+              "OpenFace-3.0": {
+                "neutral": 0.16841192543506622,
+                "happy": 0.029106374830007553,
+                "sad": 0.1081261858344078,
+                "surprise": 0.24212850630283356,
+                "fear": 0.08421238511800766,
+                "disgust": 0.15371248126029968,
+                "anger": 0.07621678709983826,
+                "contempt": 0.138085275888443
+              },
+              "EmotiEffLib-enet-b2-8": {
+                "anger": 0.0665721520781517,
+                "contempt": 0.19628222286701202,
+                "disgust": 0.16050328314304352,
+                "fear": 0.07617437839508057,
+                "happy": 0.06379876285791397,
+                "neutral": 0.22354188561439514,
+                "sad": 0.15256038308143616,
+                "surprise": 0.06056691333651543
+              }
+            },
+            "aus": {
+              "AU1": 0.03139933943748474,
+              "AU2": 0.04364277794957161,
+              "AU4": 0.0077080633491277695,
+              "AU6": 0.0060384394600987434,
+              "AU9": 0,
+              "AU12": 0.018272297456860542,
+              "AU25": 0.21111398935317993,
+              "AU26": 0.15660254657268524
+            },
+            "gaze": [
+              -0.22321897745132446,
+              0.17837680876255035
+            ],
+            "quality": "ok"
+          },
+          "latencyMs": 265
+        },
+        {
+          "id": "sf-4",
+          "modality": "画面",
+          "text": "面部表情分类：sad 0.29，neutral 0.20，disgust 0.15；分类分数未校准，不等于心理状态；AU1 0.44，AU2 0.06，AU4 0.36，AU6 0.04，AU9 0.01，AU12 0.05，AU25 0.81，AU26 0.20",
+          "start": 3.0999999999999996,
+          "end": 3.5999999999999996,
+          "source": "specialist",
+          "model": "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+          "details": {
+            "scores": {
+              "anger": 0.05372825264930725,
+              "contempt": 0.09976885467767715,
+              "disgust": 0.15442012250423431,
+              "fear": 0.09963515400886536,
+              "happy": 0.021044772118330002,
+              "neutral": 0.1967625468969345,
+              "sad": 0.2949196398258209,
+              "surprise": 0.07972060143947601
+            },
+            "expressionModels": {
+              "OpenFace-3.0": {
+                "neutral": 0.0815117210149765,
+                "happy": 0.012328032404184341,
+                "sad": 0.2757284641265869,
+                "surprise": 0.08838041871786118,
+                "fear": 0.12615779042243958,
+                "disgust": 0.26737937331199646,
+                "anger": 0.06455022841691971,
+                "contempt": 0.08396396040916443
+              },
+              "EmotiEffLib-enet-b2-8": {
+                "anger": 0.05372825264930725,
+                "contempt": 0.09976885467767715,
+                "disgust": 0.15442012250423431,
+                "fear": 0.09963515400886536,
+                "happy": 0.021044772118330002,
+                "neutral": 0.1967625468969345,
+                "sad": 0.2949196398258209,
+                "surprise": 0.07972060143947601
+              }
+            },
+            "aus": {
+              "AU1": 0.43809401988983154,
+              "AU2": 0.059147708117961884,
+              "AU4": 0.3645997643470764,
+              "AU6": 0.04444624483585358,
+              "AU9": 0.005145739763975143,
+              "AU12": 0.05326439440250397,
+              "AU25": 0.8106303811073303,
+              "AU26": 0.19573375582695007
+            },
+            "gaze": [
+              -0.2527831792831421,
+              0.23279663920402527
+            ],
+            "quality": "ok"
+          },
+          "latencyMs": 294
+        },
+        {
+          "id": "sf-5",
+          "modality": "画面",
+          "text": "面部表情分类：sad 0.33，contempt 0.19，disgust 0.12；分类分数未校准，不等于心理状态；AU1 0.03，AU2 0.03，AU4 0.01，AU6 0.00，AU9 0.00，AU12 0.00，AU25 0.03，AU26 0.20",
+          "start": 3.8999999999999995,
+          "end": 4.3999999999999995,
+          "source": "specialist",
+          "model": "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+          "details": {
+            "scores": {
+              "anger": 0.06636334210634232,
+              "contempt": 0.1924651712179184,
+              "disgust": 0.12024585902690887,
+              "fear": 0.0709785521030426,
+              "happy": 0.09035155922174454,
+              "neutral": 0.09651661664247513,
+              "sad": 0.33088064193725586,
+              "surprise": 0.0321982316672802
+            },
+            "expressionModels": {
+              "OpenFace-3.0": {
+                "neutral": 0.10534588992595673,
+                "happy": 0.021732809022068977,
+                "sad": 0.08764547854661942,
+                "surprise": 0.060750268399715424,
+                "fear": 0.06609965860843658,
+                "disgust": 0.1363712102174759,
+                "anger": 0.3463539481163025,
+                "contempt": 0.17570078372955322
+              },
+              "EmotiEffLib-enet-b2-8": {
+                "anger": 0.06636334210634232,
+                "contempt": 0.1924651712179184,
+                "disgust": 0.12024585902690887,
+                "fear": 0.0709785521030426,
+                "happy": 0.09035155922174454,
+                "neutral": 0.09651661664247513,
+                "sad": 0.33088064193725586,
+                "surprise": 0.0321982316672802
+              }
+            },
+            "aus": {
+              "AU1": 0.025115083903074265,
+              "AU2": 0.03298923745751381,
+              "AU4": 0.013800456188619137,
+              "AU6": 0,
+              "AU9": 0,
+              "AU12": 0,
+              "AU25": 0.02520691603422165,
+              "AU26": 0.20277003943920135
+            },
+            "gaze": [
+              -0.14923864603042603,
+              0.19268272817134857
+            ],
+            "quality": "ok"
+          },
+          "latencyMs": 290
+        },
+        {
+          "id": "sf-6",
+          "modality": "画面",
+          "text": "面部表情分类：fear 0.21，disgust 0.20，surprise 0.18；分类分数未校准，不等于心理状态；AU1 0.76，AU2 0.72，AU4 0.11，AU6 0.01，AU9 0.00，AU12 0.04，AU25 0.40，AU26 0.06",
+          "start": 4.699999999999999,
+          "end": 4.999,
+          "source": "specialist",
+          "model": "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+          "details": {
+            "scores": {
+              "anger": 0.0529126301407814,
+              "contempt": 0.1186341866850853,
+              "disgust": 0.19649183750152588,
+              "fear": 0.21462836861610413,
+              "happy": 0.0644599050283432,
+              "neutral": 0.06913864612579346,
+              "sad": 0.09997622668743134,
+              "surprise": 0.1837581992149353
+            },
+            "expressionModels": {
+              "OpenFace-3.0": {
+                "neutral": 0.013884486630558968,
+                "happy": 0.016203293576836586,
+                "sad": 0.061354078352451324,
+                "surprise": 0.15669694542884827,
+                "fear": 0.5820184350013733,
+                "disgust": 0.055023327469825745,
+                "anger": 0.03693217784166336,
+                "contempt": 0.07788727432489395
+              },
+              "EmotiEffLib-enet-b2-8": {
+                "anger": 0.0529126301407814,
+                "contempt": 0.1186341866850853,
+                "disgust": 0.19649183750152588,
+                "fear": 0.21462836861610413,
+                "happy": 0.0644599050283432,
+                "neutral": 0.06913864612579346,
+                "sad": 0.09997622668743134,
+                "surprise": 0.1837581992149353
+              }
+            },
+            "aus": {
+              "AU1": 0.7553586959838867,
+              "AU2": 0.7196757793426514,
+              "AU4": 0.11436766386032104,
+              "AU6": 0.008809173479676247,
+              "AU9": 0.002082968596369028,
+              "AU12": 0.040098950266838074,
+              "AU25": 0.39729374647140503,
+              "AU26": 0.05907488241791725
+            },
+            "gaze": [
+              -0.20520073175430298,
+              0.28060367703437805
+            ],
+            "quality": "ok"
+          },
+          "latencyMs": 308
+        }
+      ],
+      "specialistFailures": 0
+    },
+    {
+      "id": "mark-zuckerberg-interview",
+      "duration": 5.12,
+      "status": 200,
+      "transcript": "around the world and make progress in a way that um that that meets people's needs.",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5.12,
+          "text": "around the world and make progress in a way that um that that meets people's needs."
+        }
+      ],
+      "observations": [
+        {
+          "id": "o1",
+          "modality": "语意",
+          "text": "around the world and make progress in a way that um that that meets people's needs.",
+          "start": 0,
+          "end": 5.12,
+          "source": "model_observation"
+        },
+        {
+          "id": "o2",
+          "modality": "语意",
+          "text": "in a way that um that that meets people's needs.",
+          "start": 2,
+          "end": 5.12,
+          "source": "model_observation"
+        }
+      ],
+      "signals": [],
+      "behaviors": [],
+      "consistency": [],
+      "scene": "人物正在讲话，阐述相关理念",
+      "unknown": "当前证据不足",
+      "unknownFamilies": [
+        "情绪",
+        "认知",
+        "投入",
+        "立场"
+      ],
+      "rejected": [
+        {
+          "label": "确信",
+          "reason": "声音说明缺少对应声音依据"
+        },
+        {
+          "label": "组织表达",
+          "reason": "缺少有效时间或可追溯依据"
+        }
+      ],
+      "quality": {
+        "audio": true,
+        "video": true,
+        "face": "single",
+        "faceSamples": 7,
+        "clipping": false,
+        "dark": false,
+        "speech": null,
+        "quiet": false
+      },
+      "partial": false,
+      "speakerBound": true,
+      "source": "model",
+      "model": "qwen3.8-omni-flash",
+      "latencyMs": 7698,
+      "specialistEvidence": [
+        {
+          "id": "sf-0",
+          "modality": "画面",
+          "text": "面部表情分类：surprise 0.38，fear 0.14，neutral 0.14；分类分数未校准，不等于心理状态；AU1 0.00，AU2 0.00，AU4 0.04，AU6 0.00，AU9 0.00，AU12 0.00，AU25 0.99，AU26 0.99",
+          "start": 0,
+          "end": 0.4,
+          "source": "specialist",
+          "model": "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+          "details": {
+            "scores": {
+              "anger": 0.06473812460899353,
+              "contempt": 0.08085636049509048,
+              "disgust": 0.13694879412651062,
+              "fear": 0.14181241393089294,
+              "happy": 0.021469270810484886,
+              "neutral": 0.1377681940793991,
+              "sad": 0.03613283485174179,
+              "surprise": 0.3802740275859833
+            },
+            "expressionModels": {
+              "OpenFace-3.0": {
+                "neutral": 0.030218318104743958,
+                "happy": 0.0032910865265876055,
+                "sad": 0.004006195347756147,
+                "surprise": 0.801962673664093,
+                "fear": 0.04410964995622635,
+                "disgust": 0.038694486021995544,
+                "anger": 0.05061688274145126,
+                "contempt": 0.027100753039121628
+              },
+              "EmotiEffLib-enet-b2-8": {
+                "anger": 0.06473812460899353,
+                "contempt": 0.08085636049509048,
+                "disgust": 0.13694879412651062,
+                "fear": 0.14181241393089294,
+                "happy": 0.021469270810484886,
+                "neutral": 0.1377681940793991,
+                "sad": 0.03613283485174179,
+                "surprise": 0.3802740275859833
+              }
+            },
+            "aus": {
+              "AU1": 0.00039799194200895727,
+              "AU2": 0,
+              "AU4": 0.03858769312500954,
+              "AU6": 0.0016138486098498106,
+              "AU9": 0.0003838678530883044,
+              "AU12": 0.0018096553394570947,
+              "AU25": 0.9932297468185425,
+              "AU26": 0.9893659949302673
+            },
+            "gaze": [
+              -0.15049436688423157,
+              -0.16999901831150055
+            ],
+            "quality": "ok"
+          },
+          "latencyMs": 326
+        },
+        {
+          "id": "sv-1",
+          "modality": "声音",
+          "text": "原声情绪分类：<unk> 0.70，恐惧/fearful 0.24，中立/neutral 0.03；分类分数未校准，不等于心理状态",
+          "start": 0,
+          "end": 5.12,
+          "source": "specialist",
+          "model": "emotion2vec-plus-large",
+          "details": {
+            "scores": {
+              "生气/angry": 0.0008062609122134745,
+              "厌恶/disgusted": 0.006606318987905979,
+              "恐惧/fearful": 0.2410234659910202,
+              "开心/happy": 0.004540989175438881,
+              "中立/neutral": 0.03191182389855385,
+              "其他/other": 0.004550643265247345,
+              "难过/sad": 0.007800207938998938,
+              "吃惊/surprised": 0.002164793200790882,
+              "<unk>": 0.7005955576896667
+            },
+            "quality": "ok"
+          },
+          "latencyMs": 346
+        },
+        {
+          "id": "sf-1",
+          "modality": "画面",
+          "text": "面部表情分类：neutral 0.28，disgust 0.16，surprise 0.15；分类分数未校准，不等于心理状态；AU1 0.00，AU2 0.00，AU4 0.13，AU6 0.01，AU9 0.01，AU12 0.01，AU25 0.99，AU26 0.87",
+          "start": 0.7000000000000001,
+          "end": 1.2000000000000002,
+          "source": "specialist",
+          "model": "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+          "details": {
+            "scores": {
+              "anger": 0.055642712861299515,
+              "contempt": 0.1426781862974167,
+              "disgust": 0.16338126361370087,
+              "fear": 0.11377763748168945,
+              "happy": 0.043962519615888596,
+              "neutral": 0.27550774812698364,
+              "sad": 0.05894580855965614,
+              "surprise": 0.1461041271686554
+            },
+            "expressionModels": {
+              "OpenFace-3.0": {
+                "neutral": 0.07310943305492401,
+                "happy": 0.012237315997481346,
+                "sad": 0.010596659034490585,
+                "surprise": 0.4771686792373657,
+                "fear": 0.06608507037162781,
+                "disgust": 0.12190394848585129,
+                "anger": 0.17048846185207367,
+                "contempt": 0.06841050088405609
+              },
+              "EmotiEffLib-enet-b2-8": {
+                "anger": 0.055642712861299515,
+                "contempt": 0.1426781862974167,
+                "disgust": 0.16338126361370087,
+                "fear": 0.11377763748168945,
+                "happy": 0.043962519615888596,
+                "neutral": 0.27550774812698364,
+                "sad": 0.05894580855965614,
+                "surprise": 0.1461041271686554
+              }
+            },
+            "aus": {
+              "AU1": 0.00013540382497012615,
+              "AU2": 0,
+              "AU4": 0.127775177359581,
+              "AU6": 0.0055267540737986565,
+              "AU9": 0.01165760774165392,
+              "AU12": 0.014869374223053455,
+              "AU25": 0.9907938241958618,
+              "AU26": 0.8744286298751831
+            },
+            "gaze": [
+              -0.12084195762872696,
+              -0.24509300291538239
+            ],
+            "quality": "ok"
+          },
+          "latencyMs": 288
+        },
+        {
+          "id": "sf-2",
+          "modality": "画面",
+          "text": "面部表情分类：surprise 0.27，neutral 0.24，disgust 0.14；分类分数未校准，不等于心理状态；AU1 0.00，AU2 0.00，AU4 0.05，AU6 0.00，AU9 0.00，AU12 0.01，AU25 0.85，AU26 1.00",
+          "start": 1.5,
+          "end": 2,
+          "source": "specialist",
+          "model": "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+          "details": {
+            "scores": {
+              "anger": 0.05028288811445236,
+              "contempt": 0.10282425582408905,
+              "disgust": 0.13683150708675385,
+              "fear": 0.11818425357341766,
+              "happy": 0.029143495485186577,
+              "neutral": 0.24491670727729797,
+              "sad": 0.052719928324222565,
+              "surprise": 0.2650969624519348
+            },
+            "expressionModels": {
+              "OpenFace-3.0": {
+                "neutral": 0.04375635087490082,
+                "happy": 0.0034202388487756252,
+                "sad": 0.010111051611602306,
+                "surprise": 0.6503540873527527,
+                "fear": 0.18104147911071777,
+                "disgust": 0.04050128906965256,
+                "anger": 0.035085007548332214,
+                "contempt": 0.03573046997189522
+              },
+              "EmotiEffLib-enet-b2-8": {
+                "anger": 0.05028288811445236,
+                "contempt": 0.10282425582408905,
+                "disgust": 0.13683150708675385,
+                "fear": 0.11818425357341766,
+                "happy": 0.029143495485186577,
+                "neutral": 0.24491670727729797,
+                "sad": 0.052719928324222565,
+                "surprise": 0.2650969624519348
+              }
+            },
+            "aus": {
+              "AU1": 0.0046393913216888905,
+              "AU2": 0.00031872521503828466,
+              "AU4": 0.049535661935806274,
+              "AU6": 0,
+              "AU9": 0,
+              "AU12": 0.005794991739094257,
+              "AU25": 0.8497903347015381,
+              "AU26": 0.9959209561347961
+            },
+            "gaze": [
+              -0.1524604707956314,
+              -0.21677111089229584
+            ],
+            "quality": "ok"
+          },
+          "latencyMs": 255
+        },
+        {
+          "id": "sf-3",
+          "modality": "画面",
+          "text": "面部表情分类：disgust 0.26，neutral 0.23，sad 0.14；分类分数未校准，不等于心理状态；AU1 0.00，AU2 0.00，AU4 0.07，AU6 0.00，AU9 0.01，AU12 0.01，AU25 0.99，AU26 0.99",
+          "start": 2.3,
+          "end": 2.8,
+          "source": "specialist",
+          "model": "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+          "details": {
+            "scores": {
+              "anger": 0.06725742667913437,
+              "contempt": 0.11591383069753647,
+              "disgust": 0.25711414217948914,
+              "fear": 0.07981908321380615,
+              "happy": 0.03269541263580322,
+              "neutral": 0.2277628630399704,
+              "sad": 0.13790148496627808,
+              "surprise": 0.08153575658798218
+            },
+            "expressionModels": {
+              "OpenFace-3.0": {
+                "neutral": 0.09310314059257507,
+                "happy": 0.021382829174399376,
+                "sad": 0.016006950289011,
+                "surprise": 0.33174312114715576,
+                "fear": 0.06241915002465248,
+                "disgust": 0.25635746121406555,
+                "anger": 0.1383741796016693,
+                "contempt": 0.08061309903860092
+              },
+              "EmotiEffLib-enet-b2-8": {
+                "anger": 0.06725742667913437,
+                "contempt": 0.11591383069753647,
+                "disgust": 0.25711414217948914,
+                "fear": 0.07981908321380615,
+                "happy": 0.03269541263580322,
+                "neutral": 0.2277628630399704,
+                "sad": 0.13790148496627808,
+                "surprise": 0.08153575658798218
+              }
+            },
+            "aus": {
+              "AU1": 0,
+              "AU2": 0,
+              "AU4": 0.06565100699663162,
+              "AU6": 0.004108422435820103,
+              "AU9": 0.008835120126605034,
+              "AU12": 0.008586902171373367,
+              "AU25": 0.9929331541061401,
+              "AU26": 0.9896955490112305
+            },
+            "gaze": [
+              -0.21729710698127747,
+              -0.02720894291996956
+            ],
+            "quality": "ok"
+          },
+          "latencyMs": 262
+        },
+        {
+          "id": "sf-4",
+          "modality": "画面",
+          "text": "面部表情分类：disgust 0.19，surprise 0.17，contempt 0.14；分类分数未校准，不等于心理状态；AU1 0.00，AU2 0.00，AU4 0.02，AU6 0.00，AU9 0.00，AU12 0.01，AU25 1.00，AU26 1.00",
+          "start": 3.0999999999999996,
+          "end": 3.5999999999999996,
+          "source": "specialist",
+          "model": "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+          "details": {
+            "scores": {
+              "anger": 0.06512048840522766,
+              "contempt": 0.13587798178195953,
+              "disgust": 0.1922481507062912,
+              "fear": 0.0950097143650055,
+              "happy": 0.09840422123670578,
+              "neutral": 0.13475117087364197,
+              "sad": 0.11118996888399124,
+              "surprise": 0.16739827394485474
+            },
+            "expressionModels": {
+              "OpenFace-3.0": {
+                "neutral": 0.09645304828882217,
+                "happy": 0.04215932637453079,
+                "sad": 0.08455302566289902,
+                "surprise": 0.38615381717681885,
+                "fear": 0.07733078300952911,
+                "disgust": 0.12925079464912415,
+                "anger": 0.07311186194419861,
+                "contempt": 0.1109873428940773
+              },
+              "EmotiEffLib-enet-b2-8": {
+                "anger": 0.06512048840522766,
+                "contempt": 0.13587798178195953,
+                "disgust": 0.1922481507062912,
+                "fear": 0.0950097143650055,
+                "happy": 0.09840422123670578,
+                "neutral": 0.13475117087364197,
+                "sad": 0.11118996888399124,
+                "surprise": 0.16739827394485474
+              }
+            },
+            "aus": {
+              "AU1": 0,
+              "AU2": 0,
+              "AU4": 0.019378066062927246,
+              "AU6": 0.0038038284983485937,
+              "AU9": 0.0006278383079916239,
+              "AU12": 0.005574417766183615,
+              "AU25": 0.9972092509269714,
+              "AU26": 0.9982566833496094
+            },
+            "gaze": [
+              -0.36024603247642517,
+              0.3010651171207428
+            ],
+            "quality": "ok"
+          },
+          "latencyMs": 319
+        },
+        {
+          "id": "sf-5",
+          "modality": "画面",
+          "text": "面部表情分类：sad 0.30，disgust 0.20，neutral 0.16；分类分数未校准，不等于心理状态；AU1 0.00，AU2 0.00，AU4 0.04，AU6 0.01，AU9 0.01，AU12 0.04，AU25 1.00，AU26 0.22",
+          "start": 3.8999999999999995,
+          "end": 4.3999999999999995,
+          "source": "specialist",
+          "model": "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+          "details": {
+            "scores": {
+              "anger": 0.059844885021448135,
+              "contempt": 0.11397924274206161,
+              "disgust": 0.20351193845272064,
+              "fear": 0.08154668658971786,
+              "happy": 0.036327894777059555,
+              "neutral": 0.16091515123844147,
+              "sad": 0.29911041259765625,
+              "surprise": 0.04476378858089447
+            },
+            "expressionModels": {
+              "OpenFace-3.0": {
+                "neutral": 0.22603200376033783,
+                "happy": 0.05814234912395477,
+                "sad": 0.1067858338356018,
+                "surprise": 0.09199932217597961,
+                "fear": 0.08268732577562332,
+                "disgust": 0.16869190335273743,
+                "anger": 0.10155028849840164,
+                "contempt": 0.1641109734773636
+              },
+              "EmotiEffLib-enet-b2-8": {
+                "anger": 0.059844885021448135,
+                "contempt": 0.11397924274206161,
+                "disgust": 0.20351193845272064,
+                "fear": 0.08154668658971786,
+                "happy": 0.036327894777059555,
+                "neutral": 0.16091515123844147,
+                "sad": 0.29911041259765625,
+                "surprise": 0.04476378858089447
+              }
+            },
+            "aus": {
+              "AU1": 0,
+              "AU2": 0,
+              "AU4": 0.04427236318588257,
+              "AU6": 0.008197764866054058,
+              "AU9": 0.0069296155124902725,
+              "AU12": 0.043862320482730865,
+              "AU25": 0.996376633644104,
+              "AU26": 0.21559210121631622
+            },
+            "gaze": [
+              -0.3482825756072998,
+              0.3214759826660156
+            ],
+            "quality": "ok"
+          },
+          "latencyMs": 298
+        },
+        {
+          "id": "sf-6",
+          "modality": "画面",
+          "text": "面部表情分类：neutral 0.25，sad 0.19，disgust 0.18；分类分数未校准，不等于心理状态；AU1 0.00，AU2 0.00，AU4 0.02，AU6 0.00，AU9 0.00，AU12 0.00，AU25 1.00，AU26 0.12",
+          "start": 4.699999999999999,
+          "end": 5.12,
+          "source": "specialist",
+          "model": "EmotiEffLib-enet-b2-8 + OpenFace-3.0",
+          "details": {
+            "scores": {
+              "anger": 0.045837655663490295,
+              "contempt": 0.1376795917749405,
+              "disgust": 0.18147024512290955,
+              "fear": 0.08716412633657455,
+              "happy": 0.048255566507577896,
+              "neutral": 0.24643266201019287,
+              "sad": 0.1936333030462265,
+              "surprise": 0.05952681601047516
+            },
+            "expressionModels": {
+              "OpenFace-3.0": {
+                "neutral": 0.2435532808303833,
+                "happy": 0.016507361084222794,
+                "sad": 0.13282853364944458,
+                "surprise": 0.18021629750728607,
+                "fear": 0.08664382249116898,
+                "disgust": 0.13728640973567963,
+                "anger": 0.063223697245121,
+                "contempt": 0.1397407054901123
+              },
+              "EmotiEffLib-enet-b2-8": {
+                "anger": 0.045837655663490295,
+                "contempt": 0.1376795917749405,
+                "disgust": 0.18147024512290955,
+                "fear": 0.08716412633657455,
+                "happy": 0.048255566507577896,
+                "neutral": 0.24643266201019287,
+                "sad": 0.1936333030462265,
+                "surprise": 0.05952681601047516
+              }
+            },
+            "aus": {
+              "AU1": 0,
+              "AU2": 0,
+              "AU4": 0.01649058237671852,
+              "AU6": 0,
+              "AU9": 0,
+              "AU12": 0.0037300181575119495,
+              "AU25": 0.9982709884643555,
+              "AU26": 0.12292781472206116
+            },
+            "gaze": [
+              -0.3605203628540039,
+              0.32404568791389465
+            ],
+            "quality": "ok"
+          },
+          "latencyMs": 905
+        }
+      ],
+      "specialistFailures": 0
+    }
+  ],
+  "phase": "完成",
+  "passed": true
+}

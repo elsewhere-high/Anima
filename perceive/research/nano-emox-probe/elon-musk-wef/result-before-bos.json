@@ -1,0 +1,38 @@
+{
+  "createdAt": "2026-10-07T17:08:24.911132+00:00",
+  "clip": "elon-musk-wef",
+  "duration": 3,
+  "device": "mps",
+  "checkpoint": "epoch60",
+  "scope": "Prefix feasibility only, not social-signal parity or calibrated accuracy",
+  "transcriptInput": "none",
+  "runs": [
+    {
+      "text": "Tipo of the character's emotional state: Excitement, enthusiasm.",
+      "encodeMs": 12322,
+      "decodeMs": 8950,
+      "totalMs": 21273,
+      "tokens": 16
+    },
+    {
+      "text": "matrix, the subtitle content \"I'm not sure if I can do it\" might be a self-assessment or reaction from this man. Given his serious expression and body language in the video clues, as well as the emotional cues of anxiety, tension, stress, frustration, irritability, overwhelm, and pressure described in",
+      "encodeMs": 3203,
+      "decodeMs": 5475,
+      "totalMs": 8678,
+      "tokens": 64
+    }
+  ],
+  "loadMs": 22256,
+  "parameters": 2451961148,
+  "loadReport": {
+    "unexpected": [],
+    "missingLearned": [],
+    "missingFrozenCount": 1679,
+    "loadedTensors": 592,
+    "faceCheckpoint": {
+      "missingParameters": [],
+      "extraUnusedHeadTensors": 145,
+      "loadedTensors": 505
+    }
+  }
+}

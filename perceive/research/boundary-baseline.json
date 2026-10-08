@@ -1,0 +1,235 @@
+[
+  {
+    "id": "neutral-confirmation",
+    "mode": "baseline",
+    "transcript": "你在测试是吧？",
+    "segments": [
+      {
+        "start": 0,
+        "end": 5,
+        "text": "你在测试是吧？"
+      }
+    ],
+    "signals": [],
+    "scene": "人物面对镜头说话，询问对方是否在测试。",
+    "unknown": "缺乏声音语调、面部表情及上下文证据，无法判断具体情绪或立场。",
+    "source": "model",
+    "model": "qwen3.8-omni-flash",
+    "latencyMs": 1145
+  },
+  {
+    "id": "calm-disagreement",
+    "mode": "baseline",
+    "transcript": "第二个方案我不同意。成本太高了。",
+    "segments": [
+      {
+        "start": 0,
+        "end": 2.5,
+        "text": "第二个方案我不同意"
+      },
+      {
+        "start": 2.5,
+        "end": 5,
+        "text": "成本太高了"
+      }
+    ],
+    "signals": [
+      {
+        "label": "反对",
+        "family": "立场",
+        "start": 0,
+        "end": 2.5,
+        "anchor": "不同意",
+        "target": "第二个方案",
+        "evidence": "明确表达“不同意”并指出理由为成本高",
+        "modalities": [
+          "语意"
+        ],
+        "tentative": false,
+        "confidence": 0.9
+      }
+    ],
+    "scene": "人物正在口头表达对某方案的异议",
+    "unknown": "",
+    "source": "model",
+    "model": "qwen3.8-omni-flash",
+    "latencyMs": 1533
+  },
+  {
+    "id": "fluent-uncertainty",
+    "mode": "baseline",
+    "transcript": "我还不能确定这个数字是否准确，需要再核对一次原始记录。",
+    "segments": [
+      {
+        "start": 0,
+        "end": 5,
+        "text": "我还不能确定这个数字是否准确，需要再核对一次原始记录。"
+      }
+    ],
+    "signals": [
+      {
+        "label": "不确定",
+        "family": "认知",
+        "start": 0,
+        "end": 2.5,
+        "anchor": "不能确定",
+        "target": "数字的准确性",
+        "evidence": "语意明确表达“不能确定”，缺乏对当前数据的确信度。",
+        "modalities": [
+          "语意"
+        ],
+        "tentative": false,
+        "confidence": 0.9
+      },
+      {
+        "label": "专注",
+        "family": "投入",
+        "start": 2.5,
+        "end": 5,
+        "anchor": "核对",
+        "target": "原始记录的核查工作",
+        "evidence": "提出具体行动“再核对一次原始记录”，显示注意力集中在验证任务上。",
+        "modalities": [
+          "语意"
+        ],
+        "tentative": false,
+        "confidence": 0.8
+      }
+    ],
+    "scene": "人物正在讨论数据准确性并提出核对计划",
+    "unknown": "无面部运动线索，无法判断情绪状态",
+    "source": "model",
+    "model": "qwen3.8-omni-flash",
+    "latencyMs": 2928
+  },
+  {
+    "id": "quoted-past-sadness",
+    "mode": "baseline",
+    "transcript": "她去年说过，当时自己很悲伤。我现在只是给你复述这句话。",
+    "segments": [
+      {
+        "start": 0,
+        "end": 2.5,
+        "text": "她去年说过，当时自己很悲伤"
+      },
+      {
+        "start": 2.5,
+        "end": 5,
+        "text": "我现在只是给你复述这句话"
+      }
+    ],
+    "signals": [],
+    "scene": "人物面对镜头进行口头陈述",
+    "unknown": "缺乏声音、面部及肢体线索以判断情绪或态度",
+    "source": "model",
+    "model": "qwen3.8-omni-flash",
+    "latencyMs": 1263
+  },
+  {
+    "id": "correction-not-deception",
+    "mode": "baseline",
+    "transcript": "刚才说成周三了，口误，是周四交付。",
+    "segments": [
+      {
+        "start": 0,
+        "end": 5,
+        "text": "刚才说成周三了，口误，是周四交付。"
+      }
+    ],
+    "signals": [
+      {
+        "label": "确信",
+        "family": "认知",
+        "start": 3,
+        "end": 5,
+        "anchor": "是周四交付",
+        "target": "修正后的交付日期为周四",
+        "evidence": "明确纠正之前的错误信息并给出确定结论",
+        "modalities": [
+          "语意"
+        ],
+        "tentative": false,
+        "confidence": 0.9
+      }
+    ],
+    "scene": "人物面对镜头进行口头陈述与自我纠错",
+    "unknown": "",
+    "source": "model",
+    "model": "qwen3.8-omni-flash",
+    "latencyMs": 1613
+  },
+  {
+    "id": "understanding-claim",
+    "mode": "baseline",
+    "transcript": "我懂了。",
+    "segments": [
+      {
+        "start": 0,
+        "end": 5,
+        "text": "我懂了。"
+      }
+    ],
+    "signals": [],
+    "scene": "人物面对镜头说话",
+    "unknown": "缺乏声音、画面及上下文线索，无法判断具体状态",
+    "source": "model",
+    "model": "qwen3.8-omni-flash",
+    "latencyMs": 915
+  },
+  {
+    "id": "explicit-curiosity",
+    "mode": "baseline",
+    "transcript": "我对这个识别方法很感兴趣，想深入了解它怎样把声音和画面结合起来，你能介绍一下原理吗？",
+    "segments": [
+      {
+        "start": 0,
+        "end": 5,
+        "text": "我对这个识别方法很感兴趣，想深入了解它怎样把声音和画面结合起来，你能介绍一下原理吗？"
+      }
+    ],
+    "signals": [
+      {
+        "label": "兴趣",
+        "family": "投入",
+        "start": 0,
+        "end": 5,
+        "anchor": "很感兴趣",
+        "target": "多模态识别方法的原理",
+        "evidence": "语意明确表达“很感兴趣”并请求介绍结合原理",
+        "modalities": [
+          "语意"
+        ],
+        "tentative": false,
+        "confidence": 0.9
+      }
+    ],
+    "scene": "用户询问多模态识别原理",
+    "unknown": "",
+    "source": "model",
+    "model": "qwen3.8-omni-flash",
+    "latencyMs": 1563
+  },
+  {
+    "id": "polite-acknowledgement",
+    "mode": "baseline",
+    "transcript": "嗯，好的，谢谢你。",
+    "segments": [
+      {
+        "start": 0,
+        "end": 1.5,
+        "text": "嗯，好的"
+      },
+      {
+        "start": 1.5,
+        "end": 3,
+        "text": "谢谢你"
+      }
+    ],
+    "signals": [],
+    "scene": "人物面对镜头说话并致谢",
+    "unknown": "缺乏足够的面部动作和声音线索以判断具体情绪或态度",
+    "source": "model",
+    "model": "qwen3.8-omni-flash",
+    "latencyMs": 1130
+  }
+]

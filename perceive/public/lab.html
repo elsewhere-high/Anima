@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Anima 实时多模态感知实验。观察画面、声音和表达，读懂此刻。">
+  <title>Anima · Perceive</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script defer src="/vendor/ort/ort.wasm.min.js"></script>
+  <script defer src="/vendor/vad/bundle.min.js"></script>
+  <script type="module" src="/lab.js"></script>
+</head>
+<body>
+  <header class="header"><a class="brand" href="/" aria-label="Anima 首页">Anima<span class="brand-dot"></span></a><span class="header-label">Perceive</span></header>
+  <div class="lab-controls"><button id="lab-run">公开素材联调</button><span id="lab-status">开发验证 · 不使用摄像头或麦克风</span></div><main>
+    <section class="stage" id="stage" aria-label="Anima 感知实验">
+      <video id="reel" playsinline muted preload="auto" poster="/assets/yann-lecun-wef.jpg" aria-label="案例视频"></video>
+      <video id="self-video" playsinline muted hidden aria-label="我的实验画面"></video>
+      <div class="shade" aria-hidden="true"></div>
+      <div class="top-controls">
+        <button id="sound" class="round" aria-label="开启声音" aria-pressed="false"></button>
+        <button id="play" class="round" aria-label="播放案例"></button>
+      </div>
+      <span id="status" class="status" aria-live="polite"></span>
+      <div id="caption" class="caption" aria-live="polite" aria-atomic="true"></div>
+      <div id="signal-detail" class="signal-detail" role="status" hidden></div>
+      <div class="reel-controls" id="reel-controls">
+        <div class="track-wrap">
+          <div class="ticks" id="ticks" aria-hidden="true"></div>
+          <input id="seek" type="range" min="0" max="1000" value="0" aria-label="案例播放位置">
+          <div id="segments" class="segments" aria-label="切换案例"></div>
+        </div>
+        <button id="try" class="try-button">试试自己</button>
+      </div>
+      <div class="experiment-controls" id="experiment-controls" hidden>
+        <span class="record-state"><span class="record-dot"></span><span id="record-time">00:00</span></span>
+        <span id="speech-state">正在观察</span>
+        <button id="stop" class="try-button">结束实验</button>
+      </div>
+      <section id="experiment-panel" class="experiment-panel" aria-label="自己的实验" hidden>
+        <div id="panel-preview" class="panel-preview">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M14.5 4h-5L7.5 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3.5z"/><circle cx="12" cy="13" r="3.5"/></svg>
+        </div>
+        <p class="panel-message" id="panel-message"></p>
+        <form id="model-form" hidden>
+          <p class="model-name" id="model">Qwen3.8 Omni · 实时音视频</p>
+          <label>千问 API Key<input id="api-key" type="password" autocomplete="off" placeholder="仅本次运行使用" required></label>
+          <details class="advanced"><summary>调用地址</summary><label>服务地址<input id="workspace" autocomplete="off" value="https://maas.qianwenaiapi.com/compatible-mode/v1" required></label></details>
+          <button class="panel-primary" type="submit">保存设置</button>
+        </form>
+        <div class="panel-actions"><button id="cancel" class="panel-secondary">暂不</button><button id="record" class="panel-primary">开始实时观察</button></div>
+        <div class="panel-links"><button id="upload">选择视频</button><button id="configure">模型设置</button></div>
+        <input id="video-file" type="file" accept="video/mp4,video/webm,video/quicktime" hidden>
+      </section>
+      <aside id="records-panel" class="records-panel" aria-label="观察记录" hidden><div class="records-head"><span>记录</span><button id="records-close" aria-label="收起记录">×</button></div><div id="records-list"></div></aside>
+      <div class="toast" id="toast" role="status" hidden></div>
+    </section>
+    <div class="under-stage"><span id="source-note">案例 · 模型离线分析</span><button id="records-button" aria-expanded="false" hidden>记录</button><button id="signals-button" aria-expanded="false">20 个信号</button><button id="analyze-saved" hidden>分析实验</button><button id="download" hidden>保存实验</button></div>
+    <section class="signals-popover" id="signals-popover" aria-label="Anima 候选信号" hidden></section>
+  </main>
+<pre id="lab-report" hidden></pre></body>
+</html>

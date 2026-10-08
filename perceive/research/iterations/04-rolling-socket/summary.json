@@ -1,0 +1,182 @@
+{
+  "createdAt": "2026-10-07T15:54:06.263Z",
+  "input": "research/iterations/04-rolling-socket/live-vad.json",
+  "protocol": "candidate-core-causal-live-with-silero-v6",
+  "runs": [
+    {
+      "id": "yann-lecun-wef",
+      "round": 1,
+      "duration": 6.869375,
+      "expected": {
+        "confidence": 2.5
+      },
+      "firstShown": {
+        "hesitation": 1.8122000000029803,
+        "愉悦语调": 2.0167000000029804,
+        "confidence": 5.608100000008941
+      },
+      "liveMatches": [
+        "confidence"
+      ],
+      "timelyMatches": [],
+      "allMatches": [
+        "confidence"
+      ],
+      "extraLabels": [
+        "hesitation",
+        "愉悦语调"
+      ],
+      "finalResults": 8,
+      "afterStop": 1,
+      "notices": 0,
+      "error": null
+    },
+    {
+      "id": "steve-jobs-interview",
+      "round": 1,
+      "duration": 12.538,
+      "expected": {
+        "confidence": 3.453,
+        "frustration": 6.103
+      },
+      "firstShown": {
+        "confidence": 2.7027999999970196
+      },
+      "liveMatches": [
+        "confidence"
+      ],
+      "timelyMatches": [
+        "confidence"
+      ],
+      "allMatches": [
+        "confidence"
+      ],
+      "extraLabels": [],
+      "finalResults": 15,
+      "afterStop": 1,
+      "notices": 0,
+      "error": null
+    },
+    {
+      "id": "elon-musk-wef",
+      "round": 1,
+      "duration": 4.013,
+      "expected": {
+        "hesitation": 2.366
+      },
+      "firstShown": {
+        "hesitation": 1.905199999988079
+      },
+      "liveMatches": [
+        "hesitation"
+      ],
+      "timelyMatches": [
+        "hesitation"
+      ],
+      "allMatches": [
+        "hesitation"
+      ],
+      "extraLabels": [],
+      "finalResults": 5,
+      "afterStop": 1,
+      "notices": 0,
+      "error": null
+    },
+    {
+      "id": "pep-guardiola-press",
+      "round": 1,
+      "duration": 4.999,
+      "expected": {
+        "confidence": 1.24,
+        "hesitation": 3.02,
+        "frustration": 4.18
+      },
+      "firstShown": {
+        "愉悦语调": 1.2085,
+        "hesitation": 2.506
+      },
+      "liveMatches": [
+        "hesitation"
+      ],
+      "timelyMatches": [
+        "hesitation"
+      ],
+      "allMatches": [
+        "hesitation"
+      ],
+      "extraLabels": [
+        "愉悦语调"
+      ],
+      "finalResults": 5,
+      "afterStop": 0,
+      "notices": 2,
+      "error": null
+    },
+    {
+      "id": "mark-zuckerberg-interview",
+      "round": 1,
+      "duration": 5.12,
+      "expected": {
+        "confidence": 1.14,
+        "hesitation": 2.92,
+        "uncertainty": 4.64
+      },
+      "firstShown": {
+        "hesitation": 4.8049000000059605
+      },
+      "liveMatches": [
+        "hesitation"
+      ],
+      "timelyMatches": [],
+      "allMatches": [
+        "hesitation"
+      ],
+      "extraLabels": [],
+      "finalResults": 7,
+      "afterStop": 1,
+      "notices": 0,
+      "error": null
+    }
+  ],
+  "referenceCoverageNotAccuracy": {
+    "denominator": 10,
+    "live": 5,
+    "timely": 3,
+    "allIncludingAfterStop": 5,
+    "extraLabelsNotAutomaticallyFalsePositives": 3
+  },
+  "requestLatencyMs": {
+    "n": 40,
+    "p50": 747,
+    "p95": 969
+  },
+  "windowEndToFinalMs": {
+    "n": 40,
+    "p50": 701.0000000000005,
+    "p95": 943.5000000000002
+  },
+  "notices": 2,
+  "independentAccuracy": null,
+  "sourceHashes": {
+    "social.mjs": "a0eb8c08b3f6e7defb05f41a7cf7e09fbd380f3a21d502cdd9de4eb3d90d0578",
+    "realtime.mjs": "f1088af4b647df8bf12db2e02cb9e42fb8da8a44e945383a3ef94d5db12f32cc",
+    "window-scheduler.mjs": "49b86dd1eed844d87f920bd69a6f7904b370f22d2ca221d078faeca4ed706be6",
+    "state-engine.mjs": "5368ab2a1eb6a0e21e57b1d626a95bf3de09c17a8161657beeb63a0ed88fe17b",
+    "public/live-state.js": "76dda04592e250f183d119ce0dd6b7fc5726156e78100ac66a5fe4f4a4ae33f9",
+    "research/candidate-server.mjs": "586e7cea16d38de0d711782c7977e18d8b4b99566d5c8665834614edc76e4b58"
+  },
+  "variant": "rolling-socket",
+  "observedModels": [
+    "qwen3.8-omni-flash-realtime"
+  ],
+  "nonemptyRequestLatencyMs": {
+    "n": 29,
+    "p50": 796,
+    "p95": 1026
+  },
+  "emptyRequestLatencyMs": {
+    "n": 11,
+    "p50": 497,
+    "p95": 793
+  }
+}

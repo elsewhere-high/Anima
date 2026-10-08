@@ -1,0 +1,386 @@
+{
+  "status": "handoff_prepared",
+  "automationId": null,
+  "goal": "Interhuman default Inter-2 demo parity, with separate held-out error checks",
+  "iteration": 33,
+  "phase": "colleague-handoff",
+  "baseline": "interhuman-audit-summary.json",
+  "productionPort": 4827,
+  "candidatePort": 4831,
+  "planAdjustments": [
+    "Treat known five clips as development reference; never as held-out accuracy.",
+    "Freeze one main hypothesis and protocol per comparison.",
+    "Do not equate prerecorded demo timestamps with API inference latency.",
+    "Only promote validated improvements; preserve original files and logs.",
+    "Independent human accuracy and full ten-signal equivalence remain unverified."
+  ],
+  "nextAction": "Read repository README; validate fresh startup and latest upload face binding; repeat final 600s chain with valid quota; establish independent Chinese event-level labels. No claim of Interhuman parity.",
+  "results": [
+    {
+      "iteration": 1,
+      "path": "iterations/01-compact/summary.json",
+      "liveCoverage": "5/10",
+      "timelyCoverage": "1/10",
+      "requestP50Ms": 1349,
+      "notices": 2,
+      "decision": "Keep as candidate; definition and compact output changed together, so improvement is not attributed to either alone. Not parity, no independent accuracy."
+    },
+    {
+      "iteration": 2,
+      "path": "iterations/02-finer-clock/summary.json",
+      "liveCoverage": "7/10",
+      "timelyCoverage": "2/10",
+      "requestP50Ms": 1309,
+      "notices": 0,
+      "decision": "Better live coverage but still slow; 57 requests versus 33, not promoted."
+    },
+    {
+      "iteration": 3,
+      "path": "iterations/03-native/summary.json",
+      "liveCoverage": "4/10",
+      "timelyCoverage": "1/10",
+      "requestP50Ms": 577,
+      "notices": 1,
+      "decision": "Rejected: native socket is faster but drops supported states."
+    },
+    {
+      "iteration": 4,
+      "path": "iterations/04-rolling-socket/summary.json",
+      "liveCoverage": "5/10",
+      "timelyCoverage": "3/10",
+      "requestP50Ms": 747,
+      "notices": 2,
+      "decision": "Rejected: persistent rolling socket remains less complete."
+    },
+    {
+      "iteration": 5,
+      "path": "iterations/05-independent-labels/summary.json",
+      "liveCoverage": "4/10",
+      "timelyCoverage": "1/10",
+      "requestP50Ms": 1433.5,
+      "notices": 0,
+      "decision": "Rejected: more complaint detection but fewer delivery signals."
+    },
+    {
+      "iteration": 6,
+      "path": "iterations/06-focused-passes/summary.json",
+      "liveCoverage": "7/10",
+      "timelyCoverage": "5/10",
+      "afterStopCoverage": "9/10",
+      "requestP50Ms": 1349,
+      "notices": 0,
+      "decision": "Promising but not accepted; two API passes per window, three-repeat test running, unknown held-out accuracy.",
+      "repeat": {
+        "live": "21/30",
+        "timely": "12/30",
+        "includingAfterStop": "25/30",
+        "extraLabels": 13,
+        "perRoundLive": [
+          7,
+          8,
+          6
+        ],
+        "notices": 0
+      }
+    },
+    {
+      "iteration": 7,
+      "path": "iterations/07-raw-delivery/summary.json",
+      "liveCoverage": "5/10",
+      "timelyCoverage": "3/10",
+      "includingAfterStop": "7/10",
+      "extraLabels": 4,
+      "decision": "Removing caption context from delivery pass did not improve this run. Reject as default."
+    },
+    {
+      "iteration": 8,
+      "path": "iterations/08-acoustic-evidence/summary.json",
+      "liveCoverage": "5/10",
+      "timelyCoverage": "4/10",
+      "includingAfterStop": "7/10",
+      "notices": 0,
+      "decision": "Feeding learned disfluency events to two prompted passes did not improve reference coverage. Keep worker for a separately tested direct speaking-pattern path."
+    },
+    {
+      "iteration": 9,
+      "path": "iterations/09-acoustic-fast/summary.json",
+      "liveCoverage": "4/10",
+      "timelyCoverage": "2/10",
+      "includingAfterStop": "8/10",
+      "notices": 0,
+      "decision": "Rejected: direct repetition/revision/partial-word path did not improve total coverage. Parallel model download confounds latency; fast-state-only results also require separate coverage accounting."
+    },
+    {
+      "iteration": 10,
+      "path": "iterations/10-contextual-speech/summary.json",
+      "liveCoverage": "8/10",
+      "timelyCoverage": "3/10",
+      "includingAfterStop": "9/10",
+      "notices": 0,
+      "decision": "Not accepted: single normal run only; blank controls passed 2/2 but no-video control wrongly emitted a voice label in 1/2 sessions. Person-presence guard needed."
+    },
+    {
+      "iteration": 11,
+      "path": "iterations/11-person-binding/controls-summary.json",
+      "controls": "2/2 no-video and 2/2 mute passed",
+      "decision": "Person-presence fix passed bounded controls, not evidence of full parity."
+    },
+    {
+      "iteration": 12,
+      "path": "iterations/12-native-delivery/summary.json",
+      "liveCoverage": "6/10",
+      "timelyCoverage": "3/10",
+      "includingAfterStop": "6/10",
+      "notices": 0,
+      "decision": "Not accepted. Native pass p50 561ms but only three nonempty results; malformed object/missing-code rows found. Parallel download confounds latency."
+    },
+    {
+      "iteration": 13,
+      "path": "iterations/13-native-format/summary.json",
+      "liveCoverage": "9/10",
+      "timelyCoverage": "4/10",
+      "includingAfterStop": "9/10",
+      "decision": "Format repair increased usable native outputs from 3 to 19. Still not parity: timing misses and rapid false face-loss cause suppression. One run only."
+    },
+    {
+      "iteration": 14,
+      "path": "iterations/14-face-presence/repeat-summary.json",
+      "liveCoverage": "25/30",
+      "timelyCoverage": "9/30",
+      "includingAfterStop": "26/30",
+      "notices": 0,
+      "decision": "Face detector recovers 15 missed Yann frames per round, but overall speed remains insufficient and tags inconsistent. Found variable pre-playback silence in QA audio clock; fix protocol before further model comparison."
+    },
+    {
+      "iteration": 15,
+      "path": "iterations/15-aligned-clock/summary.json",
+      "liveCoverage": "8/10",
+      "timelyCoverage": "2/10",
+      "includingAfterStop": "8/10",
+      "notices": 0,
+      "decision": "Clock corrected: transmitted duration within 70ms of all five clips. New baseline, not parity. Next test reduces fast-pass generation length."
+    },
+    {
+      "iteration": 16,
+      "path": "iterations/16-current-classifier/summary.json",
+      "liveCoverage": "9/10",
+      "timelyCoverage": "2/10",
+      "notices": 5,
+      "decision": "Compact output frequently used scalar mask and was rejected; fast lane failed in all five reference sessions. Correct only unambiguous equivalent forms before judging hypothesis. Six new neutral clips: one happy voice label conflicts with neutral crowd vote; no full accuracy claim."
+    },
+    {
+      "iteration": 17,
+      "path": "iterations/17-classifier-format/repeat-summary.json",
+      "liveCoverage": "23/30",
+      "timelyCoverage": "11/30",
+      "includingAfterStop": "25/30",
+      "notices": 0,
+      "decision": "Single run 9/10 and 6 timely did not reproduce: 23/30 and 11 timely across three rounds. Not accepted. Try compact all-signal provisional path before slower verification."
+    },
+    {
+      "iteration": 18,
+      "path": "iterations/18-ten-current/connection-failure.json",
+      "decision": "Not evaluated: remote ASR and native classifier could not start; both Omni HTTP and WS rejected current key with AccessDenied.Unpurchased. Same key can call qwen3.8-flash. No comparison score, no automatic permission or billing changes."
+    },
+    {
+      "iteration": 19,
+      "path": "iterations/19-local-audio-visual/summary.json",
+      "liveCoverage": "6/10",
+      "timelyCoverage": "2/10",
+      "notices": 0,
+      "decision": "Fallback functional, but lower coverage. No raw audio enters qwen3.8-flash; local speech/emotion/disfluency still measured. Confidence rows rejected when slow prompt incorrectly used direct audio mode; fix contradictory modality contract in a separate iteration."
+    },
+    {
+      "iteration": 20,
+      "path": "iterations/20-local-compact/summary.json",
+      "liveCoverage": "7/10",
+      "timelyCoverage": "0/10",
+      "notices": 0,
+      "decision": "Rejected as faster path: compact image/text request p50 1836ms is slower than local-audio-visual baseline, often arrives after 2s tentative expiry. Do not extend stale expiry to disguise latency. Return to single path and fix modality contract."
+    },
+    {
+      "iteration": 21,
+      "path": "iterations/21-local-contract/summary.json",
+      "liveCoverage": "8/10",
+      "timelyCoverage": "2/10",
+      "includingAfterStop": "8/10",
+      "notices": 0,
+      "decision": "Corrected no-raw-audio modality contract recovers labels but remains late; slow request p50 1606.5ms. Not accepted, independent accuracy unknown."
+    },
+    {
+      "iteration": 22,
+      "path": "iterations/22-local-sparse/summary.json",
+      "liveCoverage": "7/10",
+      "timelyCoverage": "1/10",
+      "includingAfterStop": "9/10",
+      "notices": 4,
+      "decision": "Not accepted: sparse fast request p50 1387ms versus full-vector1836ms, but only5 fast results and4/5 sessions lose fast lane due schema output deviations. First attempt interrupted with no complete report; only saved rerun is scored. No accuracy claim."
+    },
+    {
+      "iteration": 23,
+      "path": "iterations/23-fast-recovery/summary.json",
+      "liveCoverage": "9/10",
+      "timelyCoverage": "3/10",
+      "includingAfterStop": "8/10",
+      "notices": 0,
+      "decision": "Availability repaired:25 fast results, no failures; p50 1153ms, p95 3275ms. Coverage improved single run, still late and not repeat-validated. Retain robustness fix, no parity."
+    },
+    {
+      "iteration": 24,
+      "path": "iterations/24-fast-two-frames/repeat-summary.json",
+      "liveCoverage": "24/30",
+      "timelyCoverage": "8/30",
+      "notices": 3,
+      "decision": "No material speed gain established: fast p50 1127ms, per-round reference coverage7/9/8. These become diagnostics, not pass criteria after user explicitly waived matching Interhuman labels."
+    },
+    {
+      "iteration": 25,
+      "path": "iterations/25-review-format/live-vad.json",
+      "decision": "All five sessions completed with cloud access failures; output-format repair is unit-tested but model efficacy unverified. No model comparison score assigned."
+    },
+    {
+      "iteration": 26,
+      "path": "iterations/26-free-models/model-comparison.json",
+      "decision": "Three free-quota model candidates actually called; Flash faster but more format deviations, 27B mostly empty, Max more supported outputs but slower. Counts are not correctness."
+    },
+    {
+      "iteration": 27,
+      "path": "iterations/27-flash-singleton/summary.json",
+      "decision": "Complete singleton triplet compatibility retains 28 fast results, 22 nonempty. Fast p50 977ms/p95 1701ms; 1 fast format drop and 1 transient slow API failure. Not repeat-validated or parity."
+    },
+    {
+      "iteration": 28,
+      "path": "iterations/28-hybrid/summary.json",
+      "decision": "Hybrid snapshot models called successfully; fast live p50 943ms/p95 1969ms; one isolated malformed fast window. Not accuracy."
+    },
+    {
+      "iteration": 29,
+      "path": "iterations/29-local-load/summary.json",
+      "decision": "Fixed actual FunASR override of thread setting. Configured thread-only comparison invalid: earlier constructor reset to4; fixed worker confirms1. ASR repeated12s windows still slow at phrase end."
+    },
+    {
+      "iteration": 30,
+      "path": "iterations/30-cloud-transcription/app20.json",
+      "decision": "Topup also restored cloud ASR. Actual20s UI live9 completed transcript chunks p50 328ms after window end, 2s input chunks; 10 live review and17 fast results,91 local measures, no notices. Use remote ASR to remove repeated local long-window compute."
+    },
+    {
+      "iteration": 31,
+      "path": "iterations/31-continuous/application-summary.json",
+      "decision": "600.0245s recorded, 30/30 blank controls clean; fast request p50 969.5ms/p95 1813ms, fast tag DOM p50 1252.5ms/p95 1823.7ms. Final fast request at599.9s refused for insufficient_quota, so full-multimodal verifier false. Local model latency stable. Late review UI still needed tightening."
+    },
+    {
+      "iteration": 32,
+      "path": "iterations/32-current-evidence/summary.json",
+      "decision": "15 sessions: fast P50 922/P95 1805ms; 2 format drops recovered. Blank2 and no-video2 show no states. Mute2 has no missing-modality claims."
+    },
+    {
+      "iteration": 33,
+      "path": "iterations/33-product-integration/actual-ui20.json",
+      "decision": "Actual20s UI passed, no notices, saved20.022s; 6 new-speaker checks completed. Upload ASR and catalogue/settings integration implemented. 93 tests passed; latest upload face-binding patch has targeted test only. Final600s check pending."
+    }
+  ],
+  "updatedAt": "2026-10-08T07:09:55.257Z",
+  "candidatePorts": [
+    4830,
+    4831
+  ],
+  "localCandidates": {
+    "openSMILE": "eGeMAPSv02 LLD successful, 72–194ms on full 4–12.5s clips; not integrated yet",
+    "CrisperWhisper2Small": "Downloaded standard research weights, MPS float32 word timings run; 3s window P50 1463.0ms, not a synchronous fast path; some hallucinated/truncated words remain.",
+    "romanaWavLM": {
+      "reference": "romana-disfluency-evidence.json",
+      "parameters": 94385781,
+      "p50Ms": 99,
+      "unitTests": "56 passed after VAD continuity and contextual filler checks",
+      "deployment": "research server only"
+    },
+    "miniCPM": {
+      "model": "openbmb/MiniCPM-o-4_5-gguf",
+      "engine": "integrations/vendor/minicpm-llamacpp",
+      "build": "llama-omni-server and llama-omni-cli compiled successfully with Metal",
+      "download": "research/minicpm-download.log",
+      "modules": [
+        "Q4_K_M LLM",
+        "F16 audio",
+        "F16 vision"
+      ],
+      "status": "Rejected for this machine realtime path: measured 12,014ms for a 3s audiovisual prefix excluding startup, no signals; local SSE and binding fixes recorded. Server stopped."
+    },
+    "nanoEmoX": {
+      "model": "Jiaha0Hu4ng/Nano-EmoX",
+      "paper": "CVPR2026",
+      "codeCommit": "1c557e6aefebbf28173e6da66502eea73b8b64e5",
+      "checkpoint": "epoch60 selected before evaluation",
+      "status": "Loaded all trained tensors and frozen FaceX parameters. BOS-corrected MPS probe 5.5/9.2s for 3s prefix; identical encoder embeddings but different greedy outputs. Research adapter not deployment-ready; do not attribute quality failure to published benchmark."
+    },
+    "SenseVoiceSmall": {
+      "status": "Research fallback integrated. Same pretrained weights, CPU depthwise convolution vectorized. All six 3s transcript pairs identical; original 824–870ms, vectorized 167–174ms. Genuine transcripts have errors; not independent WER.",
+      "evidence": "depthwise-feasibility.json"
+    }
+  },
+  "currentAccessIssue": null,
+  "resumeResearchNote": "Official Qwen structured-output docs support JSON Object for multimodal calls; JSON Schema constraints fall back to JSON Object when images are present. Before iteration23 inspect inherited prompt and recoverable fast-output format errors; do not assume strict image-call schema enforcement.",
+  "executionMode": "Continuous current-chat work explicitly resumed by user; recurring automation deleted.",
+  "priorAcceptance": {
+    "referenceLabelCoverage": 0.9,
+    "repeatRounds": 3,
+    "referenceAppearanceGraceSeconds": 0.5,
+    "includeFalsePositiveReview": true,
+    "newSpeakersRequired": true,
+    "longRunMinutes": 10
+  },
+  "acceptance": {
+    "referenceLabelMatchingRequired": false,
+    "userClarification": "2026-10-08: 准确性不好判断，不要求案例标签与 Interhuman 完全一致。",
+    "streamingRequired": true,
+    "causalInputsOnly": true,
+    "noPostStopBackfillAsRealtime": true,
+    "reportDisplayLatency": true,
+    "noFastLanePermanentLossFromOneFormatError": true,
+    "emptyMediaControlsRequired": true,
+    "repeatStabilityRequired": true,
+    "longRunMinutes": 10,
+    "independentAccuracyClaimAllowed": false,
+    "proposedLatencyTargets": {
+      "fastRequestP50Ms": 1000,
+      "fastRequestP95Ms": 2000,
+      "note": "Engineering targets for iteration, not Interhuman published specifications or proof of inference accuracy."
+    }
+  },
+  "modelPreference": {
+    "source": "User screenshots 2026-10-08",
+    "freeQuotaPerModelUserReported": 1000000,
+    "priority": [
+      "qwen3.7-flash",
+      "qwen3.8-27b",
+      "qwen3.8-max"
+    ],
+    "remainingQuotaVerified": true,
+    "automaticModelFallback": false,
+    "imageVideoGeneratorsExcluded": true,
+    "quotaEvidence": "iterations/26-free-models/account-check.json"
+  },
+  "latestChecks": {
+    "unitTests": 88,
+    "passed": 88,
+    "additionalTargetedTests": 34,
+    "productionPromoted": false,
+    "continuousRun": "600.0245s recorded, 30/30 blank controls clean; fast request p50 969.5ms/p95 1813ms, fast tag DOM p50 1252.5ms/p95 1823.7ms. Final fast request at599.9s refused for insufficient_quota, so full-multimodal verifier false. Local model latency stable. Late review UI still needed tightening."
+  },
+  "accessRestored": {
+    "at": "2026-10-08T01:55:39Z",
+    "userConfirmedTopup": true,
+    "testedModel": "qwen3.7-flash",
+    "status": 200,
+    "evidence": "iterations/26-free-models/access-after-topup.json"
+  },
+  "productionPromoted": false,
+  "handoff": {
+    "acceptanceComplete": false,
+    "noTimers": true,
+    "oldLocalService": 4827,
+    "candidateService": 4831,
+    "newSpeakerCheck": "iterations/33-product-integration/neutral-summary.json",
+    "latestPatchUnverifiedInLiveService": "Upload face count sets quality.face; targeted test passed; running candidate predates patch."
+  }
+}

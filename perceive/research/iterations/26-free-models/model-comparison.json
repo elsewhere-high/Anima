@@ -1,0 +1,74 @@
+[
+  {
+    "variant": "free-max",
+    "model": "qwen3.8-max",
+    "clips": 5,
+    "fastLatency": {
+      "n": 19,
+      "p50Ms": 1652,
+      "p95Ms": 2441
+    },
+    "nonemptyFastLatency": {
+      "n": 12,
+      "p50Ms": 1811.0,
+      "p95Ms": 2441
+    },
+    "slowLatency": {
+      "n": 31,
+      "p50Ms": 2517,
+      "p95Ms": 3019
+    },
+    "nonemptySlowResults": 23,
+    "notices": {},
+    "independentAccuracy": null
+  },
+  {
+    "variant": "free-27b",
+    "model": "qwen3.8-27b",
+    "clips": 5,
+    "fastLatency": {
+      "n": 30,
+      "p50Ms": 912.5,
+      "p95Ms": 1930
+    },
+    "nonemptyFastLatency": {
+      "n": 1,
+      "p50Ms": 1026,
+      "p95Ms": 1026
+    },
+    "slowLatency": {
+      "n": 38,
+      "p50Ms": 1295.5,
+      "p95Ms": 2656
+    },
+    "nonemptySlowResults": 8,
+    "notices": {},
+    "independentAccuracy": null
+  },
+  {
+    "variant": "free-flash",
+    "model": "qwen3.7-flash",
+    "clips": 5,
+    "fastLatency": {
+      "n": 12,
+      "p50Ms": 879.0,
+      "p95Ms": 1094
+    },
+    "nonemptyFastLatency": {
+      "n": 9,
+      "p50Ms": 880,
+      "p95Ms": 1094
+    },
+    "slowLatency": {
+      "n": 29,
+      "p50Ms": 1994,
+      "p95Ms": 4255
+    },
+    "nonemptySlowResults": 13,
+    "notices": {
+      "FAST_DELIVERY_WINDOW_DROPPED": 8,
+      "FAST_DELIVERY_UNAVAILABLE": 1
+    },
+    "independentAccuracy": null
+  }
+]

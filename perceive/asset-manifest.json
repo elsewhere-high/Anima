@@ -1,0 +1,68 @@
+[
+  {
+    "path": "assets/yann-lecun-wef.mp4",
+    "url": "https://www.interhuman.ai/videos/v3demo/yann-lecun-wef.mp4",
+    "bytes": 1039695,
+    "sha256": "2f4a6231b21a34cc331ea223226e8592b253a5cc82562ddfd6acdf711086ade6"
+  },
+  {
+    "path": "assets/yann-lecun-wef.jpg",
+    "url": "https://www.interhuman.ai/images/v3demo/reel-posters/yann-lecun-wef.jpg",
+    "bytes": 14658,
+    "sha256": "3b5ec853ca25eedfff13d9a2740eb9828ea2843e5a33e7cec5ca8fd9f55c18fd"
+  },
+  {
+    "path": "assets/steve-jobs-interview.mp4",
+    "url": "https://www.interhuman.ai/videos/v3demo/steve-jobs-interview.mp4",
+    "bytes": 488569,
+    "sha256": "25ad7885670d56315f5c37fc417444da11f3bbe9f7449759db3e246da8ac5b41"
+  },
+  {
+    "path": "assets/steve-jobs-interview.jpg",
+    "url": "https://www.interhuman.ai/images/v3demo/reel-posters/steve-jobs-interview.jpg",
+    "bytes": 13434,
+    "sha256": "6a6999141d197a6d8f25960882dec714cfc357cbcaa6e3af83d8e1368c387033"
+  },
+  {
+    "path": "assets/elon-musk-wef.mp4",
+    "url": "https://www.interhuman.ai/videos/v3demo/elon-musk-wef.mp4",
+    "bytes": 1344131,
+    "sha256": "f088e59fac68115a93483c2e1c1d9c26881b15b62248e7f18b08b2811f51f7ed"
+  },
+  {
+    "path": "assets/elon-musk-wef.jpg",
+    "url": "https://www.interhuman.ai/images/v3demo/reel-posters/elon-musk-wef.jpg",
+    "bytes": 25732,
+    "sha256": "d412a72300cd5b1b4ef0bfb64fc51d3ba07f451955069796c82c19b699ab9978"
+  },
+  {
+    "path": "assets/pep-guardiola-press.mp4",
+    "url": "https://www.interhuman.ai/videos/v3demo/pep-guardiola-press.mp4",
+    "bytes": 173278,
+    "sha256": "85bda93b7983eec552528d01615b9324676fb4797e0aab42e4afcd82b95955d2"
+  },
+  {
+    "path": "assets/pep-guardiola-press.jpg",
+    "url": "https://www.interhuman.ai/images/v3demo/reel-posters/pep-guardiola-press.jpg",
+    "bytes": 46855,
+    "sha256": "8bb81a376fe06fdbe437b3f6ca2df8a70fa279061d95af17d1dcda3c98a13db4"
+  },
+  {
+    "path": "assets/mark-zuckerberg-interview.mp4",
+    "url": "https://www.interhuman.ai/videos/v3demo/mark-zuckerberg-interview.mp4",
+    "bytes": 1311367,
+    "sha256": "bfcc735a00b268c97d81585ca8b212a89ede641497fdcd8fd3036ba38d1f5176"
+  },
+  {
+    "path": "assets/mark-zuckerberg-interview.jpg",
+    "url": "https://www.interhuman.ai/images/v3demo/reel-posters/mark-zuckerberg-interview.jpg",
+    "bytes": 20398,
+    "sha256": "21085517507ff653ea2d26a7f258781cf81642e1bf59d277f82479405c76472b"
+  },
+  {
+    "path": "models/face_landmarker.task",
+    "url": "https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task",
+    "bytes": 3758596,
+    "sha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff"
+  }
+]

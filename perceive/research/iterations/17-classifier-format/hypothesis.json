@@ -1,0 +1,7 @@
+{
+  "hypothesis": "Accept the observed scalar modality mask only for zero or one active class, where no per-label ambiguity exists. Preserve explicit refusal for two active labels sharing an ambiguous mask. No classification prompt change.",
+  "nativeCompact": true,
+  "presence": "detector",
+  "speechFast": true,
+  "heads": 2
+}

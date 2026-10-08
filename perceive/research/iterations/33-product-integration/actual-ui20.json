@@ -1,0 +1,179 @@
+{
+  "profile": "current-product-short",
+  "createdAt": "2026-10-08T03:08:15.234Z",
+  "complete": true,
+  "models": {
+    "fusion": "qwen3.8-max",
+    "fast": "qwen3.7-flash",
+    "asr": "qwen3.8-omni-flash-realtime"
+  },
+  "files": [
+    "autosaved/0dd6d72a4605dcd1dd37-1-yann-lecun-wef.json"
+  ],
+  "final": {
+    "phase": "完成",
+    "seconds": 20,
+    "profile": "current-product-short",
+    "cameraAccess": false,
+    "microphoneAccess": false,
+    "transcripts": 127,
+    "measurements": 91,
+    "displayUpdates": 16,
+    "notices": [],
+    "savedMinutes": 0,
+    "blankChecks": [],
+    "cloudVerified": true,
+    "localRuntime": {
+      "torchThreads": 1,
+      "workers": 3
+    },
+    "elapsedSeconds": 20,
+    "reviewLiveResults": 7,
+    "fastLiveResults": 16,
+    "recordedBytes": 2655994,
+    "recordedSeconds": 20.022,
+    "infrastructurePassed": true,
+    "fullMultimodalVerified": true,
+    "final": true
+  },
+  "savedParts": 1,
+  "liveEventCounts": {
+    "session.start": 1,
+    "display": 156,
+    "quality": 3,
+    "state": 133,
+    "measurement": 90,
+    "fast.result": 16,
+    "transcript": 126,
+    "result": 7
+  },
+  "notices": {},
+  "latency": {
+    "asrCompletedWindowEndToReceipt": {
+      "n": 9,
+      "p50Ms": 325.6,
+      "p95Ms": 505.2,
+      "maxMs": 505.2
+    },
+    "fastInputEndToReceipt": {
+      "n": 16,
+      "p50Ms": 1126.8,
+      "p95Ms": 1948.5,
+      "maxMs": 1948.5
+    },
+    "fastRequest": {
+      "n": 16,
+      "p50Ms": 1067.0,
+      "p95Ms": 1915,
+      "maxMs": 1915
+    },
+    "reviewInputEndToReceipt": {
+      "n": 7,
+      "p50Ms": 2830.5,
+      "p95Ms": 6082.1,
+      "maxMs": 6082.1
+    },
+    "specialistCompute": {
+      "face": {
+        "n": 39,
+        "p50Ms": 158,
+        "p95Ms": 221,
+        "maxMs": 224
+      },
+      "voice": {
+        "n": 19,
+        "p50Ms": 262,
+        "p95Ms": 347,
+        "maxMs": 347
+      },
+      "speech": {
+        "n": 32,
+        "p50Ms": 165.0,
+        "p95Ms": 207,
+        "maxMs": 281
+      }
+    }
+  },
+  "captionInputEndToFirstDOM": {
+    "n": 9,
+    "p50Ms": 288.3,
+    "p95Ms": 757.7,
+    "maxMs": 757.7
+  },
+  "tagInputEndToFirstDOM": {
+    "speech_delivery": {
+      "n": 2,
+      "p50Ms": 370.8,
+      "p95Ms": 522.2,
+      "maxMs": 522.2
+    },
+    "visual_local_classifier": {
+      "n": 8,
+      "p50Ms": 992.5,
+      "p95Ms": 1408.2,
+      "maxMs": 1408.2
+    },
+    "vocal_expression": {
+      "n": 2,
+      "p50Ms": 375.4,
+      "p95Ms": 415.2,
+      "maxMs": 415.2
+    }
+  },
+  "minutes": {
+    "1": {
+      "asrCompletedWindowEndToReceipt": {
+        "n": 9,
+        "p50Ms": 325.6,
+        "p95Ms": 505.2,
+        "maxMs": 505.2
+      },
+      "fastInputEndToReceipt": {
+        "n": 16,
+        "p50Ms": 1126.8,
+        "p95Ms": 1948.5,
+        "maxMs": 1948.5
+      },
+      "fastRequest": {
+        "n": 16,
+        "p50Ms": 1067.0,
+        "p95Ms": 1915,
+        "maxMs": 1915
+      },
+      "reviewInputEndToReceipt": {
+        "n": 7,
+        "p50Ms": 2830.5,
+        "p95Ms": 6082.1,
+        "maxMs": 6082.1
+      },
+      "specialistCompute": {
+        "face": {
+          "n": 39,
+          "p50Ms": 158,
+          "p95Ms": 221,
+          "maxMs": 224
+        },
+        "voice": {
+          "n": 19,
+          "p50Ms": 262,
+          "p95Ms": 347,
+          "maxMs": 347
+        },
+        "speech": {
+          "n": 32,
+          "p50Ms": 165.0,
+          "p95Ms": 207,
+          "maxMs": 281
+        }
+      }
+    }
+  },
+  "independentAccuracy": null,
+  "limits": [
+    "Input-end latency excludes waiting to collect a roughly 2s ASR chunk.",
+    "Draft timestamps based on receipt are excluded from caption DOM latency. Older runs without timing provenance have no accepted caption DOM latency.",
+    "Label onset is model estimated; input-end-to-DOM is not physical expression onset latency.",
+    "Local model time excludes capture and queue.",
+    "Repeated public clip stress test is not held-out accuracy."
+  ]
+}

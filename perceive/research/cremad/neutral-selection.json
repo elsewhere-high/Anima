@@ -1,0 +1,85 @@
+{
+  "scope": "Held-out from our prompt iteration, not necessarily unseen by upstream pretrained models. Crowd-labeled neutral clips; confidence may be legitimate, no automatic mapping to all ten social labels.",
+  "selectionRule": "Actors 1001 through 1006, first alphabetic neutral-intent filename with neutral plurality for audio, video and audiovisual. Frozen before inference.",
+  "source": "https://github.com/CheyneyComputerScience/CREMA-D",
+  "rows": [
+    {
+      "": "59",
+      "FileName": "1001_DFA_NEU_XX",
+      "VoiceVote": "N",
+      "VoiceLevel": "64",
+      "FaceVote": "N",
+      "FaceLevel": "77.22",
+      "MultiModalVote": "N",
+      "MultiModalLevel": "75.88",
+      "sourceUrl": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/master/VideoFlash/1001_DFA_NEU_XX.flv",
+      "sourceSha256": "a2b374bcd195d7320437c944eef2208dedd2c22725d09d65e8c31bf6c1eeb286",
+      "testMedia": "public/research-assets/cremad/1001_DFA_NEU_XX.mp4"
+    },
+    {
+      "": "140",
+      "FileName": "1002_DFA_NEU_XX",
+      "VoiceVote": "N",
+      "VoiceLevel": "60.12",
+      "FaceVote": "N",
+      "FaceLevel": "51",
+      "MultiModalVote": "N",
+      "MultiModalLevel": "68.25",
+      "sourceUrl": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/master/VideoFlash/1002_DFA_NEU_XX.flv",
+      "sourceSha256": "1dcc7dd3a460f4bdecedbcff5d026bd99f72f3ff0e05f41298c093759c0fd220",
+      "testMedia": "public/research-assets/cremad/1002_DFA_NEU_XX.mp4"
+    },
+    {
+      "": "222",
+      "FileName": "1003_DFA_NEU_XX",
+      "VoiceVote": "N",
+      "VoiceLevel": "86",
+      "FaceVote": "N",
+      "FaceLevel": "60.2",
+      "MultiModalVote": "N",
+      "MultiModalLevel": "80.75",
+      "sourceUrl": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/master/VideoFlash/1003_DFA_NEU_XX.flv",
+      "sourceSha256": "b57046431372b84a19db3480f19411f43550b7232aee76115854c3080b860fe8",
+      "testMedia": "public/research-assets/cremad/1003_DFA_NEU_XX.mp4"
+    },
+    {
+      "": "246",
+      "FileName": "1004_IEO_NEU_XX",
+      "VoiceVote": "N",
+      "VoiceLevel": "59.67",
+      "FaceVote": "N",
+      "FaceLevel": "85.22",
+      "MultiModalVote": "N",
+      "MultiModalLevel": "71.67",
+      "sourceUrl": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/master/VideoFlash/1004_IEO_NEU_XX.flv",
+      "sourceSha256": "b8cbc5898257c3f8d35a0a4352a960d2ccf6e8cc1b5799bd31c31e40374c5220",
+      "testMedia": "public/research-assets/cremad/1004_IEO_NEU_XX.mp4"
+    },
+    {
+      "": "386",
+      "FileName": "1005_DFA_NEU_XX",
+      "VoiceVote": "N",
+      "VoiceLevel": "54.22",
+      "FaceVote": "N",
+      "FaceLevel": "73.83",
+      "MultiModalVote": "N",
+      "MultiModalLevel": "63.5",
+      "sourceUrl": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/master/VideoFlash/1005_DFA_NEU_XX.flv",
+      "sourceSha256": "861c34aa5a0964b71cfe7ec5e5881cc5a1935756d7812b01524d63de79a56433",
+      "testMedia": "public/research-assets/cremad/1005_DFA_NEU_XX.mp4"
+    },
+    {
+      "": "468",
+      "FileName": "1006_DFA_NEU_XX",
+      "VoiceVote": "N",
+      "VoiceLevel": "64.14",
+      "FaceVote": "N",
+      "FaceLevel": "70.3",
+      "MultiModalVote": "N",
+      "MultiModalLevel": "72.88",
+      "sourceUrl": "https://media.githubusercontent.com/media/CheyneyComputerScience/CREMA-D/master/VideoFlash/1006_DFA_NEU_XX.flv",
+      "sourceSha256": "92476ad25880670e9985396caaecc4f57c6cbb722b94321867ee5a20fb0e97b9",
+      "testMedia": "public/research-assets/cremad/1006_DFA_NEU_XX.mp4"
+    }
+  ]
+}

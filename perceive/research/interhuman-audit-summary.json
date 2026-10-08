@@ -1,0 +1,574 @@
+{
+  "verdict": "Not comparable to the showcased reference; independent accuracy and live Interhuman API latency remain unmeasured.",
+  "createdAt": "2026-10-07T14:59:30.585Z",
+  "models": {
+    "fusion": "qwen3.8-omni-flash",
+    "specialists": {
+      "face": {
+        "status": "ready",
+        "latencyMs": 258,
+        "model": "EmotiEffLib-enet-b2-8 + OpenFace-3.0"
+      },
+      "voice": {
+        "status": "ready",
+        "latencyMs": 204,
+        "model": "emotion2vec-plus-large"
+      }
+    }
+  },
+  "cases": [
+    {
+      "id": "yann-lecun-wef",
+      "name": "Yann LeCun",
+      "referenceFirstAppearance": {
+        "confidence": 2.5
+      },
+      "rounds": [
+        {
+          "round": 1,
+          "duration": 6.869375,
+          "shown": {
+            "平静": 4.403,
+            "专注": 6.403
+          },
+          "allFusionLabelsIncludingAfterStop": [
+            "专注",
+            "平静",
+            "确信"
+          ],
+          "liveGenerousMatches": [],
+          "allGenerousMatches": [
+            "confidence"
+          ],
+          "resultCount": 5,
+          "resultCountAfterStop": 2,
+          "notices": 0,
+          "error": null
+        },
+        {
+          "round": 2,
+          "duration": 6.869375,
+          "shown": {
+            "平静": 5.203
+          },
+          "allFusionLabelsIncludingAfterStop": [
+            "平静",
+            "确信"
+          ],
+          "liveGenerousMatches": [],
+          "allGenerousMatches": [
+            "confidence"
+          ],
+          "resultCount": 5,
+          "resultCountAfterStop": 3,
+          "notices": 0,
+          "error": null
+        },
+        {
+          "round": 3,
+          "duration": 6.869375,
+          "shown": {},
+          "allFusionLabelsIncludingAfterStop": [
+            "确信"
+          ],
+          "liveGenerousMatches": [],
+          "allGenerousMatches": [
+            "confidence"
+          ],
+          "resultCount": 5,
+          "resultCountAfterStop": 3,
+          "notices": 0,
+          "error": null
+        }
+      ],
+      "offline": {
+        "labels": [
+          "专注"
+        ],
+        "latencyMs": 7433,
+        "rejected": [
+          {
+            "label": "确信",
+            "reason": "声音说明缺少对应声音依据"
+          }
+        ]
+      },
+      "vadSensitivity": {
+        "shown": {
+          "愉悦语调": 2.006,
+          "平静": 5.504,
+          "专注": 6.507
+        },
+        "allFusionLabelsIncludingAfterStop": [
+          "专注",
+          "平静"
+        ],
+        "vadReady": true,
+        "activity": [
+          {
+            "at": 0.542,
+            "speaking": true
+          }
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": "steve-jobs-interview",
+      "name": "Steve Jobs",
+      "referenceFirstAppearance": {
+        "confidence": 3.453,
+        "frustration": 6.103
+      },
+      "rounds": [
+        {
+          "round": 1,
+          "duration": 12.538,
+          "shown": {
+            "平静": 5.004,
+            "专注": 6.803,
+            "不满": 8.303,
+            "确信": 10.403
+          },
+          "allFusionLabelsIncludingAfterStop": [
+            "不满",
+            "专注",
+            "平静",
+            "确信"
+          ],
+          "liveGenerousMatches": [
+            "confidence",
+            "frustration"
+          ],
+          "allGenerousMatches": [
+            "confidence",
+            "frustration"
+          ],
+          "resultCount": 8,
+          "resultCountAfterStop": 3,
+          "notices": 0,
+          "error": null
+        },
+        {
+          "round": 2,
+          "duration": 12.538,
+          "shown": {
+            "专注": 6.708,
+            "不满": 7.808
+          },
+          "allFusionLabelsIncludingAfterStop": [
+            "不满",
+            "专注",
+            "平静"
+          ],
+          "liveGenerousMatches": [
+            "frustration"
+          ],
+          "allGenerousMatches": [
+            "frustration"
+          ],
+          "resultCount": 8,
+          "resultCountAfterStop": 3,
+          "notices": 0,
+          "error": null
+        },
+        {
+          "round": 3,
+          "duration": 12.538,
+          "shown": {
+            "平静": 4.804,
+            "专注": 7.305
+          },
+          "allFusionLabelsIncludingAfterStop": [
+            "专注",
+            "平静",
+            "确信"
+          ],
+          "liveGenerousMatches": [],
+          "allGenerousMatches": [
+            "confidence"
+          ],
+          "resultCount": 7,
+          "resultCountAfterStop": 3,
+          "notices": 0,
+          "error": null
+        }
+      ],
+      "offline": {
+        "labels": [
+          "不满"
+        ],
+        "latencyMs": 7746,
+        "rejected": [
+          {
+            "label": "确信",
+            "reason": "声音说明缺少对应声音依据"
+          }
+        ]
+      },
+      "vadSensitivity": {
+        "shown": {
+          "平静": 4.604,
+          "专注": 5.901,
+          "低落": 6.201
+        },
+        "allFusionLabelsIncludingAfterStop": [
+          "不满",
+          "专注",
+          "低落",
+          "平静"
+        ],
+        "vadReady": true,
+        "activity": [
+          {
+            "at": 0.1916000000089407,
+            "speaking": true
+          }
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": "elon-musk-wef",
+      "name": "Elon Musk",
+      "referenceFirstAppearance": {
+        "hesitation": 2.366
+      },
+      "rounds": [
+        {
+          "round": 1,
+          "duration": 4.013,
+          "shown": {},
+          "allFusionLabelsIncludingAfterStop": [
+            "惊讶",
+            "犹豫"
+          ],
+          "liveGenerousMatches": [],
+          "allGenerousMatches": [
+            "hesitation"
+          ],
+          "resultCount": 4,
+          "resultCountAfterStop": 3,
+          "notices": 0,
+          "error": null
+        },
+        {
+          "round": 2,
+          "duration": 4.013,
+          "shown": {
+            "愉悦语调": 2.406
+          },
+          "allFusionLabelsIncludingAfterStop": [
+            "平静",
+            "惊讶"
+          ],
+          "liveGenerousMatches": [],
+          "allGenerousMatches": [],
+          "resultCount": 4,
+          "resultCountAfterStop": 3,
+          "notices": 0,
+          "error": null
+        },
+        {
+          "round": 3,
+          "duration": 4.013,
+          "shown": {
+            "愉悦语调": 2.407
+          },
+          "allFusionLabelsIncludingAfterStop": [
+            "平静",
+            "惊讶",
+            "犹豫"
+          ],
+          "liveGenerousMatches": [],
+          "allGenerousMatches": [
+            "hesitation"
+          ],
+          "resultCount": 4,
+          "resultCountAfterStop": 3,
+          "notices": 0,
+          "error": null
+        }
+      ],
+      "offline": {
+        "labels": [
+          "犹豫"
+        ],
+        "latencyMs": 5533,
+        "rejected": []
+      },
+      "vadSensitivity": {
+        "shown": {},
+        "allFusionLabelsIncludingAfterStop": [],
+        "vadReady": true,
+        "activity": [
+          {
+            "at": 0.8002000000029802,
+            "speaking": true
+          }
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": "pep-guardiola-press",
+      "name": "Pep Guardiola",
+      "referenceFirstAppearance": {
+        "confidence": 1.24,
+        "hesitation": 3.02,
+        "frustration": 4.18
+      },
+      "rounds": [
+        {
+          "round": 1,
+          "duration": 4.999,
+          "shown": {
+            "愉悦语调": 1.205
+          },
+          "allFusionLabelsIncludingAfterStop": [
+            "低落",
+            "平静"
+          ],
+          "liveGenerousMatches": [],
+          "allGenerousMatches": [],
+          "resultCount": 4,
+          "resultCountAfterStop": 2,
+          "notices": 0,
+          "error": null
+        },
+        {
+          "round": 2,
+          "duration": 4.999,
+          "shown": {
+            "愉悦语调": 1.302
+          },
+          "allFusionLabelsIncludingAfterStop": [
+            "低落",
+            "平静"
+          ],
+          "liveGenerousMatches": [],
+          "allGenerousMatches": [],
+          "resultCount": 5,
+          "resultCountAfterStop": 3,
+          "notices": 0,
+          "error": null
+        },
+        {
+          "round": 3,
+          "duration": 4.999,
+          "shown": {
+            "愉悦语调": 1.304
+          },
+          "allFusionLabelsIncludingAfterStop": [
+            "平静"
+          ],
+          "liveGenerousMatches": [],
+          "allGenerousMatches": [],
+          "resultCount": 5,
+          "resultCountAfterStop": 3,
+          "notices": 0,
+          "error": null
+        }
+      ],
+      "offline": {
+        "labels": [
+          "低落",
+          "确信"
+        ],
+        "latencyMs": 8335,
+        "rejected": []
+      },
+      "vadSensitivity": {
+        "shown": {
+          "愉悦语调": 1.205
+        },
+        "allFusionLabelsIncludingAfterStop": [
+          "低落",
+          "平静"
+        ],
+        "vadReady": true,
+        "activity": [
+          {
+            "at": 0.253,
+            "speaking": true
+          },
+          {
+            "at": 3.3895,
+            "speaking": false
+          },
+          {
+            "at": 3.804800000011921,
+            "speaking": true
+          }
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": "mark-zuckerberg-interview",
+      "name": "Mark Zuckerberg",
+      "referenceFirstAppearance": {
+        "confidence": 1.14,
+        "hesitation": 2.92,
+        "uncertainty": 4.64
+      },
+      "rounds": [
+        {
+          "round": 1,
+          "duration": 5.12,
+          "shown": {},
+          "allFusionLabelsIncludingAfterStop": [],
+          "liveGenerousMatches": [],
+          "allGenerousMatches": [],
+          "resultCount": 4,
+          "resultCountAfterStop": 3,
+          "notices": 0,
+          "error": null
+        },
+        {
+          "round": 2,
+          "duration": 5.12,
+          "shown": {},
+          "allFusionLabelsIncludingAfterStop": [
+            "平静",
+            "犹豫"
+          ],
+          "liveGenerousMatches": [],
+          "allGenerousMatches": [
+            "hesitation"
+          ],
+          "resultCount": 5,
+          "resultCountAfterStop": 3,
+          "notices": 0,
+          "error": null
+        },
+        {
+          "round": 3,
+          "duration": 5.12,
+          "shown": {},
+          "allFusionLabelsIncludingAfterStop": [],
+          "liveGenerousMatches": [],
+          "allGenerousMatches": [],
+          "resultCount": 4,
+          "resultCountAfterStop": 2,
+          "notices": 0,
+          "error": null
+        }
+      ],
+      "offline": {
+        "labels": [],
+        "latencyMs": 7698,
+        "rejected": [
+          {
+            "label": "确信",
+            "reason": "声音说明缺少对应声音依据"
+          },
+          {
+            "label": "组织表达",
+            "reason": "缺少有效时间或可追溯依据"
+          }
+        ]
+      },
+      "vadSensitivity": {
+        "shown": {},
+        "allFusionLabelsIncludingAfterStop": [],
+        "vadReady": true,
+        "activity": [
+          {
+            "at": 0.0625,
+            "speaking": true
+          }
+        ],
+        "error": null
+      }
+    }
+  ],
+  "mainProtocol": "15 causal real-time sessions with production server/LiveConnection/LiveViewState, camera/microphone unused, no expected labels supplied. VAD assistance disabled in main run; separate five-case VAD sensitivity run. Display sampled every 100 ms, compared with app refresh every 250 ms, mildly favorable to Anima.",
+  "referenceProtocol": "bundled prerecorded demo events, not independently timed live API",
+  "referenceSource": "https://www.interhuman.ai/_next/static/chunks/03hvlan.lx7z7.js",
+  "referenceBundleSHA256": "dd8b4995dfd2423610aba1615c711b516409d12d6aae475d9d90dc3e962d1590",
+  "requestLatencyMs": {
+    "n": 77,
+    "p50": 3573,
+    "p95": 5543
+  },
+  "windowEndToFinalResultMs": {
+    "n": 77,
+    "p50": 3722.4,
+    "p95": 6544.3
+  },
+  "finalResultsAfterStop": {
+    "n": 42,
+    "total": 77
+  },
+  "localInferenceLatencyMs": {
+    "face": {
+      "n": 191,
+      "p50": 271,
+      "p95": 355
+    },
+    "voice": {
+      "n": 87,
+      "p50": 167,
+      "p95": 317
+    }
+  },
+  "captureAbsoluteDriftMs": {
+    "n": 195,
+    "p50": 49,
+    "p95": 67
+  },
+  "maxCaptureAbsoluteDriftMs": 109,
+  "referenceCoverageNotAccuracy": {
+    "denominator": 30,
+    "liveGenerousMatches": 3,
+    "allGenerousMatches": 10,
+    "mapping": {
+      "确信": "confidence",
+      "不满": "frustration",
+      "挫败": "frustration",
+      "犹豫": "hesitation",
+      "不确定": "uncertainty"
+    },
+    "doesNotScoreFalsePositivesOrTemporalOverlap": true
+  },
+  "rejectedCandidates": [
+    {
+      "label": "确信",
+      "reason": "声音说明缺少对应声音依据",
+      "count": 11
+    },
+    {
+      "label": "组织表达",
+      "reason": "缺少有效时间或可追溯依据",
+      "count": 7
+    },
+    {
+      "label": "平静",
+      "reason": "超出已接入的测量能力",
+      "count": 4
+    },
+    {
+      "label": "低落",
+      "reason": "声音说明缺少对应声音依据",
+      "count": 1
+    },
+    {
+      "label": "不确定",
+      "reason": "能力或结果陈述不等于不确定",
+      "count": 1
+    }
+  ],
+  "sourceHashes": {
+    "fusion.mjs": "de9f753501229fdc56ec0ffcdfc1383251433ce966c6a32caa0ec8a8e857d504",
+    "fusion-provider.mjs": "62ccadf57c8927089c12cb3a5fdfe225cb4d0c07af9f567dbb60186d62c9c24b",
+    "perceive.mjs": "6a36d0b86b45730c706d467dc3cfe855f8cc0b0a778c9e76bd2d516b057b660e",
+    "realtime.mjs": "9cd57f834388551558c67b498567d5c5db3935b9f8a3d8fc50fa9543c40eca41",
+    "state-engine.mjs": "5368ab2a1eb6a0e21e57b1d626a95bf3de09c17a8161657beeb63a0ed88fe17b",
+    "public/live-state.js": "76dda04592e250f183d119ce0dd6b7fc5726156e78100ac66a5fe4f4a4ae33f9",
+    "public/comparison-qa.js": "cdebf75c22d9c10f78cab56f3fe88fe6f1dc0cd6c4d820f39ee830fe41406a89",
+    "public/comparison-vad-qa.js": "43404a3865a16ac51e4b8fe37abcab090cbec2e934faac9d317b567971625cf9"
+  },
+  "independentAccuracy": null,
+  "interhumanLiveApiLatency": null
+}
